@@ -1,0 +1,31 @@
+ClubName,Country,LogoPath,isActive
+Arsenal,England,logos/arsenal.png,TRUE
+Aston Villa,England,logos/aston_villa.png,TRUE
+Bournemouth,England,logos/bournemouth.png,TRUE
+Brentford,England,logos/brentford.png,TRUE
+Brighton,England,logos/brighton.png,TRUE
+Chelsea,England,logos/chelsea.png,TRUE
+Coventry City,England,logos/coventry_city.png,TRUE
+Crystal Palace,England,logos/crystal_palace.png,TRUE
+Everton,England,logos/everton.png,TRUE
+Fulham,England,logos/fulham.png,TRUE
+Hull City,England,logos/hull_city.png,TRUE
+Ipswich Town,England,logos/ipswich_town.png,TRUE
+Leeds United,England,logos/leeds_united.png,TRUE
+Liverpool,England,logos/liverpool.png,TRUE
+Manchester City,England,logos/manchester_city.png,TRUE
+Manchester Utd,England,logos/manchester_utd.png,TRUE
+Newcastle,England,logos/newcastle.png,TRUE
+Nottingham,England,logos/nottingham_forest.png,TRUE
+Sunderland,England,logos/sunderland.png,TRUE
+Tottenham,England,logos/tottenham.png,TRUE
+Burnley,England,logos/burnley.png,FALSE
+Leicester City,England,logos/leicester_city.png,FALSE
+Luton Town,England,logos/luton_town.png,FALSE
+Norwich City,England,logos/norwich_city.png,FALSE
+Sheffield United,England,logos/sheffield_united.png,FALSE
+Southampton,England,logos/southampton.png,FALSE
+Watford,England,logos/watford.png,FALSE
+West Brom,England,logos/west_brom.png,FALSE
+West Ham,England,logos/west_ham.png,FALSE
+Wolves,England,logos/wolves.png,FALSE
