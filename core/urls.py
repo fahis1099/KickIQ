@@ -1,4 +1,5 @@
 from django.urls import path
+
 from .views import (
     ClubListAPIView, 
     PlayerListAPIView,
@@ -6,6 +7,8 @@ from .views import (
     UpcomingMatchListAPIView,
     CompletedMatchListAPIView,
 )
+
+from .admin_views import match_result_update
 
 urlpatterns = [
     path(

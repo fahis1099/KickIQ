@@ -1,0 +1,47 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+
+<h1>Match Result Update</h1>
+
+<p>
+    Upload the CSV containing the matches whose results
+    need to be updated.
+</p>
+
+<p>
+    The system identifies matches using:
+    <strong>Season + Match Date + Home Club + Away Club</strong>.
+</p>
+
+<form method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit" class="default">
+        Upload & Update Matches
+    </button>
+
+</form>
+
+{% if details %}
+
+<hr>
+
+<h2>Update Details</h2>
+
+<ul>
+
+    {% for detail in details %}
+
+        <li>{{ detail }}</li>
+
+    {% endfor %}
+
+</ul>
+
+{% endif %}
+
+{% endblock %}

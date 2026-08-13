@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.urls import path
+from .admin_views import match_result_update
 from .models import (
     Club,
     Player,
@@ -13,6 +15,7 @@ class ClubAdmin(admin.ModelAdmin):
     list_display = ("name", "country", "is_active")
     list_filter = ("country", "is_active")
     search_fields = ("name", "country")
+    ordering = ("name",)
 
 
 @admin.register(Player)
@@ -26,6 +29,7 @@ class PlayerAdmin(admin.ModelAdmin):
     )
     list_filter = ("position", "is_active", "current_club")
     search_fields = ("name", "nationality")
+    ordering = ("name",)
 
 
 @admin.register(Match)
@@ -43,7 +47,9 @@ class MatchAdmin(admin.ModelAdmin):
     search_fields = (
         "home_club__name",
         "away_club__name",
+        "competition",
     )
+    ordering = ("-match_date",)
 
 
 @admin.register(PlayerStatistics)
@@ -85,3 +91,26 @@ class PredictionAdmin(admin.ModelAdmin):
         "match__home_club__name",
         "match__away_club__name",
     )
+    
+# --------------------------------------------------
+# Custom Admin URLs
+# --------------------------------------------------
+
+original_get_urls = admin.site.get_urls
+
+
+def custom_admin_urls():
+    urls = original_get_urls()
+
+    custom_urls = [
+        path(
+            "match-result-update/",
+            admin.site.admin_view(match_result_update),
+            name="match-result-update",
+        ),
+    ]
+
+    return custom_urls + urls
+
+
+admin.site.get_urls = custom_admin_urls
