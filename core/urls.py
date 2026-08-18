@@ -3,7 +3,9 @@ from django.urls import path
 from .views import (
     ClubListAPIView, 
     PlayerListAPIView,
+    PlayerDetailAPIView,
     MatchListAPIView,
+    MatchDetailAPIView,
     UpcomingMatchListAPIView,
     CompletedMatchListAPIView,
 )
@@ -24,6 +26,12 @@ urlpatterns = [
     ),
     
     path(
+        "players/<int:pk>/",
+        PlayerDetailAPIView.as_view(),
+        name="player-detail",
+    ),
+    
+    path(
         "matches/",
         MatchListAPIView.as_view(),
         name="match-list"
@@ -38,5 +46,11 @@ urlpatterns = [
         "matches/completed/",
         CompletedMatchListAPIView.as_view(),
         name="completed-matches"
+    ),
+    
+    path(
+        "matches/<int:pk>/",
+        MatchDetailAPIView.as_view(),
+        name="match-detail",
     ),
 ]
