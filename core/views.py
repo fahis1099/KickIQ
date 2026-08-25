@@ -1,10 +1,11 @@
 from rest_framework import generics
 
-from .models import Club, Player, Match
+from .models import Club, Player, Match, PlayerStatistics
 from .serializers import (
     ClubSerializer,
     PlayerSerializer,
-    MatchSerializer
+    MatchSerializer,
+    PlayerStatisticsSerializer,
 )
 
 
@@ -102,3 +103,96 @@ class CompletedMatchListAPIView(generics.ListAPIView):
         ).filter(
             status="COMPLETED"
         ).order_by("-match_date")
+        
+# --------------------------------------------------
+# Player Statistics APIs
+# --------------------------------------------------
+
+class PlayerStatisticsListAPIView(generics.ListAPIView):
+    serializer_class = PlayerStatisticsSerializer
+
+    def get_queryset(self):
+        queryset = PlayerStatistics.objects.select_related(
+            "player",
+            "club",
+            "match",
+            "match__home_club",
+            "match__away_club",
+        ).all().order_by(
+            "-match__match_date"
+        )
+
+        # Filter by player ID
+        player_id = self.request.query_params.get("player")
+
+        if player_id:
+            queryset = queryset.filter(
+                player_id=player_id
+            )
+
+        # Filter by club name
+        club = self.request.query_params.get("club")
+
+        if club:
+            queryset = queryset.filter(
+                club__name__iexact=club
+            )
+
+        # Filter by season
+        season = self.request.query_params.get("season")
+
+        if season:
+            queryset = queryset.filter(
+                match__season=season
+            )
+
+        return queryset
+
+
+class PlayerStatisticsDetailAPIView(generics.RetrieveAPIView):
+    queryset = PlayerStatistics.objects.select_related(
+        "player",
+        "club",
+        "match",
+        "match__home_club",
+        "match__away_club",
+    ).all()
+
+    serializer_class = PlayerStatisticsSerializer
+
+
+class PlayerStatisticsByPlayerAPIView(generics.ListAPIView):
+    serializer_class = PlayerStatisticsSerializer
+
+    def get_queryset(self):
+        player_id = self.kwargs["player_id"]
+
+        queryset = PlayerStatistics.objects.select_related(
+            "player",
+            "club",
+            "match",
+            "match__home_club",
+            "match__away_club",
+        ).filter(
+            player_id=player_id
+        ).order_by(
+            "-match__match_date"
+        )
+
+        # Filter by season
+        season = self.request.query_params.get("season")
+
+        if season:
+            queryset = queryset.filter(
+                match__season=season
+            )
+
+        # Filter by club
+        club = self.request.query_params.get("club")
+
+        if club:
+            queryset = queryset.filter(
+                club__name__iexact=club
+            )
+
+        return queryset

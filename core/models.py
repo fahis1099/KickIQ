@@ -120,6 +120,8 @@ class PlayerStatistics(models.Model):
     # General
     minutes_played = models.PositiveIntegerField(default=0)
 
+    started = models.BooleanField(default=False)
+
     goals = models.PositiveIntegerField(default=0)
     assists = models.PositiveIntegerField(default=0)
 
@@ -130,15 +132,16 @@ class PlayerStatistics(models.Model):
     shots_on_target = models.PositiveIntegerField(default=0)
 
     # Passing
-    # Optional because this data may not be available initially.
     passes_completed = models.PositiveIntegerField(
         null=True,
         blank=True
     )
+
     passes_attempted = models.PositiveIntegerField(
         null=True,
         blank=True
     )
+
     key_passes = models.PositiveIntegerField(
         null=True,
         blank=True
@@ -151,6 +154,7 @@ class PlayerStatistics(models.Model):
         null=True,
         blank=True
     )
+
     dribbles_attempted = models.PositiveIntegerField(
         null=True,
         blank=True
