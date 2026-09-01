@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>KickIQ | Create Account</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #111827,
+                    #1f2937
+                );
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #1f2937;
+        }
+
+
+        .register-container {
+
+            width: 100%;
+
+            max-width: 1050px;
+
+            min-height: 620px;
+
+            margin: 25px;
+
+            display: grid;
+
+            grid-template-columns:
+                1.1fr 0.9fr;
+
+            background: white;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 25px 60px
+                rgba(0, 0, 0, 0.3);
+        }
+
+
+        /* ================================
+           LEFT PANEL
+        ================================= */
+
+        .register-info {
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #14532d,
+                    #166534,
+                    #15803d
+                );
+
+            color: white;
+
+            padding: 60px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+
+        .logo {
+
+            font-size: 38px;
+
+            font-weight: bold;
+
+            margin-bottom: 30px;
+        }
+
+
+        .logo span {
+
+            color: #86efac;
+        }
+
+
+        .register-info h1 {
+
+            font-size: 42px;
+
+            line-height: 1.15;
+
+            margin-bottom: 20px;
+        }
+
+
+        .register-info p {
+
+            color: #dcfce7;
+
+            font-size: 17px;
+
+            line-height: 1.7;
+
+            max-width: 450px;
+        }
+
+
+        .feature-list {
+
+            margin-top: 35px;
+
+            list-style: none;
+        }
+
+
+        .feature-list li {
+
+            margin-bottom: 16px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            color: #f0fdf4;
+        }
+
+
+        .feature-icon {
+
+            width: 30px;
+
+            height: 30px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 255, 255, 0.15);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        /* ================================
+           RIGHT PANEL
+        ================================= */
+
+        .register-form-container {
+
+            padding: 50px 55px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+
+        .register-form-container h2 {
+
+            font-size: 30px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .subtitle {
+
+            color: #6b7280;
+
+            margin-bottom: 30px;
+
+            font-size: 15px;
+        }
+
+
+        /* ================================
+           MESSAGE
+        ================================= */
+
+        .message {
+
+            display: none;
+
+            padding: 12px 14px;
+
+            border-radius: 8px;
+
+            margin-bottom: 20px;
+
+            font-size: 14px;
+        }
+
+
+        .message.error {
+
+            display: block;
+
+            background: #fee2e2;
+
+            color: #991b1b;
+        }
+
+
+        .message.success {
+
+            display: block;
+
+            background: #dcfce7;
+
+            color: #166534;
+        }
+
+
+        /* ================================
+           FORM
+        ================================= */
+
+        .form-group {
+
+            margin-bottom: 18px;
+        }
+
+
+        .form-group label {
+
+            display: block;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            margin-bottom: 8px;
+        }
+
+
+        .form-group input {
+
+            width: 100%;
+
+            padding: 13px 15px;
+
+            border: 1px solid #d1d5db;
+
+            border-radius: 9px;
+
+            font-size: 15px;
+
+            outline: none;
+
+            transition: 0.2s;
+        }
+
+
+        .form-group input:focus {
+
+            border-color: #16a34a;
+
+            box-shadow:
+                0 0 0 3px
+                rgba(22, 163, 74, 0.12);
+        }
+
+
+        /* ================================
+           PASSWORD
+        ================================= */
+
+        .password-wrapper {
+
+            position: relative;
+        }
+
+
+        .password-wrapper input {
+
+            padding-right: 50px;
+        }
+
+
+        .toggle-password {
+
+            position: absolute;
+
+            right: 14px;
+
+            top: 50%;
+
+            transform:
+                translateY(-50%);
+
+            border: none;
+
+            background: transparent;
+
+            cursor: pointer;
+
+            font-size: 18px;
+
+            color: #6b7280;
+        }
+
+
+        /* ================================
+           BUTTON
+        ================================= */
+
+        .register-button {
+
+            width: 100%;
+
+            padding: 14px;
+
+            margin-top: 5px;
+
+            border: none;
+
+            border-radius: 9px;
+
+            background: #16a34a;
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+
+        .register-button:hover {
+
+            background: #15803d;
+        }
+
+
+        .register-button:disabled {
+
+            background: #86efac;
+
+            cursor: not-allowed;
+        }
+
+
+        /* ================================
+           LOGIN LINK
+        ================================= */
+
+        .login-text {
+
+            text-align: center;
+
+            margin-top: 22px;
+
+            color: #6b7280;
+
+            font-size: 14px;
+        }
+
+
+        .login-text a {
+
+            color: #16a34a;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+
+        .login-text a:hover {
+
+            text-decoration: underline;
+        }
+
+
+        /* ================================
+           RESPONSIVE
+        ================================= */
+
+        @media (max-width: 800px) {
+
+            .register-container {
+
+                grid-template-columns: 1fr;
+
+                max-width: 500px;
+            }
+
+            .register-info {
+
+                display: none;
+            }
+
+            .register-form-container {
+
+                padding: 45px 35px;
+            }
+        }
+
+
+        @media (max-width: 450px) {
+
+            .register-container {
+
+                margin: 15px;
+
+                border-radius: 15px;
+            }
+
+            .register-form-container {
+
+                padding: 35px 25px;
+            }
+
+            .register-form-container h2 {
+
+                font-size: 26px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="register-container">
+
+
+    <!-- ================================
+         INFORMATION PANEL
+    ================================= -->
+
+    <div class="register-info">
+
+        <div class="logo">
+            Kick<span>IQ</span>
+        </div>
+
+
+        <h1>
+            Start Making
+            Smarter Decisions.
+        </h1>
+
+
+        <p>
+            Create your KickIQ account and
+            explore football performance analytics,
+            statistics and decision-support insights.
+        </p>
+
+
+        <ul class="feature-list">
+
+            <li>
+                <span class="feature-icon">✓</span>
+                Player performance analytics
+            </li>
+
+            <li>
+                <span class="feature-icon">✓</span>
+                Match statistics
+            </li>
+
+            <li>
+                <span class="feature-icon">✓</span>
+                Performance trends
+            </li>
+
+            <li>
+                <span class="feature-icon">✓</span>
+                Decision-support insights
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ================================
+         REGISTRATION FORM
+    ================================= -->
+
+    <div class="register-form-container">
+
+        <h2>
+            Create Account
+        </h2>
+
+
+        <p class="subtitle">
+            Create your KickIQ account to continue.
+        </p>
+
+
+        <div
+            id="message"
+            class="message"
+        ></div>
+
+
+        <form id="registerForm">
+
+
+            <!-- Username -->
+
+            <div class="form-group">
+
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Choose a username"
+                    required
+                    autocomplete="username"
+                >
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                    autocomplete="email"
+                >
+
+            </div>
+
+
+            <!-- Password -->
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required
+                        autocomplete="new-password"
+                    >
+
+                    <button
+                        type="button"
+                        class="toggle-password"
+                        onclick="togglePassword('password', this)"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Confirm Password -->
+
+            <div class="form-group">
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                        autocomplete="new-password"
+                    >
+
+                    <button
+                        type="button"
+                        class="toggle-password"
+                        onclick="togglePassword('confirmPassword', this)"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="register-button"
+                id="registerButton"
+            >
+                Create Account
+            </button>
+
+
+        </form>
+
+
+        <div class="login-text">
+
+            Already have an account?
+
+            <a href="/login/">
+                Sign in
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    /* ==================================
+       PASSWORD VISIBILITY
+    ================================== */
+
+    function togglePassword(
+        inputId,
+        button
+    ) {
+
+        const input =
+            document.getElementById(
+                inputId
+            );
+
+
+        if (
+            input.type === "password"
+        ) {
+
+            input.type = "text";
+
+            button.textContent = "🙈";
+
+        } else {
+
+            input.type = "password";
+
+            button.textContent = "👁";
+        }
+    }
+
+
+    /* ==================================
+       MESSAGE
+    ================================== */
+
+    function showMessage(
+        message,
+        type
+    ) {
+
+        const element =
+            document.getElementById(
+                "message"
+            );
+
+
+        element.textContent =
+            message;
+
+
+        element.className =
+            `message ${type}`;
+    }
+
+
+    /* ==================================
+       REGISTRATION
+    ================================== */
+
+    document
+        .getElementById("registerForm")
+        .addEventListener(
+            "submit",
+            async function(event) {
+
+                event.preventDefault();
+
+
+                const username =
+                    document
+                        .getElementById(
+                            "username"
+                        )
+                        .value
+                        .trim();
+
+
+                const email =
+                    document
+                        .getElementById(
+                            "email"
+                        )
+                        .value
+                        .trim();
+
+
+                const password =
+                    document
+                        .getElementById(
+                            "password"
+                        )
+                        .value;
+
+
+                const confirmPassword =
+                    document
+                        .getElementById(
+                            "confirmPassword"
+                        )
+                        .value;
+
+
+                const registerButton =
+                    document.getElementById(
+                        "registerButton"
+                    );
+
+
+                /* Password confirmation */
+
+                if (
+                    password !==
+                    confirmPassword
+                ) {
+
+                    showMessage(
+                        "Passwords do not match.",
+                        "error"
+                    );
+
+                    return;
+                }
+
+
+                registerButton.disabled =
+                    true;
+
+                registerButton.textContent =
+                    "Creating account...";
+
+
+                try {
+
+                    /*
+                     * The existing registration
+                     * API expects form data.
+                     */
+
+                    const formData =
+                        new URLSearchParams();
+
+
+                    formData.append(
+                        "username",
+                        username
+                    );
+
+                    formData.append(
+                        "email",
+                        email
+                    );
+
+                    formData.append(
+                        "password",
+                        password
+                    );
+
+
+                    const response =
+                        await fetch(
+                            "/api/auth/register/",
+                            {
+                                method: "POST",
+
+                                headers: {
+                                    "Content-Type":
+                                        "application/x-www-form-urlencoded"
+                                },
+
+                                body: formData,
+
+                                credentials:
+                                    "same-origin"
+                            }
+                        );
+
+
+                    const data =
+                        await response.json();
+
+
+                    console.log(
+                        "Registration response:",
+                        data
+                    );
+
+
+                    if (
+                        response.ok &&
+                        data.success
+                    ) {
+
+                        showMessage(
+                            "Account created successfully. Redirecting to login...",
+                            "success"
+                        );
+
+
+                        setTimeout(
+                            function() {
+
+                                window.location.href =
+                                    "/login/";
+
+                            },
+                            1000
+                        );
+
+
+                    } else {
+
+                        showMessage(
+                            data.message ||
+                            "Unable to create account.",
+                            "error"
+                        );
+
+
+                        registerButton.disabled =
+                            false;
+
+                        registerButton.textContent =
+                            "Create Account";
+                    }
+
+
+                } catch (error) {
+
+                    console.error(
+                        "Registration error:",
+                        error
+                    );
+
+
+                    showMessage(
+                        "Unable to connect to the server. Please try again.",
+                        "error"
+                    );
+
+
+                    registerButton.disabled =
+                        false;
+
+                    registerButton.textContent =
+                        "Create Account";
+                }
+
+            }
+        );
+
+</script>
+
+
+</body>
+
+</html>

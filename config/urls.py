@@ -16,10 +16,34 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-
+from core.views import (
+    login_page, 
+    player_dashboard,
+    register_page,
+)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+
     path("api/", include("core.urls")),
-    path("api/auth/",include("core.auth_urls"),),
+
+    path("api/auth/", include("core.auth_urls")),
+
+    path(
+        "dashboard/",
+        player_dashboard,
+        name="player-dashboard",
+    ),
+    
+    path(
+        "login/",
+        login_page,
+        name="login-page",
+    ),
+
+    path(
+        "register/",
+        register_page,
+        name="register-page",
+    ),
 ]

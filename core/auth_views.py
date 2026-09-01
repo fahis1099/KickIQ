@@ -10,9 +10,13 @@ from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt
 def register_view(request):
 
-    username = request.POST.get("username")
-    password = request.POST.get("password")
-    email = request.POST.get("email", "")
+    username = request.POST.get("username", "").strip()
+    password = request.POST.get("password", "")
+    email = request.POST.get("email", "").strip().lower()
+
+    # ------------------------------------------
+    # Required field validation
+    # ------------------------------------------
 
     if not username or not password:
         return JsonResponse(
@@ -23,7 +27,24 @@ def register_view(request):
             status=400
         )
 
-    if User.objects.filter(username=username).exists():
+    if not email:
+        return JsonResponse(
+            {
+                "success": False,
+                "message": "Email is required."
+            },
+            status=400
+        )
+
+
+    # ------------------------------------------
+    # Username validation
+    # ------------------------------------------
+
+    if User.objects.filter(
+        username__iexact=username
+    ).exists():
+
         return JsonResponse(
             {
                 "success": False,
@@ -32,11 +53,34 @@ def register_view(request):
             status=400
         )
 
+
+    # ------------------------------------------
+    # Email validation
+    # ------------------------------------------
+
+    if User.objects.filter(
+        email__iexact=email
+    ).exists():
+
+        return JsonResponse(
+            {
+                "success": False,
+                "message": "An account with this email already exists."
+            },
+            status=400
+        )
+
+
+    # ------------------------------------------
+    # Create user
+    # ------------------------------------------
+
     user = User.objects.create_user(
         username=username,
         email=email,
         password=password,
     )
+
 
     return JsonResponse(
         {

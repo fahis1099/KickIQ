@@ -1,4 +1,8 @@
+from django.contrib.auth.decorators import login_required
 from rest_framework import generics
+from django.shortcuts import render
+from django.views.decorators.cache import never_cache
+from django.shortcuts import redirect
 
 from .models import Club, Player, Match, PlayerStatistics
 from .serializers import (
@@ -196,3 +200,27 @@ class PlayerStatisticsByPlayerAPIView(generics.ListAPIView):
             )
 
         return queryset
+    
+@login_required(login_url="/login/")
+@never_cache
+def player_dashboard(request):
+    return render(
+        request,
+        "core/player_dashboard.html"
+    )
+    
+def login_page(request):
+
+    if request.user.is_authenticated:
+        return redirect("/dashboard/")
+
+    return render(
+        request,
+        "core/login.html"
+    )
+    
+def register_page(request):
+    return render(
+        request,
+        "core/register.html"
+    )
