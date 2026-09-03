@@ -1,0 +1,418 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}Logged out | KickIQ Administration{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        KickIQ Administration
+    </a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">Home</a>
+    &rsaquo;
+    Logged out
+</div>
+{% endblock %}
+
+{% block content_title %}
+{% endblock %}
+
+{% block content %}
+
+<div class="kickiq-logout-page">
+
+    <div class="kickiq-logout-card">
+
+        <div class="kickiq-logout-icon">
+            ✓
+        </div>
+
+        <h1>Logged out</h1>
+
+        <div class="kickiq-logout-line"></div>
+
+        <p>
+            Thanks for spending some quality time<br class="desktop-break">
+            with the web site today.
+        </p>
+
+        <a href="/login/" class="kickiq-login-button">
+            <span class="login-arrow">→</span>
+            <span>Log in again</span>
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+
+{% block extrastyle %}
+{{ block.super }}
+
+<style>
+
+/* =========================================================
+   REMOVE ADMIN SIDEBAR
+   ========================================================= */
+
+#nav-sidebar {
+    display: none !important;
+}
+
+#toggle-nav-sidebar {
+    display: none !important;
+}
+
+
+/* =========================================================
+   FULL PAGE WIDTH
+   ========================================================= */
+
+/*
+   Django Admin normally limits #content to its main
+   content column. We override that so our logout page
+   can be centered against the complete browser width.
+*/
+
+#container {
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.main {
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+#content {
+    width: 100vw !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+#content-main {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LOGOUT PAGE
+   ========================================================= */
+
+.kickiq-logout-page {
+
+    width: 100%;
+
+    min-height: calc(100vh - 108px);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 50px 25px;
+
+    background:
+        radial-gradient(
+            circle at 7% 78%,
+            rgba(70, 130, 180, 0.07) 0,
+            rgba(70, 130, 180, 0.07) 130px,
+            transparent 131px
+        ),
+        radial-gradient(
+            circle at 93% 78%,
+            rgba(70, 130, 180, 0.06) 0,
+            rgba(70, 130, 180, 0.06) 150px,
+            transparent 151px
+        ),
+        #fafbfc;
+}
+
+
+/* =========================================================
+   LOGOUT CARD
+   ========================================================= */
+
+.kickiq-logout-card {
+
+    width: 100%;
+    max-width: 760px;
+
+    padding: 55px 45px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: var(--body-bg);
+
+    border: 1px solid var(--hairline-color);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.04),
+        0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.kickiq-logout-icon {
+
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 25px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf5fa;
+
+    color: #24617a;
+
+    border: 1px solid #d9edf5;
+
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.kickiq-logout-card h1 {
+
+    margin: 0;
+
+    color: var(--body-fg);
+
+    font-size: 2.2rem;
+    line-height: 1.2;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DECORATIVE LINE
+   ========================================================= */
+
+.kickiq-logout-line {
+
+    width: 68px;
+    height: 3px;
+
+    margin: 20px auto 25px auto;
+
+    background: #28749a;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.kickiq-logout-card p {
+
+    margin: 0 0 32px 0;
+
+    color: var(--body-quiet-color);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+.kickiq-login-button {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-width: 190px;
+    min-height: 48px;
+
+    padding: 12px 24px;
+
+    box-sizing: border-box;
+
+    background: #205a73;
+
+    color: #ffffff !important;
+
+    border-radius: 6px;
+
+    text-decoration: none !important;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    box-shadow:
+        0 4px 10px rgba(32, 90, 115, 0.18);
+
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.kickiq-login-button:hover {
+
+    background: #184b61;
+
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 14px rgba(32, 90, 115, 0.22);
+}
+
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.login-arrow {
+
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .kickiq-logout-page {
+
+        min-height: calc(100vh - 100px);
+
+        padding: 30px 15px;
+    }
+
+    .kickiq-logout-card {
+
+        max-width: 100%;
+
+        padding: 40px 22px;
+
+        border-radius: 10px;
+    }
+
+    .kickiq-logout-icon {
+
+        width: 62px;
+        height: 62px;
+
+        margin-bottom: 20px;
+
+        font-size: 30px;
+    }
+
+    .kickiq-logout-card h1 {
+
+        font-size: 1.7rem;
+    }
+
+    .kickiq-logout-line {
+
+        margin: 16px auto 20px auto;
+    }
+
+    .kickiq-logout-card p {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        margin-bottom: 26px;
+    }
+
+    .desktop-break {
+        display: none;
+    }
+
+    .kickiq-login-button {
+
+        width: 100%;
+
+        min-height: 46px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .kickiq-logout-page {
+
+        padding: 20px 12px;
+    }
+
+    .kickiq-logout-card {
+
+        padding: 32px 18px;
+    }
+
+    .kickiq-logout-card h1 {
+
+        font-size: 1.5rem;
+    }
+
+    .kickiq-logout-card p {
+
+        font-size: 12px;
+    }
+}
+
+</style>
+{% endblock %}

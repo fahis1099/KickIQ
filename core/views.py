@@ -210,8 +210,10 @@ def player_dashboard(request):
     )
     
 def login_page(request):
-
     if request.user.is_authenticated:
+        if request.user.is_staff:
+            return redirect("/admin/")
+
         return redirect("/dashboard/")
 
     return render(
@@ -224,3 +226,12 @@ def register_page(request):
         request,
         "core/register.html"
     )
+    
+def home(request):
+    if not request.user.is_authenticated:
+        return redirect("/login/")
+
+    if request.user.is_staff:
+        return redirect("/admin/")
+
+    return redirect("/dashboard/")

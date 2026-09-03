@@ -1,0 +1,118 @@
+/* =========================================================
+   KickIQ Admin Custom Styling
+   ========================================================= */
+
+:root {
+    --kickiq-primary: #111827;
+    --kickiq-secondary: #1f2937;
+    --kickiq-accent: #2563eb;
+    --kickiq-background: #f3f4f6;
+}
+
+
+/* Main header */
+
+#header {
+    background: var(--kickiq-primary);
+}
+
+
+/* Header branding */
+
+#branding h1 {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+
+/* Header links */
+
+#header a:link,
+#header a:visited {
+    color: #ffffff;
+}
+
+
+/* Page background */
+
+body {
+    background: var(--kickiq-background);
+}
+
+
+/* Content area */
+
+#content {
+    padding-top: 20px;
+}
+
+
+/* Module headers */
+
+.module h2,
+.module caption {
+    background: var(--kickiq-secondary);
+}
+
+
+/* Buttons */
+
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+a.button {
+    border-radius: 6px;
+}
+
+
+/* Primary buttons */
+
+input[type="submit"].default {
+    background: var(--kickiq-accent);
+}
+
+
+/* Links */
+
+a:link,
+a:visited {
+    color: var(--kickiq-accent);
+}
+
+
+/* Tables */
+
+#changelist table {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+/* Table headers */
+
+#changelist table thead th {
+    font-weight: 600;
+}
+
+
+/* Search box */
+
+#toolbar form input[type="text"] {
+    border-radius: 6px;
+}
+
+
+/* Filter sidebar */
+
+#changelist-filter {
+    border-radius: 6px;
+}
+
+
+/* Dashboard modules */
+
+.dashboard .module {
+    border-radius: 8px;
+    overflow: hidden;
+}

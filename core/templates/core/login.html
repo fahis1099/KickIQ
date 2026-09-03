@@ -258,7 +258,7 @@
 
 
         /* ==================================
-           BUTTON
+           USER LOGIN BUTTON
         ================================== */
 
         .login-button {
@@ -363,6 +363,89 @@
 
 
         /* ==================================
+           ADMIN LOGIN DIVIDER
+        ================================== */
+
+        .admin-login-divider {
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin: 22px 0 15px;
+
+            color: #9ca3af;
+
+            font-size: 13px;
+        }
+
+
+        .admin-login-divider::before,
+        .admin-login-divider::after {
+            content: "";
+
+            flex: 1;
+
+            height: 1px;
+
+            background: #e5e7eb;
+        }
+
+
+        .admin-login-divider span {
+            padding: 0 5px;
+        }
+
+
+        /* ==================================
+           ADMIN LOGIN BUTTON
+        ================================== */
+
+        .admin-login-link {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 100%;
+
+            min-height: 44px;
+
+            padding: 11px 15px;
+
+            border: 1px solid #374151;
+
+            border-radius: 9px;
+
+            background: transparent;
+
+            color: #374151;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            transition:
+                background 0.2s,
+                color 0.2s,
+                border-color 0.2s;
+        }
+
+
+        .admin-login-link:hover {
+            background: #374151;
+
+            color: white;
+
+            border-color: #374151;
+        }
+
+
+        /* ==================================
            RESPONSIVE
         ================================== */
 
@@ -372,11 +455,15 @@
                 grid-template-columns: 1fr;
 
                 max-width: 500px;
+
+                min-height: auto;
             }
+
 
             .login-info {
                 display: none;
             }
+
 
             .login-form-container {
                 padding: 45px 35px;
@@ -392,12 +479,32 @@
                 border-radius: 15px;
             }
 
+
             .login-form-container {
                 padding: 35px 25px;
             }
 
+
             .login-form-container h2 {
                 font-size: 26px;
+            }
+
+
+            .admin-login-link {
+                min-height: 46px;
+            }
+        }
+
+
+        @media (max-width: 350px) {
+
+            .login-container {
+                margin: 10px;
+            }
+
+
+            .login-form-container {
+                padding: 30px 20px;
             }
         }
 
@@ -443,15 +550,18 @@
                 Player performance analytics
             </li>
 
+
             <li>
                 <span class="feature-icon">✓</span>
                 Match-by-match statistics
             </li>
 
+
             <li>
                 <span class="feature-icon">✓</span>
                 Performance trends and insights
             </li>
+
 
             <li>
                 <span class="feature-icon">✓</span>
@@ -552,6 +662,8 @@
         </form>
 
 
+        <!-- Register -->
+
         <div class="register-text">
 
             Don't have an account?
@@ -561,6 +673,22 @@
             </a>
 
         </div>
+
+
+        <!-- Admin Login -->
+
+        <div class="admin-login-divider">
+            <span>Admin access</span>
+        </div>
+
+
+        <a
+            href="/admin/login/"
+            class="admin-login-link"
+        >
+            🔐 Admin Login
+        </a>
+
 
     </div>
 
@@ -591,7 +719,6 @@
             password.type = "password";
 
             button.textContent = "👁";
-
         }
     }
 
@@ -609,125 +736,155 @@
 
 
     document
-    .getElementById("loginForm")
-    .addEventListener(
-        "submit",
-        async function(event) {
+        .getElementById("loginForm")
+        .addEventListener(
+            "submit",
+            async function(event) {
 
-            event.preventDefault();
-
-
-            const username =
-                document
-                    .getElementById("username")
-                    .value
-                    .trim();
-
-            const password =
-                document
-                    .getElementById("password")
-                    .value;
+                event.preventDefault();
 
 
-            const loginButton =
-                document.getElementById(
-                    "loginButton"
-                );
+                const username =
+                    document
+                        .getElementById("username")
+                        .value
+                        .trim();
 
 
-            loginButton.disabled = true;
-
-            loginButton.textContent =
-                "Signing in...";
-
-
-            try {
-
-                // Create form data
-                const formData =
-                    new URLSearchParams();
-
-                formData.append(
-                    "username",
-                    username
-                );
-
-                formData.append(
-                    "password",
-                    password
-                );
+                const password =
+                    document
+                        .getElementById("password")
+                        .value;
 
 
-                // Send request to Django
-                const response =
-                    await fetch(
-                        "/api/auth/login/",
-                        {
-                            method: "POST",
+                const loginButton =
+                    document.getElementById(
+                        "loginButton"
+                    );
 
-                            headers: {
-                                "Content-Type":
-                                    "application/x-www-form-urlencoded"
+
+                loginButton.disabled = true;
+
+                loginButton.textContent =
+                    "Signing in...";
+
+
+                try {
+
+                    // Create form data
+
+                    const formData =
+                        new URLSearchParams();
+
+
+                    formData.append(
+                        "username",
+                        username
+                    );
+
+
+                    formData.append(
+                        "password",
+                        password
+                    );
+
+
+                    // Send request to Django
+
+                    const response =
+                        await fetch(
+                            "/api/auth/login/",
+                            {
+                                method: "POST",
+
+                                headers: {
+                                    "Content-Type":
+                                        "application/x-www-form-urlencoded"
+                                },
+
+                                body: formData,
+
+                                credentials:
+                                    "same-origin"
+                            }
+                        );
+
+
+                    const data =
+                        await response.json();
+
+
+                    console.log(
+                        "Login response:",
+                        data
+                    );
+
+
+                    if (
+                        response.ok &&
+                        data.success
+                    ) {
+
+                        showMessage(
+                            "Login successful. Redirecting...",
+                            "success"
+                        );
+
+
+                        // Store non-sensitive user information
+
+                        sessionStorage.setItem(
+                            "kickiq_user_id",
+                            data.user_id
+                        );
+
+
+                        sessionStorage.setItem(
+                            "kickiq_username",
+                            data.username
+                        );
+
+
+                        // Redirect to user dashboard
+
+                        setTimeout(
+                            function() {
+
+                                window.location.href =
+                                    "/dashboard/";
+
                             },
+                            500
+                        );
 
-                            body: formData,
 
-                            credentials:
-                                "same-origin"
-                        }
+                    } else {
+
+                        showMessage(
+                            data.message ||
+                            "Invalid username or password.",
+                            "error"
+                        );
+
+
+                        loginButton.disabled =
+                            false;
+
+                        loginButton.textContent =
+                            "Sign In";
+                    }
+
+
+                } catch (error) {
+
+                    console.error(
+                        "Login error:",
+                        error
                     );
 
-
-                const data =
-                    await response.json();
-
-
-                console.log(
-                    "Login response:",
-                    data
-                );
-
-
-                if (
-                    response.ok &&
-                    data.success
-                ) {
 
                     showMessage(
-                        "Login successful. Redirecting...",
-                        "success"
-                    );
-
-
-                    // Store non-sensitive user information
-                    sessionStorage.setItem(
-                        "kickiq_user_id",
-                        data.user_id
-                    );
-
-                    sessionStorage.setItem(
-                        "kickiq_username",
-                        data.username
-                    );
-
-
-                    // Redirect to dashboard
-                    setTimeout(
-                        function() {
-
-                            window.location.href =
-                                "/dashboard/";
-
-                        },
-                        500
-                    );
-
-
-                } else {
-
-                    showMessage(
-                        data.message ||
-                        "Invalid username or password.",
+                        "Unable to connect to the server. Please try again.",
                         "error"
                     );
 
@@ -739,30 +896,8 @@
                         "Sign In";
                 }
 
-
-            } catch (error) {
-
-                console.error(
-                    "Login error:",
-                    error
-                );
-
-
-                showMessage(
-                    "Unable to connect to the server. Please try again.",
-                    "error"
-                );
-
-
-                loginButton.disabled =
-                    false;
-
-                loginButton.textContent =
-                    "Sign In";
             }
-
-        }
-    );
+        );
 
 </script>
 

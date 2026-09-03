@@ -1,38 +1,241 @@
 {% extends "admin/index.html" %}
+{% load static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'core/css/kickiq_admin.css' %}">
+{% endblock %}
+
 
 {% block content %}
 
-<div style="
-    margin-bottom: 25px;
-    padding: 18px;
-    background: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-">
+<!-- =====================================================
+     KICKIQ OVERVIEW
+     ===================================================== -->
 
-    <h2 style="margin-top: 0;">
-        KickIQ Tools
-    </h2>
+<div class="kickiq-dashboard">
 
-    <p>
-        Manage and update KickIQ football data.
-    </p>
+    <div class="kickiq-welcome">
+        <div>
+            <h2>KickIQ Overview</h2>
+            <p>
+                Football performance data management and monitoring.
+            </p>
+        </div>
+    </div>
 
-    <a href="{% url 'admin:match-result-update' %}"
-       class="button"
-       style="
-           display: inline-block;
-           padding: 10px 16px;
-           background: #417690;
-           color: white;
-           text-decoration: none;
-           border-radius: 4px;
-           font-weight: bold;
-       ">
-        ⚽ Match Result Update
-    </a>
+
+    <!-- =================================================
+         STATISTICS CARDS
+         ================================================= -->
+
+    <div class="kickiq-stats-grid">
+
+        <!-- Clubs -->
+
+        <div class="kickiq-stat-card">
+
+            <div class="kickiq-stat-icon">
+                🏟️
+            </div>
+
+            <div class="kickiq-stat-content">
+
+                <span class="kickiq-stat-label">
+                    Clubs
+                </span>
+
+                <strong>
+                    {{ kickiq_stats.clubs }}
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- Players -->
+
+        <div class="kickiq-stat-card">
+
+            <div class="kickiq-stat-icon">
+                👤
+            </div>
+
+            <div class="kickiq-stat-content">
+
+                <span class="kickiq-stat-label">
+                    Players
+                </span>
+
+                <strong>
+                    {{ kickiq_stats.players }}
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- Matches -->
+
+        <div class="kickiq-stat-card">
+
+            <div class="kickiq-stat-icon">
+                ⚽
+            </div>
+
+            <div class="kickiq-stat-content">
+
+                <span class="kickiq-stat-label">
+                    Matches
+                </span>
+
+                <strong>
+                    {{ kickiq_stats.matches }}
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- Statistics -->
+
+        <div class="kickiq-stat-card">
+
+            <div class="kickiq-stat-icon">
+                📊
+            </div>
+
+            <div class="kickiq-stat-content">
+
+                <span class="kickiq-stat-label">
+                    Player Statistics
+                </span>
+
+                <strong>
+                    {{ kickiq_stats.statistics }}
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         MATCH STATUS
+         ================================================= -->
+
+    <div class="kickiq-section">
+
+        <h2>Match Status</h2>
+
+        <div class="kickiq-status-grid">
+
+            <div class="kickiq-status-card">
+
+                <span>Completed Matches</span>
+
+                <strong>
+                    {{ kickiq_stats.completed_matches }}
+                </strong>
+
+            </div>
+
+
+            <div class="kickiq-status-card">
+
+                <span>Upcoming Matches</span>
+
+                <strong>
+                    {{ kickiq_stats.upcoming_matches }}
+                </strong>
+
+            </div>
+
+
+            <div class="kickiq-status-card">
+
+                <span>Active Players</span>
+
+                <strong>
+                    {{ kickiq_stats.active_players }}
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         QUICK ACTIONS
+         ================================================= -->
+
+    <div class="kickiq-tools">
+
+        <h2>Quick Actions</h2>
+
+        <p class="kickiq-tools-description">
+            Frequently used KickIQ administration tools.
+        </p>
+
+
+        <div class="kickiq-actions">
+
+            <a
+                href="{% url 'admin:match-result-update' %}"
+                class="kickiq-action primary"
+            >
+                ⚽ Match Result Update
+            </a>
+
+
+            <a
+                href="{% url 'admin:core_club_add' %}"
+                class="kickiq-action"
+            >
+                🏟️ Add Club
+            </a>
+
+
+            <a
+                href="{% url 'admin:core_player_add' %}"
+                class="kickiq-action"
+            >
+                👤 Add Player
+            </a>
+
+
+            <a
+                href="{% url 'admin:core_match_add' %}"
+                class="kickiq-action"
+            >
+                ⚽ Add Match
+            </a>
+
+
+            <a
+                href="{% url 'admin:core_playerstatistics_add' %}"
+                class="kickiq-action"
+            >
+                📊 Add Statistics
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
+
+
+<!-- =====================================================
+     NORMAL DJANGO ADMIN CONTENT
+     ===================================================== -->
 
 {{ block.super }}
 

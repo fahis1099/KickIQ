@@ -1,0 +1,749 @@
+/* =========================================================
+   KickIQ Admin Dashboard
+   Responsive Desktop + Tablet + Mobile
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN KICKIQ DASHBOARD
+   ========================================================= */
+
+.kickiq-dashboard {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   WELCOME SECTION
+   ========================================================= */
+
+.kickiq-welcome {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.kickiq-welcome h2 {
+    margin: 0 0 6px 0;
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.kickiq-welcome p {
+    margin: 0;
+    color: var(--body-quiet-color);
+}
+
+
+/* =========================================================
+   OVERVIEW STATISTICS CARDS
+   ========================================================= */
+
+.kickiq-stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+
+    width: 100%;
+    margin: 0 0 32px 0;
+}
+
+
+.kickiq-stat-card {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background: var(--body-bg);
+
+    border: 1px solid var(--hairline-color);
+
+    border-radius: 8px;
+
+    min-height: 105px;
+}
+
+
+.kickiq-stat-icon {
+    flex: 0 0 48px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--darkened-bg);
+
+    border-radius: 9px;
+
+    font-size: 1.35rem;
+}
+
+
+.kickiq-stat-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.kickiq-stat-label {
+    font-size: 0.78rem;
+
+    color: var(--body-quiet-color);
+}
+
+
+.kickiq-stat-content strong {
+    font-size: 1.5rem;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    color: var(--body-fg);
+}
+
+
+/* =========================================================
+   GENERAL DASHBOARD SECTIONS
+   ========================================================= */
+
+.kickiq-section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.kickiq-section h2,
+.kickiq-tools h2 {
+    margin: 0 0 15px 0;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   MATCH STATUS
+   ========================================================= */
+
+.kickiq-status-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+.kickiq-status-card {
+    min-width: 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    background: var(--body-bg);
+
+    border: 1px solid var(--hairline-color);
+
+    border-radius: 8px;
+}
+
+
+.kickiq-status-card span {
+    color: var(--body-quiet-color);
+
+    font-size: 0.8rem;
+}
+
+
+.kickiq-status-card strong {
+    font-size: 1.2rem;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   QUICK ACTIONS
+   ========================================================= */
+
+.kickiq-tools {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-bottom: 35px;
+
+    padding: 22px;
+
+    background: var(--body-bg);
+
+    border: 1px solid var(--hairline-color);
+
+    border-radius: 8px;
+}
+
+
+.kickiq-tools-description {
+    margin: 0 0 18px 0;
+
+    color: var(--body-quiet-color);
+}
+
+
+/* =========================================================
+   QUICK ACTION BUTTONS
+   ========================================================= */
+
+.kickiq-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    width: 100%;
+}
+
+
+.kickiq-action {
+    display: inline-flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    min-height: 40px;
+
+    padding: 10px 16px !important;
+
+    box-sizing: border-box;
+
+    border-radius: 6px !important;
+
+    background: var(--button-bg) !important;
+
+    color: var(--button-fg) !important;
+
+    text-decoration: none !important;
+
+    font-size: 0.8rem;
+
+    font-weight: 500;
+
+    transition:
+        opacity 0.15s ease,
+        transform 0.15s ease;
+}
+
+
+.kickiq-action:hover {
+    opacity: 0.88;
+
+    color: var(--button-fg) !important;
+
+    transform: translateY(-1px);
+}
+
+
+.kickiq-action.primary {
+    background: var(--default-button-bg) !important;
+}
+
+
+/* =========================================================
+   DJANGO ADMIN DASHBOARD WIDTH OVERRIDE
+   ========================================================= */
+
+/*
+   Django's default admin dashboard uses:
+
+       .dashboard #content {
+           width: 600px;
+       }
+
+   We override that so KickIQ can use the available
+   screen width while remaining centered.
+*/
+
+.dashboard #content {
+    width: auto !important;
+
+    max-width: 1280px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+}
+
+
+.dashboard #content-main {
+    width: 100%;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .kickiq-dashboard {
+        max-width: 100%;
+    }
+
+
+    .kickiq-stats-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 15px;
+    }
+
+
+    .kickiq-status-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 15px;
+    }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /*
+       Give the dashboard the full available width.
+    */
+
+    .kickiq-dashboard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /*
+       Two-column statistics layout.
+    */
+
+    .kickiq-stats-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+
+    /*
+       Match status becomes one column.
+    */
+
+    .kickiq-status-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .kickiq-stat-card {
+        min-height: 90px;
+
+        padding: 15px;
+    }
+
+
+    .kickiq-stat-icon {
+        flex: 0 0 42px;
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 1.15rem;
+    }
+
+
+    .kickiq-stat-content strong {
+        font-size: 1.3rem;
+    }
+
+
+    .kickiq-tools {
+        padding: 18px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /*
+       Remove Django Admin's 980px minimum width.
+       This is important for phone screens.
+    */
+
+    #container {
+        min-width: 0 !important;
+
+        width: 100%;
+
+        overflow-x: hidden;
+    }
+
+
+    /*
+       Reduce Django Admin content padding.
+    */
+
+    #content {
+        width: 100% !important;
+
+        padding: 15px !important;
+
+        box-sizing: border-box;
+    }
+
+
+    /*
+       Remove Django's 600px dashboard restriction.
+    */
+
+    .dashboard #content {
+        width: 100% !important;
+
+        max-width: 100%;
+
+        margin: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    .dashboard #content-main {
+        width: 100%;
+    }
+
+
+    /*
+       KickIQ dashboard.
+    */
+
+    .kickiq-dashboard {
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0 0 25px 0;
+    }
+
+
+    /*
+       Welcome heading.
+    */
+
+    .kickiq-welcome {
+        margin-bottom: 20px;
+    }
+
+
+    .kickiq-welcome h2 {
+        font-size: 1.15rem;
+
+        line-height: 1.4;
+    }
+
+
+    .kickiq-welcome p {
+        font-size: 0.8rem;
+
+        line-height: 1.4;
+    }
+
+
+    /*
+       One card per row on phones.
+    */
+
+    .kickiq-stats-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .kickiq-stat-card {
+        width: 100%;
+
+        min-height: 80px;
+
+        padding: 15px;
+    }
+
+
+    .kickiq-stat-icon {
+        flex: 0 0 42px;
+
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .kickiq-stat-label {
+        font-size: 0.75rem;
+    }
+
+
+    .kickiq-stat-content strong {
+        font-size: 1.3rem;
+    }
+
+
+    /*
+       Match status.
+    */
+
+    .kickiq-section {
+        width: 100%;
+
+        margin-bottom: 25px;
+    }
+
+
+    .kickiq-status-grid {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    .kickiq-status-card {
+        width: 100%;
+
+        padding: 15px;
+
+        box-sizing: border-box;
+    }
+
+
+    /*
+       Quick actions.
+    */
+
+    .kickiq-tools {
+        width: 100%;
+
+        padding: 16px;
+
+        margin-bottom: 25px;
+
+        box-sizing: border-box;
+    }
+
+
+    .kickiq-tools h2 {
+        font-size: 1rem;
+    }
+
+
+    .kickiq-tools-description {
+        font-size: 0.8rem;
+
+        line-height: 1.4;
+    }
+
+
+    /*
+       Stack every action button.
+    */
+
+    .kickiq-actions {
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 10px;
+    }
+
+
+    .kickiq-action {
+        width: 100%;
+
+        min-height: 44px;
+
+        padding: 11px 14px !important;
+
+        box-sizing: border-box;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    #content {
+        padding: 12px !important;
+    }
+
+
+    .kickiq-stat-card {
+        padding: 13px;
+    }
+
+
+    .kickiq-stat-icon {
+        flex-basis: 38px;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 1rem;
+    }
+
+
+    .kickiq-stat-content strong {
+        font-size: 1.2rem;
+    }
+
+
+    .kickiq-tools {
+        padding: 14px;
+    }
+}
+/* =========================================================
+   RECENT ACTIONS
+   Move Django Admin Recent Actions below the main content
+   ========================================================= */
+
+.dashboard #content-related {
+    float: none !important;
+
+    width: 100% !important;
+
+    max-width: 1200px;
+
+    margin: 30px auto 0 auto !important;
+
+    position: static !important;
+
+    box-sizing: border-box;
+}
+
+
+/* Make the Recent Actions module use the available width */
+
+.dashboard #content-related .module {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-bottom: 20px;
+}
+
+
+/* Recent Actions heading */
+
+.dashboard #content-related .module h2 {
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* Recent Actions content */
+
+.dashboard #content-related .actionlist {
+    width: auto;
+
+    margin: 16px;
+}
+
+
+/* =========================================================
+   PREVENT HORIZONTAL OVERFLOW
+   ========================================================= */
+
+.dashboard {
+    overflow-x: hidden;
+}
+
+.dashboard #content {
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   MOBILE RECENT ACTIONS
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .dashboard #content-related {
+        width: 100% !important;
+
+        max-width: 100%;
+
+        margin: 25px 0 0 0 !important;
+
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    .dashboard #content-related .module {
+        width: 100%;
+
+        margin-bottom: 15px;
+    }
+
+
+    .dashboard #content-related .actionlist {
+        margin: 12px;
+    }
+}
