@@ -21,7 +21,9 @@ from core.views import (
     home,
     login_page, 
     player_dashboard,
+    players_page,
     register_page,
+    player_performance_page,
 )
 
 urlpatterns = [
@@ -31,4 +33,6 @@ urlpatterns = [
     path("dashboard/", player_dashboard, name="player-dashboard"),
     path("login/", login_page, name="login-page"),
     path("register/", register_page, name="register-page"),
+    path("players/", players_page, name="players-page"),
+    path("players/<int:player_id>/",player_performance_page, name="player-performance-page"),
 ]

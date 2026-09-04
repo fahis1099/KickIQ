@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ player.name }} - KickIQ</title>
+
+    <link rel="stylesheet"
+          href="/static/core/css/player_performance.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="page-header">
+
+        <div class="header-left">
+            <h1>KickIQ</h1>
+            <span>Player Performance</span>
+        </div>
+
+        <div class="header-right">
+
+            <a href="/players/" class="back-btn">
+                ← Players
+            </a>
+
+            <button type="button"
+                    id="logout-btn"
+                    class="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="performance-container">
+
+        <!-- Player Profile -->
+        <section class="player-profile">
+
+            <div class="player-photo">
+
+                {% if player.photo_path %}
+
+                    <img src="{{ player.photo_path }}"
+                         alt="{{ player.name }}">
+
+                {% else %}
+
+                    <span>
+                        {{ player.name|first|upper }}
+                    </span>
+
+                {% endif %}
+
+            </div>
+
+
+            <div class="player-details">
+
+                <h2>{{ player.name }}</h2>
+
+                <p class="club">
+                    {{ player.current_club.name }}
+                </p>
+
+                <span class="position">
+                    {{ player.position }}
+                </span>
+
+                <div class="player-meta">
+
+                    <div>
+                        <strong>Nationality</strong>
+                        <span>{{ player.nationality }}</span>
+                    </div>
+
+                    <div>
+                        <strong>Date of Birth</strong>
+                        <span>{{ player.date_of_birth }}</span>
+                    </div>
+
+                    <div>
+                        <strong>Height</strong>
+                        <span>{{ player.height }}</span>
+                    </div>
+
+                    <div>
+                        <strong>Jersey Number</strong>
+                        <span>{{ player.jersey_number }}</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Performance Section -->
+      <section class="performance-section">
+
+    <h2>Performance Overview</h2>
+
+    <!-- Summary Cards -->
+
+    <div class="summary-grid">
+
+        <div class="summary-card">
+            <span class="summary-label">Appearances</span>
+            <strong>{{ summary.appearances|default:0 }}</strong>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Minutes</span>
+            <strong>{{ summary.minutes|default:0 }}</strong>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Average Rating</span>
+            <strong>
+                {% if summary.average_rating %}
+                    {{ summary.average_rating }}
+                {% else %}
+                    —
+                {% endif %}
+            </strong>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Goals</span>
+            <strong>{{ summary.goals|default:0 }}</strong>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Assists</span>
+            <strong>{{ summary.assists|default:0 }}</strong>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Shots</span>
+            <strong>{{ summary.shots|default:0 }}</strong>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Key Passes</span>
+            <strong>{{ summary.key_passes|default:0 }}</strong>
+        </div>
+
+    </div>
+
+
+    <!-- Rating Trend -->
+
+    <div class="chart-card">
+
+        <div class="chart-header">
+            <h3>Rating Trend</h3>
+            <p>Player rating across completed matches</p>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="rating-chart"></canvas>
+        </div>
+
+    </div>
+
+
+    <!-- Minutes Played -->
+
+    <div class="chart-card">
+
+        <div class="chart-header">
+            <h3>Minutes Played</h3>
+            <p>Playing time and starting status across matches</p>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="minutes-chart"></canvas>
+        </div>
+
+    </div>
+    <!-- Position-Specific Analysis -->
+
+<div class="position-analysis-card">
+
+    <div class="chart-header">
+        <h3>Position-Specific Performance</h3>
+        <p id="position-description">
+            Performance indicators based on the player's position
+        </p>
+    </div>
+
+    <div
+        id="position-metrics"
+        class="position-metrics-grid"
+    >
+        <!-- Metrics will be generated by JavaScript -->
+    </div>
+
+</div>
+    <!-- Match-by-Match Performance -->
+
+<div class="match-table-card">
+
+    <div class="chart-header">
+        <h3>Match-by-Match Performance</h3>
+        <p>Recent completed match statistics</p>
+    </div>
+
+    <div class="table-wrapper">
+
+        <table class="performance-table">
+
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Opponent</th>
+                    <th>Venue</th>
+                    <th>Start</th>
+                    <th>Minutes</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                    <th>Shots</th>
+                    <th>Key Passes</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+
+            <tbody id="performance-table-body">
+
+                <tr>
+                    <td colspan="10" class="loading-row">
+                        Loading performance data...
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+</section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/core/js/player_performance.js"></script>
+
+</body>
+</html>

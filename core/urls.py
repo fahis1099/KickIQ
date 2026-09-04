@@ -1,7 +1,7 @@
 from django.urls import path
 
 from .views import (
-    ClubListAPIView, 
+    ClubListAPIView,
     PlayerListAPIView,
     PlayerDetailAPIView,
     MatchListAPIView,
@@ -10,17 +10,74 @@ from .views import (
     CompletedMatchListAPIView,
     PlayerStatisticsListAPIView,
     PlayerStatisticsDetailAPIView,
-    PlayerStatisticsByPlayerAPIView
+    PlayerStatisticsByPlayerAPIView,
+    DashboardAPIView,
 )
 
-from .admin_views import match_result_update
+from .auth_views import (
+    login_view,
+    register_view,
+    logout_view,
+    profile_view,
+)
+
 
 urlpatterns = [
+
+    # ------------------------------------------
+    # Dashboard
+    # ------------------------------------------
+
+    path(
+        "dashboard/",
+        DashboardAPIView.as_view(),
+        name="dashboard-api"
+    ),
+
+
+    # ------------------------------------------
+    # Authentication
+    # ------------------------------------------
+
+    path(
+        "auth/login/",
+        login_view,
+        name="api-login"
+    ),
+
+    path(
+        "auth/register/",
+        register_view,
+        name="api-register"
+    ),
+
+    path(
+        "auth/logout/",
+        logout_view,
+        name="api-logout"
+    ),
+
+    path(
+        "auth/profile/",
+        profile_view,
+        name="api-profile"
+    ),
+
+
+    # ------------------------------------------
+    # Clubs
+    # ------------------------------------------
+
     path(
         "clubs/",
         ClubListAPIView.as_view(),
         name="club-list"
     ),
+
+
+    # ------------------------------------------
+    # Players
+    # ------------------------------------------
 
     path(
         "players/",
@@ -39,6 +96,11 @@ urlpatterns = [
         PlayerStatisticsByPlayerAPIView.as_view(),
         name="player-statistics"
     ),
+
+
+    # ------------------------------------------
+    # Matches
+    # ------------------------------------------
 
     path(
         "matches/",
@@ -63,6 +125,11 @@ urlpatterns = [
         MatchDetailAPIView.as_view(),
         name="match-detail"
     ),
+
+
+    # ------------------------------------------
+    # Player Statistics
+    # ------------------------------------------
 
     path(
         "player-statistics/",

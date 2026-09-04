@@ -1,1281 +1,279 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>KickIQ | Player Dashboard</title>
+    <title>KickIQ Dashboard</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f6f8;
-            color: #1f2937;
-        }
-
-        /* ==============================
-           HEADER
-        ============================== */
-
-        .header {
-            height: 70px;
-            background: #111827;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 40px;
-        }
-
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .logo span {
-            color: #22c55e;
-        }
-
-        .nav {
-            display: flex;
-            gap: 25px;
-        }
-
-        .nav a {
-            color: #d1d5db;
-            text-decoration: none;
-            font-size: 15px;
-        }
-
-        .nav a:hover {
-            color: white;
-        }
-
-        /* ==============================
-           MAIN
-        ============================== */
-
-        .container {
-            max-width: 1250px;
-            margin: 35px auto;
-            padding: 0 25px;
-        }
-
-        .page-title {
-            margin-bottom: 25px;
-        }
-
-        .page-title h1 {
-            font-size: 30px;
-            margin-bottom: 8px;
-        }
-
-        .page-title p {
-            color: #6b7280;
-        }
-
-        /* ==============================
-           SEARCH
-        ============================== */
-
-        .search-box {
-            position: relative;
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-            margin-bottom: 25px;
-        }
-
-        .search-box label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .search-wrapper {
-            display: flex;
-            gap: 10px;
-        }
-
-        .search-wrapper input {
-            flex: 1;
-            padding: 13px 15px;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
-            font-size: 15px;
-            outline: none;
-        }
-
-        .search-wrapper input:focus {
-            border-color: #22c55e;
-        }
-
-        .search-wrapper button {
-            padding: 13px 25px;
-            border: none;
-            border-radius: 8px;
-            background: #16a34a;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .search-wrapper button:hover {
-            background: #15803d;
-        }
-
-        .search-results {
-            position: absolute;
-            left: 20px;
-            right: 20px;
-            top: 105px;
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            z-index: 10;
-            display: none;
-            max-height: 250px;
-            overflow-y: auto;
-        }
-
-        .search-result {
-            padding: 13px 15px;
-            cursor: pointer;
-            border-bottom: 1px solid #f3f4f6;
-        }
-
-        .search-result:hover {
-            background: #f0fdf4;
-        }
-
-        .search-result-name {
-            font-weight: bold;
-        }
-
-        .search-result-info {
-            color: #6b7280;
-            font-size: 13px;
-            margin-top: 3px;
-        }
-
-        /* ==============================
-           PLAYER PROFILE
-        ============================== */
-
-        .profile-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        }
-
-        .profile-header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .player-photo {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: #e5e7eb;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            font-size: 40px;
-        }
-
-        .player-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .profile-info h2 {
-            font-size: 26px;
-            margin-bottom: 8px;
-        }
-
-        .profile-info p {
-            color: #6b7280;
-            margin-bottom: 4px;
-        }
-
-        /* ==============================
-           SUMMARY CARDS
-        ============================== */
-
-        .summary-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 18px;
-            margin-bottom: 25px;
-        }
-
-        .summary-card {
-            background: white;
-            padding: 22px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        }
-
-        .summary-card .label {
-            color: #6b7280;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .summary-card .value {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        /* ==============================
-           SECTIONS
-        ============================== */
-
-        .section {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        }
-
-        .section h2 {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        /* ==============================
-           TABLE
-        ============================== */
-
-        .table-container {
-            overflow-x: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            padding: 13px 12px;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-            font-size: 14px;
-        }
-
-        th {
-            background: #f9fafb;
-            font-weight: bold;
-            color: #374151;
-        }
-
-        tr:hover {
-            background: #f9fafb;
-        }
-
-        .rating {
-            font-weight: bold;
-        }
-
-        .empty-message {
-            text-align: center;
-            padding: 30px;
-            color: #6b7280;
-        }
-
-        /* ==============================
-           STATUS
-        ============================== */
-
-        .status {
-            margin-bottom: 20px;
-            padding: 12px 15px;
-            border-radius: 8px;
-            display: none;
-        }
-
-        .status.error {
-            display: block;
-            background: #fee2e2;
-            color: #991b1b;
-        }
-
-        .status.loading {
-            display: block;
-            background: #eff6ff;
-            color: #1e40af;
-        }
-
-        /* ==============================
-           RESPONSIVE
-        ============================== */
-
-        @media (max-width: 900px) {
-            .summary-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .header {
-                padding: 0 20px;
-            }
-
-            .container {
-                padding: 0 15px;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .summary-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .nav {
-                display: none;
-            }
-
-            .search-wrapper {
-                flex-direction: column;
-            }
-
-            .profile-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-
-        .logout-button {
-            border: none;
-            background: transparent;
-            color: white;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            padding: 8px 12px;
-            border-radius: 6px;
-        }
-
-        .logout-button:hover {
-            background: rgba(255, 255, 255, 0.12);
-        }
-    </style>
+    <link rel="stylesheet"
+          href="{% static 'core/css/player_dashboard.css' %}">
 </head>
 
 <body>
 
-<header class="header">
-    <div class="logo">Kick<span>IQ</span></div>
+<div class="dashboard-container">
 
-    <nav class="nav">
-        <a href="/dashboard/">Dashboard</a>
-        <a href="/admin/">Admin</a>
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
 
-        <button
-            type="button"
-            id="logoutButton"
-            class="logout-button"
-        >
-            Logout
-        </button>
-    </nav>
-</header>
+    <header class="dashboard-header">
 
+        <div class="brand">
+            <h1>KickIQ</h1>
+            <p>Football Performance Analytics</p>
+        </div>
 
-<main class="container">
+        <div class="header-right">
+            <span id="welcome-message"></span>
 
-    <div class="page-title">
-        <h1>Player Performance</h1>
-        <p>Football performance analytics and insights</p>
-    </div>
+            <a href="/players/" class="nav-btn">
+                Players
+            </a>
 
-
-    <!-- ==============================
-         SEARCH
-    ============================== -->
-
-    <section class="search-box">
-
-        <label for="playerSearch">
-            Search Player
-        </label>
-
-        <div class="search-wrapper">
-
-            <input
-                type="text"
-                id="playerSearch"
-                placeholder="Enter player name..."
-                autocomplete="off"
-            >
-
-            <button
-                type="button"
-                onclick="searchPlayers()"
-            >
-                Search
+            <button type="button" id="logout-btn" class="logout-btn">
+                Logout
             </button>
-
         </div>
 
-        <div
-            id="searchResults"
-            class="search-results"
-        ></div>
-
-    </section>
+    </header>
 
 
-    <div id="statusMessage" class="status"></div>
+    <!-- ============================= -->
+    <!-- PAGE TITLE -->
+    <!-- ============================= -->
 
+    <section class="page-heading">
 
-    <!-- ==============================
-         PLAYER PROFILE
-    ============================== -->
-
-    <section class="profile-card">
-
-        <div class="profile-header">
-
-            <div class="player-photo" id="playerPhoto">
-                ⚽
-            </div>
-
-            <div class="profile-info">
-
-                <h2 id="playerName">
-                    Select a player
-                </h2>
-
-                <p>
-                    Club:
-                    <span id="playerClub">—</span>
-                </p>
-
-                <p>
-                    Position:
-                    <span id="playerPosition">—</span>
-                </p>
-
-                <p>
-                    Nationality:
-                    <span id="playerNationality">—</span>
-                </p>
-
-            </div>
-
+        <div>
+            <h2>Performance Dashboard</h2>
+            <p>
+                Analyze player performance, team activity and match trends.
+            </p>
         </div>
 
     </section>
 
 
-    <!-- ==============================
-         SUMMARY
-    ============================== -->
+    <!-- ============================= -->
+    <!-- SUMMARY CARDS -->
+    <!-- ============================= -->
 
     <section class="summary-grid">
 
         <div class="summary-card">
-            <div class="label">Matches</div>
-            <div class="value" id="matchesValue">0</div>
+            <div class="card-label">Total Players</div>
+            <div class="card-value" id="total-players">-</div>
+            <div class="card-description">
+                Players in database
+            </div>
         </div>
 
-        <div class="summary-card">
-            <div class="label">Goals</div>
-            <div class="value" id="goalsValue">0</div>
-        </div>
 
         <div class="summary-card">
-            <div class="label">Assists</div>
-            <div class="value" id="assistsValue">0</div>
+            <div class="card-label">Active Players</div>
+            <div class="card-value" id="active-players">-</div>
+            <div class="card-description">
+                Currently active
+            </div>
         </div>
 
-        <div class="summary-card">
-            <div class="label">Minutes</div>
-            <div class="value" id="minutesValue">0</div>
-        </div>
 
         <div class="summary-card">
-            <div class="label">Average Rating</div>
-            <div class="value" id="ratingValue">—</div>
+            <div class="card-label">Clubs</div>
+            <div class="card-value" id="total-clubs">-</div>
+            <div class="card-description">
+                Clubs available
+            </div>
+        </div>
+
+
+        <div class="summary-card">
+            <div class="card-label">Matches</div>
+            <div class="card-value" id="total-matches">-</div>
+            <div class="card-description">
+                Total matches
+            </div>
+        </div>
+
+
+        <div class="summary-card">
+            <div class="card-label">Completed</div>
+            <div class="card-value" id="completed-matches">-</div>
+            <div class="card-description">
+                Matches completed
+            </div>
+        </div>
+
+
+        <div class="summary-card">
+            <div class="card-label">Upcoming</div>
+            <div class="card-value" id="upcoming-matches">-</div>
+            <div class="card-description">
+                Matches scheduled
+            </div>
+        </div>
+
+
+        <div class="summary-card rating-card">
+            <div class="card-label">Average Rating</div>
+            <div class="card-value" id="average-rating">-</div>
+            <div class="card-description">
+                Overall player rating
+            </div>
         </div>
 
     </section>
 
 
-    <!-- ==============================
-         MATCH STATISTICS
-    ============================== -->
+    <!-- ============================= -->
+    <!-- MAIN DASHBOARD GRID -->
+    <!-- ============================= -->
 
-    <section class="section">
-
-        <h2>Match-by-Match Performance</h2>
-
-        <div class="table-container">
-
-            <table>
-
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Opponent</th>
-                        <th>Venue</th>
-                        <th>Min</th>
-                        <th>G</th>
-                        <th>A</th>
-                        <th>Shots</th>
-                        <th>Passes</th>
-                        <th>Dribbles</th>
-                        <th>Rating</th>
-                    </tr>
-                </thead>
-
-                <tbody id="statisticsTable">
-
-                    <tr>
-                        <td colspan="10" class="empty-message">
-                            Select a player to view performance.
-                        </td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-    </section>
-
-</main>
+    <section class="dashboard-grid">
 
 
-<script>
+        <!-- TOP PLAYERS -->
 
-    // ==========================================
-    // API CONFIGURATION
-    // ==========================================
+        <div class="dashboard-card top-players-card">
 
-    const API_BASE = "/api";
-
-
-    let allPlayers = [];
-
-
-    // ==========================================
-    // LOAD PLAYERS
-    // ==========================================
-
-    async function loadPlayers() {
-
-        try {
-
-            showStatus("Loading players...", "loading");
-
-            const response = await fetch(
-                `${API_BASE}/players/`
-            );
-
-            if (!response.ok) {
-                throw new Error("Failed to load players.");
-            }
-
-            allPlayers = await response.json();
-
-            hideStatus();
-
-            console.log(
-                "Players loaded:",
-                allPlayers.length
-            );
-
-        } catch (error) {
-
-            console.error(error);
-
-            showStatus(
-                "Unable to load players.",
-                "error"
-            );
-        }
-    }
-
-
-    // ==========================================
-    // SEARCH PLAYERS
-    // ==========================================
-
-    function searchPlayers() {
-
-        const searchText =
-            document
-                .getElementById("playerSearch")
-                .value
-                .trim()
-                .toLowerCase();
-
-        const resultsContainer =
-            document.getElementById("searchResults");
-
-
-        if (!searchText) {
-
-            resultsContainer.style.display = "none";
-            resultsContainer.innerHTML = "";
-
-            return;
-        }
-
-
-        const results = allPlayers
-            .filter(player =>
-                player.name
-                    .toLowerCase()
-                    .includes(searchText)
-            )
-            .slice(0, 10);
-
-
-        if (results.length === 0) {
-
-            resultsContainer.innerHTML = `
-                <div class="search-result">
-                    No players found.
+            <div class="section-header">
+                <div>
+                    <h3>Top Performing Players</h3>
+                    <p>Based on average match rating</p>
                 </div>
-            `;
+            </div>
 
-            resultsContainer.style.display = "block";
+            <div class="table-wrapper">
 
-            return;
-        }
+                <table>
 
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Player</th>
+                            <th>Position</th>
+                            <th>Rating</th>
+                            <th>Apps</th>
+                            <th>Goals</th>
+                            <th>Assists</th>
+                        </tr>
+                    </thead>
 
-        resultsContainer.innerHTML = results
-            .map(player => {
+                    <tbody id="top-players-body">
 
-                return `
-                    <div
-                        class="search-result"
-                        onclick="selectPlayer(${player.id})"
-                    >
+                        <tr>
+                            <td colspan="7" class="loading">
+                                Loading player data...
+                            </td>
+                        </tr>
 
-                        <div class="search-result-name">
-                            ${escapeHtml(player.name)}
-                        </div>
+                    </tbody>
 
-                        <div class="search-result-info">
-                            ${escapeHtml(player.club_name || "Unknown club")}
-                            •
-                            ${escapeHtml(player.position || "Unknown position")}
-                        </div>
+                </table>
 
-                    </div>
-                `;
+            </div>
 
-            })
-            .join("");
+        </div>
 
 
-        resultsContainer.style.display = "block";
-    }
+        <!-- POSITION SUMMARY -->
 
+        <div class="dashboard-card">
 
-    // ==========================================
-    // SELECT PLAYER
-    // ==========================================
+            <div class="section-header">
 
-    async function selectPlayer(playerId) {
+                <div>
+                    <h3>Position Performance</h3>
+                    <p>Average rating by position</p>
+                </div>
 
-        document
-            .getElementById("searchResults")
-            .style.display = "none";
+            </div>
 
+            <div class="chart-container">
 
-        const selectedPlayer =
-            allPlayers.find(
-                player => player.id === playerId
-            );
+                <canvas id="positionChart"></canvas>
 
+            </div>
 
-        if (selectedPlayer) {
+        </div>
 
-            document
-                .getElementById("playerSearch")
-                .value = selectedPlayer.name;
-        }
 
+    </section>
 
-        await loadPlayerData(playerId);
-    }
 
+    <!-- ============================= -->
+    <!-- MATCHES -->
+    <!-- ============================= -->
 
-    // ==========================================
-    // LOAD PLAYER DATA
-    // ==========================================
+    <section class="dashboard-grid">
 
-    async function loadPlayerData(playerId) {
 
-        try {
+        <!-- UPCOMING MATCHES -->
 
-            showStatus(
-                "Loading player performance...",
-                "loading"
-            );
+        <div class="dashboard-card">
 
+            <div class="section-header">
 
-            const playerResponse =
-                await fetch(
-                    `${API_BASE}/players/${playerId}/`
-                );
+                <div>
+                    <h3>Upcoming Matches</h3>
+                    <p>Next scheduled matches</p>
+                </div>
 
+            </div>
 
-            if (!playerResponse.ok) {
+            <div id="upcoming-matches-container">
 
-                throw new Error(
-                    "Unable to load player details."
-                );
-            }
+                <div class="loading">
+                    Loading matches...
+                </div>
 
+            </div>
 
-            const player =
-                await playerResponse.json();
+        </div>
 
 
-            const statisticsResponse =
-                await fetch(
-                    `${API_BASE}/players/${playerId}/statistics/`
-                );
+        <!-- RECENT RESULTS -->
 
+        <div class="dashboard-card">
 
-            if (!statisticsResponse.ok) {
+            <div class="section-header">
 
-                throw new Error(
-                    "Unable to load player statistics."
-                );
-            }
+                <div>
+                    <h3>Recent Results</h3>
+                    <p>Latest completed matches</p>
+                </div>
 
+            </div>
 
-            const statistics =
-                await statisticsResponse.json();
+            <div id="recent-matches-container">
 
+                <div class="loading">
+                    Loading results...
+                </div>
 
-            displayPlayer(player);
+            </div>
 
-            displayStatistics(statistics);
+        </div>
 
 
-            hideStatus();
+    </section>
 
-        } catch (error) {
 
-            console.error(error);
+</div>
 
-            showStatus(
-                error.message,
-                "error"
-            );
-        }
-    }
 
+<!-- Chart.js -->
 
-    // ==========================================
-    // DISPLAY PLAYER
-    // ==========================================
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    function displayPlayer(player) {
 
-        document
-            .getElementById("playerName")
-            .textContent = player.name || "Unknown";
+<!-- Dashboard JavaScript -->
 
-        document
-            .getElementById("playerClub")
-            .textContent =
-                player.club_name || "—";
-
-        document
-            .getElementById("playerPosition")
-            .textContent =
-                player.position || "—";
-
-        document
-            .getElementById("playerNationality")
-            .textContent =
-                player.nationality || "—";
-
-
-        const photoContainer =
-            document.getElementById("playerPhoto");
-
-
-        if (player.photo_path) {
-
-            photoContainer.innerHTML = `
-                <img
-                    src="/media/${player.photo_path}"
-                    alt="${escapeHtml(player.name)}"
-                    onerror="this.parentElement.innerHTML='⚽'"
-                >
-            `;
-
-        } else {
-
-            photoContainer.textContent = "⚽";
-        }
-    }
-
-
-    // ==========================================
-    // DISPLAY STATISTICS
-    // ==========================================
-
-    function displayStatistics(statistics) {
-
-        const table =
-            document.getElementById(
-                "statisticsTable"
-            );
-
-
-        if (!statistics || statistics.length === 0) {
-
-            table.innerHTML = `
-                <tr>
-                    <td colspan="10" class="empty-message">
-                        No statistics available for this player.
-                    </td>
-                </tr>
-            `;
-
-            updateSummary([]);
-
-            return;
-        }
-
-
-        updateSummary(statistics);
-
-
-        table.innerHTML =
-            statistics.map(stat => {
-
-                const isHome =
-                    stat.home_club_name ===
-                    stat.club_name;
-
-
-                const opponent =
-                    isHome
-                        ? stat.away_club_name
-                        : stat.home_club_name;
-
-
-                const venue =
-                    isHome
-                        ? "Home"
-                        : "Away";
-
-
-                const passes =
-                    stat.passes_completed !== null &&
-                    stat.passes_completed !== undefined
-                        ? `${stat.passes_completed}/${stat.passes_attempted ?? 0}`
-                        : "—";
-
-
-                const dribbles =
-                    stat.dribbles_completed !== null &&
-                    stat.dribbles_completed !== undefined
-                        ? `${stat.dribbles_completed}/${stat.dribbles_attempted ?? 0}`
-                        : "—";
-
-
-                return `
-                    <tr>
-
-                        <td>
-                            ${stat.match_date || "—"}
-                        </td>
-
-                        <td>
-                            ${escapeHtml(opponent || "—")}
-                        </td>
-
-                        <td>
-                            ${venue}
-                        </td>
-
-                        <td>
-                            ${stat.minutes_played ?? 0}
-                        </td>
-
-                        <td>
-                            ${stat.goals ?? 0}
-                        </td>
-
-                        <td>
-                            ${stat.assists ?? 0}
-                        </td>
-
-                        <td>
-                            ${stat.shots ?? 0}
-                        </td>
-
-                        <td>
-                            ${passes}
-                        </td>
-
-                        <td>
-                            ${dribbles}
-                        </td>
-
-                        <td class="rating">
-                            ${stat.rating ?? "—"}
-                        </td>
-
-                    </tr>
-                `;
-
-            }).join("");
-    }
-
-
-    // ==========================================
-    // SUMMARY
-    // ==========================================
-
-    function updateSummary(statistics) {
-
-        if (!statistics.length) {
-
-            document
-                .getElementById("matchesValue")
-                .textContent = "0";
-
-            document
-                .getElementById("goalsValue")
-                .textContent = "0";
-
-            document
-                .getElementById("assistsValue")
-                .textContent = "0";
-
-            document
-                .getElementById("minutesValue")
-                .textContent = "0";
-
-            document
-                .getElementById("ratingValue")
-                .textContent = "—";
-
-            return;
-        }
-
-
-        const matches =
-            statistics.length;
-
-
-        const goals =
-            statistics.reduce(
-                (total, stat) =>
-                    total + Number(stat.goals || 0),
-                0
-            );
-
-
-        const assists =
-            statistics.reduce(
-                (total, stat) =>
-                    total + Number(stat.assists || 0),
-                0
-            );
-
-
-        const minutes =
-            statistics.reduce(
-                (total, stat) =>
-                    total + Number(stat.minutes_played || 0),
-                0
-            );
-
-
-        const ratedMatches =
-            statistics.filter(
-                stat =>
-                    stat.rating !== null &&
-                    stat.rating !== undefined
-            );
-
-
-        const averageRating =
-            ratedMatches.length
-                ? (
-                    ratedMatches.reduce(
-                        (total, stat) =>
-                            total + Number(stat.rating),
-                        0
-                    ) / ratedMatches.length
-                ).toFixed(2)
-                : "—";
-
-
-        document
-            .getElementById("matchesValue")
-            .textContent = matches;
-
-
-        document
-            .getElementById("goalsValue")
-            .textContent = goals;
-
-
-        document
-            .getElementById("assistsValue")
-            .textContent = assists;
-
-
-        document
-            .getElementById("minutesValue")
-            .textContent = minutes;
-
-
-        document
-            .getElementById("ratingValue")
-            .textContent = averageRating;
-    }
-
-
-    // ==========================================
-    // STATUS MESSAGE
-    // ==========================================
-
-    function showStatus(message, type) {
-
-        const status =
-            document.getElementById(
-                "statusMessage"
-            );
-
-        status.textContent = message;
-
-        status.className =
-            `status ${type}`;
-    }
-
-
-    function hideStatus() {
-
-        const status =
-            document.getElementById(
-                "statusMessage"
-            );
-
-        status.style.display = "none";
-    }
-
-
-    // ==========================================
-    // HTML ESCAPE
-    // ==========================================
-
-    function escapeHtml(value) {
-
-        const div =
-            document.createElement("div");
-
-        div.textContent = value ?? "";
-
-        return div.innerHTML;
-    }
-
-
-    // ==========================================
-    // SEARCH WHILE TYPING
-    // ==========================================
-
-    document
-        .getElementById("playerSearch")
-        .addEventListener(
-            "input",
-            searchPlayers
-        );
-
-
-    // ==========================================
-    // INITIALIZE
-    // ==========================================
-
-    loadPlayers();
-
-</script>
-<script>
-
-    const logoutButton =
-        document.getElementById("logoutButton");
-
-
-    logoutButton.addEventListener(
-        "click",
-        async function() {
-
-            const confirmed =
-                confirm(
-                    "Are you sure you want to logout?"
-                );
-
-
-            if (!confirmed) {
-                return;
-            }
-
-
-            logoutButton.disabled = true;
-
-            logoutButton.textContent =
-                "Logging out...";
-
-
-            try {
-
-                const response =
-                    await fetch(
-                        "/api/auth/logout/",
-                        {
-                            method: "POST",
-
-                            credentials:
-                                "same-origin",
-
-                            headers: {
-                                "X-CSRFToken":
-                                    getCookie("csrftoken")
-                            }
-                        }
-                    );
-
-
-                const data =
-                    await response.json();
-
-
-                if (
-                    response.ok &&
-                    data.success
-                ) {
-
-                    // Clear frontend session information
-                    sessionStorage.removeItem(
-                        "kickiq_user_id"
-                    );
-
-                    sessionStorage.removeItem(
-                        "kickiq_username"
-                    );
-
-
-                    // Go back to login page
-                    window.location.href =
-                        "/login/";
-
-                } else {
-
-                    alert(
-                        data.message ||
-                        "Logout failed."
-                    );
-
-                    logoutButton.disabled =
-                        false;
-
-                    logoutButton.textContent =
-                        "Logout";
-                }
-
-
-            } catch (error) {
-
-                console.error(
-                    "Logout error:",
-                    error
-                );
-
-
-                alert(
-                    "Unable to connect to the server."
-                );
-
-
-                logoutButton.disabled =
-                    false;
-
-                logoutButton.textContent =
-                    "Logout";
-            }
-
-        }
-    );
-
-
-    // Get Django CSRF cookie
-    function getCookie(name) {
-
-        let cookieValue = null;
-
-
-        if (document.cookie &&
-            document.cookie !== "") {
-
-            const cookies =
-                document.cookie.split(";");
-
-
-            for (
-                let cookie of cookies
-            ) {
-
-                cookie =
-                    cookie.trim();
-
-
-                if (
-                    cookie.substring(
-                        0,
-                        name.length + 1
-                    ) ===
-                    (name + "=")
-                ) {
-
-                    cookieValue =
-                        decodeURIComponent(
-                            cookie.substring(
-                                name.length + 1
-                            )
-                        );
-
-                    break;
-                }
-            }
-        }
-
-
-        return cookieValue;
-    }
-
-</script>
+<script src="{% static 'core/js/player_dashboard.js' %}"></script>
 
 </body>
 </html>

@@ -1,0 +1,190 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Players | KickIQ</title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'core/css/players.css' %}"
+    >
+
+</head>
+
+
+<body>
+
+<div class="players-container">
+
+
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
+
+    <header class="players-header">
+
+        <div>
+
+            <a
+                href="/dashboard/"
+                class="back-link"
+            >
+                ← Dashboard
+            </a>
+
+            <h1>Players</h1>
+
+            <p>
+                Search and explore football players
+                across available teams.
+            </p>
+
+        </div>
+
+
+        <div class="header-user">
+
+            <span>
+                {{ request.user.first_name|default:request.user.username }}
+            </span>
+
+            <button
+                type="button"
+                id="logout-btn"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- SEARCH & FILTERS -->
+    <!-- ============================= -->
+
+    <section class="filters-card">
+
+        <div class="search-box">
+
+            <label for="player-search">
+                Search Player
+            </label>
+
+            <input
+                type="text"
+                id="player-search"
+                placeholder="Search by player name..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <label for="club-filter">
+                Team
+            </label>
+
+            <select id="club-filter">
+
+                <option value="">
+                    All Teams
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <label for="position-filter">
+                Position
+            </label>
+
+            <select id="position-filter">
+
+                <option value="">
+                    All Positions
+                </option>
+
+                <option value="GK">
+                    Goalkeeper
+                </option>
+
+                <option value="DF">
+                    Defender
+                </option>
+
+                <option value="MF">
+                    Midfielder
+                </option>
+
+                <option value="FW">
+                    Forward
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- RESULT INFORMATION -->
+    <!-- ============================= -->
+
+    <div class="results-header">
+
+        <div>
+
+            <h2>Player List</h2>
+
+            <p id="results-count">
+                Loading players...
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- PLAYER GRID -->
+    <!-- ============================= -->
+
+    <section
+        id="players-grid"
+        class="players-grid"
+    >
+
+        <div class="loading">
+            Loading players...
+        </div>
+
+    </section>
+
+
+</div>
+
+
+<script src="{% static 'core/js/players.js' %}"></script>
+
+</body>
+
+</html>
