@@ -254,6 +254,10 @@ body {
 }
 
 
+/* =====================================
+   PLAYER IMAGE
+===================================== */
+
 .player-image {
 
     width: 100%;
@@ -269,8 +273,14 @@ body {
     justify-content: center;
 
     overflow: hidden;
+
+    position: relative;
 }
 
+
+/*
+ * Actual player photo
+ */
 
 .player-image img {
 
@@ -278,19 +288,58 @@ body {
 
     height: 100%;
 
+    display: block;
+
     object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform 0.25s ease;
 }
 
 
+/*
+ * Slight zoom when hovering over card
+ */
+
+.player-card:hover .player-image img {
+
+    transform: scale(1.03);
+
+}
+
+
+/*
+ * Fallback initial when a photo
+ * is unavailable
+ */
+
 .player-initial {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eef1f3;
+
+    color: #9ca3af;
 
     font-size: 45px;
 
     font-weight: 700;
-
-    color: #9ca3af;
 }
 
+
+/* =====================================
+   PLAYER INFORMATION
+===================================== */
 
 .player-info {
 
@@ -305,6 +354,12 @@ body {
     font-weight: 700;
 
     margin-bottom: 6px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
 }
 
 
@@ -315,6 +370,12 @@ body {
     color: #6b7280;
 
     margin-bottom: 4px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
 }
 
 
@@ -335,6 +396,10 @@ body {
     margin-top: 6px;
 }
 
+
+/* =====================================
+   VIEW PERFORMANCE BUTTON
+===================================== */
 
 .view-player-btn {
 
@@ -361,12 +426,18 @@ body {
     font-size: 12px;
 
     font-weight: 600;
+
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
 }
 
 
 .view-player-btn:hover {
 
     background: #f3f4f6;
+
+    border-color: #9ca3af;
 }
 
 
@@ -396,8 +467,10 @@ body {
 @media (max-width: 1100px) {
 
     .players-grid {
+
         grid-template-columns:
             repeat(3, minmax(0, 1fr));
+
     }
 
 }
@@ -406,8 +479,10 @@ body {
 @media (max-width: 800px) {
 
     .players-grid {
+
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
+
     }
 
 

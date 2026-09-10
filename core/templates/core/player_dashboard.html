@@ -2,19 +2,29 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>KickIQ Dashboard</title>
 
-    <link rel="stylesheet"
-          href="{% static 'core/css/player_dashboard.css' %}">
+    <link
+        rel="stylesheet"
+        href="{% static 'core/css/player_dashboard.css' %}"
+    >
+
 </head>
 
 <body>
 
 <div class="dashboard-container">
+
 
     <!-- ============================= -->
     <!-- HEADER -->
@@ -23,20 +33,35 @@
     <header class="dashboard-header">
 
         <div class="brand">
+
             <h1>KickIQ</h1>
-            <p>Football Performance Analytics</p>
+
+            <p>
+                Football Performance Analytics
+            </p>
+
         </div>
 
+
         <div class="header-right">
+
             <span id="welcome-message"></span>
 
-            <a href="/players/" class="nav-btn">
+            <a
+                href="/players/"
+                class="nav-btn"
+            >
                 Players
             </a>
 
-            <button type="button" id="logout-btn" class="logout-btn">
+            <button
+                type="button"
+                id="logout-btn"
+                class="logout-btn"
+            >
                 Logout
             </button>
+
         </div>
 
     </header>
@@ -49,10 +74,15 @@
     <section class="page-heading">
 
         <div>
-            <h2>Performance Dashboard</h2>
+
+            <h2>
+                Performance Dashboard
+            </h2>
+
             <p>
                 Analyze player performance, team activity and match trends.
             </p>
+
         </div>
 
     </section>
@@ -64,67 +94,146 @@
 
     <section class="summary-grid">
 
+
         <div class="summary-card">
-            <div class="card-label">Total Players</div>
-            <div class="card-value" id="total-players">-</div>
+
+            <div class="card-label">
+                Total Players
+            </div>
+
+            <div
+                class="card-value"
+                id="total-players"
+            >
+                -
+            </div>
+
             <div class="card-description">
                 Players in database
             </div>
+
         </div>
 
 
         <div class="summary-card">
-            <div class="card-label">Active Players</div>
-            <div class="card-value" id="active-players">-</div>
+
+            <div class="card-label">
+                Active Players
+            </div>
+
+            <div
+                class="card-value"
+                id="active-players"
+            >
+                -
+            </div>
+
             <div class="card-description">
                 Currently active
             </div>
+
         </div>
 
 
         <div class="summary-card">
-            <div class="card-label">Clubs</div>
-            <div class="card-value" id="total-clubs">-</div>
+
+            <div class="card-label">
+                Clubs
+            </div>
+
+            <div
+                class="card-value"
+                id="total-clubs"
+            >
+                -
+            </div>
+
             <div class="card-description">
                 Clubs available
             </div>
+
         </div>
 
 
         <div class="summary-card">
-            <div class="card-label">Matches</div>
-            <div class="card-value" id="total-matches">-</div>
+
+            <div class="card-label">
+                Matches
+            </div>
+
+            <div
+                class="card-value"
+                id="total-matches"
+            >
+                -
+            </div>
+
             <div class="card-description">
                 Total matches
             </div>
+
         </div>
 
 
         <div class="summary-card">
-            <div class="card-label">Completed</div>
-            <div class="card-value" id="completed-matches">-</div>
+
+            <div class="card-label">
+                Completed
+            </div>
+
+            <div
+                class="card-value"
+                id="completed-matches"
+            >
+                -
+            </div>
+
             <div class="card-description">
                 Matches completed
             </div>
+
         </div>
 
 
         <div class="summary-card">
-            <div class="card-label">Upcoming</div>
-            <div class="card-value" id="upcoming-matches">-</div>
+
+            <div class="card-label">
+                Upcoming
+            </div>
+
+            <div
+                class="card-value"
+                id="upcoming-matches"
+            >
+                -
+            </div>
+
             <div class="card-description">
                 Matches scheduled
             </div>
+
         </div>
 
 
         <div class="summary-card rating-card">
-            <div class="card-label">Average Rating</div>
-            <div class="card-value" id="average-rating">-</div>
+
+            <div class="card-label">
+                Average Rating
+            </div>
+
+            <div
+                class="card-value"
+                id="average-rating"
+            >
+                -
+            </div>
+
             <div class="card-description">
                 Overall player rating
             </div>
+
         </div>
+
 
     </section>
 
@@ -136,39 +245,79 @@
     <section class="dashboard-grid">
 
 
+        <!-- ============================= -->
         <!-- TOP PLAYERS -->
+        <!-- ============================= -->
 
         <div class="dashboard-card top-players-card">
 
             <div class="section-header">
+
                 <div>
-                    <h3>Top Performing Players</h3>
-                    <p>Based on average match rating</p>
+
+                    <h3>
+                        Top Performing Players
+                    </h3>
+
+                    <p>
+                        Based on average match rating
+                    </p>
+
                 </div>
+
             </div>
+
 
             <div class="table-wrapper">
 
                 <table>
 
                     <thead>
+
                         <tr>
+
                             <th>#</th>
-                            <th>Player</th>
-                            <th>Position</th>
-                            <th>Rating</th>
-                            <th>Apps</th>
-                            <th>Goals</th>
-                            <th>Assists</th>
+
+                            <th>
+                                Player
+                            </th>
+
+                            <th>
+                                Position
+                            </th>
+
+                            <th>
+                                Rating
+                            </th>
+
+                            <th>
+                                Apps
+                            </th>
+
+                            <th>
+                                Goals
+                            </th>
+
+                            <th>
+                                Assists
+                            </th>
+
                         </tr>
+
                     </thead>
+
 
                     <tbody id="top-players-body">
 
                         <tr>
-                            <td colspan="7" class="loading">
+
+                            <td
+                                colspan="7"
+                                class="loading"
+                            >
                                 Loading player data...
                             </td>
+
                         </tr>
 
                     </tbody>
@@ -180,18 +329,28 @@
         </div>
 
 
+        <!-- ============================= -->
         <!-- POSITION SUMMARY -->
+        <!-- ============================= -->
 
         <div class="dashboard-card">
 
             <div class="section-header">
 
                 <div>
-                    <h3>Position Performance</h3>
-                    <p>Average rating by position</p>
+
+                    <h3>
+                        Position Performance
+                    </h3>
+
+                    <p>
+                        Average rating by position
+                    </p>
+
                 </div>
 
             </div>
+
 
             <div class="chart-container">
 
@@ -212,18 +371,33 @@
     <section class="dashboard-grid">
 
 
+        <!-- ============================= -->
         <!-- UPCOMING MATCHES -->
+        <!-- ============================= -->
 
         <div class="dashboard-card">
 
             <div class="section-header">
 
                 <div>
-                    <h3>Upcoming Matches</h3>
-                    <p>Next scheduled matches</p>
+
+                    <h3>
+                        Upcoming Matches
+                    </h3>
+
+                    <p>
+                        Next scheduled matches
+                    </p>
+
                 </div>
 
             </div>
+
+
+            <!--
+                Match data will be loaded dynamically
+                by player_dashboard.js
+            -->
 
             <div id="upcoming-matches-container">
 
@@ -236,18 +410,33 @@
         </div>
 
 
+        <!-- ============================= -->
         <!-- RECENT RESULTS -->
+        <!-- ============================= -->
 
         <div class="dashboard-card">
 
             <div class="section-header">
 
                 <div>
-                    <h3>Recent Results</h3>
-                    <p>Latest completed matches</p>
+
+                    <h3>
+                        Recent Results
+                    </h3>
+
+                    <p>
+                        Latest completed matches
+                    </p>
+
                 </div>
 
             </div>
+
+
+            <!--
+                Match results will be loaded dynamically
+                by player_dashboard.js
+            -->
 
             <div id="recent-matches-container">
 
@@ -266,14 +455,20 @@
 </div>
 
 
-<!-- Chart.js -->
+<!-- ============================= -->
+<!-- CHART.JS -->
+<!-- ============================= -->
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
-<!-- Dashboard JavaScript -->
+<!-- ============================= -->
+<!-- EXISTING DASHBOARD JAVASCRIPT -->
+<!-- ============================= -->
 
 <script src="{% static 'core/js/player_dashboard.js' %}"></script>
 
+
 </body>
+
 </html>

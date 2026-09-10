@@ -80,6 +80,20 @@ function updateTopPlayers(players) {
 
     tbody.innerHTML = "";
 
+    if (!players || players.length === 0) {
+
+        tbody.innerHTML = `
+            <tr>
+                <td colspan="7" class="loading">
+                    No player data available.
+                </td>
+            </tr>
+        `;
+
+        return;
+    }
+
+
     players.forEach(function (player, index) {
 
         const row = document.createElement("tr");
@@ -134,6 +148,7 @@ function updatePositionChart(positionData) {
     const ratings = positionData.map(
         item => item.average_rating
     );
+
 
     new Chart(
         document.getElementById("positionChart"),
@@ -201,7 +216,21 @@ function updateUpcomingMatches(matches) {
             "upcoming-matches-container"
         );
 
+
     container.innerHTML = "";
+
+
+    if (!matches || matches.length === 0) {
+
+        container.innerHTML = `
+            <div class="loading">
+                No upcoming matches available.
+            </div>
+        `;
+
+        return;
+    }
+
 
     matches.forEach(function (match) {
 
@@ -209,27 +238,76 @@ function updateUpcomingMatches(matches) {
 
         item.className = "match-item";
 
+
+        /*
+         * Convert:
+         *
+         * logos/arsenal.png
+         *
+         * into:
+         *
+         * /static/core/images/logos/arsenal.png
+         */
+
+        const homeLogo = getLogoURL(
+            match.home_logo
+        );
+
+        const awayLogo = getLogoURL(
+            match.away_logo
+        );
+
+
         item.innerHTML = `
 
-            <div>
+            <div class="match-date">
+                ${formatDate(match.date)}
+            </div>
 
-                <div class="match-date">
-                    ${formatDate(match.date)}
+
+            <div class="match-teams">
+
+                <div class="match-team">
+
+                    ${createClubLogo(
+                        homeLogo,
+                        match.home_club
+                    )}
+
+                    <span>
+                        ${match.home_club}
+                    </span>
+
                 </div>
 
-                <div class="match-teams">
-                    ${match.home_club}
-                    vs
-                    ${match.away_club}
+
+                <div class="match-vs">
+                    VS
                 </div>
 
-                <div class="match-competition">
-                    ${match.competition}
+
+                <div class="match-team">
+
+                    ${createClubLogo(
+                        awayLogo,
+                        match.away_club
+                    )}
+
+                    <span>
+                        ${match.away_club}
+                    </span>
+
                 </div>
 
             </div>
 
+
+            <div class="match-competition">
+                ${match.competition}
+            </div>
+
         `;
+
 
         container.appendChild(item);
 
@@ -249,7 +327,21 @@ function updateRecentMatches(matches) {
             "recent-matches-container"
         );
 
+
     container.innerHTML = "";
+
+
+    if (!matches || matches.length === 0) {
+
+        container.innerHTML = `
+            <div class="loading">
+                No recent results available.
+            </div>
+        `;
+
+        return;
+    }
+
 
     matches.forEach(function (match) {
 
@@ -257,35 +349,70 @@ function updateRecentMatches(matches) {
 
         item.className = "match-item";
 
+
+        const homeLogo = getLogoURL(
+            match.home_logo
+        );
+
+        const awayLogo = getLogoURL(
+            match.away_logo
+        );
+
+
         item.innerHTML = `
 
-            <div>
+            <div class="match-date">
+                ${formatDate(match.date)}
+            </div>
 
-                <div class="match-date">
-                    ${formatDate(match.date)}
+
+            <div class="match-teams">
+
+                <div class="match-team">
+
+                    ${createClubLogo(
+                        homeLogo,
+                        match.home_club
+                    )}
+
+                    <span>
+                        ${match.home_club}
+                    </span>
+
                 </div>
 
-                <div class="match-teams">
-                    ${match.home_club}
-                    vs
-                    ${match.away_club}
+
+                <div class="match-score">
+
+                    ${match.home_goals}
+                    -
+                    ${match.away_goals}
+
                 </div>
 
-                <div class="match-competition">
-                    ${match.competition}
+
+                <div class="match-team">
+
+                    ${createClubLogo(
+                        awayLogo,
+                        match.away_club
+                    )}
+
+                    <span>
+                        ${match.away_club}
+                    </span>
+
                 </div>
 
             </div>
 
-            <div class="match-score">
 
-                ${match.home_goals}
-                -
-                ${match.away_goals}
-
+            <div class="match-competition">
+                ${match.competition}
             </div>
 
         `;
+
 
         container.appendChild(item);
 
@@ -295,7 +422,112 @@ function updateRecentMatches(matches) {
 
 
 /* =====================================
-   HELPERS
+   CLUB LOGO URL
+===================================== */
+
+function getLogoURL(logoPath) {
+
+    if (!logoPath) {
+        return null;
+    }
+
+
+    return `/static/core/images/${logoPath}`;
+
+}
+
+
+/* =====================================
+   CREATE CLUB LOGO
+===================================== */
+
+function createClubLogo(logoURL, clubName) {
+
+    if (!logoURL) {
+
+        return `
+            <div class="club-logo-fallback">
+                ${getClubInitials(clubName)}
+            </div>
+        `;
+
+    }
+
+
+    return `
+
+        <img
+            src="${logoURL}"
+            alt="${clubName} logo"
+            class="club-logo"
+            onerror="handleLogoError(this, '${getClubInitials(clubName)}')"
+        >
+
+    `;
+
+}
+
+
+/* =====================================
+   LOGO ERROR HANDLING
+===================================== */
+
+function handleLogoError(image, initials) {
+
+    image.style.display = "none";
+
+
+    const fallback =
+        document.createElement("div");
+
+    fallback.className =
+        "club-logo-fallback";
+
+    fallback.textContent =
+        initials;
+
+
+    image.parentNode.appendChild(
+        fallback
+    );
+
+}
+
+
+/* =====================================
+   CLUB INITIALS
+===================================== */
+
+function getClubInitials(clubName) {
+
+    if (!clubName) {
+        return "?";
+    }
+
+
+    const words =
+        clubName.trim().split(/\s+/);
+
+
+    if (words.length === 1) {
+
+        return words[0]
+            .substring(0, 2)
+            .toUpperCase();
+
+    }
+
+
+    return (
+        words[0].charAt(0) +
+        words[words.length - 1].charAt(0)
+    ).toUpperCase();
+
+}
+
+
+/* =====================================
+   POSITION FORMAT
 ===================================== */
 
 function formatPosition(position) {
@@ -314,6 +546,10 @@ function formatPosition(position) {
 }
 
 
+/* =====================================
+   DATE FORMAT
+===================================== */
+
 function formatDate(dateString) {
 
     const date = new Date(dateString);
@@ -330,7 +566,6 @@ function formatDate(dateString) {
 }
 
 
-
 /* =====================================
    LOGOUT
 ===================================== */
@@ -340,52 +575,68 @@ function setupLogout() {
     const logoutButton =
         document.getElementById("logout-btn");
 
+
     if (!logoutButton) {
         return;
     }
 
-    logoutButton.addEventListener("click", async function () {
 
-        try {
+    logoutButton.addEventListener(
+        "click",
+        async function () {
 
-            const response = await fetch(
-                "/api/auth/logout/",
-                {
-                    method: "POST"
+            try {
+
+                const response = await fetch(
+                    "/api/auth/logout/",
+                    {
+                        method: "POST"
+                    }
+                );
+
+
+                const data =
+                    await response.json();
+
+
+                if (data.success) {
+
+                    // Clear stored login information
+                    sessionStorage.clear();
+
+
+                    // Return to login page
+                    window.location.href =
+                        "/login/";
+
                 }
-            );
 
-            const data = await response.json();
+                else {
 
-            if (data.success) {
+                    alert(
+                        data.message ||
+                        "Logout failed."
+                    );
 
-                // Clear any stored login information
-                sessionStorage.clear();
+                }
 
-                // Go back to login page
-                window.location.href = "/login/";
+            }
 
-            } else {
+            catch (error) {
+
+                console.error(
+                    "Logout error:",
+                    error
+                );
+
 
                 alert(
-                    data.message || "Logout failed."
+                    "Unable to logout. Please try again."
                 );
 
             }
 
-        } catch (error) {
-
-            console.error(
-                "Logout error:",
-                error
-            );
-
-            alert(
-                "Unable to logout. Please try again."
-            );
-
         }
-
-    });
+    );
 
 }

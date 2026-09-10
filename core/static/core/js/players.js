@@ -25,7 +25,36 @@ async function loadPlayers() {
             throw new Error("Failed to load players");
         }
 
-        allPlayers = await response.json();
+        const data = await response.json();
+
+        /*
+         * Django REST Framework may return either:
+         *
+         * 1. Direct array:
+         *    [ {...}, {...} ]
+         *
+         * 2. Paginated response:
+         *    { "results": [ {...}, {...} ] }
+         */
+
+        if (Array.isArray(data)) {
+
+            allPlayers = data;
+
+        }
+
+        else if (Array.isArray(data.results)) {
+
+            allPlayers = data.results;
+
+        }
+
+        else {
+
+            throw new Error("Invalid player data format");
+
+        }
+
 
         populateClubFilter();
 
@@ -35,13 +64,19 @@ async function loadPlayers() {
 
     catch (error) {
 
-        console.error("Player loading error:", error);
+        console.error(
+            "Player loading error:",
+            error
+        );
 
         document.getElementById("players-grid").innerHTML = `
             <div class="no-results">
                 Unable to load player data.
             </div>
         `;
+
+        document.getElementById("results-count").textContent =
+            "Unable to load players.";
 
     }
 
@@ -57,6 +92,7 @@ function populateClubFilter() {
     const clubFilter =
         document.getElementById("club-filter");
 
+
     const clubs = [
         ...new Set(
             allPlayers
@@ -65,16 +101,20 @@ function populateClubFilter() {
         )
     ];
 
+
     clubs.sort();
+
 
     clubs.forEach(function (club) {
 
         const option =
             document.createElement("option");
 
+
         option.value = club;
 
         option.textContent = club;
+
 
         clubFilter.appendChild(option);
 
@@ -104,10 +144,12 @@ function setupFilters() {
         applyFilters
     );
 
+
     club.addEventListener(
         "change",
         applyFilters
     );
+
 
     position.addEventListener(
         "change",
@@ -124,7 +166,8 @@ function setupFilters() {
 function applyFilters() {
 
     const searchValue =
-        document.getElementById("player-search")
+        document
+            .getElementById("player-search")
             .value
             .trim()
             .toLowerCase();
@@ -142,14 +185,17 @@ function applyFilters() {
         allPlayers.filter(function (player) {
 
             const playerName =
-                player.name.toLowerCase();
+                (player.name || "").toLowerCase();
+
 
             const matchesSearch =
                 playerName.includes(searchValue);
 
+
             const matchesClub =
                 !selectedClub ||
                 player.club_name === selectedClub;
+
 
             const matchesPosition =
                 !selectedPosition ||
@@ -178,6 +224,7 @@ function displayPlayers(players) {
 
     const grid =
         document.getElementById("players-grid");
+
 
     const count =
         document.getElementById("results-count");
@@ -208,61 +255,95 @@ function displayPlayers(players) {
         const card =
             document.createElement("div");
 
+
         card.className = "player-card";
 
 
-        /* -----------------------------
-           Player Image
-        ----------------------------- */
+        /* =================================
+           PLAYER IMAGE
+        ================================= */
 
         let imageHTML;
 
 
         if (player.photo_path) {
 
+            /*
+             * photo_path stored in database:
+             *
+             * players/aaron_ramsdale.png
+             *
+             * Browser URL:
+             *
+             * /static/core/images/players/aaron_ramsdale.png
+             */
+
+            const imageURL =
+                `/static/core/images/${player.photo_path}`;
+
+
             imageHTML = `
                 <img
-                    src="${player.photo_path}"
+                    src="${imageURL}"
                     alt="${player.name}"
+                    class="player-photo"
+                    onerror="handleImageError(this)"
                 >
+
+                <span
+                    class="player-initial"
+                    style="display: none;"
+                >
+                    ${getPlayerInitial(player.name)}
+                </span>
             `;
 
         }
 
         else {
 
+            /*
+             * No photo path available
+             */
+
             imageHTML = `
                 <span class="player-initial">
-                    ${player.name.charAt(0).toUpperCase()}
+                    ${getPlayerInitial(player.name)}
                 </span>
             `;
 
         }
 
 
-        /* -----------------------------
-           Player Card
-        ----------------------------- */
+        /* =================================
+           PLAYER CARD
+        ================================= */
 
         card.innerHTML = `
 
             <div class="player-image">
+
                 ${imageHTML}
+
             </div>
+
 
             <div class="player-info">
 
                 <div class="player-name">
-                    ${player.name}
+                    ${player.name || "Unknown Player"}
                 </div>
 
+
                 <div class="player-club">
-                    ${player.club_name}
+                    ${player.club_name || "Unknown Club"}
                 </div>
+
 
                 <span class="player-position">
                     ${formatPosition(player.position)}
                 </span>
+
 
                 <a
                     href="/players/${player.id}/"
@@ -279,6 +360,53 @@ function displayPlayers(players) {
         grid.appendChild(card);
 
     });
+
+}
+
+
+/* =====================================
+   IMAGE ERROR HANDLER
+===================================== */
+
+function handleImageError(imageElement) {
+
+    /*
+     * If the actual image file does not exist,
+     * hide the broken image and show the
+     * player's initial instead.
+     */
+
+    imageElement.style.display = "none";
+
+
+    const fallback =
+        imageElement.nextElementSibling;
+
+
+    if (fallback) {
+
+        fallback.style.display = "flex";
+
+    }
+
+}
+
+
+/* =====================================
+   PLAYER INITIAL
+===================================== */
+
+function getPlayerInitial(name) {
+
+    if (!name) {
+        return "?";
+    }
+
+
+    return name
+        .trim()
+        .charAt(0)
+        .toUpperCase();
 
 }
 
@@ -301,7 +429,8 @@ function formatPosition(position) {
 
     };
 
-    return positions[position] || position;
+
+    return positions[position] || position || "Unknown";
 
 }
 
@@ -344,6 +473,7 @@ function setupLogout() {
 
                     sessionStorage.clear();
 
+
                     window.location.href =
                         "/login/";
 
@@ -366,6 +496,7 @@ function setupLogout() {
                     "Logout error:",
                     error
                 );
+
 
                 alert(
                     "Unable to logout. Please try again."

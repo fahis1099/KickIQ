@@ -81,6 +81,34 @@ body {
 
 
 /* =====================================
+   NAVIGATION BUTTON
+===================================== */
+
+.nav-btn {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background: #ffffff;
+    color: #1f2937;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+
+    border: 1px solid #e5e7eb;
+}
+
+.nav-btn:hover {
+    background: #f3f4f6;
+}
+
+
+/* =====================================
    PAGE HEADING
 ===================================== */
 
@@ -101,7 +129,7 @@ body {
 
 /* =========================================
    PERFORMANCE SUMMARY
-   ========================================= */
+========================================= */
 
 .summary-grid {
     display: grid;
@@ -194,6 +222,7 @@ body {
     color: #111827;
 }
 
+
 .card-value {
     font-size: 30px;
     font-weight: 700;
@@ -201,8 +230,10 @@ body {
     margin-top: 10px;
 }
 
+
 .card-description {
     font-size: 12px;
+
     color: #9ca3af;
 
     margin-top: 5px;
@@ -234,6 +265,7 @@ body {
     background: white;
 
     border: 1px solid #e5e7eb;
+
     border-radius: 12px;
 
     padding: 22px;
@@ -241,17 +273,22 @@ body {
     min-width: 0;
 }
 
+
 .section-header {
     margin-bottom: 20px;
 }
 
+
 .section-header h3 {
     font-size: 18px;
+
     margin-bottom: 5px;
 }
 
+
 .section-header p {
     font-size: 12px;
+
     color: #9ca3af;
 }
 
@@ -262,20 +299,25 @@ body {
 
 .table-wrapper {
     width: 100%;
+
     overflow-x: auto;
 }
 
+
 table {
     width: 100%;
+
     border-collapse: collapse;
 
     font-size: 13px;
 }
 
+
 th {
     text-align: left;
 
     font-size: 11px;
+
     color: #6b7280;
 
     padding: 10px;
@@ -283,19 +325,23 @@ th {
     border-bottom: 1px solid #e5e7eb;
 }
 
+
 td {
     padding: 13px 10px;
 
     border-bottom: 1px solid #f0f1f2;
 }
 
+
 tbody tr:last-child td {
     border-bottom: none;
 }
 
+
 .player-name {
     font-weight: 600;
 }
+
 
 .rating {
     font-weight: 700;
@@ -310,6 +356,7 @@ tbody tr:last-child td {
     position: relative;
 
     width: 100%;
+
     height: 300px;
 }
 
@@ -321,40 +368,192 @@ tbody tr:last-child td {
 .match-item {
     display: flex;
 
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 
-    padding: 15px 0;
+    padding: 16px 0;
 
     border-bottom: 1px solid #f0f1f2;
 }
+
 
 .match-item:last-child {
     border-bottom: none;
 }
 
+
+/* =====================================
+   MATCH DATE
+===================================== */
+
 .match-date {
     font-size: 11px;
+
     color: #9ca3af;
 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+
+    text-align: center;
 }
+
+
+/* =====================================
+   MATCH TEAMS
+===================================== */
 
 .match-teams {
-    font-size: 13px;
-    font-weight: 600;
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    width: 100%;
 }
 
-.match-score {
-    font-size: 17px;
+
+/* =====================================
+   INDIVIDUAL TEAM
+===================================== */
+
+.match-team {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 120px;
+
+    min-width: 0;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =====================================
+   CLUB LOGO
+===================================== */
+
+.club-logo {
+    width: 48px;
+
+    height: 48px;
+
+    object-fit: contain;
+
+    margin-bottom: 8px;
+
+    display: block;
+}
+
+
+/* =====================================
+   LOGO FALLBACK
+===================================== */
+
+.club-logo-fallback {
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 8px;
+
+    background: #f1f5f9;
+
+    border: 1px solid #e5e7eb;
+
+    color: #475569;
+
+    font-size: 13px;
+
     font-weight: 700;
 }
 
+
+/* =====================================
+   VS
+===================================== */
+
+.match-vs {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    color: #6b7280;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================
+   SCORE
+===================================== */
+
+.match-score {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    min-width: 55px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* =====================================
+   COMPETITION
+===================================== */
+
 .match-competition {
     font-size: 11px;
+
     color: #9ca3af;
 
-    margin-top: 4px;
+    margin-top: 10px;
+
+    text-align: center;
 }
 
 
@@ -374,129 +573,25 @@ tbody tr:last-child td {
 
 
 /* =====================================
-   RESPONSIVE
-===================================== */
-
-@media (max-width: 1100px) {
-
-    .summary-grid {
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-    }
-
-    .dashboard-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-@media (max-width: 700px) {
-
-    .dashboard-container {
-        padding: 0 15px 30px;
-    }
-
-    .dashboard-header {
-        align-items: flex-start;
-
-        padding: 18px 0;
-
-        gap: 15px;
-    }
-
-    .header-right {
-        flex-direction: column;
-        align-items: flex-end;
-
-        gap: 8px;
-    }
-
-    .welcome {
-        font-size: 12px;
-    }
-
-    .summary-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap: 12px;
-    }
-
-    .summary-card {
-        padding: 15px;
-        min-height: 110px;
-    }
-
-    .card-value {
-        font-size: 24px;
-    }
-
-    .dashboard-card {
-        padding: 16px;
-    }
-
-    .page-heading h2 {
-        font-size: 21px;
-    }
-
-    .chart-container {
-        height: 250px;
-    }
-}
-
-
-@media (max-width: 450px) {
-
-    .summary-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .dashboard-header {
-        flex-direction: column;
-    }
-
-    .header-right {
-        width: 100%;
-
-        flex-direction: row;
-
-        justify-content: space-between;
-        align-items: center;
-    }
-
-}
-.nav-btn {
-    display: inline-block;
-    padding: 10px 18px;
-    background: #ffffff;
-    color: #1f2937;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: 0.2s;
-}
-
-.nav-btn:hover {
-    background: #f3f4f6;
-}
-
-/* =========================================
    POSITION-SPECIFIC PERFORMANCE
-   ========================================= */
+===================================== */
 
 .position-analysis-card {
     margin-top: 28px;
+
     padding: 24px;
 
     background: #ffffff;
 
     border: 1px solid #e6eaf0;
+
     border-radius: 14px;
 
     box-shadow:
         0 4px 18px rgba(15, 23, 42, 0.06);
 
     position: relative;
+
     overflow: hidden;
 }
 
@@ -509,7 +604,9 @@ tbody tr:last-child td {
     position: absolute;
 
     top: 0;
+
     left: 0;
+
     right: 0;
 
     height: 4px;
@@ -529,14 +626,17 @@ tbody tr:last-child td {
     margin-bottom: 22px;
 }
 
+
 .position-analysis-card .chart-header h3 {
     margin: 0 0 6px;
 
     font-size: 21px;
+
     font-weight: 700;
 
     color: #111827;
 }
+
 
 .position-analysis-card .chart-header p {
     margin: 0;
@@ -579,6 +679,7 @@ tbody tr:last-child td {
     min-height: 105px;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
@@ -610,7 +711,9 @@ tbody tr:last-child td {
     position: absolute;
 
     left: 0;
+
     top: 18px;
+
     bottom: 18px;
 
     width: 3px;
@@ -627,6 +730,7 @@ tbody tr:last-child td {
     display: block;
 
     margin-left: 7px;
+
     margin-bottom: 8px;
 
     font-size: 12px;
@@ -657,15 +761,206 @@ tbody tr:last-child td {
     color: #111827;
 }
 
-@media (max-width: 700px) {
 
-    .position-metrics-grid {
-        grid-template-columns: repeat(2, 1fr);
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 1100px) {
+
+    .summary-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
     }
 
 }
 
+
+@media (max-width: 700px) {
+
+    .dashboard-container {
+        padding: 0 15px 30px;
+    }
+
+
+    .dashboard-header {
+        align-items: flex-start;
+
+        padding: 18px 0;
+
+        gap: 15px;
+    }
+
+
+    .header-right {
+        flex-direction: column;
+
+        align-items: flex-end;
+
+        gap: 8px;
+    }
+
+
+    .welcome {
+        font-size: 12px;
+    }
+
+
+    .summary-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+
+    .summary-card {
+        padding: 15px;
+
+        min-height: 110px;
+    }
+
+
+    .card-value {
+        font-size: 24px;
+    }
+
+
+    .dashboard-card {
+        padding: 16px;
+    }
+
+
+    .page-heading h2 {
+        font-size: 21px;
+    }
+
+
+    .chart-container {
+        height: 250px;
+    }
+
+
+    /* Match layout */
+
+    .match-teams {
+        gap: 10px;
+    }
+
+
+    .match-team {
+        width: 100px;
+
+        font-size: 12px;
+    }
+
+
+    .club-logo {
+        width: 42px;
+
+        height: 42px;
+    }
+
+
+    .club-logo-fallback {
+        width: 42px;
+
+        height: 42px;
+    }
+
+
+    .match-vs {
+        width: 30px;
+
+        height: 30px;
+    }
+
+
+    .match-score {
+        font-size: 16px;
+    }
+
+
+    .position-metrics-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
 @media (max-width: 450px) {
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .dashboard-header {
+        flex-direction: column;
+    }
+
+
+    .header-right {
+        width: 100%;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+    }
+
+
+    /* Match layout */
+
+    .match-teams {
+        gap: 5px;
+    }
+
+
+    .match-team {
+        width: 85px;
+
+        font-size: 11px;
+    }
+
+
+    .club-logo {
+        width: 38px;
+
+        height: 38px;
+    }
+
+
+    .club-logo-fallback {
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 11px;
+    }
+
+
+    .match-vs {
+        width: 27px;
+
+        height: 27px;
+
+        font-size: 9px;
+    }
+
+
+    .match-score {
+        min-width: 45px;
+
+        font-size: 15px;
+    }
+
 
     .position-metrics-grid {
         grid-template-columns: 1fr;
