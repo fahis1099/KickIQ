@@ -2,12 +2,19 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>KickIQ | Login</title>
 
+
     <style>
+
+        /* ==================================
+           GLOBAL
+        ================================== */
 
         * {
             margin: 0;
@@ -15,8 +22,14 @@
             box-sizing: border-box;
         }
 
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
             min-height: 100vh;
 
             background:
@@ -27,7 +40,9 @@
                 );
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             color: #1f2937;
@@ -39,7 +54,9 @@
         ================================== */
 
         .login-container {
+
             width: 100%;
+
             max-width: 1050px;
 
             min-height: 620px;
@@ -47,7 +64,9 @@
             margin: 25px;
 
             display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
+
+            grid-template-columns:
+                1.1fr 0.9fr;
 
             background: white;
 
@@ -56,15 +75,17 @@
             overflow: hidden;
 
             box-shadow:
-                0 25px 60px rgba(0, 0, 0, 0.3);
+                0 25px 60px
+                rgba(0, 0, 0, 0.3);
         }
 
 
         /* ==================================
-           LEFT SIDE
+           LEFT INFORMATION PANEL
         ================================== */
 
         .login-info {
+
             background:
                 linear-gradient(
                     145deg,
@@ -78,13 +99,21 @@
             padding: 60px;
 
             display: flex;
+
             flex-direction: column;
+
             justify-content: center;
         }
 
 
+        /* ==================================
+           LOGO
+        ================================== */
+
         .logo {
+
             font-size: 38px;
+
             font-weight: bold;
 
             margin-bottom: 30px;
@@ -92,11 +121,17 @@
 
 
         .logo span {
+
             color: #86efac;
         }
 
 
+        /* ==================================
+           LEFT HEADING
+        ================================== */
+
         .login-info h1 {
+
             font-size: 42px;
 
             line-height: 1.15;
@@ -106,6 +141,7 @@
 
 
         .login-info p {
+
             color: #dcfce7;
 
             font-size: 17px;
@@ -116,7 +152,12 @@
         }
 
 
+        /* ==================================
+           FEATURE LIST
+        ================================== */
+
         .feature-list {
+
             margin-top: 35px;
 
             list-style: none;
@@ -124,9 +165,11 @@
 
 
         .feature-list li {
+
             margin-bottom: 16px;
 
             display: flex;
+
             align-items: center;
 
             gap: 12px;
@@ -136,33 +179,47 @@
 
 
         .feature-icon {
+
             width: 30px;
+
             height: 30px;
 
             border-radius: 50%;
 
-            background: rgba(255, 255, 255, 0.15);
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.15
+                );
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
         }
 
 
         /* ==================================
-           RIGHT SIDE
+           RIGHT LOGIN PANEL
         ================================== */
 
         .login-form-container {
+
             padding: 60px 55px;
 
             display: flex;
+
             flex-direction: column;
+
             justify-content: center;
         }
 
 
         .login-form-container h2 {
+
             font-size: 30px;
 
             margin-bottom: 10px;
@@ -170,11 +227,14 @@
 
 
         .subtitle {
+
             color: #6b7280;
 
             margin-bottom: 35px;
 
             font-size: 15px;
+
+            line-height: 1.5;
         }
 
 
@@ -183,11 +243,13 @@
         ================================== */
 
         .form-group {
+
             margin-bottom: 22px;
         }
 
 
         .form-group label {
+
             display: block;
 
             font-size: 14px;
@@ -199,11 +261,13 @@
 
 
         .form-group input {
+
             width: 100%;
 
             padding: 14px 15px;
 
-            border: 1px solid #d1d5db;
+            border:
+                1px solid #d1d5db;
 
             border-radius: 9px;
 
@@ -216,10 +280,17 @@
 
 
         .form-group input:focus {
+
             border-color: #16a34a;
 
             box-shadow:
-                0 0 0 3px rgba(22, 163, 74, 0.12);
+                0 0 0 3px
+                rgba(
+                    22,
+                    163,
+                    74,
+                    0.12
+                );
         }
 
 
@@ -228,22 +299,27 @@
         ================================== */
 
         .password-wrapper {
+
             position: relative;
         }
 
 
         .password-wrapper input {
+
             padding-right: 50px;
         }
 
 
         .toggle-password {
+
             position: absolute;
 
             right: 14px;
+
             top: 50%;
 
-            transform: translateY(-50%);
+            transform:
+                translateY(-50%);
 
             border: none;
 
@@ -254,14 +330,23 @@
             font-size: 18px;
 
             color: #6b7280;
+
+            padding: 4px;
+        }
+
+
+        .toggle-password:hover {
+
+            color: #374151;
         }
 
 
         /* ==================================
-           USER LOGIN BUTTON
+           LOGIN BUTTON
         ================================== */
 
         .login-button {
+
             width: 100%;
 
             padding: 14px;
@@ -287,11 +372,13 @@
 
 
         .login-button:hover {
+
             background: #15803d;
         }
 
 
         .login-button:disabled {
+
             background: #86efac;
 
             cursor: not-allowed;
@@ -303,6 +390,7 @@
         ================================== */
 
         .message {
+
             display: none;
 
             padding: 12px 14px;
@@ -312,10 +400,13 @@
             margin-bottom: 20px;
 
             font-size: 14px;
+
+            line-height: 1.5;
         }
 
 
         .message.error {
+
             display: block;
 
             background: #fee2e2;
@@ -325,6 +416,7 @@
 
 
         .message.success {
+
             display: block;
 
             background: #dcfce7;
@@ -338,6 +430,7 @@
         ================================== */
 
         .register-text {
+
             text-align: center;
 
             margin-top: 25px;
@@ -349,6 +442,7 @@
 
 
         .register-text a {
+
             color: #16a34a;
 
             font-weight: bold;
@@ -358,90 +452,8 @@
 
 
         .register-text a:hover {
+
             text-decoration: underline;
-        }
-
-
-        /* ==================================
-           ADMIN LOGIN DIVIDER
-        ================================== */
-
-        .admin-login-divider {
-            display: flex;
-
-            align-items: center;
-
-            gap: 10px;
-
-            margin: 22px 0 15px;
-
-            color: #9ca3af;
-
-            font-size: 13px;
-        }
-
-
-        .admin-login-divider::before,
-        .admin-login-divider::after {
-            content: "";
-
-            flex: 1;
-
-            height: 1px;
-
-            background: #e5e7eb;
-        }
-
-
-        .admin-login-divider span {
-            padding: 0 5px;
-        }
-
-
-        /* ==================================
-           ADMIN LOGIN BUTTON
-        ================================== */
-
-        .admin-login-link {
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            width: 100%;
-
-            min-height: 44px;
-
-            padding: 11px 15px;
-
-            border: 1px solid #374151;
-
-            border-radius: 9px;
-
-            background: transparent;
-
-            color: #374151;
-
-            text-decoration: none;
-
-            font-size: 14px;
-
-            font-weight: bold;
-
-            transition:
-                background 0.2s,
-                color 0.2s,
-                border-color 0.2s;
-        }
-
-
-        .admin-login-link:hover {
-            background: #374151;
-
-            color: white;
-
-            border-color: #374151;
         }
 
 
@@ -452,6 +464,7 @@
         @media (max-width: 800px) {
 
             .login-container {
+
                 grid-template-columns: 1fr;
 
                 max-width: 500px;
@@ -461,11 +474,13 @@
 
 
             .login-info {
+
                 display: none;
             }
 
 
             .login-form-container {
+
                 padding: 45px 35px;
             }
         }
@@ -474,6 +489,7 @@
         @media (max-width: 450px) {
 
             .login-container {
+
                 margin: 15px;
 
                 border-radius: 15px;
@@ -481,17 +497,14 @@
 
 
             .login-form-container {
+
                 padding: 35px 25px;
             }
 
 
             .login-form-container h2 {
+
                 font-size: 26px;
-            }
-
-
-            .admin-login-link {
-                min-height: 46px;
             }
         }
 
@@ -499,11 +512,13 @@
         @media (max-width: 350px) {
 
             .login-container {
+
                 margin: 10px;
             }
 
 
             .login-form-container {
+
                 padding: 30px 20px;
             }
         }
@@ -516,353 +531,628 @@
 <body>
 
 
-<div class="login-container">
-
-
     <!-- ==================================
-         LEFT INFORMATION PANEL
+         MAIN LOGIN CONTAINER
     ================================== -->
 
-    <div class="login-info">
-
-        <div class="logo">
-            Kick<span>IQ</span>
-        </div>
+    <div class="login-container">
 
 
-        <h1>
-            Smarter Football
-            Decisions.
-        </h1>
+        <!-- ==================================
+             LEFT INFORMATION PANEL
+        ================================== -->
+
+        <div class="login-info">
 
 
-        <p>
-            Analyse player performance, understand
-            trends and make data-driven football
-            decisions with KickIQ.
-        </p>
+            <div class="logo">
 
-
-        <ul class="feature-list">
-
-            <li>
-                <span class="feature-icon">✓</span>
-                Player performance analytics
-            </li>
-
-
-            <li>
-                <span class="feature-icon">✓</span>
-                Match-by-match statistics
-            </li>
-
-
-            <li>
-                <span class="feature-icon">✓</span>
-                Performance trends and insights
-            </li>
-
-
-            <li>
-                <span class="feature-icon">✓</span>
-                AI-powered decision support
-            </li>
-
-        </ul>
-
-    </div>
-
-
-    <!-- ==================================
-         LOGIN FORM
-    ================================== -->
-
-    <div class="login-form-container">
-
-        <h2>
-            Welcome Back
-        </h2>
-
-
-        <p class="subtitle">
-            Sign in to access your KickIQ dashboard.
-        </p>
-
-
-        <div
-            id="message"
-            class="message"
-        ></div>
-
-
-        <form id="loginForm">
-
-
-            <!-- Username -->
-
-            <div class="form-group">
-
-                <label for="username">
-                    Username
-                </label>
-
-                <input
-                    type="text"
-                    id="username"
-                    name="username"
-                    placeholder="Enter your username"
-                    required
-                >
+                Kick<span>IQ</span>
 
             </div>
 
 
-            <!-- Password -->
+            <h1>
 
-            <div class="form-group">
+                Smarter Football
+                Decisions.
 
-                <label for="password">
-                    Password
-                </label>
+            </h1>
 
 
-                <div class="password-wrapper">
+            <p>
+
+                Analyse player performance,
+                understand trends and make
+                data-driven football decisions
+                with KickIQ.
+
+            </p>
+
+
+            <ul class="feature-list">
+
+
+                <li>
+
+                    <span class="feature-icon">
+                        ✓
+                    </span>
+
+                    Player performance analytics
+
+                </li>
+
+
+                <li>
+
+                    <span class="feature-icon">
+                        ✓
+                    </span>
+
+                    Match-by-match statistics
+
+                </li>
+
+
+                <li>
+
+                    <span class="feature-icon">
+                        ✓
+                    </span>
+
+                    Performance trends and insights
+
+                </li>
+
+
+                <li>
+
+                    <span class="feature-icon">
+                        ✓
+                    </span>
+
+                    AI-powered decision support
+
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+
+        <!-- ==================================
+             RIGHT LOGIN FORM
+        ================================== -->
+
+        <div class="login-form-container">
+
+
+            <h2>
+
+                Welcome Back
+
+            </h2>
+
+
+            <p class="subtitle">
+
+                Sign in to access your KickIQ dashboard.
+
+            </p>
+
+
+            <!-- ==================================
+                 MESSAGE
+            ================================== -->
+
+            <div
+                id="message"
+                class="message"
+            ></div>
+
+
+            <!-- ==================================
+                 LOGIN FORM
+            ================================== -->
+
+            <form id="loginForm">
+
+
+                <!-- ==================================
+                     USERNAME
+                ================================== -->
+
+                <div class="form-group">
+
+
+                    <label for="username">
+
+                        Username
+
+                    </label>
+
 
                     <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Enter your password"
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username"
+                        autocomplete="username"
                         required
                     >
 
 
-                    <button
-                        type="button"
-                        class="toggle-password"
-                        onclick="togglePassword()"
-                    >
-                        👁
-                    </button>
+                </div>
+
+
+                <!-- ==================================
+                     PASSWORD
+                ================================== -->
+
+                <div class="form-group">
+
+
+                    <label for="password">
+
+                        Password
+
+                    </label>
+
+
+                    <div class="password-wrapper">
+
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            id="togglePasswordButton"
+                            onclick="togglePassword()"
+                            aria-label="Show password"
+                        >
+
+                            👁
+
+                        </button>
+
+
+                    </div>
+
 
                 </div>
+
+
+                <!-- ==================================
+                     LOGIN BUTTON
+                ================================== -->
+
+                <button
+                    type="submit"
+                    class="login-button"
+                    id="loginButton"
+                >
+
+                    Sign In
+
+                </button>
+
+
+            </form>
+
+
+            <!-- ==================================
+                 REGISTER
+            ================================== -->
+
+            <div class="register-text">
+
+
+                Don't have an account?
+
+
+                <a href="/register/">
+
+                    Create an account
+
+                </a>
+
 
             </div>
 
 
-            <button
-                type="submit"
-                class="login-button"
-                id="loginButton"
-            >
-                Sign In
-            </button>
-
-
-        </form>
-
-
-        <!-- Register -->
-
-        <div class="register-text">
-
-            Don't have an account?
-
-            <a href="/register/">
-                Create an account
-            </a>
-
         </div>
-
-
-        <!-- Admin Login -->
-
-        <div class="admin-login-divider">
-            <span>Admin access</span>
-        </div>
-
-
-        <a
-            href="/admin/login/"
-            class="admin-login-link"
-        >
-            🔐 Admin Login
-        </a>
-
 
     </div>
 
-</div>
+
+    <!-- ==================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script>
 
 
-<script>
+        /* ==================================
+           PASSWORD VISIBILITY
+        ================================== */
 
-    function togglePassword() {
-
-        const password =
-            document.getElementById("password");
-
-        const button =
-            document.querySelector(
-                ".toggle-password"
-            );
+        function togglePassword() {
 
 
-        if (password.type === "password") {
+            const password =
+                document.getElementById(
+                    "password"
+                );
 
-            password.type = "text";
 
-            button.textContent = "🙈";
+            const button =
+                document.getElementById(
+                    "togglePasswordButton"
+                );
 
-        } else {
 
-            password.type = "password";
+            if (
+                password.type === "password"
+            ) {
 
-            button.textContent = "👁";
+
+                password.type = "text";
+
+
+                button.textContent = "🙈";
+
+
+                button.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+
+            } else {
+
+
+                password.type = "password";
+
+
+                button.textContent = "👁";
+
+
+                button.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+
+            }
+
         }
-    }
 
 
-    function showMessage(message, type) {
+        /* ==================================
+           SHOW MESSAGE
+        ================================== */
 
-        const element =
-            document.getElementById("message");
-
-        element.textContent = message;
-
-        element.className =
-            `message ${type}`;
-    }
+        function showMessage(
+            message,
+            type
+        ) {
 
 
-    document
-        .getElementById("loginForm")
-        .addEventListener(
-            "submit",
-            async function(event) {
-
-                event.preventDefault();
+            const element =
+                document.getElementById(
+                    "message"
+                );
 
 
-                const username =
+            element.textContent =
+                message;
+
+
+            element.className =
+                `message ${type}`;
+
+        }
+
+
+        /* ==================================
+           LOGIN FORM
+        ================================== */
+
+        document
+            .getElementById("loginForm")
+            .addEventListener(
+                "submit",
+                async function(event) {
+
+
+                    event.preventDefault();
+
+
+                    /* ------------------------------
+                       GET FORM VALUES
+                    ------------------------------ */
+
+                    const username =
+                        document
+                            .getElementById(
+                                "username"
+                            )
+                            .value
+                            .trim();
+
+
+                    const password =
+                        document
+                            .getElementById(
+                                "password"
+                            )
+                            .value;
+
+
+                    const loginButton =
+                        document.getElementById(
+                            "loginButton"
+                        );
+
+
+                    /* ------------------------------
+                       CLIENT-SIDE VALIDATION
+                    ------------------------------ */
+
+                    if (!username) {
+
+
+                        showMessage(
+                            "Please enter your username.",
+                            "error"
+                        );
+
+
+                        return;
+
+                    }
+
+
+                    if (!password) {
+
+
+                        showMessage(
+                            "Please enter your password.",
+                            "error"
+                        );
+
+
+                        return;
+
+                    }
+
+
+                    /* ------------------------------
+                       DISABLE BUTTON
+                    ------------------------------ */
+
+                    loginButton.disabled =
+                        true;
+
+
+                    loginButton.textContent =
+                        "Signing in...";
+
+
+                    /* Clear previous message */
+
                     document
-                        .getElementById("username")
-                        .value
-                        .trim();
+                        .getElementById("message")
+                        .className = "message";
 
 
-                const password =
-                    document
-                        .getElementById("password")
-                        .value;
+                    try {
 
 
-                const loginButton =
-                    document.getElementById(
-                        "loginButton"
-                    );
+                        /* --------------------------
+                           CREATE FORM DATA
+                        -------------------------- */
+
+                        const formData =
+                            new URLSearchParams();
 
 
-                loginButton.disabled = true;
-
-                loginButton.textContent =
-                    "Signing in...";
-
-
-                try {
-
-                    // Create form data
-
-                    const formData =
-                        new URLSearchParams();
+                        formData.append(
+                            "username",
+                            username
+                        );
 
 
-                    formData.append(
-                        "username",
-                        username
-                    );
+                        formData.append(
+                            "password",
+                            password
+                        );
 
 
-                    formData.append(
-                        "password",
-                        password
-                    );
+                        /* --------------------------
+                           SEND LOGIN REQUEST
+                        -------------------------- */
+
+                        const response =
+                            await fetch(
+                                "/api/auth/login/",
+                                {
+
+                                    method: "POST",
+
+                                    headers: {
+
+                                        "Content-Type":
+                                            "application/x-www-form-urlencoded"
+
+                                    },
+
+                                    body: formData,
+
+                                    credentials:
+                                        "same-origin"
+
+                                }
+                            );
 
 
-                    // Send request to Django
+                        /* --------------------------
+                           READ RESPONSE
+                        -------------------------- */
 
-                    const response =
-                        await fetch(
-                            "/api/auth/login/",
-                            {
-                                method: "POST",
+                        const data =
+                            await response.json();
 
-                                headers: {
-                                    "Content-Type":
-                                        "application/x-www-form-urlencoded"
+
+                        console.log(
+                            "Login response:",
+                            data
+                        );
+
+
+                        /* --------------------------
+                           SUCCESS
+                        -------------------------- */
+
+                        if (
+                            response.ok &&
+                            data.success
+                        ) {
+
+
+                            showMessage(
+                                "Login successful. Redirecting...",
+                                "success"
+                            );
+
+
+                            /* ----------------------
+                               STORE NON-SENSITIVE
+                               USER INFORMATION
+                            ---------------------- */
+
+                            sessionStorage.setItem(
+                                "kickiq_user_id",
+                                data.user_id
+                            );
+
+
+                            sessionStorage.setItem(
+                                "kickiq_username",
+                                data.username
+                            );
+
+
+                            /* ----------------------
+                               ROLE-BASED REDIRECT
+
+                               Django decides the
+                               user's role.
+
+                               Admin/staff:
+                               /admin/
+
+                               Normal user:
+                               /dashboard/
+                            ---------------------- */
+
+                            setTimeout(
+                                function() {
+
+
+                                    if (
+                                        data.redirect_url
+                                    ) {
+
+
+                                        window.location.href =
+                                            data.redirect_url;
+
+
+                                    } else {
+
+
+                                        /*
+                                         * Fallback in case
+                                         * redirect_url is
+                                         * missing.
+                                         */
+
+                                        if (
+                                            data.role ===
+                                            "admin"
+                                        ) {
+
+
+                                            window.location.href =
+                                                "/admin/";
+
+
+                                        } else {
+
+
+                                            window.location.href =
+                                                "/dashboard/";
+
+                                        }
+
+                                    }
+
                                 },
+                                500
+                            );
 
-                                body: formData,
 
-                                credentials:
-                                    "same-origin"
-                            }
+                        } else {
+
+
+                            /* ----------------------
+                               LOGIN FAILED
+                            ---------------------- */
+
+                            showMessage(
+                                data.message ||
+                                "Invalid username or password.",
+                                "error"
+                            );
+
+
+                            loginButton.disabled =
+                                false;
+
+
+                            loginButton.textContent =
+                                "Sign In";
+
+                        }
+
+
+                    } catch (error) {
+
+
+                        /* --------------------------
+                           SERVER / NETWORK ERROR
+                        -------------------------- */
+
+                        console.error(
+                            "Login error:",
+                            error
                         );
 
-
-                    const data =
-                        await response.json();
-
-
-                    console.log(
-                        "Login response:",
-                        data
-                    );
-
-
-                    if (
-                        response.ok &&
-                        data.success
-                    ) {
 
                         showMessage(
-                            "Login successful. Redirecting...",
-                            "success"
-                        );
-
-
-                        // Store non-sensitive user information
-
-                        sessionStorage.setItem(
-                            "kickiq_user_id",
-                            data.user_id
-                        );
-
-
-                        sessionStorage.setItem(
-                            "kickiq_username",
-                            data.username
-                        );
-
-
-                        // Redirect to user dashboard
-
-                        setTimeout(
-                            function() {
-
-                                window.location.href =
-                                    "/dashboard/";
-
-                            },
-                            500
-                        );
-
-
-                    } else {
-
-                        showMessage(
-                            data.message ||
-                            "Invalid username or password.",
+                            "Unable to connect to the server. Please try again.",
                             "error"
                         );
 
@@ -870,37 +1160,18 @@
                         loginButton.disabled =
                             false;
 
+
                         loginButton.textContent =
                             "Sign In";
+
                     }
 
-
-                } catch (error) {
-
-                    console.error(
-                        "Login error:",
-                        error
-                    );
-
-
-                    showMessage(
-                        "Unable to connect to the server. Please try again.",
-                        "error"
-                    );
-
-
-                    loginButton.disabled =
-                        false;
-
-                    loginButton.textContent =
-                        "Sign In";
                 }
+            );
 
-            }
-        );
-
-</script>
+    </script>
 
 
 </body>
+
 </html>

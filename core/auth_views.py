@@ -96,8 +96,25 @@ def register_view(request):
 @require_POST
 def login_view(request):
 
-    username = request.POST.get("username")
-    password = request.POST.get("password")
+    username = request.POST.get("username", "").strip()
+    password = request.POST.get("password", "")
+
+    # ------------------------------------------
+    # Required field validation
+    # ------------------------------------------
+
+    if not username or not password:
+        return JsonResponse(
+            {
+                "success": False,
+                "message": "Username and password are required."
+            },
+            status=400
+        )
+
+    # ------------------------------------------
+    # Authenticate user
+    # ------------------------------------------
 
     user = authenticate(
         request,
@@ -114,6 +131,10 @@ def login_view(request):
             status=401
         )
 
+    # ------------------------------------------
+    # Active account check
+    # ------------------------------------------
+
     if not user.is_active:
         return JsonResponse(
             {
@@ -123,7 +144,26 @@ def login_view(request):
             status=403
         )
 
+    # ------------------------------------------
+    # Create login session
+    # ------------------------------------------
+
     login(request, user)
+
+    # ------------------------------------------
+    # Determine user role
+    # ------------------------------------------
+
+    if user.is_staff:
+        role = "admin"
+        redirect_url = "/admin/"
+    else:
+        role = "user"
+        redirect_url = "/dashboard/"
+
+    # ------------------------------------------
+    # Response
+    # ------------------------------------------
 
     return JsonResponse(
         {
@@ -131,6 +171,8 @@ def login_view(request):
             "message": "Login successful.",
             "user_id": user.id,
             "username": user.username,
+            "role": role,
+            "redirect_url": redirect_url,
         }
     )
 
