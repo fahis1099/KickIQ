@@ -18,6 +18,10 @@ from .models import (
 admin.site.site_header = "KickIQ Administration"
 admin.site.site_title = "KickIQ Admin"
 admin.site.index_title = "Football Performance Management"
+
+# View site button → KickIQ website dashboard
+admin.site.site_url = "/dashboard/"
+
 admin.site.logout_template = "admin/logout.html"
 
 
@@ -221,6 +225,7 @@ def custom_admin_urls():
 
 admin.site.get_urls = custom_admin_urls
 
+
 # =========================================================
 # KICKIQ ADMIN DASHBOARD DATA
 # =========================================================
@@ -229,28 +234,40 @@ original_each_context = admin.site.each_context
 
 
 def kickiq_each_context(request):
+
     context = original_each_context(request)
 
     context["kickiq_stats"] = {
-        "clubs": Club.objects.count(),
-        "players": Player.objects.count(),
-        "matches": Match.objects.count(),
-        "statistics": PlayerStatistics.objects.count(),
-        "active_players": Player.objects.filter(is_active=True).count(),
-        "upcoming_matches": Match.objects.filter(status="UPCOMING").count(),
-        "completed_matches": Match.objects.filter(status="COMPLETED").count(),
+
+        "clubs":
+            Club.objects.count(),
+
+        "players":
+            Player.objects.count(),
+
+        "matches":
+            Match.objects.count(),
+
+        "statistics":
+            PlayerStatistics.objects.count(),
+
+        "active_players":
+            Player.objects.filter(
+                is_active=True
+            ).count(),
+
+        "upcoming_matches":
+            Match.objects.filter(
+                status="UPCOMING"
+            ).count(),
+
+        "completed_matches":
+            Match.objects.filter(
+                status="COMPLETED"
+            ).count(),
     }
 
     return context
 
 
 admin.site.each_context = kickiq_each_context
-
-
-# --------------------------------------------------
-# KickIQ Admin Branding
-# --------------------------------------------------
-
-admin.site.site_header = "KickIQ Administration"
-admin.site.site_title = "KickIQ Admin"
-admin.site.index_title = "Football Performance Management"
