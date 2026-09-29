@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+/* =====================================
+   LOAD DASHBOARD
+===================================== */
+
 async function loadDashboard() {
 
     try {
@@ -66,6 +70,7 @@ function updateSummary(summary) {
 
     document.getElementById("average-rating").textContent =
         summary.average_rating;
+
 }
 
 
@@ -84,7 +89,7 @@ function updateTopPlayers(players) {
 
         tbody.innerHTML = `
             <tr>
-                <td colspan="7" class="loading">
+                <td colspan="8" class="loading">
                     No player data available.
                 </td>
             </tr>
@@ -100,7 +105,9 @@ function updateTopPlayers(players) {
 
         row.innerHTML = `
 
-            <td>${index + 1}</td>
+            <td>
+                ${index + 1}
+            </td>
 
             <td class="player-name">
                 ${player.player__name}
@@ -108,6 +115,10 @@ function updateTopPlayers(players) {
 
             <td>
                 ${formatPosition(player.player__position)}
+            </td>
+
+            <td>
+                ${formatPreferredFoot(player.player__preferred_foot)}
             </td>
 
             <td class="rating">
@@ -131,6 +142,27 @@ function updateTopPlayers(players) {
         tbody.appendChild(row);
 
     });
+
+}
+
+
+/* =====================================
+   PREFERRED FOOT FORMAT
+===================================== */
+
+function formatPreferredFoot(foot) {
+
+    if (!foot) {
+        return "-";
+    }
+
+    const feet = {
+        "Right": "Right",
+        "Left": "Left",
+        "Both": "Both"
+    };
+
+    return feet[foot] || foot;
 
 }
 
@@ -180,6 +212,7 @@ function updatePositionChart(positionData) {
                 scales: {
 
                     y: {
+
                         beginAtZero: false,
 
                         min: 6,

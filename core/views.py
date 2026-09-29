@@ -255,7 +255,8 @@ class DashboardAPIView(APIView):
             .values(
                 "player_id",
                 "player__name",
-                "player__position"
+                "player__position",
+                "player__preferred_foot"
             )
             .annotate(
                 average_rating=Avg("rating"),

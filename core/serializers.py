@@ -27,6 +27,7 @@ class PlayerSerializer(serializers.ModelSerializer):
             "name",
             "club_name",
             "position",
+            "preferred_foot",
             "nationality",
             "date_of_birth",
             "height",
@@ -60,6 +61,7 @@ class MatchSerializer(serializers.ModelSerializer):
             "away_goals",
             "status",
         ]
+
 class PlayerStatisticsSerializer(serializers.ModelSerializer):
     player_name = serializers.CharField(
         source="player.name",

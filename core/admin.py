@@ -61,17 +61,18 @@ class ClubAdmin(admin.ModelAdmin):
 
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
-
     list_display = (
         "name",
         "current_club",
         "position",
+        "preferred_foot",
         "nationality",
         "is_active",
     )
 
     list_filter = (
         "position",
+        "preferred_foot",
         "current_club",
         "nationality",
         "is_active",
@@ -83,10 +84,7 @@ class PlayerAdmin(admin.ModelAdmin):
         "current_club__name",
     )
 
-    ordering = (
-        "name",
-    )
-
+    ordering = ("name",)
     list_per_page = 25
 
 

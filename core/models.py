@@ -19,6 +19,12 @@ class Player(models.Model):
         ("FW", "Forward"),
     ]
 
+    PREFERRED_FOOT_CHOICES = [
+        ("Right", "Right"),
+        ("Left", "Left"),
+        ("Both", "Both"),
+    ]
+
     name = models.CharField(max_length=100)
     current_club = models.ForeignKey(
         Club,
@@ -30,6 +36,11 @@ class Player(models.Model):
     position = models.CharField(
         max_length=2,
         choices=POSITION_CHOICES
+    )
+    preferred_foot = models.CharField(
+        max_length=5,
+        choices=PREFERRED_FOOT_CHOICES,
+        default="Right"
     )
     nationality = models.CharField(max_length=100, blank=True)
     date_of_birth = models.DateField(null=True, blank=True)
