@@ -1,0 +1,612 @@
+Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
+2023/24,Premier League,2023-08-12,Bournemouth,West Ham,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,0,0,0,0,0,3,0,4,1,0,0,0,0,0,0,0,0,6.8,1,31,40,3,1
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,2,2,4,0,0,0,0,0,0,0,6.7,0,24,31,2,1
+2023/24,Premier League,2023-08-26,Bournemouth,Tottenham,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,0,0,0,0,0,2,0,5,1,0,0,0,0,0,0,0,0,7,0,26,33,2,2
+2023/24,Premier League,2023-09-02,Brentford,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,3,2,0,0,0,0,0,0,0,0,6.3,1,15,21,0,0
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Milos Kerkez,Bournemouth,DF,TRUE,73,0,0,0,0,0,0,1,0,4,0,0,3,1,1,0,0,0,0,0,0,0,6.7,0,18,23,0,0
+2023/24,Premier League,2023-09-24,Brighton,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,0,0,0,0,3,3,0,3,1,1,1,0,0,0,0,0,0,6.2,0,14,17,1,1
+2023/24,Premier League,2023-09-30,Bournemouth,Arsenal,Milos Kerkez,Bournemouth,DF,TRUE,82,0,0,0,0,1,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,6.3,0,22,28,2,1
+2023/24,Premier League,2023-10-07,Everton,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,66,0,0,0,0,1,0,0,0,2,1,0,1,1,1,0,0,0,0,0,0,0,6.1,0,13,20,1,1
+2023/24,Premier League,2023-10-21,Bournemouth,Wolves,Milos Kerkez,Bournemouth,DF,TRUE,84,0,0,0,0,0,0,0,0,1,2,0,3,0,0,0,0,0,0,0,0,0,6.6,0,16,22,1,0
+2023/24,Premier League,2023-10-28,Bournemouth,Burnley,Milos Kerkez,Bournemouth,DF,FALSE,9,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.6,0,1,3,0,0
+2023/24,Premier League,2023-11-04,Manchester City,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,3,0,1,0,0,0,0,0,0,0,5.8,0,16,21,1,0
+2023/24,Premier League,2023-11-25,Sheffield United,Bournemouth,Milos Kerkez,Bournemouth,DF,FALSE,45,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.8,2,17,21,1,0
+2023/24,Premier League,2023-12-03,Bournemouth,Aston Villa,Milos Kerkez,Bournemouth,DF,TRUE,82,0,1,0,0,0,0,1,0,1,0,0,3,3,1,0,0,0,0,0,0,0,7.4,1,12,21,0,0
+2023/24,Premier League,2023-12-06,Crystal Palace,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,7,0,19,27,0,0
+2023/24,Premier League,2023-12-09,Manchester Utd,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,7.4,0,19,23,2,1
+2023/24,Premier League,2024-02-01,West Ham,Bournemouth,Milos Kerkez,Bournemouth,DF,FALSE,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,10,10,0,0
+2023/24,Premier League,2024-02-04,Bournemouth,Nottingham,Milos Kerkez,Bournemouth,DF,FALSE,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,5,6,0,0
+2023/24,Premier League,2024-02-10,Fulham,Bournemouth,Milos Kerkez,Bournemouth,DF,FALSE,45,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,6.5,0,17,24,0,0
+2023/24,Premier League,2024-02-24,Bournemouth,Manchester City,Milos Kerkez,Bournemouth,DF,TRUE,87,0,0,0,0,3,1,0,0,0,0,1,1,1,2,0,0,0,0,0,0,0,7.4,1,24,26,0,0
+2023/24,Premier League,2024-03-03,Burnley,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,88,0,0,0,0,0,0,0,0,0,1,0,2,1,2,0,0,0,0,0,0,0,7.2,0,9,16,2,1
+2023/24,Premier League,2024-03-09,Bournemouth,Sheffield United,Milos Kerkez,Bournemouth,DF,TRUE,45,0,0,0,0,1,1,1,0,1,0,0,6,1,1,0,0,0,0,0,0,0,7,0,42,48,1,1
+2023/24,Premier League,2024-03-30,Bournemouth,Everton,Milos Kerkez,Bournemouth,DF,TRUE,62,0,0,0,0,0,0,0,0,2,2,0,1,0,0,0,0,0,0,0,0,0,6.4,0,17,23,0,0
+2023/24,Premier League,2024-04-02,Bournemouth,Crystal Palace,Milos Kerkez,Bournemouth,DF,FALSE,28,0,0,0,0,1,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,7.4,1,9,10,0,0
+2023/24,Premier League,2024-04-06,Luton Town,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,85,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,6.5,0,19,26,0,0
+2023/24,Premier League,2024-04-13,Bournemouth,Manchester Utd,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,4,1,0,0,0,2,0,4,1,1,0,0,0,0,0,0,0,7.4,1,23,27,0,0
+2023/24,Premier League,2024-04-21,Aston Villa,Bournemouth,Milos Kerkez,Bournemouth,CM,TRUE,90,0,0,0,0,1,0,0,0,2,1,0,4,0,0,0,0,0,0,0,0,0,6.9,2,24,29,1,0
+2023/24,Premier League,2024-04-24,Wolves,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,78,0,0,0,0,2,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,6.7,0,9,13,2,2
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Milos Kerkez,Bournemouth,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,0,0,0,0,0,0,6,2,13,18,2,0
+2023/24,Premier League,2023-08-12,Newcastle,Aston Villa,Alexander Isak,Newcastle,FW,TRUE,67,2,0,0,0,3,3,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,8,0,12,16,3,1
+2023/24,Premier League,2023-08-19,Manchester City,Newcastle,Alexander Isak,Newcastle,FW,TRUE,65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,8,10,1,1
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Alexander Isak,Newcastle,FW,TRUE,71,0,0,0,0,1,1,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,6.7,1,4,5,0,0
+2023/24,Premier League,2023-09-02,Brighton,Newcastle,Alexander Isak,Newcastle,FW,TRUE,73,0,0,0,0,4,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,7,0,11,15,6,5
+2023/24,Premier League,2023-09-24,Sheffield United,Newcastle,Alexander Isak,Newcastle,FW,FALSE,21,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.4,0,7,8,1,1
+2023/24,Premier League,2023-09-30,Newcastle,Burnley,Alexander Isak,Newcastle,FW,TRUE,89,1,0,1,1,6,4,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,6.9,2,9,10,1,0
+2023/24,Premier League,2023-10-08,West Ham,Newcastle,Alexander Isak,Newcastle,FW,TRUE,85,2,0,0,0,3,2,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,8.4,0,17,21,6,4
+2023/24,Premier League,2023-10-21,Newcastle,Crystal Palace,Alexander Isak,Newcastle,FW,FALSE,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,1,5,6,0,0
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Alexander Isak,Newcastle,FW,TRUE,80,1,0,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,7,0,9,12,1,0
+2023/24,Premier League,2023-12-02,Newcastle,Manchester Utd,Alexander Isak,Newcastle,FW,TRUE,90,0,0,0,0,3,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.9,1,33,39,2,1
+2023/24,Premier League,2023-12-07,Everton,Newcastle,Alexander Isak,Newcastle,FW,TRUE,90,0,0,0,0,2,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,6.4,1,10,16,1,1
+2023/24,Premier League,2023-12-10,Tottenham,Newcastle,Alexander Isak,Newcastle,FW,TRUE,63,0,0,0,0,1,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,0,6.3,0,12,13,1,1
+2023/24,Premier League,2023-12-23,Luton Town,Newcastle,Alexander Isak,Newcastle,FW,FALSE,53,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,6.9,1,16,20,2,2
+2023/24,Premier League,2023-12-26,Newcastle,Nottingham,Alexander Isak,Newcastle,FW,TRUE,90,1,0,1,1,6,5,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,7.9,3,21,26,6,4
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Alexander Isak,Newcastle,FW,TRUE,90,1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,7.1,1,9,12,3,1
+2023/24,Premier League,2024-01-13,Newcastle,Manchester City,Alexander Isak,Newcastle,FW,TRUE,90,1,0,0,0,5,3,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,6.2,0,7,10,0,0
+2023/24,Premier League,2024-01-30,Aston Villa,Newcastle,Alexander Isak,Newcastle,FW,TRUE,42,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,1,5,5,1,1
+2023/24,Premier League,2024-02-24,Arsenal,Newcastle,Alexander Isak,Newcastle,FW,TRUE,63,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.7,0,7,9,1,1
+2023/24,Premier League,2024-03-02,Newcastle,Wolves,Alexander Isak,Newcastle,FW,TRUE,69,1,0,0,0,2,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7.1,0,11,17,2,0
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Alexander Isak,Newcastle,FW,TRUE,90,1,0,0,0,3,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,7.2,1,17,21,5,2
+2023/24,Premier League,2024-03-30,Newcastle,West Ham,Alexander Isak,Newcastle,FW,TRUE,90,2,1,2,2,4,2,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,9,2,25,29,0,0
+2023/24,Premier League,2024-04-02,Newcastle,Everton,Alexander Isak,Newcastle,FW,TRUE,90,1,0,0,0,4,3,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,7.6,2,13,19,4,3
+2023/24,Premier League,2024-04-06,Fulham,Newcastle,Alexander Isak,Newcastle,FW,TRUE,90,0,0,0,0,2,2,0,0,0,0,1,1,0,2,0,0,0,0,0,0,0,6.8,1,12,13,2,1
+2023/24,Premier League,2024-04-13,Newcastle,Tottenham,Alexander Isak,Newcastle,FW,TRUE,90,2,0,0,0,6,2,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,8.3,1,6,9,3,1
+2023/24,Premier League,2024-04-24,Crystal Palace,Newcastle,Alexander Isak,Newcastle,FW,TRUE,90,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,7.1,1,20,24,6,5
+2023/24,Premier League,2024-04-27,Newcastle,Sheffield United,Alexander Isak,Newcastle,FW,TRUE,90,2,0,1,1,5,3,0,0,1,0,3,0,0,0,0,0,0,0,0,0,0,8.5,2,15,20,3,3
+2023/24,Premier League,2024-05-04,Burnley,Newcastle,Alexander Isak,Newcastle,FW,TRUE,76,1,0,0,1,4,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.7,1,14,17,1,1
+2023/24,Premier League,2024-05-11,Newcastle,Brighton,Alexander Isak,Newcastle,FW,TRUE,67,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.4,0,6,7,2,1
+2023/24,Premier League,2024-05-15,Manchester Utd,Newcastle,Alexander Isak,Newcastle,FW,TRUE,90,0,0,0,0,3,0,0,0,1,2,2,0,0,0,0,0,0,0,0,0,0,6.9,2,21,23,2,0
+2023/24,Premier League,2024-05-19,Brentford,Newcastle,Alexander Isak,Newcastle,FW,TRUE,80,1,1,0,0,4,3,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,7.9,2,17,22,4,1
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,76,0,1,0,0,3,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,7.4,1,17,22,0,0
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Mohammed Salah,Liverpool,FW,TRUE,85,1,0,0,1,5,3,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,6.7,2,28,32,3,0
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,90,0,1,0,0,2,1,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,7.5,2,22,23,5,3
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Mohammed Salah,Liverpool,FW,TRUE,90,1,0,0,0,4,3,0,0,1,2,0,0,2,0,0,0,0,0,0,0,0,8.1,2,22,27,3,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,89,0,2,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,8.2,5,18,24,3,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Mohammed Salah,Liverpool,FW,TRUE,90,1,0,1,1,5,2,0,0,0,3,0,5,1,0,0,0,0,0,0,0,0,8.7,2,29,38,3,2
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,73,0,0,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.7,2,13,20,5,1
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,90,2,0,1,1,5,2,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,8.6,1,21,30,5,2
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Mohammed Salah,Liverpool,FW,TRUE,90,2,0,1,1,4,2,0,0,0,1,2,3,0,0,0,0,0,0,0,0,0,8.4,3,19,24,2,0
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Mohammed Salah,Liverpool,FW,TRUE,90,1,0,0,0,3,1,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,7.8,3,37,54,1,0
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,90,0,0,0,0,2,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,0,7.1,3,24,27,3,1
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Mohammed Salah,Liverpool,FW,TRUE,90,2,0,0,0,3,2,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,8.6,1,38,53,1,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,90,0,1,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,7.5,3,20,26,4,3
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Mohammed Salah,Liverpool,FW,TRUE,90,0,1,0,0,2,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,7,5,22,35,3,1
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,66,0,0,0,0,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,1,23,27,2,1
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,90,1,1,0,0,3,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,7.9,1,31,39,0,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Mohammed Salah,Liverpool,FW,TRUE,90,0,0,0,0,6,4,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,7.9,5,37,54,2,1
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Mohammed Salah,Liverpool,FW,TRUE,90,1,0,0,0,3,2,1,0,1,1,0,2,1,0,0,0,0,0,0,0,0,7.7,2,11,19,4,1
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,90,0,0,0,0,3,2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,7.4,0,31,37,0,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Mohammed Salah,Liverpool,FW,TRUE,90,2,1,1,2,6,4,0,0,1,1,0,2,0,0,0,0,0,0,0,0,0,9.2,5,25,39,3,1
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Mohammed Salah,Liverpool,FW,FALSE,47,1,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8.1,2,20,22,2,2
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Mohammed Salah,Liverpool,FW,FALSE,30,0,0,0,0,3,1,0,0,0,1,1,4,0,0,0,0,0,0,0,0,0,7.4,1,11,14,1,0
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Mohammed Salah,Liverpool,FW,TRUE,90,1,0,0,0,12,4,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,7.4,1,29,37,9,3
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Mohammed Salah,Liverpool,FW,TRUE,59,0,0,0,0,3,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7.4,1,26,32,1,1
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,90,1,0,1,1,6,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7.7,3,25,33,2,1
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Mohammed Salah,Liverpool,FW,TRUE,90,0,0,0,0,2,1,0,0,1,1,1,2,0,0,0,0,0,0,0,0,0,6.8,5,19,24,2,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Mohammed Salah,Liverpool,FW,FALSE,17,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,6.6,0,3,5,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,90,0,0,0,0,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.2,1,21,26,0,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Mohammed Salah,Liverpool,FW,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,8,10,0,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Mohammed Salah,Liverpool,FW,TRUE,90,1,1,0,0,6,4,0,0,1,2,2,4,0,0,0,0,0,0,0,0,0,8.2,3,21,30,1,0
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Mohammed Salah,Liverpool,FW,TRUE,90,0,0,0,0,1,0,0,0,1,2,0,1,0,0,0,0,0,0,0,0,0,7.2,2,17,23,2,2
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Mohammed Salah,Liverpool,FW,TRUE,90,0,0,0,0,7,5,0,0,1,1,3,4,2,0,0,0,0,0,0,0,0,6.8,0,20,29,4,1
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,7.1,0,26,33,0,0
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,3,1,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,7.7,1,60,62,0,0
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,27,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,4.6,0,18,20,0,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Virgil van Dijk,Liverpool,DF,TRUE,90,0,1,0,0,3,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,8.5,2,78,84,0,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,1,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,8.4,1,40,42,0,0
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,68,73,0,0
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.7,1,95,106,0,0
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,8.2,1,104,112,0,0
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,7.6,0,108,117,0,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,8.1,0,55,62,0,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.9,0,57,63,0,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,2,0,0,0,1,0,0,0,2,4,0,0,0,0,0,0,0,6.8,0,90,108,0,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,1,0,0,0,3,2,0,0,1,0,0,0,2,1,0,0,0,0,0,0,0,8.6,0,83,89,0,0
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,7.2,0,90,102,0,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,3,2,0,0,2,0,0,0,2,2,0,0,0,0,0,0,0,7.9,1,71,84,0,0
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,2,1,0,0,1,0,0,0,0,0,0,0,0,7.3,0,72,80,0,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.8,0,97,104,1,1
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.7,0,60,64,1,0
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.6,0,47,52,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,6.9,0,57,64,0,0
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,0,0,2,0,0,0,0,0,0,0,7.1,0,87,97,0,0
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.2,1,95,103,0,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.5,1,62,69,0,0
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Virgil van Dijk,Liverpool,DF,TRUE,90,1,0,0,0,2,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,8.3,0,59,66,0,0
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,7.5,0,96,102,0,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,3,4,0,0,0,0,0,0,0,7.6,0,77,79,0,0
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.8,1,45,51,0,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.5,0,99,101,0,0
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,6.7,0,65,69,0,0
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,4,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,8,0,114,123,0,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,95,102,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,2,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.5,1,93,107,1,1
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,2,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,6.8,0,80,86,0,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,42,45,0,0
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,1,2,0,0,1,0,0,0,0,0,0,0,0,6.9,0,79,84,0,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Virgil van Dijk,Liverpool,DF,TRUE,90,0,0,0,0,5,2,0,0,1,0,0,0,0,3,0,0,0,0,0,0,0,8.1,0,63,67,1,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Ryan Gravenberch,Liverpool,MF,FALSE,10,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.5,0,2,3,3,1
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Ryan Gravenberch,Liverpool,MF,FALSE,14,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.5,0,6,9,1,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Ryan Gravenberch,Liverpool,MF,FALSE,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,1,1,0,0
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Ryan Gravenberch,Liverpool,MF,FALSE,45,0,0,0,0,2,1,0,0,2,2,0,0,0,1,0,0,0,0,0,0,0,6.8,0,15,20,1,1
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Ryan Gravenberch,Liverpool,MF,TRUE,61,0,0,0,0,1,0,0,0,0,3,0,0,1,3,0,0,0,0,0,0,0,7.2,1,31,32,1,1
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Ryan Gravenberch,Liverpool,MF,TRUE,58,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,20,21,2,1
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Ryan Gravenberch,Liverpool,MF,TRUE,82,0,0,0,0,1,1,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,7.2,2,32,35,4,2
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Ryan Gravenberch,Liverpool,MF,FALSE,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,1,7,9,1,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Ryan Gravenberch,Liverpool,MF,TRUE,82,0,0,0,0,2,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.7,1,32,43,4,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Ryan Gravenberch,Liverpool,MF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,2,4,0,0
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Ryan Gravenberch,Liverpool,MF,TRUE,56,0,0,0,0,1,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,21,29,2,1
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Ryan Gravenberch,Liverpool,MF,TRUE,60,0,0,0,0,2,0,0,0,2,1,0,0,1,0,0,0,0,0,0,0,0,7.1,2,20,23,1,1
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Ryan Gravenberch,Liverpool,MF,FALSE,23,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.3,0,8,12,1,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Ryan Gravenberch,Liverpool,MF,TRUE,65,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.7,1,26,30,2,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Ryan Gravenberch,Liverpool,MF,FALSE,27,0,0,0,0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,6.7,1,9,9,0,0
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Ryan Gravenberch,Liverpool,MF,FALSE,27,0,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,6.7,0,6,9,3,2
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Ryan Gravenberch,Liverpool,MF,TRUE,57,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,12,14,3,2
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Ryan Gravenberch,Liverpool,MF,FALSE,57,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,7,0,31,38,3,2
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Ryan Gravenberch,Liverpool,MF,TRUE,77,0,0,0,0,2,1,0,0,3,1,0,0,2,1,0,0,0,0,0,0,0,7.4,2,21,25,2,1
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Ryan Gravenberch,Liverpool,MF,TRUE,59,0,0,0,0,2,1,0,0,1,1,0,1,0,2,0,0,0,0,0,0,0,7,0,28,33,1,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Ryan Gravenberch,Liverpool,MF,TRUE,73,1,0,0,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,7.1,1,28,31,1,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Ryan Gravenberch,Liverpool,MF,TRUE,90,0,0,0,0,3,0,0,0,1,1,0,2,1,0,0,0,0,0,0,0,0,7.8,2,34,42,8,7
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Ryan Gravenberch,Liverpool,MF,FALSE,16,0,0,0,0,1,0,0,0,2,0,0,0,1,1,0,0,0,0,0,0,0,6.7,0,3,3,0,0
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Ryan Gravenberch,Liverpool,MF,FALSE,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,1,4,5,1,1
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Ryan Gravenberch,Liverpool,MF,FALSE,21,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.8,1,10,11,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,0,0,1,0,2,2,0,0,2,1,0,0,0,0,0,0,0,7.4,1,46,52,2,2
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Alexis Mac Allister,Liverpool,MF,TRUE,57,0,0,0,0,0,0,0,1,1,2,0,0,1,0,0,0,0,0,0,0,0,6.3,0,40,50,3,2
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,76,0,0,0,0,0,0,0,0,1,3,0,0,1,4,0,0,0,0,0,0,0,7.2,0,23,27,2,1
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Alexis Mac Allister,Liverpool,MF,TRUE,86,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,6.7,0,63,72,3,1
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,45,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,6.7,0,40,46,0,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Alexis Mac Allister,Liverpool,MF,TRUE,87,0,1,0,0,1,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,7.6,2,86,90,3,2
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,79,0,0,0,0,1,0,1,0,3,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,36,41,0,0
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,1,0,0,0,3,2,0,0,2,5,0,0,0,0,0,0,0,7.2,0,64,69,1,1
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,1,1,0,0,1,1,0,1,2,1,0,0,0,0,0,0,0,7.4,3,83,92,2,2
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,1,0,1,0,2,4,0,0,1,1,0,0,0,0,0,0,0,7.5,1,69,85,1,1
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,0,0,1,0,2,1,0,0,1,0,0,0,0,0,0,0,0,6.8,1,75,88,0,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,84,0,0,0,0,1,0,0,0,1,2,0,0,1,2,0,0,0,0,0,0,0,6.6,0,43,46,0,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Alexis Mac Allister,Liverpool,MF,TRUE,64,1,0,0,0,1,1,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,7.1,0,33,38,1,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,56,0,0,0,0,1,1,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,7,0,14,16,0,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Alexis Mac Allister,Liverpool,MF,FALSE,16,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,23,24,0,0
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,1,0,0,0,0,3,0,1,3,3,0,0,0,0,0,0,0,7.8,4,63,72,1,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,3,0,0,0,4,2,0,0,7,1,0,0,0,0,0,0,0,7.6,1,65,72,1,1
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,3,0,0,0,1,4,0,2,2,0,0,0,0,0,0,0,0,7.8,2,54,60,3,2
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Alexis Mac Allister,Liverpool,MF,TRUE,89,0,0,0,0,2,0,0,0,0,1,0,3,3,1,0,0,0,0,0,0,0,6.9,0,35,41,1,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,82,1,0,0,0,1,1,0,0,5,0,0,3,1,0,0,0,0,0,0,0,0,7.4,2,50,60,2,1
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Alexis Mac Allister,Liverpool,MF,TRUE,88,0,2,0,0,0,0,0,0,1,1,0,7,1,2,0,0,0,0,0,0,0,8.3,4,38,44,2,2
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,1,0,0,2,0,0,0,1,2,0,3,1,2,0,0,0,0,0,0,0,8.1,6,57,67,0,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Alexis Mac Allister,Liverpool,MF,TRUE,90,1,0,1,1,4,2,0,0,1,3,0,0,1,1,0,0,0,0,0,0,0,7.8,0,52,64,1,1
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,1,0,0,5,0,1,0,4,2,0,2,0,1,0,0,0,0,0,0,0,8,5,56,64,0,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Alexis Mac Allister,Liverpool,MF,TRUE,90,1,0,0,0,3,1,0,0,0,0,0,1,2,2,0,0,0,0,0,0,0,8.3,2,78,88,0,0
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,1,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,0,7,1,55,64,2,1
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,1,0,0,0,2,2,0,2,4,0,0,0,0,0,0,0,0,7.1,2,77,90,1,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Alexis Mac Allister,Liverpool,MF,FALSE,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,6,7,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,4,0,0,0,2,1,0,1,1,0,0,0,0,0,0,0,0,7.2,1,92,102,0,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,2,1,1,0,4,3,0,2,2,0,0,0,0,0,0,0,0,7.1,4,54,60,1,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Alexis Mac Allister,Liverpool,MF,TRUE,74,0,0,0,0,0,0,0,0,1,0,0,1,1,2,0,0,0,0,0,0,0,7,1,20,26,1,1
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Alexis Mac Allister,Liverpool,MF,TRUE,90,0,0,0,0,2,0,0,0,2,1,0,1,2,0,0,0,0,0,0,0,0,6.1,1,60,68,0,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Alexis Mac Allister,Liverpool,MF,TRUE,69,1,0,0,0,2,1,0,0,0,2,0,0,1,1,0,0,0,0,0,0,0,8,0,39,42,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,2,1,0,0,1,1,0,0,0,0,0,0,0,7,0,32,38,0,0
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,7,0,64,69,2,2
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Ibrahim Konate,Liverpool,DF,FALSE,8,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.1,1,17,18,0,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Ibrahim Konate,Liverpool,DF,FALSE,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,0,0,0,0
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Ibrahim Konate,Liverpool,DF,FALSE,18,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,7,8,0,0
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Ibrahim Konate,Liverpool,DF,TRUE,65,0,0,0,0,0,0,1,0,2,0,0,0,0,1,0,0,0,0,0,0,0,6.9,0,60,68,0,0
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,7.6,1,123,127,0,0
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,3,1,0,0,0,1,0,0,0,0,0,0,0,7.2,0,94,102,1,1
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Ibrahim Konate,Liverpool,DF,FALSE,22,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.7,0,24,29,0,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,1,1,1,0,2,1,0,0,2,3,0,0,0,0,0,0,0,8.3,0,98,119,0,0
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Ibrahim Konate,Liverpool,DF,FALSE,34,0,0,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,0,0,6.7,0,31,34,0,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,4,1,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,7.9,1,94,106,0,0
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,7.1,1,35,42,0,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,4,0,0,1,0,0,0,0,0,0,0,0,6.9,1,49,55,0,0
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,7.8,1,71,83,2,2
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,2,0,0,0,0,0,0,0,0,7.1,1,53,65,0,0
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Ibrahim Konate,Liverpool,DF,TRUE,87,0,0,0,0,0,0,2,1,3,0,0,0,0,2,0,0,0,0,0,0,0,6.8,1,75,86,0,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,1,0,4,0,0,0,0,0,0,0,6.7,0,33,44,0,0
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,7.7,0,78,85,1,1
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,2,1,0,0,1,1,0,0,0,0,0,0,0,7.1,0,83,96,0,0
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Ibrahim Konate,Liverpool,DF,TRUE,90,0,0,0,0,2,0,0,0,0,1,0,0,2,1,0,0,0,0,0,0,0,7.4,0,87,103,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Ibrahim Konate,Liverpool,DF,TRUE,62,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6,0,67,72,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,0,0,0,1,0,0,0,3,1,1,3,1,1,0,0,0,0,0,0,0,7,3,32,39,1,0
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,0,0,0,3,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,7.7,1,66,71,5,3
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,0,0,0,2,0,0,0,3,3,0,4,2,0,0,0,0,0,0,0,0,6.6,1,32,38,6,3
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Dominik Szoboszlai,Liverpool,MF,TRUE,90,1,0,0,0,2,1,0,0,1,1,1,4,0,0,0,0,0,0,0,0,0,7.6,2,51,56,2,1
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,0,0,0,2,1,0,0,0,2,0,3,1,0,0,0,0,0,0,0,0,7.3,1,82,99,1,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,0,0,0,3,0,0,0,1,2,0,3,1,1,0,0,0,0,0,0,0,7.7,4,81,87,0,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,0,0,0,1,1,0,0,0,2,0,5,1,1,0,0,0,0,0,0,0,7,1,35,43,3,1
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,0,0,0,1,0,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,7.4,4,29,36,1,1
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,0,0,0,5,0,0,0,0,0,0,6,1,0,0,0,0,0,0,0,0,7.5,4,76,82,2,1
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,2,0,0,1,1,0,0,0,1,0,10,0,1,0,0,0,0,0,0,0,8.9,4,75,81,4,3
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,65,0,0,0,0,1,0,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,6.6,1,35,42,0,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Dominik Szoboszlai,Liverpool,MF,TRUE,89,0,0,0,0,2,1,0,0,3,0,0,1,0,0,0,0,0,0,0,0,0,7,2,52,59,2,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,72,0,0,0,0,1,0,0,0,3,1,0,2,0,0,0,0,0,0,0,0,0,6.9,1,22,25,1,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Dominik Szoboszlai,Liverpool,MF,TRUE,63,0,0,0,0,3,2,0,0,0,3,1,1,0,0,0,0,0,0,0,0,0,7.3,1,33,39,0,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,90,1,0,0,0,1,1,0,0,2,3,0,7,1,1,0,0,0,0,0,0,0,8.1,2,58,65,3,2
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,73,0,0,0,0,2,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,6.5,0,44,47,3,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Dominik Szoboszlai,Liverpool,MF,TRUE,60,0,0,0,0,1,0,0,0,0,0,0,5,1,1,0,0,0,0,0,0,0,7,0,31,40,1,1
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Dominik Szoboszlai,Liverpool,MF,TRUE,90,0,0,0,0,2,0,0,0,2,0,0,3,3,1,0,0,0,0,0,0,0,7.3,0,32,38,2,2
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Dominik Szoboszlai,Liverpool,MF,FALSE,24,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,14,17,1,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Dominik Szoboszlai,Liverpool,MF,TRUE,63,0,0,0,0,3,0,0,0,1,0,0,4,1,1,0,0,0,0,0,0,0,7.2,3,33,39,3,2
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Dominik Szoboszlai,Liverpool,MF,TRUE,68,1,0,0,0,3,1,0,0,0,1,0,12,1,0,0,0,0,0,0,0,0,7.9,2,39,43,1,1
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Dominik Szoboszlai,Liverpool,MF,FALSE,15,0,0,0,0,1,0,0,0,1,1,0,3,0,0,0,0,0,0,0,0,0,6.5,0,6,7,0,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Dominik Szoboszlai,Liverpool,MF,TRUE,60,0,0,0,0,3,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,7,1,18,27,0,0
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Dominik Szoboszlai,Liverpool,MF,TRUE,89,0,0,0,0,3,0,0,0,2,1,0,9,0,1,0,0,0,0,0,0,0,7.2,3,48,54,0,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Dominik Szoboszlai,Liverpool,MF,TRUE,72,0,0,0,0,1,1,0,0,1,0,0,11,0,1,0,0,0,0,0,0,0,7.5,3,75,81,5,1
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,65,0,0,0,0,5,1,0,0,0,0,0,3,0,1,0,0,0,0,0,0,0,6.6,4,32,37,1,1
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Dominik Szoboszlai,Liverpool,MF,FALSE,45,0,0,0,0,1,0,0,0,1,2,0,4,1,0,0,0,0,0,0,0,0,7.5,3,25,32,1,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Dominik Szoboszlai,Liverpool,MF,FALSE,5,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,1,5,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Dominik Szoboszlai,Liverpool,MF,TRUE,62,0,0,0,0,1,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,6.7,1,30,32,2,1
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Dominik Szoboszlai,Liverpool,MF,FALSE,8,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,6.9,1,3,3,0,0
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Dominik Szoboszlai,Liverpool,MF,FALSE,15,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,1,21,22,0,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Dominik Szoboszlai,Liverpool,MF,FALSE,10,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7.3,2,8,9,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,4,1,2,0,0,0,0,0,0,0,7.3,1,36,48,0,0
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,6,2,1,0,0,0,0,0,0,0,7.4,3,65,73,1,0
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,6.5,1,33,41,2,0
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,2,6,1,0,0,0,0,0,0,0,0,7.6,2,97,102,0,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Andy Robertson,Liverpool,DF,TRUE,90,1,0,0,0,1,1,0,0,1,0,0,7,2,2,0,0,0,0,0,0,0,7.9,2,73,79,0,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,8,0,0,0,0,0,0,0,0,0,7.5,1,58,69,0,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,1,1,1,0,1,0,0,3,1,1,0,0,0,0,0,0,0,7,4,32,42,1,1
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,4,4,1,0,0,0,0,0,0,0,6.9,2,33,38,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Andy Robertson,Liverpool,DF,FALSE,22,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,6.7,1,11,14,0,0
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Andy Robertson,Liverpool,DF,FALSE,33,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,6.3,0,20,22,0,0
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Andy Robertson,Liverpool,DF,TRUE,89,0,0,0,0,1,0,0,0,0,2,0,14,1,0,0,0,0,0,0,0,0,7.9,5,56,66,2,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,9,3,1,0,0,0,0,0,0,0,7.4,2,65,74,1,1
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Andy Robertson,Liverpool,DF,FALSE,23,0,1,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,7.2,1,15,16,1,1
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Andy Robertson,Liverpool,DF,TRUE,59,0,0,0,0,1,1,1,0,1,1,0,9,2,0,0,0,0,0,0,0,0,7.7,4,49,55,0,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Andy Robertson,Liverpool,DF,FALSE,30,0,0,0,0,0,0,0,0,1,0,0,10,0,0,0,0,0,0,0,0,0,7.1,3,14,17,1,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Andy Robertson,Liverpool,DF,FALSE,31,0,1,0,0,1,0,0,0,0,1,0,12,0,0,0,0,0,0,0,0,0,7.7,1,29,32,0,0
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,2,0,0,0,0,1,0,17,0,0,0,0,0,0,0,0,0,7.8,5,38,44,2,1
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,13,1,1,0,0,0,0,0,0,0,7.8,4,76,86,1,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,6,1,0,0,0,0,0,0,0,0,7.1,2,51,58,1,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Andy Robertson,Liverpool,DF,TRUE,83,0,0,0,0,1,1,0,0,0,0,1,16,2,0,0,0,0,0,0,0,0,7.1,3,52,64,1,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Andy Robertson,Liverpool,DF,TRUE,90,1,0,0,0,2,2,0,0,1,0,0,16,1,2,0,0,0,0,0,0,0,8.6,5,65,72,0,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Andy Robertson,Liverpool,DF,TRUE,63,1,0,0,0,2,1,0,0,0,0,0,3,2,2,0,0,0,0,0,0,0,8.1,1,36,43,2,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Andy Robertson,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,8.4,7,84,89,1,1
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,0,0,7.2,0,13,19,0,0
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,5,4,0,0,7.2,0,37,45,0,0
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,7,0,0,8,0,29,42,0,0
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,7.6,0,31,32,0,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,6.4,0,30,35,0,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,0,0,7.1,0,27,29,0,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,8,0,0,8.1,0,30,47,0,0
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,5.8,0,45,51,0,0
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,7.3,1,35,35,0,0
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,7.2,0,36,36,0,0
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,0,0,7.3,0,32,33,0,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,3,3,0,0,7.4,0,17,29,0,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,5,4,0,0,6.8,0,36,51,0,0
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,1,0,7.2,0,25,29,0,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,7.2,0,36,37,0,0
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,6.7,0,36,41,0,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,28,33,0,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,3,1,0,0,6.4,0,37,42,0,0
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,7,0,34,41,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,6.5,0,30,35,0,0
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,4,0,0,6.2,0,43,52,0,0
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,0,0,6.8,0,30,33,0,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,0,0,7.1,0,46,50,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,0,0,6.9,0,19,21,0,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,6,0,0,7.8,0,24,26,0,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,0,0,7.3,0,22,28,0,0
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,5,2,0,0,5.9,0,24,27,0,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Alisson,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7.2,0,16,18,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Lius Diaz,Liverpool,FW,TRUE,76,1,0,0,0,4,1,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,7.3,1,18,20,3,2
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Lius Diaz,Liverpool,FW,TRUE,85,1,0,0,0,3,1,0,0,4,3,0,1,0,0,0,0,0,0,0,0,0,7.7,2,32,40,4,3
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Lius Diaz,Liverpool,FW,TRUE,32,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,2,4,1,1
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Lius Diaz,Liverpool,FW,TRUE,64,0,0,0,0,1,0,0,0,1,2,1,0,0,1,0,0,0,0,0,0,0,6.7,0,22,27,1,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Lius Diaz,Liverpool,FW,FALSE,45,0,0,0,0,3,1,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,6.9,2,25,33,1,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Lius Diaz,Liverpool,FW,TRUE,80,0,0,0,0,1,0,0,0,2,4,1,1,1,0,0,0,0,0,0,0,0,6.9,2,20,25,3,1
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Lius Diaz,Liverpool,FW,TRUE,72,0,0,0,0,2,0,0,0,3,0,1,0,1,0,0,0,0,0,0,0,0,6.3,0,13,21,4,3
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Lius Diaz,Liverpool,FW,TRUE,90,0,0,0,0,2,0,0,0,4,2,0,0,3,0,0,0,0,0,0,0,0,6.9,0,23,27,4,2
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Lius Diaz,Liverpool,FW,TRUE,80,0,0,0,0,3,0,0,0,1,2,0,2,2,0,0,0,0,0,0,0,0,7.7,0,36,41,4,3
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Lius Diaz,Liverpool,FW,FALSE,8,1,0,0,0,1,1,0,0,1,0,0,2,0,0,0,0,0,0,0,0,0,7.2,0,6,7,1,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Lius Diaz,Liverpool,FW,FALSE,8,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,2,4,1,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Lius Diaz,Liverpool,FW,FALSE,37,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,6.5,0,6,9,0,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Lius Diaz,Liverpool,FW,TRUE,90,0,0,0,0,5,4,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,7.4,2,29,38,4,1
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Lius Diaz,Liverpool,FW,TRUE,66,0,0,0,0,0,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,6.9,3,24,28,3,2
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Lius Diaz,Liverpool,FW,TRUE,90,0,0,0,0,2,0,1,0,2,5,2,0,0,0,0,0,0,0,0,0,0,6.9,3,24,28,3,2
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Lius Diaz,Liverpool,FW,TRUE,77,0,0,0,0,3,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7,5,24,26,3,0
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Lius Diaz,Liverpool,FW,TRUE,67,0,0,0,0,2,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.8,1,10,13,2,1
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Lius Diaz,Liverpool,FW,FALSE,24,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,1,10,11,1,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Lius Diaz,Liverpool,FW,TRUE,63,0,0,0,0,1,1,1,0,3,1,0,1,0,1,0,0,0,0,0,0,0,7.9,3,27,32,8,5
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Lius Diaz,Liverpool,FW,TRUE,63,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.7,0,17,19,1,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Lius Diaz,Liverpool,FW,TRUE,90,1,1,0,0,3,2,0,0,0,2,0,2,1,0,0,0,0,0,0,0,0,8.9,2,30,38,1,1
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Lius Diaz,Liverpool,FW,TRUE,90,0,0,0,0,3,1,0,0,1,2,0,1,0,0,0,0,0,0,0,0,0,6.9,1,17,21,7,3
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Lius Diaz,Liverpool,FW,TRUE,81,1,0,0,0,5,4,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,7.6,1,25,27,3,2
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Lius Diaz,Liverpool,FW,TRUE,90,0,1,0,0,2,0,0,0,4,1,1,2,0,0,0,0,0,0,0,0,0,7.7,3,46,49,5,4
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Lius Diaz,Liverpool,FW,TRUE,88,1,0,0,0,10,3,0,0,0,4,0,0,2,0,0,0,0,0,0,0,0,7.2,1,24,27,5,2
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Lius Diaz,Liverpool,FW,TRUE,90,0,0,0,0,6,0,0,0,0,1,0,2,2,0,0,0,0,0,0,0,0,7.3,1,40,44,1,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Lius Diaz,Liverpool,FW,TRUE,90,0,0,0,0,2,0,0,0,2,0,0,2,1,1,0,0,0,0,0,0,0,7.1,3,33,37,6,4
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Lius Diaz,Liverpool,FW,TRUE,88,1,0,0,0,4,2,0,0,5,0,2,0,1,0,0,0,0,0,0,0,0,7.9,2,34,37,7,2
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Lius Diaz,Liverpool,FW,TRUE,90,0,1,0,0,3,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,8,6,49,54,4,2
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Lius Diaz,Liverpool,FW,TRUE,90,1,0,0,0,6,2,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,7.9,3,29,34,10,6
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Lius Diaz,Liverpool,FW,TRUE,65,0,0,0,0,1,1,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,6.8,0,12,15,2,1
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Lius Diaz,Liverpool,FW,TRUE,73,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.7,1,17,21,3,3
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Lius Diaz,Liverpool,FW,TRUE,90,0,0,0,0,3,1,1,0,2,3,0,2,2,0,0,0,0,0,0,0,0,7.4,3,44,48,3,2
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Lius Diaz,Liverpool,FW,TRUE,78,0,1,0,0,3,2,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,8.3,7,36,42,4,3
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Lius Diaz,Liverpool,FW,TRUE,74,0,0,0,0,2,1,0,0,2,3,1,0,0,0,0,0,0,0,0,0,0,7.3,1,19,19,2,2
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Lius Diaz,Liverpool,FW,TRUE,75,0,0,0,0,0,0,0,0,4,1,4,0,2,0,0,0,0,0,0,0,0,7,4,23,30,1,1
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Lius Diaz,Liverpool,FW,TRUE,70,0,0,0,0,4,1,0,0,3,0,0,1,1,0,0,0,0,0,0,0,0,7.1,3,30,35,8,3
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,0,0,1,0,0,1,3,0,1,0,0,0,0,0,0,0,0,6.5,0,24,38,1,0
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Trent Alexander Arnold,Liverpool,DF,TRUE,74,0,0,0,0,3,2,0,0,0,1,8,0,1,1,0,0,0,0,0,0,0,7.2,3,45,54,3,3
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,3,0,2,0,0,0,0,0,0,0,0,6.4,1,25,39,2,2
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Trent Alexander Arnold,Liverpool,DF,TRUE,70,0,1,0,0,2,0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,0,8,1,68,75,1,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Trent Alexander Arnold,Liverpool,DF,FALSE,17,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,6,1,0,2,2,0
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,79,0,0,0,0,0,0,0,0,1,0,2,0,3,1,0,0,0,0,0,0,0,6.9,0,52,59,0,0
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,4,0,0,0,0,0,6,0,1,1,0,0,0,0,0,0,0,7.2,0,67,89,3,2
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Trent Alexander Arnold,Liverpool,DF,TRUE,88,0,0,0,0,3,0,1,0,1,1,5,0,0,1,0,0,0,0,0,0,0,6.8,1,64,72,1,1
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,2,0,0,0,1,0,9,0,0,2,0,0,0,0,0,0,0,7.9,6,70,82,2,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Trent Alexander Arnold,Liverpool,DF,TRUE,89,0,0,0,0,0,0,0,0,0,0,6,0,0,1,0,0,0,0,0,0,0,7.3,2,45,58,1,1
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,90,1,0,0,0,1,1,0,0,0,0,4,0,1,2,0,0,0,0,0,0,0,7.3,0,31,41,5,2
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Trent Alexander Arnold,Liverpool,DF,TRUE,90,1,0,0,0,4,1,0,0,0,0,3,0,1,0,0,0,0,0,0,0,0,7.8,2,68,81,4,3
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,1,0,0,1,0,0,0,0,0,12,0,1,2,0,0,0,0,0,0,0,8.6,7,59,82,3,1
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,6,0,0,2,0,0,0,0,0,0,0,8.1,6,72,86,2,1
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,4,0,0,0,0,1,13,0,3,2,0,0,0,0,0,0,0,9.1,6,69,88,3,3
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,1,0,0,1,0,0,0,0,1,6,0,0,0,0,0,0,0,0,0,0,7.2,3,40,57,0,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,1,0,1,0,1,0,8,0,3,0,0,0,0,0,0,0,0,7.7,4,76,93,1,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,3,0,1,0,0,1,13,0,1,3,0,0,0,0,0,0,0,7,2,41,61,3,3
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Trent Alexander Arnold,Liverpool,DF,FALSE,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,1,20,21,3,2
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,57,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,6.4,1,14,21,1,0
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Trent Alexander Arnold,Liverpool,DF,TRUE,45,0,1,0,0,1,0,0,0,0,0,8,0,1,1,0,0,0,0,0,0,0,7.3,2,37,45,1,1
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Trent Alexander Arnold,Liverpool,DF,FALSE,43,0,0,0,0,1,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,6.8,1,26,43,1,1
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,79,1,0,0,0,1,1,0,0,1,0,4,0,1,1,0,0,0,0,0,0,0,7.7,1,57,73,1,1
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,83,0,0,0,0,1,0,0,0,0,1,7,0,0,1,0,0,0,0,0,0,0,7.1,0,81,99,1,1
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,78,0,0,0,0,4,2,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,7.6,3,60,72,0,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,4,0,1,0,2,1,7,0,3,3,0,0,0,0,0,0,0,7.4,2,39,51,2,0
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Trent Alexander Arnold,Liverpool,DF,TRUE,90,0,0,0,0,2,1,0,0,0,0,8,1,1,2,0,0,0,0,0,0,0,6.3,1,51,60,0,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Trent Alexander Arnold,Liverpool,DF,TRUE,70,0,0,0,0,4,0,0,0,1,1,5,0,2,1,0,0,0,0,0,0,0,8.1,3,42,43,2,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Cody Gakpo,Liverpool,MF,TRUE,65,0,0,0,0,0,0,0,0,3,0,0,1,1,0,0,0,0,0,0,0,0,6.7,1,10,13,2,1
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Cody Gakpo,Liverpool,MF,TRUE,62,0,0,0,0,3,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,7.1,1,20,25,2,2
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,57,0,0,0,0,0,0,0,0,1,4,0,1,0,1,0,0,0,0,0,0,0,6.7,1,4,6,4,1
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Cody Gakpo,Liverpool,FW,FALSE,26,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,6.4,0,2,2,0,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,55,1,0,0,0,3,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.3,0,10,13,2,1
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Cody Gakpo,Liverpool,FW,FALSE,10,0,0,0,0,2,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,6.4,0,4,8,1,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,45,1,0,0,0,3,2,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,7.5,1,9,11,0,0
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Cody Gakpo,Liverpool,FW,FALSE,33,0,0,0,0,1,0,0,0,1,3,1,0,0,0,0,0,0,0,0,0,0,6.9,0,12,17,1,1
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Cody Gakpo,Liverpool,FW,FALSE,25,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.1,0,4,5,0,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Cody Gakpo,Liverpool,MF,TRUE,82,0,0,0,0,2,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,7.2,0,30,33,3,2
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Cody Gakpo,Liverpool,MF,FALSE,18,0,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,6.6,0,2,4,0,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Cody Gakpo,Liverpool,MF,FALSE,27,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.9,0,12,16,1,1
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,85,0,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,7.2,1,18,21,4,3
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Cody Gakpo,Liverpool,FW,FALSE,34,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,6.7,0,14,15,0,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Cody Gakpo,Liverpool,FW,FALSE,30,0,0,0,0,4,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.5,1,13,16,0,0
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Cody Gakpo,Liverpool,FW,TRUE,67,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,6.6,2,5,9,1,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,66,0,1,0,0,3,2,0,0,1,1,0,1,2,1,0,0,0,0,0,0,0,7.6,2,13,14,8,5
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Cody Gakpo,Liverpool,FW,FALSE,27,1,0,0,0,2,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.5,0,4,6,0,0
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Cody Gakpo,Liverpool,FW,FALSE,27,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,1,7,12,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Cody Gakpo,Liverpool,FW,FALSE,23,0,0,0,0,2,1,0,0,1,2,0,0,0,2,0,0,0,0,0,0,0,7,0,13,14,0,0
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,57,0,0,0,0,1,0,0,0,0,2,0,0,1,1,0,0,0,0,0,0,0,6.7,0,6,11,0,0
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Cody Gakpo,Liverpool,FW,FALSE,9,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,6.7,0,3,3,1,1
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Cody Gakpo,Liverpool,FW,FALSE,45,1,1,0,0,2,1,0,0,2,0,1,0,1,0,0,0,0,0,0,0,0,8.1,1,12,16,0,0
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Cody Gakpo,Liverpool,FW,TRUE,90,1,0,0,0,8,4,0,0,3,4,2,0,2,0,0,0,0,0,0,0,0,8.1,1,16,24,1,0
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,83,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.6,0,17,21,0,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Cody Gakpo,Liverpool,FW,FALSE,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,3,6,0,0
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Cody Gakpo,Liverpool,FW,FALSE,2,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,2,4,0,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Cody Gakpo,Liverpool,FW,FALSE,18,1,0,0,0,4,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,8.1,3,13,13,3,2
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Cody Gakpo,Liverpool,FW,FALSE,22,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,9,11,0,0
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Cody Gakpo,Liverpool,FW,FALSE,25,0,0,0,0,0,0,0,0,0,0,0,7,1,0,0,0,0,0,0,0,0,7.7,2,12,13,3,3
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,85,0,1,0,0,4,3,0,0,0,2,0,2,1,3,0,0,0,0,0,0,0,8.2,2,31,36,4,3
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,90,0,0,0,0,8,0,0,0,0,1,1,2,3,1,0,0,0,0,0,0,0,8,2,25,32,2,1
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Cody Gakpo,Liverpool,FW,TRUE,90,1,1,0,0,2,2,0,0,1,2,1,1,1,0,0,0,0,0,0,0,0,8.6,2,19,26,2,1
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Cody Gakpo,Liverpool,FW,TRUE,74,1,0,0,0,2,1,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,7.5,0,20,25,2,2
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Cody Gakpo,Liverpool,FW,TRUE,80,0,0,0,0,5,1,0,0,1,2,0,1,0,1,0,0,0,0,0,0,0,7.3,1,30,34,1,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Curtis Jones,Liverpool,MF,FALSE,25,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,6.7,0,16,18,1,1
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Curtis Jones,Liverpool,MF,TRUE,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,33,36,0,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Curtis Jones,Liverpool,MF,TRUE,90,0,0,0,0,0,0,1,0,0,2,0,0,1,1,0,0,0,0,0,0,0,7,0,72,76,4,2
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Curtis Jones,Liverpool,MF,TRUE,76,0,0,0,0,2,1,0,0,0,1,1,0,3,0,0,0,0,0,0,0,0,6.9,0,49,51,4,1
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Curtis Jones,Liverpool,MF,TRUE,25,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,4.7,0,8,8,0,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Curtis Jones,Liverpool,MF,TRUE,53,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.4,0,19,22,4,2
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Curtis Jones,Liverpool,MF,FALSE,34,0,0,0,0,1,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,6.8,0,16,20,1,1
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Curtis Jones,Liverpool,MF,FALSE,17,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,7,1,15,17,0,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Curtis Jones,Liverpool,MF,FALSE,13,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,3,3,0,0
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Curtis Jones,Liverpool,MF,TRUE,67,0,0,0,0,1,0,0,0,0,2,0,0,1,1,0,0,0,0,0,0,0,7.1,1,29,33,0,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Curtis Jones,Liverpool,MF,FALSE,25,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,21,22,0,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Curtis Jones,Liverpool,MF,TRUE,90,1,0,0,0,5,3,0,0,1,2,0,0,2,0,0,0,0,0,0,0,0,8.6,2,49,54,2,2
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Curtis Jones,Liverpool,MF,TRUE,82,0,0,0,0,1,0,0,0,0,0,0,2,1,1,0,0,0,0,0,0,0,7.4,0,49,52,1,1
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Curtis Jones,Liverpool,MF,TRUE,82,0,0,0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,0,0,0,0,7,1,40,45,2,1
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Curtis Jones,Liverpool,MF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.2,0,36,45,1,1
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Curtis Jones,Liverpool,MF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,1,2,0,0,0,0,0,0,0,0,7.5,3,66,73,2,1
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Curtis Jones,Liverpool,MF,TRUE,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,19,20,0,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Curtis Jones,Liverpool,MF,FALSE,18,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.1,1,29,31,1,1
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Curtis Jones,Liverpool,MF,FALSE,25,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.4,0,17,19,0,0
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Curtis Jones,Liverpool,MF,TRUE,81,0,0,0,0,2,0,1,0,4,1,0,1,1,1,0,0,0,0,0,0,0,6.2,0,43,47,1,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Curtis Jones,Liverpool,MF,TRUE,62,0,0,0,0,1,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,6.7,1,43,44,1,1
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Curtis Jones,Liverpool,MF,FALSE,15,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,2,2,0,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Curtis Jones,Liverpool,MF,FALSE,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,1,12,12,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Diogo jota,Liverpool,FW,TRUE,65,0,0,0,0,2,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.8,1,14,18,2,1
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Diogo jota,Liverpool,FW,TRUE,75,1,0,0,0,5,2,0,0,2,2,0,0,0,1,0,0,0,0,0,0,0,8.2,2,26,37,4,2
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Diogo jota,Liverpool,FW,FALSE,33,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,7.2,1,9,13,0,0
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Diogo jota,Liverpool,FW,FALSE,26,0,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,6.6,0,9,13,1,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Diogo jota,Liverpool,FW,TRUE,55,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,7,0,15,18,3,3
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Diogo jota,Liverpool,FW,FALSE,10,1,0,0,0,2,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.4,0,4,6,0,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Diogo jota,Liverpool,FW,FALSE,23,0,0,0,0,0,0,2,1,4,2,0,0,1,0,0,0,0,0,0,0,0,5.3,0,3,4,2,0
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Diogo jota,Liverpool,FW,TRUE,90,0,0,0,0,4,1,0,0,2,1,0,1,0,0,0,0,0,0,0,0,0,7.3,3,26,32,2,1
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Diogo jota,Liverpool,FW,TRUE,57,1,0,0,0,3,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.7,1,17,21,2,1
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Diogo jota,Liverpool,FW,TRUE,65,0,0,0,0,2,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,6.8,1,20,24,3,2
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Diogo jota,Liverpool,FW,TRUE,82,1,0,0,0,3,1,0,0,1,3,0,0,0,1,0,0,0,0,0,0,0,7.8,2,20,25,1,1
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Diogo jota,Liverpool,FW,TRUE,53,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,6.5,1,6,7,1,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Diogo jota,Liverpool,FW,FALSE,7,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.5,0,3,4,2,1
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Diogo jota,Liverpool,FW,FALSE,27,0,1,0,0,1,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,7.6,2,5,6,0,0
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Diogo jota,Liverpool,FW,TRUE,89,2,1,0,0,2,2,0,0,3,2,0,0,2,1,0,0,0,0,0,0,0,9.2,1,19,23,3,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Diogo jota,Liverpool,FW,TRUE,67,1,0,0,0,2,1,0,0,2,1,1,2,2,0,0,0,0,0,0,0,0,8,1,18,31,3,2
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Diogo jota,Liverpool,FW,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,1,1,1,0,0,0,0,0,0,0,6.8,2,19,24,0,0
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Diogo jota,Liverpool,FW,TRUE,90,1,0,0,0,6,3,0,0,3,2,0,1,1,1,0,0,0,0,0,0,0,7.8,1,26,34,2,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Diogo jota,Liverpool,FW,TRUE,43,0,1,0,0,2,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.9,1,11,17,1,0
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Diogo jota,Liverpool,FW,FALSE,25,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,1,5,6,0,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Diogo jota,Liverpool,FW,TRUE,73,1,0,0,0,3,2,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,7.4,1,11,18,4,1
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,2,0,0,6.1,0,33,34,0,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,7.2,0,28,33,0,0
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,0,0,6.7,0,30,35,0,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,0,0,7.5,0,15,35,0,0
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,6.7,0,33,55,0,0
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7.2,0,34,41,0,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,0,0,7.6,0,41,53,0,0
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,6.9,1,36,38,0,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,0,0,7,0,29,30,0,0
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Caoimhin Kelleher,Liverpool,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,0,0,6.7,0,28,33,0,0
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Kostas Tsimikas,Liverpool,DF,FALSE,11,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.6,0,3,5,0,0
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Kostas Tsimikas,Liverpool,DF,TRUE,61,0,0,0,0,0,0,0,0,3,0,0,8,0,0,0,0,0,0,0,0,0,6.6,1,39,48,1,0
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Kostas Tsimikas,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,8,1,0,0,0,0,0,0,0,0,7.3,1,60,64,0,0
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Kostas Tsimikas,Liverpool,DF,FALSE,24,0,0,0,0,0,0,0,0,2,0,0,8,0,1,0,0,0,0,0,0,0,6.5,1,16,19,1,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Kostas Tsimikas,Liverpool,DF,TRUE,90,0,2,0,0,1,0,0,0,1,1,0,10,1,0,0,0,0,0,0,0,0,8.2,3,35,41,3,1
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Kostas Tsimikas,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,0,0,0,6.8,1,33,39,0,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Kostas Tsimikas,Liverpool,DF,TRUE,90,0,1,0,0,0,0,0,0,0,1,0,6,1,2,0,0,0,0,0,0,0,7.4,4,43,50,3,2
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Kostas Tsimikas,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,1,1,1,4,3,0,0,0,0,0,0,0,0,6.9,1,41,47,4,1
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Kostas Tsimikas,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,10,3,1,0,0,0,0,0,0,0,7.7,3,25,31,2,0
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Kostas Tsimikas,Liverpool,DF,TRUE,34,0,0,0,0,0,0,0,0,1,2,0,4,2,0,0,0,0,0,0,0,0,6.6,0,7,8,0,0
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Kostas Tsimikas,Liverpool,DF,FALSE,17,0,0,0,0,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,6.8,1,4,5,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Kostas Tsimikas,Liverpool,DF,FALSE,12,0,0,0,0,0,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,0,6.6,0,2,3,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Darwin Nunez,Liverpool,FW,FALSE,25,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,5,6,3,2
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Darwin Nunez,Liverpool,FW,FALSE,5,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.6,0,1,2,0,0
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Darwin Nunez,Liverpool,FW,FALSE,14,2,0,0,0,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8.7,0,3,5,0,0
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Darwin Nunez,Liverpool,FW,TRUE,64,0,1,0,0,5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.7,1,7,11,0,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Darwin Nunez,Liverpool,FW,FALSE,35,0,0,0,0,2,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,6.5,0,10,16,0,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Darwin Nunez,Liverpool,FW,TRUE,80,1,0,0,0,3,2,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.8,0,14,18,2,1
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Darwin Nunez,Liverpool,FW,TRUE,90,0,1,0,0,3,1,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,7.4,2,17,19,1,0
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Darwin Nunez,Liverpool,FW,FALSE,29,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.2,1,8,13,1,0
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Darwin Nunez,Liverpool,FW,TRUE,79,1,0,0,0,5,3,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,7.3,1,16,17,2,0
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Darwin Nunez,Liverpool,FW,TRUE,90,0,0,0,0,9,3,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,6.5,1,14,22,0,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Darwin Nunez,Liverpool,FW,TRUE,90,0,1,0,0,3,3,0,0,0,1,2,2,1,0,0,0,0,0,0,0,0,7.9,2,23,26,1,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Darwin Nunez,Liverpool,FW,TRUE,84,0,0,0,0,4,1,1,0,1,0,2,0,0,1,0,0,0,0,0,0,0,6.6,0,10,15,0,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Darwin Nunez,Liverpool,FW,TRUE,90,0,0,0,0,3,0,0,0,1,2,3,0,1,0,0,0,0,0,0,0,0,6.4,1,17,30,1,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Darwin Nunez,Liverpool,FW,FALSE,24,0,1,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6.7,1,3,4,3,1
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Darwin Nunez,Liverpool,FW,TRUE,72,0,0,0,0,2,0,0,0,1,0,3,0,1,0,0,0,0,0,0,0,0,6.5,0,12,15,1,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Darwin Nunez,Liverpool,FW,TRUE,77,0,0,0,0,2,0,1,0,1,0,3,2,0,0,0,0,0,0,0,0,0,7,4,8,10,1,1
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Darwin Nunez,Liverpool,FW,FALSE,23,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7,0,3,5,2,2
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Darwin Nunez,Liverpool,FW,TRUE,83,1,0,0,0,2,1,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,7.8,3,15,25,1,1
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Darwin Nunez,Liverpool,FW,TRUE,63,0,1,0,0,8,5,0,0,2,0,1,0,1,0,0,0,0,0,0,0,0,6.8,2,8,11,2,1
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Darwin Nunez,Liverpool,FW,TRUE,90,2,0,0,0,3,3,1,0,2,0,0,1,2,0,0,0,0,0,0,0,0,8.9,3,20,25,3,1
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Darwin Nunez,Liverpool,FW,TRUE,90,0,1,0,1,11,5,1,0,3,0,1,2,0,0,0,0,0,0,0,0,0,7.5,1,16,17,1,1
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Darwin Nunez,Liverpool,FW,FALSE,33,0,0,0,0,1,0,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,6.8,0,3,4,1,1
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Darwin Nunez,Liverpool,FW,TRUE,90,1,0,0,0,5,2,1,0,1,1,1,3,0,1,0,0,0,0,0,0,0,7.5,3,15,22,1,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Darwin Nunez,Liverpool,FW,TRUE,45,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.1,0,9,15,1,0
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Darwin Nunez,Liverpool,FW,FALSE,31,1,0,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.5,1,2,3,1,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Darwin Nunez,Liverpool,FW,TRUE,75,0,0,0,0,2,1,0,0,0,1,5,0,0,0,0,0,0,0,0,0,0,7,0,12,16,0,0
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Darwin Nunez,Liverpool,FW,TRUE,82,0,0,0,0,2,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,7.1,0,1,13,17,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Darwin Nunez,Liverpool,FW,TRUE,90,1,0,0,0,7,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.4,0,15,21,2,2
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Darwin Nunez,Liverpool,FW,TRUE,68,0,1,0,0,5,0,0,0,1,1,1,2,0,0,0,0,0,0,0,0,0,7,2,6,12,2,0
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Darwin Nunez,Liverpool,FW,TRUE,65,0,0,0,0,3,2,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,6.9,0,8,13,1,1
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Darwin Nunez,Liverpool,FW,FALSE,17,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,6.5,0,1,3,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Darwin Nunez,Liverpool,FW,TRUE,90,0,0,0,0,2,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.7,2,11,11,0,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Darwin Nunez,Liverpool,FW,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.6,1,1,2,0,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Darwin Nunez,Liverpool,FW,FALSE,16,0,0,0,0,1,1,0,0,1,1,2,0,0,0,0,0,0,0,0,0,0,6.2,0,0,3,0,0
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Darwin Nunez,Liverpool,FW,FALSE,16,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,6.7,0,4,5,0,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Darwin Nunez,Liverpool,FW,FALSE,20,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,3,4,0,0
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Conor Bradley,Liverpool,DF,TRUE,82,0,1,0,0,3,1,1,0,2,1,0,4,2,1,0,0,0,0,0,0,0,7,1,21,33,4,1
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Conor Bradley,Liverpool,DF,TRUE,67,1,2,0,0,1,1,0,0,2,4,0,3,2,0,0,0,0,0,0,0,0,9.5,4,25,31,2,1
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Conor Bradley,Liverpool,DF,TRUE,82,0,0,0,0,2,1,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,7.3,0,53,62,1,1
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Conor Bradley,Liverpool,DF,TRUE,67,0,0,0,0,1,1,0,0,0,0,0,3,3,1,0,0,0,0,0,0,0,7.7,3,21,33,2,2
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Conor Bradley,Liverpool,DF,TRUE,83,0,0,0,0,0,0,0,0,1,2,0,1,4,1,0,0,0,0,0,0,0,7.2,2,39,52,6,2
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Conor Bradley,Liverpool,DF,TRUE,60,0,0,0,0,1,0,0,0,0,2,0,1,4,2,0,0,0,0,0,0,0,7.2,0,21,29,1,0
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Conor Bradley,Liverpool,DF,TRUE,90,0,0,0,0,2,0,0,0,0,1,1,1,5,3,0,0,0,0,0,0,0,8.2,4,42,49,6,4
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Conor Bradley,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,3,0,0,1,0,0,0,0,0,0,6.7,0,67,71,0,0
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Conor Bradley,Liverpool,DF,TRUE,65,0,0,0,0,1,0,1,0,0,1,1,0,2,0,0,0,0,0,0,0,0,6.6,1,28,35,3,1
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Conor Bradley,Liverpool,DF,TRUE,47,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,6.6,1,28,35,3,1
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Conor Bradley,Liverpool,DF,FALSE,20,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.5,0,21,31,1,1
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Wataru Endo,Liverpool,MF,FALSE,28,0,0,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,0,0,6.6,0,15,17,0,0
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Wataru Endo,Liverpool,MF,TRUE,57,0,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,6.5,0,28,32,0,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Wataru Endo,Liverpool,MF,FALSE,8,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,4,4,0,0
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Wataru Endo,Liverpool,MF,FALSE,18,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.3,0,4,8,0,0
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Wataru Endo,Liverpool,MF,FALSE,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,3,3,0,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,0,0,0,0,4,0,0,0,1,0,0,0,0,0,0,0,0,6.5,0,49,57,0,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Wataru Endo,Liverpool,MF,FALSE,14,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,4,4,0,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Wataru Endo,Liverpool,MF,FALSE,15,1,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.4,1,6,8,0,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,0,0,1,0,2,2,0,0,2,1,0,0,0,0,0,0,0,7,0,55,69,0,0
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Wataru Endo,Liverpool,MF,TRUE,45,0,0,0,0,0,0,0,0,3,3,0,0,1,0,0,0,0,0,0,0,0,6.7,0,39,42,0,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,1,0,1,0,4,3,0,1,2,1,0,0,0,0,0,0,0,7.2,0,55,62,2,1
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,0,0,1,0,2,2,0,1,3,2,0,0,0,0,0,0,0,7,0,42,48,0,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6.9,2,63,75,0,0
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Wataru Endo,Liverpool,MF,TRUE,74,0,0,0,0,2,0,1,0,3,2,0,2,0,2,0,0,0,0,0,0,0,7.1,3,63,69,0,0
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Wataru Endo,Liverpool,MF,TRUE,89,0,0,0,0,1,0,1,0,4,3,0,0,2,0,0,0,0,0,0,0,0,7.2,2,60,68,1,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,1,0,1,0,2,2,0,0,1,1,0,0,0,0,0,0,0,6.9,0,69,79,0,0
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,7.2,3,50,53,1,1
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Wataru Endo,Liverpool,MF,FALSE,31,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.7,0,21,26,1,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,7.2,1,59,62,0,0
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,0,0,1,0,3,0,0,0,1,2,0,0,0,0,0,0,0,6.8,0,63,67,1,1
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Wataru Endo,Liverpool,MF,TRUE,68,0,0,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,0,0,6.5,1,34,43,1,1
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Wataru Endo,Liverpool,MF,TRUE,45,0,0,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,7,0,42,53,2,1
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,0,0,1,0,0,0,0,0,0,0,6.7,0,69,76,2,2
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Wataru Endo,Liverpool,MF,FALSE,28,0,0,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,0,0,6.4,0,28,30,0,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Wataru Endo,Liverpool,MF,TRUE,78,0,0,0,0,0,0,1,0,2,0,0,0,1,2,0,0,0,0,0,0,0,6.5,0,63,72,1,1
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Wataru Endo,Liverpool,MF,TRUE,64,0,0,0,0,0,0,0,0,3,0,0,0,1,0,0,0,0,0,0,0,0,6.8,1,40,44,1,1
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Wataru Endo,Liverpool,MF,TRUE,75,0,0,0,0,0,0,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,7,0,50,55,1,1
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Wataru Endo,Liverpool,MF,TRUE,90,0,0,0,0,1,1,1,0,3,3,0,0,3,0,0,0,0,0,0,0,0,7,2,69,73,1,0
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Joe Gomez,Liverpool,DF,FALSE,16,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.6,0,7,8,0,0
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Joe Gomez,Liverpool,DF,FALSE,58,0,0,0,0,1,0,0,0,1,2,0,0,0,1,0,0,0,0,0,0,0,7.2,0,27,30,0,0
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,1,2,0,0,0,2,0,0,0,0,0,0,0,7.2,1,103,108,1,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,6,1,1,0,0,0,0,0,0,0,6.6,1,54,61,1,0
+2023/24,Premier League,2023-09-24,Liverpool,West Ham,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,2,2,2,0,0,0,0,0,0,0,7.5,1,53,61,3,2
+2023/24,Premier League,2023-09-30,Tottenham,Liverpool,Joe Gomez,Liverpool,DF,TRUE,72,0,0,0,0,0,0,0,0,1,2,0,1,1,0,0,0,0,0,0,0,0,6.8,0,24,33,1,1
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Joe Gomez,Liverpool,DF,FALSE,11,0,0,0,0,0,0,1,0,2,0,0,0,2,0,0,0,0,0,0,0,0,6.6,1,6,7,0,0
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Joe Gomez,Liverpool,DF,FALSE,10,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,1,19,20,0,0
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Joe Gomez,Liverpool,DF,TRUE,66,0,0,0,0,1,0,0,0,1,1,0,1,2,0,0,0,0,0,0,0,0,7.3,2,40,44,1,0
+2023/24,Premier League,2023-12-03,Liverpool,Fulham,Joe Gomez,Liverpool,DF,FALSE,26,0,0,0,0,0,0,0,0,1,0,0,2,0,1,0,0,0,0,0,0,0,6.5,0,17,48,0,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,7,0,45,55,3,1
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Joe Gomez,Liverpool,DF,FALSE,45,0,0,0,0,0,0,1,0,1,1,0,4,0,0,0,0,0,0,0,0,0,7,1,38,42,2,2
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Joe Gomez,Liverpool,DF,FALSE,30,0,0,0,0,2,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,6.8,1,18,20,0,0
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Joe Gomez,Liverpool,DF,FALSE,56,0,0,0,0,2,1,0,0,0,0,0,1,4,1,0,0,0,0,0,0,0,7.7,1,16,24,0,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,2,1,0,3,3,1,0,0,0,0,0,0,0,7.1,0,34,45,4,3
+2023/24,Premier League,2024-01-01,Liverpool,Newcastle,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,1,0,1,0,0,0,0,0,0,0,6.7,1,38,44,3,1
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Joe Gomez,Liverpool,DF,TRUE,90,0,1,0,0,1,0,0,0,2,1,0,1,1,0,0,0,0,0,0,0,0,7.1,1,44,55,2,1
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Joe Gomez,Liverpool,DF,TRUE,68,0,0,0,0,0,0,0,0,1,0,0,2,3,0,0,0,0,0,0,0,0,7.3,2,35,40,1,0
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Joe Gomez,Liverpool,DF,TRUE,84,0,0,0,0,0,0,1,0,1,0,0,3,0,0,0,0,0,0,0,0,0,6.1,1,29,40,0,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Joe Gomez,Liverpool,DF,FALSE,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,7,7,0,0
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,1,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.7,1,47,50,2,2
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Joe Gomez,Liverpool,MF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,0,1,1,0,0,0,0,0,0,0,7.1,2,51,64,0,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,1,3,1,0,0,0,0,0,0,0,6.8,0,38,46,1,1
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,0,0,1,0,3,1,0,1,1,1,0,0,0,0,0,0,0,6.8,1,39,43,1,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Joe Gomez,Liverpool,DF,TRUE,72,0,0,0,0,2,0,0,0,0,2,0,2,1,0,0,0,0,0,0,0,0,7.6,2,71,79,0,0
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Joe Gomez,Liverpool,DF,FALSE,25,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,7,1,17,22,0,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Joe Gomez,Liverpool,DF,FALSE,11,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.6,0,2,4,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Joe Gomez,Liverpool,DF,FALSE,7,0,0,0,0,0,0,0,0,1,0,0,3,1,0,0,0,0,0,0,0,0,6.7,0,6,6,0,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Joe Gomez,Liverpool,DF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,6.6,0,8,11,0,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Joe Gomez,Liverpool,DF,FALSE,27,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.3,0,8,8,0,0
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Joe Gomez,Liverpool,DF,TRUE,90,0,0,0,0,2,1,0,0,1,1,0,1,2,1,0,0,0,0,0,0,0,6.8,0,2,4,0,0
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Jarell Quansah,Liverpool,DF,FALSE,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,3,5,1,0
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Jarell Quansah,Liverpool,DF,FALSE,20,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,22,23,1,1
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Jarell Quansah,Liverpool,DF,TRUE,82,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,0,0,0,0,0,7.2,0,77,80,0,0
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Jarell Quansah,Liverpool,DF,TRUE,56,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,58,66,0,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Jarell Quansah,Liverpool,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,7.3,0,98,113,0,0
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Jarell Quansah,Liverpool,DF,TRUE,90,0,0,0,0,1,0,1,0,1,0,0,0,2,0,0,0,0,0,0,0,0,7.1,0,99,116,0,0
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Jarell Quansah,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,2,1,0,0,1,1,0,0,0,0,0,0,0,6.7,0,43,51,0,0
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Jarell Quansah,Liverpool,DF,TRUE,90,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,78,90,2,1
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Jarell Quansah,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,7.2,1,102,114,1,0
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Jarell Quansah,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,6.2,0,81,92,0,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Jarell Quansah,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,7.1,0,97,107,0,0
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Jarell Quansah,Liverpool,DF,FALSE,28,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.7,1,23,28,0,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Jarell Quansah,Liverpool,DF,TRUE,89,0,0,0,0,0,0,0,0,1,0,0,0,3,1,0,0,0,0,0,0,0,6.9,0,81,90,0,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Jarell Quansah,Liverpool,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,0,0,6.9,0,33,38,1,1
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Jarell Quansah,Liverpool,DF,TRUE,90,1,0,0,0,1,1,0,0,1,0,0,0,3,2,0,0,0,0,0,0,0,7.9,0,68,74,0,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Jarell Quansah,Liverpool,DF,TRUE,90,1,0,0,0,2,2,0,0,1,0,0,0,2,2,0,0,0,0,0,0,0,8.7,1,67,74,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,14,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7,1,8,9,1,1
+2023/24,Premier League,2023-08-19,Liverpool,Bournemouth,Harvey Elliott,Liverpool,MF,FALSE,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,7,10,1,0
+2023/24,Premier League,2023-08-27,Newcastle,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,15,16,0,0
+2023/24,Premier League,2023-09-03,Liverpool,Aston Villa,Harvey Elliott,Liverpool,MF,FALSE,26,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,16,16,0,0
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,35,0,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.1,1,24,30,0,0
+2023/24,Premier League,2023-10-08,Brighton,Liverpool,Harvey Elliott,Liverpool,MF,TRUE,45,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.5,1,13,17,0,0
+2023/24,Premier League,2023-10-21,Liverpool,Everton,Harvey Elliott,Liverpool,MF,FALSE,29,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.2,0,31,31,0,0
+2023/24,Premier League,2023-10-29,Liverpool,Nottingham,Harvey Elliott,Liverpool,MF,FALSE,32,0,0,0,0,3,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.8,0,15,15,0,0
+2023/24,Premier League,2023-11-05,Luton Town,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,25,0,1,0,0,1,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,6.8,2,11,12,1,0
+2023/24,Premier League,2023-11-12,Liverpool,Brentford,Harvey Elliott,Liverpool,MF,FALSE,14,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,5,5,0,0
+2023/24,Premier League,2023-11-25,Manchester City,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,1,4,0,0
+2023/24,Premier League,2023-12-06,Sheffield United,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,24,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.7,1,12,12,0,0
+2023/24,Premier League,2023-12-09,Crystal Palace,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,18,1,0,0,0,2,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,7.7,0,24,24,0,0
+2023/24,Premier League,2023-12-17,Liverpool,Manchester Utd,Harvey Elliott,Liverpool,MF,FALSE,13,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,6,7,0,0
+2023/24,Premier League,2023-12-23,Liverpool,Arsenal,Harvey Elliott,Liverpool,MF,FALSE,23,0,0,0,0,1,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,7.1,1,11,13,0,0
+2023/24,Premier League,2023-12-26,Burnley,Liverpool,Harvey Elliott,Liverpool,MF,TRUE,66,0,0,0,0,2,1,0,0,1,1,0,3,2,0,0,0,0,0,0,0,0,7.3,2,34,41,2,2
+2023/24,Premier League,2024-01-21,Bournemouth,Liverpool,Harvey Elliott,Liverpool,MF,TRUE,63,0,0,0,0,1,0,0,0,1,0,0,6,4,0,0,0,0,0,0,0,0,7.5,0,35,40,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Harvey Elliott,Liverpool,MF,FALSE,22,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.9,1,18,18,0,0
+2023/24,Premier League,2024-02-04,Arsenal,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,33,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,6.4,0,19,21,1,0
+2023/24,Premier League,2024-02-10,Liverpool,Burnley,Harvey Elliott,Liverpool,MF,FALSE,45,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,7.4,1,29,34,0,0
+2023/24,Premier League,2024-02-17,Brentford,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,15,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,6,7,1,1
+2023/24,Premier League,2024-02-21,Liverpool,Luton Town,Harvey Elliott,Liverpool,FW,TRUE,90,1,0,0,0,5,2,0,0,0,1,0,10,0,1,0,0,0,0,0,0,0,8.9,8,39,49,3,2
+2023/24,Premier League,2024-03-02,Nottingham,Liverpool,Harvey Elliott,Liverpool,FW,TRUE,75,0,0,0,0,2,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,7.2,1,47,53,1,1
+2023/24,Premier League,2024-03-10,Liverpool,Manchester City,Harvey Elliott,Liverpool,FW,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,4,1,1,0,0,0,0,0,0,0,6.8,1,33,42,0,0
+2023/24,Premier League,2024-03-31,Liverpool,Brighton,Harvey Elliott,Liverpool,MF,FALSE,14,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,7,8,0,0
+2023/24,Premier League,2024-04-04,Liverpool,Sheffield United,Harvey Elliott,Liverpool,MF,FALSE,31,0,0,0,0,0,0,0,0,0,1,0,4,0,0,0,0,0,0,0,0,0,7,2,23,24,0,0
+2023/24,Premier League,2024-04-07,Manchester Utd,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,22,0,0,0,0,1,1,0,0,0,1,0,3,0,0,0,0,0,0,0,0,0,7.5,0,22,26,1,0
+2023/24,Premier League,2024-04-14,Liverpool,Crystal Palace,Harvey Elliott,Liverpool,MF,FALSE,9,0,0,0,0,1,1,0,0,0,1,0,3,1,0,0,0,0,0,0,0,0,7.1,0,11,13,0,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Harvey Elliott,Liverpool,MF,TRUE,90,0,1,0,0,4,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,7,1,51,60,2,1
+2023/24,Premier League,2024-04-24,Everton,Liverpool,Harvey Elliott,Liverpool,MF,FALSE,28,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7.1,1,22,24,0,0
+2023/24,Premier League,2024-04-27,West Ham,Liverpool,Harvey Elliott,Liverpool,FW,TRUE,90,0,0,0,0,4,1,0,0,0,2,0,3,3,0,0,0,0,0,0,0,0,7.1,0,46,54,3,0
+2023/24,Premier League,2024-05-05,Liverpool,Tottenham,Harvey Elliott,Liverpool,MF,TRUE,82,1,1,0,0,4,4,0,0,0,1,1,2,1,0,0,0,0,0,0,0,0,9.5,5,47,53,1,1
+2023/24,Premier League,2024-05-13,Aston Villa,Liverpool,Harvey Elliott,Liverpool,MF,TRUE,74,0,1,0,0,0,0,1,0,0,0,0,3,0,0,0,0,0,0,0,0,0,7,2,40,46,1,0
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Harvey Elliott,Liverpool,MF,TRUE,80,0,1,0,0,3,0,0,0,1,1,0,7,0,0,0,0,0,0,0,0,0,8.7,5,65,70,0,0

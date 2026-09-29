@@ -1,0 +1,561 @@
+Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
+2023/24,Premier League,12/8/23,Sheffield United,Crystal Palace,Eberechi Eze,Crystal Palace,MF,TRUE,90,0,0,0,0,8,0,0,0,1,5,0,9,0,0,0,0,0,0,0,0,0,8.4,7,39,46,2,2
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Eberechi Eze,Crystal Palace,MF,TRUE,90,0,0,0,0,4,1,0,0,1,2,0,4,0,0,0,0,0,0,0,0,0,7.3,1,36,39,4,3
+2023/24,Premier League,26/8/23,Brentford,Crystal Palace,Eberechi Eze,Crystal Palace,MF,TRUE,90,0,0,0,0,4,1,0,0,1,0,0,5,1,1,0,0,0,0,0,0,0,7.3,1,23,25,6,5
+2023/24,Premier League,3/9/23,Crystal Palace,Wolves,Eberechi Eze,Crystal Palace,MF,TRUE,90,1,0,0,0,3,3,0,0,0,1,1,8,1,0,0,0,0,0,0,0,0,8.2,4,27,30,5,3
+2023/24,Premier League,16/9/23,Aston Villa,Crystal Palace,Eberechi Eze,Crystal Palace,MF,TRUE,90,0,0,0,0,4,2,1,0,2,3,0,3,1,0,0,0,0,0,0,0,0,7,0,30,34,11,7
+2023/24,Premier League,23/9/23,Crystal Palace,Fulham,Eberechi Eze,Crystal Palace,MF,TRUE,90,0,0,0,0,3,1,0,0,1,0,0,6,0,1,0,0,0,0,0,0,0,6.8,3,26,31,12,5
+2023/24,Premier League,30/9/23,Manchester Utd,Crystal Palace,Eberechi Eze,Crystal Palace,MF,TRUE,87,0,0,0,0,1,0,0,0,1,2,0,4,1,0,0,0,0,0,0,0,0,7.3,2,13,20,5,2
+2023/24,Premier League,4/11/23,Burnley,Crystal Palace,Eberechi Eze,Crystal Palace,MF,FALSE,33,0,1,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,6.9,1,5,6,1,1
+2023/24,Premier League,11/11/23,Crystal Palace,Everton,Eberechi Eze,Crystal Palace,MF,TRUE,90,1,0,1,1,2,2,1,0,3,4,0,8,2,0,0,0,0,0,0,0,0,8,2,26,31,4,3
+2023/24,Premier League,25/11/23,Luton Town,Crystal Palace,Eberechi Eze,Crystal Palace,MF,TRUE,48,0,0,0,0,2,2,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,7.2,1,17,20,2,1
+2023/24,Premier League,21/12/23,Crystal Palace,Brighton,Eberechi Eze,Crystal Palace,MF,FALSE,21,0,0,0,0,2,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,6.3,0,3,5,2,0
+2023/24,Premier League,27/12/23,Chelsea,Crystal Palace,Eberechi Eze,Crystal Palace,MF,TRUE,90,0,0,0,0,4,0,0,0,2,1,0,4,0,2,0,0,0,0,0,0,0,6.5,3,27,34,3,1
+2023/24,Premier League,30/12/23,Crystal Palace,Brentford,Eberechi Eze,Crystal Palace,MF,TRUE,85,1,0,0,0,3,2,0,0,0,2,0,6,1,0,0,0,0,0,0,0,0,7.6,2,37,41,3,1
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Eberechi Eze,Crystal Palace,FW,TRUE,90,0,0,0,0,4,2,0,0,0,4,1,8,0,0,0,0,0,0,0,0,0,7.7,4,27,33,10,6
+2023/24,Premier League,30/1/24,Crystal Palace,Sheffield United,Eberechi Eze,Crystal Palace,MF,TRUE,76,2,0,0,0,4,3,0,0,1,1,0,5,1,0,0,0,0,0,0,0,0,9.1,2,28,32,4,3
+2023/24,Premier League,2/3/24,Tottenham,Crystal Palace,Eberechi Eze,Crystal Palace,MF,TRUE,65,1,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,7,0,8,13,4,0
+2023/24,Premier League,9/3/24,Crystal Palace,Luton Town,Eberechi Eze,Crystal Palace,FW,TRUE,90,0,0,0,0,6,1,1,0,3,1,0,7,0,0,0,0,0,0,0,0,0,7.8,4,39,43,1,1
+2023/24,Premier League,30/3/24,Nottingham,Crystal Palace,Eberechi Eze,Crystal Palace,MF,TRUE,90,0,1,0,0,3,2,0,0,0,3,0,4,1,2,0,0,0,0,0,0,0,7.4,2,34,45,5,2
+2023/24,Premier League,2/4/24,Bournemouth,Crystal Palace,Eberechi Eze,Crystal Palace,FW,TRUE,90,0,0,0,0,0,0,0,0,1,4,1,3,0,0,0,0,0,0,0,0,0,7,2,38,51,7,3
+2023/24,Premier League,6/4/24,Crystal Palace,Manchester City,Eberechi Eze,Crystal Palace,FW,TRUE,63,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,6.6,0,14,18,0,0
+2023/24,Premier League,14/4/24,Liverpool,Crystal Palace,Eberechi Eze,Crystal Palace,FW,TRUE,76,1,0,0,0,2,2,0,0,0,1,2,3,0,0,0,0,0,0,0,0,0,8.2,3,22,28,7,3
+2023/24,Premier League,21/4/24,Crystal Palace,West Ham,Eberechi Eze,Crystal Palace,MF,TRUE,80,1,1,0,0,7,2,0,0,1,1,0,4,0,1,0,0,0,0,0,0,0,8.5,2,38,42,7,4
+2023/24,Premier League,24/4/24,Crystal Palace,Newcastle,Eberechi Eze,Crystal Palace,MF,TRUE,82,0,0,0,0,5,1,0,0,2,3,3,10,0,0,0,0,0,0,0,0,0,7.5,3,31,38,9,4
+2023/24,Premier League,6/5/24,Crystal Palace,Manchester Utd,Eberechi Eze,Crystal Palace,MF,TRUE,84,0,0,0,0,3,1,0,0,0,2,1,3,1,1,0,0,0,0,0,0,0,7.6,2,21,27,11,7
+2023/24,Premier League,11/5/24,Wolves,Crystal Palace,Eberechi Eze,Crystal Palace,MF,TRUE,87,1,0,0,0,3,1,0,0,1,1,1,2,2,0,0,0,0,0,0,0,0,7.9,2,19,21,5,1
+2023/24,Premier League,19/5/24,Crystal Palace,Aston Villa,Eberechi Eze,Crystal Palace,MF,TRUE,87,2,1,0,0,5,4,0,0,1,2,1,1,3,0,0,0,0,0,0,0,0,10,1,33,37,2,1
+2023/24,Premier League,17/9/23,Everton,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,7.4,0,30,32,0,0
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,5,3,0,0,6.9,0,19,26,0,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,7.4,0,45,52,0,0
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,29,43,0,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,1,0,6.8,0,31,42,0,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,21,24,0,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6.4,0,18,27,0,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,0,0,7.2,0,13,20,0,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,6.7,0,15,23,0,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,5,0,21,29,0,0
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,6.7,0,10,14,0,0
+2023/24,Premier League,17/12/23,Arsenal,Brighton,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,6.9,0,18,30,0,0
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,7,0,5,20,0,0
+2023/24,Premier League,28/12/23,Arsenal,West Ham,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,1,7,0,17,17,0,0
+2023/24,Premier League,31/12/23,Fulham,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,0,0,6.7,0,17,23,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,0,0,7.6,0,20,28,0,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,6.9,0,14,21,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,6.4,0,10,27,0,0
+2023/24,Premier League,11/2/24,West Ham,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,7.2,0,21,21,0,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.1,0,23,28,0,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,1,0,0,6.7,0,15,27,0,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,21,26,0,0
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,7,0,17,35,0,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,6.8,0,45,61,0,0
+2023/24,Premier League,6/4/24,Brighton,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7,0,18,29,0,0
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,6.3,0,15,19,0,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,7.5,0,23,30,0,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,6.8,0,12,17,0,0
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,6,0,21,34,0,0
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,2,0,0,7.3,0,13,17,0,0
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7.2,0,31,46,0,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,David Raya,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,6.6,0,13,15,0,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,William Saliba,Arsenal,CB,TRUE,90,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,7.2,0,127,130,0,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,7.8,0,61,65,0,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,7,0,89,93,1,0
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7.1,0,71,78,1,1
+2023/24,Premier League,17/9/23,Everton,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.2,0,94,103,0,0
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.9,0,44,50,1,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.9,0,45,47,0,0
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.1,0,69,70,0,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,6.4,0,89,98,1,1
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.2,0,122,127,0,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.5,0,45,50,1,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,William Saliba,Arsenal,CB,TRUE,90,1,0,0,0,1,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,7.4,0,84,91,0,0
+2023/24,Premier League,25/11/23,Brentford,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,7,0,39,48,0,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.6,0,63,67,0,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.5,0,83,93,0,0
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,1,1,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,6.8,0,64,71,0,0
+2023/24,Premier League,17/12/23,Arsenal,Brighton,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,2,1,0,0,0,0,0,0,0,7.3,0,64,65,0,0
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,2,1,0,0,0,0,0,0,0,6.9,0,36,45,0,0
+2023/24,Premier League,28/12/23,Arsenal,West Ham,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,84,89,0,0
+2023/24,Premier League,31/12/23,Fulham,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,1,0,2,1,0,0,1,2,0,0,0,0,0,0,0,6.4,0,95,104,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,3,0,0,0,0,0,0,0,7,0,53,58,0,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,3,0,0,0,0,0,0,0,7.3,0,86,91,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,6.5,0,29,38,0,0
+2023/24,Premier League,11/2/24,West Ham,Arsenal,William Saliba,Arsenal,CB,TRUE,90,1,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,8.2,0,74,76,0,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.9,0,81,90,0,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.7,0,47,51,0,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,7.6,0,167,172,0,0
+2023/24,Premier League,9/3/24,Arsenal,Brentford,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,6.8,0,52,63,0,0
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,0,0,7.5,0,25,33,1,1
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,7.1,0,72,73,1,1
+2023/24,Premier League,6/4/24,Brighton,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,0,1,0,0,0,0,0,0,0,0,7,0,46,50,3,2
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,6.6,0,45,48,0,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,80,85,1,1
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7.1,0,49,50,0,0
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,0,3,0,0,0,0,0,0,0,6.8,0,41,46,0,0
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,1,1,0,0,2,1,0,0,1,2,0,0,0,0,0,0,0,7.5,0,48,54,2,2
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,7.8,0,76,84,0,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,William Saliba,Arsenal,CB,TRUE,90,0,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,7.1,0,89,93,1,1
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,3,3,0,0,2,1,0,0,4,1,0,0,0,0,0,0,0,7.5,0,84,91,1,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,7.3,1,55,61,1,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Declan Rice,Arsenal,MF,TRUE,89,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,0,0,0,7.3,0,68,71,0,0
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Declan Rice,Arsenal,MF,TRUE,90,1,0,0,0,2,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7.8,0,64,73,1,0
+2023/24,Premier League,17/9/23,Everton,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,0,0,3,0,0,0,0,0,0,0,7.7,1,85,91,3,3
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Declan Rice,Arsenal,MF,TRUE,45,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,14,15,0,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Declan Rice,Arsenal,MF,TRUE,80,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,7.2,0,58,61,0,0
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,2,3,0,0,0,0,0,0,0,7.7,2,36,40,1,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,1,0,0,0,1,1,0,0,1,0,1,2,1,0,0,0,0,0,0,0,0,7.4,1,46,52,2,1
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Declan Rice,Arsenal,MF,TRUE,88,0,1,0,0,1,0,0,0,2,0,0,1,0,1,0,0,0,0,0,0,0,7.3,1,67,71,0,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,2,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,7.5,1,51,57,2,2
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6.9,1,33,38,0,0
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,1,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,7.8,1,65,73,0,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,3,0,0,0,0,1,0,1,0,5,0,0,0,0,0,0,0,7.3,0,76,83,0,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,1,0,0,0,3,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,7.2,1,72,78,2,0
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,1,0,1,0,3,0,0,1,5,1,0,0,0,0,0,0,0,7.2,1,68,75,1,1
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,2,1,0,0,1,0,0,1,0,3,0,0,0,0,0,0,0,7.2,0,53,58,2,1
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,1,0,1,0,2,0,0,1,2,2,0,0,0,0,0,0,0,7,0,64,73,1,1
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,2,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,7.3,2,100,107,1,1
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,7.6,1,97,103,3,3
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Declan Rice,Arsenal,MF,TRUE,72,0,1,0,0,1,1,0,0,2,0,0,1,0,1,0,0,0,0,0,0,0,7.3,0,54,59,0,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,4,3,0,0,0,0,0,0,0,0,7.6,1,72,79,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,1,0,1,0,2,0,0,3,3,2,0,0,0,0,0,0,0,7.2,2,45,53,0,0
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Declan Rice,Arsenal,MF,TRUE,66,1,2,0,0,1,1,0,0,0,0,0,5,0,1,0,0,0,0,0,0,0,9.4,4,66,71,0,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Declan Rice,Arsenal,MF,TRUE,78,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.9,0,50,56,0,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Declan Rice,Arsenal,MF,TRUE,90,0,1,0,0,1,1,0,0,1,0,0,6,0,1,0,0,0,0,0,0,0,7.6,4,45,46,50,2
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Declan Rice,Arsenal,MF,TRUE,73,1,0,0,0,5,3,0,0,1,1,0,3,2,0,0,0,0,0,0,0,0,8.3,2,40,45,0,0
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Declan Rice,Arsenal,MF,TRUE,90,1,0,0,0,3,1,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,7.7,0,33,42,2,1
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,5,1,0,0,0,0,0,0,0,0,6.8,1,25,29,1,1
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Declan Rice,Arsenal,MF,FALSE,24,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,6.6,0,14,15,0,0
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,3,1,1,0,0,0,0,0,0,0,7.4,3,29,31,4,2
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,2,0,0,0,2,1,0,0,3,0,0,0,0,0,0,0,0,7,0,54,60,0,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,4,2,1,0,1,1,0,0,2,0,0,0,0,0,0,0,0,7.8,5,55,61,2,1
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Declan Rice,Arsenal,MF,TRUE,90,0,1,0,0,3,1,0,0,1,0,1,0,3,2,0,0,0,0,0,0,0,7.8,1,33,38,3,1
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,1,0,0,1,0,0,0,1,0,0,6,3,2,0,0,0,0,0,0,0,7.4,2,30,36,1,0
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Declan Rice,Arsenal,MF,TRUE,90,1,1,0,0,3,1,0,0,1,0,0,3,0,2,0,0,0,0,0,0,0,8.4,3,44,49,3,2
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,2,1,0,0,1,0,0,1,2,0,0,0,0,0,0,0,0,7,1,28,31,1,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,Declan Rice,Arsenal,MF,TRUE,90,0,0,0,0,2,1,1,0,3,0,0,4,2,1,0,0,0,0,0,0,0,7.2,2,45,51,1,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Thomas Partey,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,7.5,2,96,102,1,1
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Thomas Partey,Arsenal,DF,TRUE,90,0,0,0,0,2,1,0,0,0,2,0,2,3,0,0,0,0,0,0,0,0,7.9,1,50,58,1,1
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Thomas Partey,Arsenal,DF,TRUE,55,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,7,0,57,62,5,4
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Thomas Partey,Arsenal,DF,FALSE,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,17,18,0,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Thomas Partey,Arsenal,DF,FALSE,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,31,35,0,0
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Thomas Partey,Arsenal,DF,FALSE,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,12,14,1,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Thomas Partey,Arsenal,MF,TRUE,66,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,6.7,0,62,67,1,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Thomas Partey,Arsenal,MF,FALSE,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,7,7,0,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Thomas Partey,Arsenal,MF,TRUE,71,0,0,0,0,3,0,0,0,2,1,0,0,1,3,0,0,0,0,0,0,0,7,2,38,44,0,0
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Thomas Partey,Arsenal,MF,TRUE,90,0,0,0,0,0,0,1,0,2,1,0,0,2,1,0,0,0,0,0,0,0,7.2,0,38,41,2,2
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Thomas Partey,Arsenal,MF,TRUE,90,0,0,0,0,2,1,1,0,2,0,0,0,2,1,0,0,0,0,0,0,0,7.4,1,38,48,1,1
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Thomas Partey,Arsenal,MF,TRUE,89,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.9,0,37,40,0,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,Thomas Partey,Arsenal,MF,TRUE,68,0,0,0,0,1,0,1,0,3,1,0,0,0,0,0,0,0,0,0,0,0,7,0,78,84,0,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Leandro Trossard,Arsenal,FW,FALSE,17,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.9,1,7,10,1,1
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Leandro Trossard,Arsenal,FW,TRUE,45,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,7.1,3,12,17,0,0
+2023/24,Premier League,17/9/23,Everton,Arsenal,Leandro Trossard,Arsenal,FW,FALSE,67,1,0,0,0,1,1,0,0,0,1,2,1,2,2,0,0,0,0,0,0,0,7.9,2,22,26,1,1
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Leandro Trossard,Arsenal,FW,TRUE,45,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,1,9,9,0,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Leandro Trossard,Arsenal,FW,FALSE,13,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.3,0,1,2,0,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Leandro Trossard,Arsenal,FW,FALSE,25,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,6.8,0,9,12,0,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Leandro Trossard,Arsenal,FW,FALSE,12,0,0,0,0,2,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,6.5,0,3,3,0,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Leandro Trossard,Arsenal,FW,TRUE,80,1,1,0,0,3,2,0,0,0,2,0,8,0,0,0,0,0,0,0,0,0,8.9,2,22,28,2,1
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Leandro Trossard,Arsenal,MF,TRUE,90,0,0,0,0,2,0,0,0,0,2,1,7,0,0,0,0,0,0,0,0,0,6.7,1,19,28,1,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Leandro Trossard,Arsenal,MF,TRUE,90,0,0,0,0,5,2,0,0,2,1,0,2,2,3,0,0,0,0,0,0,0,6.7,1,35,44,2,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Leandro Trossard,Arsenal,MF,FALSE,27,0,0,0,0,4,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,6.8,0,10,16,0,0
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Leandro Trossard,Arsenal,MF,FALSE,21,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.5,0,2,4,0,0
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Leandro Trossard,Arsenal,MF,FALSE,9,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,4,5,1,1
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Leandro Trossard,Arsenal,MF,FALSE,23,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,6.2,0,7,9,3,0
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Leandro Trossard,Arsenal,MF,TRUE,78,0,0,0,0,5,1,0,0,1,0,0,2,1,0,0,0,0,0,0,0,0,7,1,35,46,1,0
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Leandro Trossard,Arsenal,FW,FALSE,24,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,6.5,0,4,6,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Leandro Trossard,Arsenal,FW,TRUE,68,1,0,0,0,5,1,0,0,1,0,2,2,0,0,0,0,0,0,0,0,0,7,0,18,21,1,1
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Leandro Trossard,Arsenal,FW,FALSE,13,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,8,9,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Leandro Trossard,Arsenal,FW,FALSE,17,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.5,0,2,4,1,1
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Leandro Trossard,Arsenal,FW,TRUE,66,1,0,0,0,5,2,0,0,0,1,0,1,2,0,0,0,0,0,0,0,0,7.6,0,27,35,5,3
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Leandro Trossard,Arsenal,FW,TRUE,68,1,0,0,0,3,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,7.8,0,7,14,0,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Leandro Trossard,Arsenal,FW,FALSE,27,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,6.6,0,2,7,2,1
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Leandro Trossard,Arsenal,FW,FALSE,17,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,6.6,0,9,9,1,1
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Leandro Trossard,Arsenal,FW,TRUE,78,0,0,0,0,2,2,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,7.5,3,31,36,4,3
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Leandro Trossard,Arsenal,FW,FALSE,19,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,8,10,1,1
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Leandro Trossard,Arsenal,FW,TRUE,90,0,0,0,0,2,0,0,0,1,1,0,2,0,0,0,0,0,0,0,0,0,7.1,1,24,30,4,3
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Leandro Trossard,Arsenal,FW,FALSE,27,1,0,0,0,2,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.5,1,3,5,1,1
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Leandro Trossard,Arsenal,FW,TRUE,66,0,0,0,0,2,1,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,6.7,2,24,26,1,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Leandro Trossard,Arsenal,FW,TRUE,71,1,0,0,0,1,1,1,0,2,0,0,2,1,0,0,0,0,0,0,0,0,7.3,1,18,24,2,1
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Leandro Trossard,Arsenal,FW,TRUE,71,1,0,0,0,5,1,1,0,1,1,0,1,2,0,0,0,0,0,0,0,0,7.8,1,25,28,0,0
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Leandro Trossard,Arsenal,FW,TRUE,63,0,0,0,0,1,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,6.7,0,12,13,3,3
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Leandro Trossard,Arsenal,FW,TRUE,80,1,0,0,0,4,1,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,7.7,0,24,29,0,0
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Leandro Trossard,Arsenal,FW,TRUE,65,1,0,0,0,1,1,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,7.3,0,8,11,0,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,Leandro Trossard,Arsenal,FW,TRUE,77,0,0,0,0,1,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,6.7,1,26,30,1,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Gabriel Magalhaes,Arsenal,DF,FALSE,5,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,2,3,0,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Gabriel Magalhaes,Arsenal,DF,FALSE,21,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.9,0,3,4,0,0
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,1,2,0,1,2,2,0,0,0,0,0,0,0,7.2,0,52,59,1,0
+2023/24,Premier League,17/9/23,Everton,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.2,0,90,99,0,0
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,1,3,0,0,0,3,0,0,0,0,0,0,0,6.9,0,40,46,0,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.2,0,60,65,0,0
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,3,0,0,0,0,0,0,0,7.2,0,54,59,0,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,2,0,0,0,1,0,0,0,1,2,0,0,0,0,0,0,0,6.9,0,71,78,1,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,2,2,0,0,1,1,0,0,0,0,0,0,0,7.6,0,35,44,0,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,3,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,7.1,1,53,60,0,0
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,7.4,0,37,49,1,1
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,2,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,7.5,1,52,61,0,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,6.5,0,60,68,0,0
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,7.4,1,46,55,0,0
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,7.2,0,42,49,0,0
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.3,0,22,32,0,0
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,2,0,2,1,2,0,0,0,0,0,0,0,7.6,0,82,92,0,0
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,2,2,0,0,0,0,0,0,0,7.4,0,88,97,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Gabriel Magalhaes,Arsenal,DF,TRUE,80,2,0,0,0,3,1,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,9.3,0,44,50,0,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,7.1,0,97,101,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,2,1,1,0,1,0,0,0,1,2,1,0,0,0,0,0,0,7,0,43,48,0,0
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,1,0,0,0,2,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,8.1,0,64,70,0,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,1,1,0,0,1,2,0,0,2,1,0,0,0,0,0,0,0,7.7,0,85,90,0,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,1,1,0,0,2,0,0,0,2,2,0,0,0,0,0,0,0,7.1,0,67,75,0,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.6,0,139,145,0,0
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,2,1,1,0,2,3,0,0,2,0,0,0,0,0,0,0,0,7.2,0,56,62,0,0
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,0,1,1,0,0,0,0,0,0,0,6.7,0,22,26,0,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,1,2,0,0,1,1,0,0,0,0,0,0,0,7.3,0,60,69,0,0
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,5,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.2,0,42,56,0,0
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,41,45,0,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,1,2,0,0,2,0,0,0,0,0,0,0,0,7,0,50,57,0,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,0,2,2,0,0,0,0,0,0,0,7.2,0,45,57,0,0
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,6.5,0,40,45,0,0
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,2,1,0,0,1,1,0,0,0,0,0,0,0,7.2,0,31,34,0,0
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Gabriel Magalhaes,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.5,0,55,59,0,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,Gabriel Magalhaes,Arsenal,DF,TRUE,58,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7,0,40,45,0,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,3,0,0,0,0,2,0,3,1,0,0,0,0,0,0,0,0,7.3,1,53,63,0,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,88,1,0,1,1,3,2,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,7.4,1,32,35,1,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Martin Odegaard,Arsenal,MF,TRUE,83,0,0,0,0,3,2,0,0,2,0,0,1,1,0,0,0,0,0,0,0,0,7.7,0,45,50,4,3
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Martin Odegaard,Arsenal,MF,TRUE,89,1,0,0,0,5,2,0,0,1,2,0,0,0,1,0,0,0,0,0,0,0,7.5,0,26,35,1,1
+2023/24,Premier League,17/9/23,Everton,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,2,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,7.2,3,43,48,2,1
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,1,1,1,0,2,0,0,5,1,0,0,0,0,0,0,0,0,6.7,3,19,28,0,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,1,1,1,1,1,1,0,0,0,2,0,3,0,0,0,0,0,0,0,0,0,9.1,3,47,53,2,1
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,3,0,0,0,0,1,0,5,2,1,0,0,0,0,0,0,0,7.1,2,30,36,4,1
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,77,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,6.6,2,20,25,1,0
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,89,0,0,0,0,1,0,0,0,1,0,1,2,0,0,0,0,0,0,0,0,0,7.2,1,51,57,3,1
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Martin Odegaard,Arsenal,MF,TRUE,89,1,0,0,0,1,1,0,0,2,0,0,3,0,0,0,0,0,0,0,0,0,9.2,6,78,88,0,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,0,1,0,0,2,1,0,0,3,1,0,3,1,0,0,0,0,0,0,0,0,7.5,5,60,67,1,1
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,3,1,0,0,0,2,0,1,0,1,0,0,0,0,0,0,0,6.8,1,33,38,2,0
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,5,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,7.8,4,55,59,5,4
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,0,1,0,0,1,0,0,0,1,2,0,1,3,0,0,0,0,0,0,0,0,7.9,3,52,62,0,0
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,3,1,0,0,1,1,0,6,0,0,0,0,0,0,0,0,0,8,6,70,81,6,1
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,2,0,0,0,1,2,0,2,0,0,0,0,0,0,0,0,0,7.1,3,61,67,3,2
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,1,0,0,0,1,2,0,3,0,1,0,0,0,0,0,0,0,6.9,3,45,51,1,1
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,89,0,0,0,0,3,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,8.1,4,71,82,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,2,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,7.7,3,27,36,1,1
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,0,2,0,0,1,0,0,0,0,1,0,3,0,1,0,0,0,0,0,0,0,9.3,7,109,115,1,1
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,1,1,0,0,2,2,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,8.9,3,61,72,1,1
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Martin Odegaard,Arsenal,MF,TRUE,75,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,7.1,2,27,32,0,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,1,0,0,0,4,1,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,8.8,4,84,93,3,3
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Martin Odegaard,Arsenal,MF,TRUE,89,0,0,0,0,3,0,0,0,1,0,0,3,1,0,0,0,0,0,0,0,0,7.4,3,44,53,4,2
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,0,0,0,0,3,2,0,0,0,2,0,0,0,0,0,0,0,6.7,2,21,32,0,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Martin Odegaard,Arsenal,MF,TRUE,90,1,0,0,0,3,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,7.5,2,58,65,2,0
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,88,0,0,0,0,2,1,0,0,0,1,0,2,0,2,0,0,0,0,0,0,0,7.5,1,46,50,2,1
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Martin Odegaard,Arsenal,MF,TRUE,78,0,0,0,0,3,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,7.4,2,38,44,5,3
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,90,1,0,0,0,5,1,0,0,2,2,0,2,0,0,0,0,0,0,0,0,0,7.5,3,31,33,3,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Martin Odegaard,Arsenal,MF,TRUE,90,0,2,0,0,2,0,0,0,1,3,0,3,0,1,0,0,0,0,0,0,0,9.9,8,58,66,4,3
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,88,0,0,0,0,1,0,0,0,0,3,1,1,1,0,0,0,0,0,0,0,0,6.6,2,17,23,6,0
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Martin Odegaard,Arsenal,MF,TRUE,90,0,0,0,0,3,0,0,0,0,1,0,4,0,0,0,0,0,0,0,0,0,7.7,1,59,69,4,3
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Martin Odegaard,Arsenal,MF,TRUE,89,0,0,0,0,1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,6.9,1,26,32,3,2
+2023/24,Premier League,19/5/24,Arsenal,Everton,Martin Odegaard,Arsenal,MF,TRUE,90,0,2,0,0,2,1,0,0,0,1,0,10,1,1,0,0,0,0,0,0,0,8.5,7,52,60,0,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Gabriel Martinelli,Arsenal,FW,TRUE,85,0,1,0,0,0,0,0,0,2,2,0,2,0,1,0,0,0,0,0,0,0,7.1,3,28,30,4,2
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,69,0,0,0,0,2,0,0,0,1,0,0,6,1,1,0,0,0,0,0,0,0,7.1,0,23,29,1,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Gabriel Martinelli,Arsenal,FW,TRUE,90,0,0,0,0,4,3,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,7.7,0,42,48,1,1
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Gabriel Martinelli,Arsenal,FW,TRUE,89,0,1,0,0,3,0,0,0,0,1,1,14,0,0,0,0,0,0,0,0,0,7.5,1,27,31,9,5
+2023/24,Premier League,17/9/23,Everton,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,6,9,0,0
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Gabriel Martinelli,Arsenal,FW,FALSE,45,1,0,0,0,2,2,0,0,1,1,0,2,0,0,0,0,0,0,0,0,0,7.6,0,6,7,2,1
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,77,0,0,0,0,1,0,0,0,1,0,0,5,1,1,0,0,0,0,0,0,0,6.9,2,31,33,3,1
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Gabriel Martinelli,Arsenal,FW,TRUE,65,0,0,0,0,1,1,0,0,0,2,0,7,0,1,0,0,0,0,0,0,0,7.8,3,35,38,3,3
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,90,0,0,0,0,3,1,0,0,2,1,1,7,0,1,0,0,0,0,0,0,0,7.7,5,42,48,7,3
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Gabriel Martinelli,Arsenal,FW,TRUE,88,0,0,0,0,1,1,0,0,1,1,2,9,0,1,0,0,0,0,0,0,0,7,2,37,42,6,2
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,78,0,0,0,0,1,0,1,0,2,0,0,6,0,0,0,0,0,0,0,0,0,7,1,23,28,3,2
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Gabriel Martinelli,Arsenal,FW,TRUE,77,0,0,0,0,2,0,0,0,2,1,0,1,0,0,0,0,0,0,0,0,0,7,1,27,29,1,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,63,1,0,0,0,2,2,0,0,0,2,0,3,0,0,0,0,0,0,0,0,0,7.2,0,12,17,2,0
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,69,0,0,0,0,1,1,0,0,0,0,2,3,0,0,0,0,0,0,0,0,0,6.2,1,19,26,6,0
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Gabriel Martinelli,Arsenal,FW,TRUE,81,0,0,0,0,4,0,0,0,0,1,0,13,0,2,0,0,0,0,0,0,0,8,5,34,38,5,3
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,67,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,6.5,1,11,14,6,2
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Gabriel Martinelli,Arsenal,FW,TRUE,63,0,0,0,0,1,0,0,0,1,0,0,2,1,1,0,0,0,0,0,0,0,7.2,1,22,29,3,2
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,66,0,0,0,0,4,1,0,0,0,2,0,3,0,1,0,0,0,0,0,0,0,7.1,1,20,28,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Gabriel Martinelli,Arsenal,FW,FALSE,22,2,0,0,0,2,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,8.9,0,12,14,1,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,77,0,0,0,0,1,0,0,0,1,0,0,4,0,1,0,0,0,0,0,0,0,6.8,0,36,40,5,1
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Gabriel Martinelli,Arsenal,FW,TRUE,73,1,0,0,0,2,1,0,0,0,1,2,3,0,1,0,0,0,0,0,0,0,7.8,1,16,19,3,2
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,76,0,0,0,0,2,0,0,0,1,3,0,1,0,0,0,0,0,0,0,0,0,7.2,0,25,27,5,2
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,90,0,0,0,0,1,0,0,0,1,2,0,2,0,0,0,0,0,0,0,0,0,6.6,2,22,28,7,2
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Gabriel Martinelli,Arsenal,FW,TRUE,63,0,1,0,0,4,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,0,7.4,2,30,34,2,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Gabriel Martinelli,Arsenal,FW,TRUE,63,1,1,0,0,4,2,0,0,1,1,0,2,0,0,0,0,0,0,0,0,0,8.1,2,31,36,6,2
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Gabriel Martinelli,Arsenal,FW,FALSE,13,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,2,2,0,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Gabriel Martinelli,Arsenal,FW,FALSE,16,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,2,4,0,0
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Gabriel Martinelli,Arsenal,FW,FALSE,27,0,0,0,0,0,0,0,0,1,0,0,0,1,3,0,0,0,0,0,0,0,7,1,4,5,0,0
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Gabriel Martinelli,Arsenal,FW,FALSE,24,0,0,0,0,0,0,0,0,1,0,1,1,0,2,0,0,0,0,0,0,0,6.6,1,2,3,1,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Gabriel Martinelli,Arsenal,FW,FALSE,19,0,0,0,0,2,2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6.7,0,6,7,0,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Gabriel Martinelli,Arsenal,FW,FALSE,19,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,8,8,1,0
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Gabriel Martinelli,Arsenal,FW,FALSE,27,0,0,0,0,1,0,0,0,1,1,0,0,0,2,0,0,0,0,0,0,0,6.7,0,0,3,1,1
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Gabriel Martinelli,Arsenal,FW,FALSE,10,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,5,5,0,0
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Gabriel Martinelli,Arsenal,FW,FALSE,25,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.4,0,2,3,5,1
+2023/24,Premier League,19/5/24,Arsenal,Everton,Gabriel Martinelli,Arsenal,FW,TRUE,90,0,0,0,0,2,1,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,8,5,38,47,2,2
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Kai Havertz,Arsenal,MF,TRUE,90,0,0,0,0,2,0,0,0,2,4,0,0,1,1,0,0,0,0,0,0,0,7.2,2,47,53,1,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Kai Havertz,Arsenal,MF,TRUE,90,0,0,0,0,1,0,1,0,3,3,0,0,0,0,0,0,0,0,0,0,0,6.9,1,25,28,2,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Kai Havertz,Arsenal,MF,TRUE,55,0,0,0,0,1,0,0,0,1,0,2,1,0,0,0,0,0,0,0,0,0,7,2,20,22,0,0
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Kai Havertz,Arsenal,MF,TRUE,76,0,0,0,0,2,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,7.1,1,22,25,0,0
+2023/24,Premier League,17/9/23,Everton,Arsenal,Kai Havertz,Arsenal,MF,FALSE,11,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.7,0,5,6,0,0
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Kai Havertz,Arsenal,MF,FALSE,45,0,0,0,0,1,0,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,6.7,0,11,13,2,1
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Kai Havertz,Arsenal,MF,TRUE,80,1,0,1,1,2,1,1,0,2,1,0,0,2,0,0,0,0,0,0,0,0,7.2,0,19,24,0,0
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Kai Havertz,Arsenal,MF,FALSE,16,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,1,7,8,0,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Kai Havertz,Arsenal,MF,FALSE,13,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,7,13,0,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Kai Havertz,Arsenal,MF,TRUE,90,0,0,0,0,1,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,6.7,1,32,35,1,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Kai Havertz,Arsenal,MF,TRUE,90,0,0,0,0,1,0,1,0,2,1,0,1,3,0,0,0,0,0,0,0,0,7,0,23,33,0,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Kai Havertz,Arsenal,MF,TRUE,58,0,0,0,0,2,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,7,1,17,22,1,0
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Kai Havertz,Arsenal,MF,FALSE,12,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.4,0,5,7,1,1
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Kai Havertz,Arsenal,MF,FALSE,13,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.5,0,4,5,0,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Kai Havertz,Arsenal,MF,TRUE,90,1,0,0,0,5,1,0,0,0,1,2,1,0,1,0,0,0,0,0,0,0,7.6,4,20,32,2,2
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Kai Havertz,Arsenal,MF,TRUE,90,0,0,0,0,1,0,0,0,4,3,0,0,2,0,0,0,0,0,0,0,0,7.1,2,15,19,2,1
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Kai Havertz,Arsenal,MF,TRUE,88,1,0,0,0,4,1,0,0,2,1,1,0,0,2,0,0,0,0,0,0,0,7.5,0,28,30,0,0
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Kai Havertz,Arsenal,MF,TRUE,90,0,0,0,0,1,0,1,0,1,2,0,1,0,1,0,0,0,0,0,0,0,6.6,0,24,28,2,2
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Kai Havertz,Arsenal,MF,TRUE,76,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,6.5,0,26,30,1,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Kai Havertz,Arsenal,MF,TRUE,68,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,6.7,0,25,27,0,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Kai Havertz,Arsenal,MF,FALSE,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,1,14,17,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Kai Havertz,Arsenal,FW,TRUE,90,0,0,0,0,3,2,1,0,3,3,0,1,0,0,0,0,0,0,0,0,0,6.2,2,17,20,3,1
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Kai Havertz,Arsenal,MF,TRUE,90,0,0,0,0,2,1,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,7.5,3,42,46,1,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Kai Havertz,Arsenal,MF,TRUE,83,1,0,0,0,2,1,0,0,1,2,0,0,1,0,0,0,0,0,0,0,0,7.8,1,22,30,1,1
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Kai Havertz,Arsenal,FW,TRUE,75,1,1,0,0,2,1,0,0,3,1,0,0,0,2,0,0,0,0,0,0,0,7.8,1,20,23,1,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Kai Havertz,Arsenal,FW,TRUE,90,1,1,0,0,2,2,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,8.6,4,41,44,2,1
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Kai Havertz,Arsenal,FW,TRUE,90,1,0,0,0,4,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,7.6,0,26,31,0,0
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Kai Havertz,Arsenal,FW,TRUE,90,0,0,0,0,1,1,0,0,4,0,1,0,0,0,0,0,0,0,0,0,0,6.7,0,6,13,2,2
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Kai Havertz,Arsenal,FW,TRUE,66,0,1,0,0,2,1,1,0,2,0,0,0,0,1,0,0,0,0,0,0,0,7.3,1,17,20,2,1
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Kai Havertz,Arsenal,FW,TRUE,88,1,1,0,0,2,1,0,0,3,4,1,1,1,0,0,0,0,0,0,0,0,8.6,4,18,22,1,0
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Kai Havertz,Arsenal,MF,TRUE,90,0,0,0,0,3,2,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,6.5,1,17,23,2,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Kai Havertz,Arsenal,MF,TRUE,90,0,0,0,0,5,2,0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,7.6,2,32,41,1,1
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Kai Havertz,Arsenal,FW,TRUE,71,2,0,0,0,4,4,0,0,1,0,2,1,0,0,0,0,0,0,0,0,0,8.6,2,22,29,0,0
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Kai Havertz,Arsenal,FW,TRUE,90,1,1,0,0,1,1,0,0,2,2,1,0,0,0,0,0,0,0,0,0,0,8.3,2,20,28,2,1
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Kai Havertz,Arsenal,FW,TRUE,90,0,0,0,0,2,2,1,0,2,3,2,0,3,1,0,0,0,0,0,0,0,8.6,3,27,37,1,1
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Kai Havertz,Arsenal,FW,TRUE,90,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,7.1,2,15,26,1,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,Kai Havertz,Arsenal,FW,TRUE,90,1,0,0,0,9,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,7.3,1,18,22,0,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Bukayo Saka,Arsenal,FW,TRUE,90,1,0,0,0,3,2,0,0,2,1,9,0,4,0,0,0,0,0,0,0,0,8.2,3,47,57,1,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,88,0,0,0,0,3,0,0,0,0,4,9,0,0,1,0,0,0,0,0,0,0,7.8,2,35,44,1,1
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Bukayo Saka,Arsenal,FW,TRUE,90,1,0,1,1,3,2,0,0,0,1,8,0,0,0,0,0,0,0,0,0,0,7.5,4,49,59,9,6
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Bukayo Saka,Arsenal,FW,TRUE,90,0,1,0,0,3,1,1,0,1,1,4,1,2,0,0,0,0,0,0,0,0,7.4,5,32,35,2,1
+2023/24,Premier League,17/9/23,Everton,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,0,1,0,0,0,0,0,0,3,4,5,0,1,0,0,0,0,0,0,0,0,7.4,1,37,41,6,2
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Bukayo Saka,Arsenal,FW,TRUE,89,1,0,1,1,3,2,0,0,1,3,6,0,3,1,0,0,0,0,0,0,0,8.4,4,25,31,4,2
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,75,1,0,0,0,3,2,0,0,2,0,1,0,1,0,0,0,0,0,0,0,0,7.3,0,25,31,1,1
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,0,1,0,0,0,0,0,0,3,3,5,0,1,2,0,0,0,0,0,0,0,7.7,3,20,29,4,3
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Bukayo Saka,Arsenal,FW,TRUE,72,0,0,0,0,0,0,0,0,1,2,4,0,1,0,0,0,0,0,0,0,0,7.4,1,24,27,1,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,0,0,0,0,1,0,0,0,0,5,5,0,1,0,0,0,0,0,0,0,0,7.2,1,33,36,1,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Bukayo Saka,Arsenal,FW,TRUE,80,0,1,0,0,3,1,0,0,2,1,6,0,0,0,0,0,0,0,0,0,0,7.9,3,27,35,1,1
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,89,0,1,0,0,0,0,0,0,0,0,6,0,1,1,0,0,0,0,0,0,0,7.9,5,31,40,1,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Bukayo Saka,Arsenal,FW,TRUE,89,1,0,0,0,3,2,0,0,1,2,6,1,1,1,0,0,0,0,0,0,0,8.2,4,42,50,7,2
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,0,1,0,0,3,1,0,0,0,3,8,0,0,1,0,0,0,0,0,0,0,7.6,2,35,42,6,3
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,0,0,0,0,3,1,0,0,0,5,4,1,2,0,0,0,0,0,0,0,0,7.3,1,22,27,3,2
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Bukayo Saka,Arsenal,FW,TRUE,88,0,0,0,0,4,1,0,0,1,4,3,0,1,0,0,0,0,0,0,0,0,8.1,3,34,39,2,1
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,0,0,0,0,2,0,1,0,3,2,8,0,1,1,0,0,0,0,0,0,0,6.8,3,22,25,9,4
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Bukayo Saka,Arsenal,FW,TRUE,90,0,0,0,0,9,3,0,0,2,1,8,0,2,0,0,0,0,0,0,0,0,7.2,4,27,62,5,1
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,1,0,0,0,3,1,0,0,1,1,8,0,0,0,0,0,0,0,0,0,0,6.8,1,33,42,5,1
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Bukayo Saka,Arsenal,FW,TRUE,90,0,1,0,0,2,0,0,0,0,2,6,0,1,1,0,0,0,0,0,0,0,7.7,4,25,32,1,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,1,0,0,0,6,1,0,0,1,0,8,0,2,2,0,0,0,0,0,0,0,8.2,4,38,47,1,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Bukayo Saka,Arsenal,FW,TRUE,78,1,0,0,0,3,1,0,0,0,1,3,1,1,0,0,0,0,0,0,0,0,7.2,0,18,29,0,0
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,66,2,0,1,1,8,3,0,0,1,2,4,1,0,0,0,0,0,0,0,0,0,9.7,3,47,51,4,2
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,68,2,0,1,1,3,2,1,0,2,0,3,0,2,0,0,0,0,0,0,0,0,8.4,0,24,31,2,1
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Bukayo Saka,Arsenal,FW,TRUE,75,1,0,0,0,4,2,0,0,2,1,2,2,0,0,0,0,0,0,0,0,0,8.1,2,31,37,1,1
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,45,0,1,0,0,3,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,7.9,3,21,25,2,2
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Bukayo Saka,Arsenal,FW,TRUE,90,0,0,0,0,3,0,0,0,1,1,11,0,0,0,0,0,0,0,0,0,0,7.6,2,40,48,2,2
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,77,0,0,0,0,0,0,0,0,2,2,1,0,0,0,0,0,0,0,0,0,0,6.5,0,11,14,1,0
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,63,1,0,1,1,3,1,0,0,0,2,4,0,1,0,0,0,0,0,0,0,0,7.8,3,22,28,2,1
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Bukayo Saka,Arsenal,FW,TRUE,90,0,0,0,0,4,0,0,0,0,3,6,0,2,0,0,0,0,0,0,0,0,7.7,3,35,42,2,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,0,0,0,0,4,1,0,0,0,4,2,0,0,1,0,0,0,0,0,0,0,7.9,3,45,47,1,1
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Bukayo Saka,Arsenal,FW,TRUE,81,0,1,0,0,4,1,0,0,2,2,2,0,2,1,0,0,0,0,0,0,0,7.9,5,29,32,2,1
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,90,1,0,0,0,3,2,0,0,2,4,4,0,3,2,0,0,0,0,0,0,0,8.2,1,23,26,3,2
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Bukayo Saka,Arsenal,FW,TRUE,85,1,0,1,1,6,3,0,0,3,0,4,1,0,0,0,0,0,0,0,0,0,7.9,5,29,32,5,2
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Bukayo Saka,Arsenal,FW,TRUE,81,0,0,0,0,2,1,1,0,2,2,6,0,1,1,0,0,0,0,0,0,0,7.4,3,19,27,5,3
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.7,0,92,103,1,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.3,0,61,69,0,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,7.2,2,82,91,1,0
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,0,0,0,0,7.4,2,50,58,0,0
+2023/24,Premier League,17/9/23,Everton,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,1,1,0,0,2,0,0,2,1,0,0,0,0,0,0,0,0,7.7,1,80,92,2,1
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,1,1,0,0,0,1,0,2,0,2,0,0,0,0,0,0,0,6.8,0,29,33,0,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Ben White,Arsenal,DF,TRUE,90,1,0,0,0,1,1,0,0,0,2,0,0,4,2,0,0,0,0,0,0,0,8.2,0,36,47,1,0
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,1,0,3,0,0,0,0,0,0,0,0,7.7,0,41,47,1,1
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,1,0,0,2,0,1,0,1,0,0,0,0,0,0,0,6.8,2,43,54,0,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Ben White,Arsenal,DF,TRUE,65,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7,0,52,62,2,2
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Ben White,Arsenal,DF,TRUE,72,0,0,0,0,0,0,0,0,0,0,0,3,1,2,0,0,0,0,0,0,0,6.9,1,34,41,0,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Ben White,Arsenal,DF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.1,0,2,3,0,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,1,0,0,0,0,0,0,1,0,1,4,1,1,0,0,0,0,0,0,0,7.2,2,55,65,1,0
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,6.7,0,36,42,0,0
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,1,1,1,0,0,2,0,1,0,0,0,0,0,0,0,0,0,7.4,1,46,48,0,0
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,1,0,0,1,0,1,2,4,0,0,0,0,0,0,0,6.8,2,30,39,1,0
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,3,0,1,0,0,0,0,0,0,0,7.5,1,78,82,0,0
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Ben White,Arsenal,DF,TRUE,66,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.4,0,46,50,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,3,1,3,0,0,0,0,0,0,0,7.5,1,43,53,0,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,0,7.3,1,67,76,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,1,1,2,0,0,0,0,0,0,0,7.2,0,25,31,2,2
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Ben White,Arsenal,DF,TRUE,76,0,1,0,0,0,0,0,0,2,0,1,3,2,0,0,0,0,0,0,0,0,7.4,1,64,66,1,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Ben White,Arsenal,DF,TRUE,68,0,0,0,0,0,0,0,0,1,1,0,0,2,2,0,0,0,0,0,0,0,7,0,37,39,0,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,6.4,0,36,47,0,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Ben White,Arsenal,DF,TRUE,64,1,0,0,0,1,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,7.9,1,43,48,0,0
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Ben White,Arsenal,DF,TRUE,90,0,2,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,8,3,63,71,1,0
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,3,0,0,0,0,0,0,0,0,0,7.2,1,9,13,0,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,6.9,0,47,50,3,1
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,1,0,1,3,1,3,0,1,0,0,0,0,0,0,0,7.4,2,27,38,0,0
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Ben White,Arsenal,DF,TRUE,66,0,0,0,0,0,0,1,0,0,0,1,1,4,1,0,0,0,0,0,0,0,7.4,2,25,29,0,0
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,2,1,0,0,0,0,0,0,0,0,0,7.7,2,70,73,0,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Ben White,Arsenal,DF,TRUE,90,2,0,0,0,2,2,1,0,1,0,0,2,1,0,0,0,0,0,0,0,0,9.7,3,48,58,1,1
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,1,1,2,1,0,0,0,0,0,0,0,6.9,0,23,30,1,0
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,7.2,3,32,40,0,0
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Ben White,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,7.5,1,43,52,1,1
+2023/24,Premier League,19/5/24,Arsenal,Everton,Ben White,Arsenal,DF,TRUE,68,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,6.8,2,62,70,1,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Jakub Kiwior,Arsenal,DF,FALSE,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,4,4,0,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Jakub Kiwior,Arsenal,DF,TRUE,90,0,0,0,0,1,1,0,0,1,0,0,2,2,0,0,0,0,0,0,0,0,7.1,0,51,59,0,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Jakub Kiwior,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.2,0,75,84,2,1
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Jakub Kiwior,Arsenal,DF,FALSE,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,0,0,0,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Jakub Kiwior,Arsenal,DF,TRUE,63,0,0,0,0,1,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,6.2,0,16,20,0,0
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Jakub Kiwior,Arsenal,DF,TRUE,45,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,6.7,0,24,26,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Jakub Kiwior,Arsenal,DF,FALSE,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,10,10,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Jakub Kiwior,Arsenal,DF,FALSE,45,0,1,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,7.2,1,9,12,0,0
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Jakub Kiwior,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,2,2,1,0,0,0,0,0,0,0,7.1,1,39,42,0,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Jakub Kiwior,Arsenal,DF,TRUE,90,0,1,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,0,0,7.5,1,45,53,0,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Jakub Kiwior,Arsenal,DF,TRUE,90,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,7.5,0,41,48,1,1
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Jakub Kiwior,Arsenal,DF,TRUE,90,0,1,0,0,2,0,0,0,1,0,0,2,2,1,0,0,0,0,0,0,0,8,1,73,80,0,0
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Jakub Kiwior,Arsenal,DF,TRUE,78,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,0,0,0,6.8,1,37,48,0,0
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Jakub Kiwior,Arsenal,DF,TRUE,65,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.7,1,10,17,1,1
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Jakub Kiwior,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,2,0,2,0,1,0,0,0,0,0,0,0,7.1,0,30,35,1,0
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Jakub Kiwior,Arsenal,DF,FALSE,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,0,0,0,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Jorginho,Arsenal,MF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.7,0,11,11,0,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Jorginho,Arsenal,MF,FALSE,7,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.6,0,17,18,0,0
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Jorginho,Arsenal,MF,FALSE,45,0,0,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,6.2,0,28,30,0,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Jorginho,Arsenal,MF,FALSE,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,15,15,0,0
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Jorginho,Arsenal,MF,TRUE,74,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,63,69,1,1
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Jorginho,Arsenal,MF,TRUE,67,0,0,0,0,1,0,0,0,0,3,0,1,1,0,0,0,0,0,0,0,0,7.2,1,59,65,0,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Jorginho,Arsenal,MF,TRUE,78,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,1,52,55,0,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Jorginho,Arsenal,MF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,7.1,1,45,51,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Jorginho,Arsenal,MF,FALSE,18,0,1,0,0,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,7.8,1,26,29,0,0
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Jorginho,Arsenal,MF,TRUE,90,0,0,0,0,0,0,0,0,1,2,0,0,1,4,0,0,0,0,0,0,0,7,1,45,53,2,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Jorginho,Arsenal,MF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.9,0,26,28,0,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Jorginho,Arsenal,MF,TRUE,88,0,0,0,0,0,0,0,0,2,2,0,0,1,1,0,0,0,0,0,0,0,7.2,1,92,103,0,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Jorginho,Arsenal,MF,TRUE,64,0,0,0,0,0,0,0,0,0,2,0,0,1,1,0,0,0,0,0,0,0,7.5,1,59,64,0,0
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Jorginho,Arsenal,MF,TRUE,69,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.1,1,23,60,0,0
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Jorginho,Arsenal,MF,TRUE,65,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,10,15,0,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Jorginho,Arsenal,MF,FALSE,6,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.9,1,2,2,0,0
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Jorginho,Arsenal,MF,TRUE,90,0,1,0,0,0,0,0,0,2,1,0,0,0,2,0,0,0,0,0,0,0,7.5,1,50,55,2,1
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Jorginho,Arsenal,MF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,15,19,0,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Jorginho,Arsenal,MF,FALSE,19,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.2,0,22,24,0,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Gabriel Jesus,Arsenal,FW,FALSE,8,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6.7,0,1,2,1,0
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Gabriel Jesus,Arsenal,FW,FALSE,15,1,0,0,0,1,1,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,7.8,1,6,6,3,3
+2023/24,Premier League,17/9/23,Everton,Arsenal,Gabriel Jesus,Arsenal,FW,FALSE,25,0,0,0,0,0,0,0,0,2,1,0,1,0,0,0,0,0,0,0,0,0,6.5,0,2,4,1,1
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Gabriel Jesus,Arsenal,FW,TRUE,76,0,0,0,0,2,1,0,0,3,2,1,0,1,2,0,0,0,0,0,0,0,7,0,12,17,4,3
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,90,0,0,0,0,2,0,0,0,0,4,0,0,1,1,0,0,0,0,0,0,0,7.7,3,33,42,3,3
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Gabriel Jesus,Arsenal,FW,TRUE,90,0,0,0,0,1,0,1,0,4,2,0,1,1,3,0,0,0,0,0,0,0,6.8,0,30,46,8,3
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,67,0,0,0,0,3,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,6.7,0,10,14,2,0
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,65,0,0,0,0,4,2,0,0,2,1,1,1,0,1,0,0,0,0,0,0,0,6.8,0,12,13,0,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Gabriel Jesus,Arsenal,FW,TRUE,66,0,0,0,0,2,1,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,6.5,1,10,11,1,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,90,1,1,0,0,3,3,1,0,1,1,1,2,1,0,0,0,0,0,0,0,0,8.8,5,30,33,3,2
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,80,0,0,0,0,1,1,0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,7,1,16,20,5,2
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Gabriel Jesus,Arsenal,FW,TRUE,80,1,0,0,0,4,2,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,7.9,2,36,36,1,1
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,77,0,0,0,0,4,1,0,0,3,3,0,0,1,1,0,0,0,0,0,0,0,7.2,0,12,14,0,0
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Gabriel Jesus,Arsenal,FW,TRUE,90,0,0,0,0,3,1,1,0,0,4,0,0,1,1,0,0,0,0,0,0,0,7.3,4,36,39,0,0
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Gabriel Jesus,Arsenal,FW,FALSE,24,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.6,0,4,6,1,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Gabriel Jesus,Arsenal,FW,TRUE,80,0,1,0,0,3,0,0,0,1,2,3,0,0,1,0,0,0,0,0,0,0,8.5,4,16,23,4,4
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,77,1,1,0,0,6,2,1,0,0,2,2,1,0,0,0,0,0,0,0,0,0,8.5,2,25,36,5,3
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Gabriel Jesus,Arsenal,FW,FALSE,27,0,0,0,0,1,1,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,7.1,0,15,17,1,1
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Gabriel Jesus,Arsenal,FW,FALSE,21,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,6.3,0,5,5,4,1
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,71,0,0,0,0,3,0,1,0,3,0,0,0,2,1,0,0,0,0,0,0,0,7.2,1,8,10,4,3
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,63,0,0,0,0,4,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,6.9,1,18,22,6,1
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Gabriel Jesus,Arsenal,FW,TRUE,78,0,0,0,0,3,1,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,7.3,1,13,14,3,2
+2023/24,Premier League,20/4/24,Wolves,Arsenal,Gabriel Jesus,Arsenal,FW,TRUE,79,0,1,0,0,2,0,0,0,1,1,0,2,2,0,0,0,0,0,0,0,0,7.1,1,22,27,1,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Gabriel Jesus,Arsenal,FW,FALSE,19,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.7,0,6,10,0,0
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Gabriel Jesus,Arsenal,FW,FALSE,5,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,6.9,1,6,7,2,1
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Gabriel Jesus,Arsenal,FW,FALSE,9,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.5,0,2,3,1,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,Gabriel Jesus,Arsenal,FW,FALSE,13,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.2,1,11,13,1,1
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Oleksandr Zinchenko,Arsenal,DF,FALSE,2,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6.5,0,6,6,0,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Oleksandr Zinchenko,Arsenal,DF,FALSE,35,0,0,0,0,0,0,0,0,0,1,0,5,0,1,0,0,0,0,0,0,0,6.8,2,30,32,1,0
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Oleksandr Zinchenko,Arsenal,DF,TRUE,75,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,6.7,1,44,51,0,0
+2023/24,Premier League,17/9/23,Everton,Arsenal,Oleksandr Zinchenko,Arsenal,DF,TRUE,79,0,0,0,0,3,0,0,0,0,0,0,3,2,0,0,0,0,0,0,0,0,7.3,1,72,87,0,0
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Oleksandr Zinchenko,Arsenal,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,1,2,1,0,0,0,0,0,0,0,7.1,0,47,51,0,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Oleksandr Zinchenko,Arsenal,DF,TRUE,68,0,0,0,0,2,1,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,7.5,2,56,62,2,1
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Oleksandr Zinchenko,Arsenal,DF,TRUE,74,0,0,0,0,3,0,0,0,0,0,0,2,1,1,0,0,0,0,0,0,0,7,1,31,34,0,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Oleksandr Zinchenko,Arsenal,DF,TRUE,45,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.2,0,26,30,0,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Oleksandr Zinchenko,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,2,1,0,0,0,0,0,0,0,7.6,1,79,84,1,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Oleksandr Zinchenko,Arsenal,DF,FALSE,18,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.3,1,24,30,0,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Oleksandr Zinchenko,Arsenal,DF,TRUE,90,1,0,0,0,1,1,0,0,1,1,0,5,3,0,0,0,0,0,0,0,0,8.9,2,83,95,1,1
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Oleksandr Zinchenko,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,4,0,1,0,0,0,0,0,0,0,8.5,2,70,75,0,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Oleksandr Zinchenko,Arsenal,DF,TRUE,90,0,1,0,0,0,0,0,0,0,0,0,0,3,1,0,0,0,0,0,0,0,6.9,1,74,78,0,0
+2023/24,Premier League,5/12/23,Luton Town,Arsenal,Oleksandr Zinchenko,Arsenal,DF,FALSE,27,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.9,1,26,29,0,0
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Oleksandr Zinchenko,Arsenal,DF,TRUE,89,0,0,0,0,0,0,1,0,1,2,0,0,4,0,0,0,0,0,0,0,0,7.3,1,56,67,1,1
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Oleksandr Zinchenko,Arsenal,DF,TRUE,89,0,0,0,0,0,0,0,0,0,1,0,0,1,4,0,0,0,0,0,0,0,7.4,2,42,50,0,0
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Oleksandr Zinchenko,Arsenal,DF,TRUE,90,0,0,0,0,2,0,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,6.7,0,51,60,2,1
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Oleksandr Zinchenko,Arsenal,DF,TRUE,63,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.8,2,60,66,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Oleksandr Zinchenko,Arsenal,DF,TRUE,90,0,0,0,0,2,1,0,0,0,0,0,1,3,1,0,0,0,0,0,0,0,8.2,1,79,88,0,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Oleksandr Zinchenko,Arsenal,DF,TRUE,89,0,1,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,0,0,0,0,8.1,4,100,107,1,1
+2023/24,Premier League,4/2/24,Arsenal,Liverpool,Oleksandr Zinchenko,Arsenal,DF,TRUE,45,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,15,17,1,1
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Oleksandr Zinchenko,Arsenal,DF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,6,7,0,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Oleksandr Zinchenko,Arsenal,DF,TRUE,74,0,0,0,0,1,0,0,0,0,1,0,0,2,2,0,0,0,0,0,0,0,7.5,1,56,67,0,0
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Oleksandr Zinchenko,Arsenal,DF,TRUE,71,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,1,36,41,1,0
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Oleksandr Zinchenko,Arsenal,DF,TRUE,86,0,0,0,0,1,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,6.7,1,44,50,0,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Oleksandr Zinchenko,Arsenal,DF,FALSE,19,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.3,1,13,14,0,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,Oleksandr Zinchenko,Arsenal,DF,FALSE,32,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.9,1,35,39,0,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Takehiro Tomiyasu,Arsenal,DF,FALSE,41,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.8,0,36,42,0,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Takehiro Tomiyasu,Arsenal,DF,TRUE,66,0,0,0,0,0,0,2,1,2,0,0,1,0,0,0,0,0,0,0,0,0,5.9,0,34,42,3,2
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Takehiro Tomiyasu,Arsenal,DF,FALSE,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,16,19,0,0
+2023/24,Premier League,17/9/23,Everton,Arsenal,Takehiro Tomiyasu,Arsenal,DF,FALSE,11,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,2,3,0,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Takehiro Tomiyasu,Arsenal,DF,FALSE,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,7,9,0,0
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Takehiro Tomiyasu,Arsenal,DF,FALSE,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,6,6,0,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Takehiro Tomiyasu,Arsenal,DF,FALSE,45,0,0,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.8,0,20,21,0,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Takehiro Tomiyasu,Arsenal,DF,FALSE,25,1,0,0,0,2,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7.7,0,21,22,0,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Takehiro Tomiyasu,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,6.8,0,26,34,1,1
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Takehiro Tomiyasu,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,2,1,1,0,0,0,0,0,0,0,7,0,63,74,0,0
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Takehiro Tomiyasu,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,1,2,0,1,1,2,0,0,0,0,0,0,0,7.3,0,42,50,1,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Takehiro Tomiyasu,Arsenal,DF,TRUE,78,0,1,0,0,0,0,0,0,2,0,0,2,1,1,0,0,0,0,0,0,0,7.4,1,61,67,2,1
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Takehiro Tomiyasu,Arsenal,DF,FALSE,45,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,7.1,1,33,37,0,0
+2023/24,Premier League,31/3/24,Manchester City,Arsenal,Takehiro Tomiyasu,Arsenal,DF,FALSE,25,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,6.9,0,5,6,0,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Takehiro Tomiyasu,Arsenal,DF,FALSE,16,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,9,11,0,0
+2023/24,Premier League,6/4/24,Brighton,Arsenal,Takehiro Tomiyasu,Arsenal,DF,FALSE,19,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.6,0,2,3,0,0
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Takehiro Tomiyasu,Arsenal,DF,FALSE,24,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,6.4,0,13,15,1,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Takehiro Tomiyasu,Arsenal,DF,TRUE,71,0,0,0,0,1,0,0,0,0,1,0,2,0,2,0,0,0,0,0,0,0,7.3,1,24,25,0,0
+2023/24,Premier League,28/4/24,Tottenham,Arsenal,Takehiro Tomiyasu,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,4,0,1,0,1,2,0,0,0,0,0,0,0,5.9,0,15,19,2,0
+2023/24,Premier League,4/5/24,Arsenal,Bournemouth,Takehiro Tomiyasu,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,2,1,0,1,0,2,0,0,0,0,0,0,0,7.9,2,28,38,0,0
+2023/24,Premier League,12/5/24,Manchester Utd,Arsenal,Takehiro Tomiyasu,Arsenal,DF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,6.9,0,15,18,1,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,Takehiro Tomiyasu,Arsenal,DF,TRUE,90,1,0,0,0,4,1,0,0,0,1,0,1,0,2,0,0,0,0,0,0,0,7.7,1,42,47,0,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Eddie Nketiah,Arsenal,FW,TRUE,73,1,0,0,0,3,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,7.5,0,15,15,2,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Eddie Nketiah,Arsenal,FW,TRUE,78,0,0,0,0,3,0,0,0,2,3,0,1,0,0,0,0,0,0,0,0,0,6.6,2,9,11,2,2
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Eddie Nketiah,Arsenal,FW,FALSE,45,1,0,0,0,4,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,7.5,0,10,12,0,0
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Eddie Nketiah,Arsenal,FW,TRUE,75,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,7,3,19,23,3,1
+2023/24,Premier League,17/9/23,Everton,Arsenal,Eddie Nketiah,Arsenal,FW,TRUE,65,0,0,0,0,1,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,6.5,0,5,7,80,0
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Eddie Nketiah,Arsenal,FW,TRUE,90,0,0,0,0,1,1,1,0,1,2,1,0,2,1,0,0,0,0,0,0,0,6.3,0,6,8,2,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Eddie Nketiah,Arsenal,FW,TRUE,68,0,0,0,0,2,0,0,0,2,2,0,0,0,1,0,0,0,0,0,0,0,7.4,0,16,16,5,4
+2023/24,Premier League,8/10/23,Arsenal,Manchester City,Eddie Nketiah,Arsenal,FW,TRUE,74,0,0,0,0,3,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,6.8,0,5,8,1,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Eddie Nketiah,Arsenal,FW,FALSE,23,0,0,0,0,2,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.7,0,2,2,1,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Eddie Nketiah,Arsenal,FW,TRUE,90,3,0,0,0,4,3,0,0,2,3,1,0,0,0,0,0,0,0,0,0,0,9.4,0,14,20,1,1
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Eddie Nketiah,Arsenal,FW,TRUE,78,0,0,0,0,1,0,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,6.7,0,14,16,2,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Eddie Nketiah,Arsenal,FW,FALSE,10,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6.4,0,0,0,0,0
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Eddie Nketiah,Arsenal,FW,FALSE,25,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,5,7,0,0
+2023/24,Premier League,2/12/23,Arsenal,Wolves,Eddie Nketiah,Arsenal,FW,FALSE,24,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,6,7,0,0
+2023/24,Premier League,9/12/23,Aston Villa,Arsenal,Eddie Nketiah,Arsenal,FW,FALSE,10,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,6.8,0,1,2,0,0
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Eddie Nketiah,Arsenal,FW,FALSE,10,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.2,1,3,3,0,0
+2023/24,Premier League,23/12/23,Liverpool,Arsenal,Eddie Nketiah,Arsenal,FW,FALSE,13,0,0,0,0,0,0,1,0,1,2,0,0,1,0,0,0,0,0,0,0,0,6.7,0,1,2,0,0
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Eddie Nketiah,Arsenal,FW,FALSE,27,0,0,0,0,2,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,6.6,0,5,6,1,0
+2023/24,Premier League,31/12/23,Fulham,Arsenal,Eddie Nketiah,Arsenal,FW,TRUE,90,0,0,0,0,2,1,0,0,1,3,0,0,1,1,0,0,0,0,0,0,0,6.8,0,7,11,1,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Eddie Nketiah,Arsenal,FW,FALSE,10,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.4,1,2,2,0,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Eddie Nketiah,Arsenal,FW,FALSE,13,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,2,3,0,0
+2023/24,Premier League,11/2/24,West Ham,Arsenal,Eddie Nketiah,Arsenal,FW,FALSE,24,0,0,0,0,1,1,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,6.8,0,8,8,0,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Eddie Nketiah,Arsenal,FW,FALSE,22,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,6,9,1,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Eddie Nketiah,Arsenal,FW,FALSE,15,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,6.9,1,2,4,0,0
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Eddie Nketiah,Arsenal,FW,FALSE,24,0,0,0,0,1,1,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,6.6,0,3,3,1,0
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Eddie Nketiah,Arsenal,FW,FALSE,4,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,1,3,0,0
+2023/24,Premier League,12/8/23,Arsenal,Nottingham,Aaron Ramsdale,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,6.6,0,19,25,0,0
+2023/24,Premier League,21/8/23,Crystal Palace,Arsenal,Aaron Ramsdale,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7.2,0,13,22,0,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Aaron Ramsdale,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,6.2,0,25,28,0,0
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Aaron Ramsdale,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,6.5,0,17,21,0,0
+2023/24,Premier League,25/11/23,Brentford,Arsenal,Aaron Ramsdale,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,6.7,0,15,30,0,0
+2023/24,Premier League,9/3/24,Arsenal,Brentford,Aaron Ramsdale,Arsenal,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,4,3,0,0,6.6,0,14,32,0,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Emile Smith Rowe,Arsenal,MF,FALSE,10,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,4,4,0,0
+2023/24,Premier League,21/10/23,Chelsea,Arsenal,Emile Smith Rowe,Arsenal,MF,FALSE,23,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,6,12,0,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Emile Smith Rowe,Arsenal,MF,TRUE,73,0,1,0,0,1,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,7.2,1,25,30,0,0
+2023/24,Premier League,17/12/23,Arsenal,Brighton,Emile Smith Rowe,Arsenal,MF,FALSE,2,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,2,2,0,0
+2023/24,Premier League,28/12/23,Arsenal,West Ham,Emile Smith Rowe,Arsenal,MF,FALSE,12,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,17,17,0,0
+2023/24,Premier League,20/1/24,Arsenal,Crystal Palace,Emile Smith Rowe,Arsenal,MF,FALSE,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,15,16,1,0
+2023/24,Premier League,30/1/24,Nottingham,Arsenal,Emile Smith Rowe,Arsenal,MF,TRUE,70,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,1,42,45,1,0
+2023/24,Premier League,17/2/24,Burnley,Arsenal,Emile Smith Rowe,Arsenal,MF,FALSE,7,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.6,0,5,5,0,0
+2023/24,Premier League,24/2/24,Arsenal,Newcastle,Emile Smith Rowe,Arsenal,MF,FALSE,15,0,0,0,0,3,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,4,5,2,1
+2023/24,Premier League,3/4/24,Arsenal,Luton Town,Emile Smith Rowe,Arsenal,MF,TRUE,84,0,0,0,0,2,1,0,0,1,0,0,0,1,2,0,0,0,0,0,0,0,7.5,2,39,44,0,0
+2023/24,Premier League,14/4/24,Arsenal,Aston Villa,Emile Smith Rowe,Arsenal,MF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,8,10,0,0
+2023/24,Premier League,19/5/24,Arsenal,Everton,Emile Smith Rowe,Arsenal,MF,FALSE,22,0,0,0,0,3,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.1,0,14,15,0,0
+2023/24,Premier League,26/8/23,Arsenal,Fulham,Fabio Vieira,Arsenal,MF,FALSE,35,0,1,0,0,1,1,0,1,1,1,5,0,0,0,0,0,0,0,0,0,0,7.8,1,16,16,2,1
+2023/24,Premier League,3/9/23,Arsenal,Manchester Utd,Fabio Vieira,Arsenal,MF,FALSE,14,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.3,1,13,13,1,0
+2023/24,Premier League,17/9/23,Everton,Arsenal,Fabio Vieira,Arsenal,MF,TRUE,79,0,0,0,0,4,0,0,1,2,0,4,1,1,0,0,0,0,0,0,0,0,7.3,0,22,26,2,1
+2023/24,Premier League,24/9/23,Arsenal,Tottenham,Fabio Vieira,Arsenal,MF,TRUE,45,0,0,0,0,0,0,0,2,3,0,1,1,0,0,0,0,0,0,0,0,0,6.4,0,11,13,1,0
+2023/24,Premier League,30/9/23,Bournemouth,Arsenal,Fabio Vieira,Arsenal,MF,FALSE,15,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,6.9,1,10,12,1,0
+2023/24,Premier League,28/10/23,Arsenal,Sheffield United,Fabio Vieira,Arsenal,MF,FALSE,17,1,0,1,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,7.6,0,5,7,0,0
+2023/24,Premier League,4/11/23,Newcastle,Arsenal,Fabio Vieira,Arsenal,MF,FALSE,12,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,6.6,0,8,10,0,0
+2023/24,Premier League,11/11/23,Arsenal,Burnley,Fabio Vieira,Arsenal,MF,FALSE,24,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,5.8,0,3,4,0,0
+2023/24,Premier League,4/3/24,Sheffield United,Arsenal,Fabio Vieira,Arsenal,MF,FALSE,45,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,6.8,1,22,23,0,0
+2023/24,Premier League,23/4/24,Arsenal,Chelsea,Fabio Vieira,Arsenal,MF,FALSE,9,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,1,7,7,1,0
