@@ -199,9 +199,29 @@
         <section class="performance-section">
 
 
-            <h2>
-                Performance Overview
-            </h2>
+            <div class="performance-heading-row">
+
+                <h2>
+                    Performance Overview
+                </h2>
+
+                <div class="season-filter">
+
+                    <label for="season-filter">
+                        Season
+                    </label>
+
+                    <select id="season-filter">
+
+                        <option value="">
+                            All Seasons
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
 
 
             <!-- =================================
@@ -217,7 +237,7 @@
                         Appearances
                     </span>
 
-                    <strong>
+                    <strong id="summary-appearances">
                         {{ summary.appearances|default:0 }}
                     </strong>
 
@@ -230,7 +250,7 @@
                         Minutes
                     </span>
 
-                    <strong>
+                    <strong id="summary-minutes">
                         {{ summary.minutes|default:0 }}
                     </strong>
 
@@ -243,7 +263,7 @@
                         Average Rating
                     </span>
 
-                    <strong>
+                    <strong id="summary-average-rating">
 
                         {% if summary.average_rating %}
 
@@ -266,7 +286,7 @@
                         Goals
                     </span>
 
-                    <strong>
+                    <strong id="summary-goals">
                         {{ summary.goals|default:0 }}
                     </strong>
 
@@ -279,7 +299,7 @@
                         Assists
                     </span>
 
-                    <strong>
+                    <strong id="summary-assists">
                         {{ summary.assists|default:0 }}
                     </strong>
 
@@ -292,7 +312,7 @@
                         Shots
                     </span>
 
-                    <strong>
+                    <strong id="summary-shots">
                         {{ summary.shots|default:0 }}
                     </strong>
 
@@ -305,7 +325,7 @@
                         Key Passes
                     </span>
 
-                    <strong>
+                    <strong id="summary-key-passes">
                         {{ summary.key_passes|default:0 }}
                     </strong>
 

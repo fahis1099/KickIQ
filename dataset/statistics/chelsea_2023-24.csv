@@ -1,0 +1,528 @@
+﻿Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Raheem Sterling,Chelsea,MF,TRUE,80,0,0,0,0,0,0,0,0,0,1,0,5,2,0,0,0,0,0,0,0,0,6.7,1,21,27,2,0
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Raheem Sterling,Chelsea,MF,TRUE,90,0,0,0,0,1,0,0,0,1,5,1,6,1,0,0,0,0,0,0,0,0,8.1,1,35,47,7,6
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Raheem Sterling,Chelsea,MF,TRUE,89,2,0,0,0,5,3,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,8.8,2,32,36,5,2
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Raheem Sterling,Chelsea,MF,TRUE,90,0,0,0,0,3,0,0,0,0,2,0,4,0,0,0,0,0,0,0,0,0,6.8,2,29,36,2,0
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Raheem Sterling,Chelsea,MF,TRUE,90,0,0,0,0,4,0,1,0,1,4,1,2,0,0,0,0,0,0,0,0,0,7.2,3,28,31,6,3
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Raheem Sterling,Chelsea,MF,TRUE,90,0,0,0,0,1,1,0,0,0,2,1,3,0,0,0,0,0,0,0,0,0,6.4,0,12,19,6,2
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Raheem Sterling,Chelsea,MF,FALSE,26,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,6.4,0,6,6,3,1
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Raheem Sterling,Chelsea,FW,TRUE,82,1,0,0,0,3,2,0,0,2,2,0,1,1,0,0,0,0,0,0,0,0,8.4,1,13,21,5,2
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Raheem Sterling,Chelsea,MF,TRUE,83,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,0,0,0,0,0,0,6.6,1,11,15,5,1
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Raheem Sterling,Chelsea,MF,TRUE,90,0,0,0,0,2,0,0,0,0,1,0,4,0,1,0,0,0,0,0,0,0,7.2,1,39,47,6,4
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Raheem Sterling,Chelsea,MF,TRUE,89,0,1,0,0,3,1,0,0,4,2,1,2,0,0,0,0,0,0,0,0,0,7.1,2,18,20,10,4
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Raheem Sterling,Chelsea,MF,TRUE,90,1,0,0,0,2,1,1,0,3,3,1,3,0,1,0,0,0,0,0,0,0,7.1,1,15,25,10,4
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Raheem Sterling,Chelsea,MF,TRUE,86,1,0,0,0,2,2,1,0,3,1,0,1,1,1,0,0,0,0,0,0,0,6.7,0,12,16,6,2
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Raheem Sterling,Chelsea,MF,TRUE,65,0,0,0,0,0,0,0,0,1,2,1,2,0,1,0,0,0,0,0,0,0,6.5,0,12,19,3,0
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Raheem Sterling,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,0,1,3,0,1,0,0,0,0,0,0,0,0,0,6.5,2,17,22,3,0
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Raheem Sterling,Chelsea,MF,FALSE,25,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,6.6,1,15,18,3,1
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Raheem Sterling,Chelsea,MF,TRUE,74,0,1,0,0,1,1,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,7.1,2,38,43,4,1
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Raheem Sterling,Chelsea,MF,TRUE,90,0,1,0,0,3,1,1,0,2,2,0,5,1,1,0,0,0,0,0,0,0,7.3,2,27,34,4,2
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Raheem Sterling,Chelsea,MF,TRUE,76,0,0,0,0,3,0,0,0,2,3,2,1,0,2,0,0,0,0,0,0,0,7.2,0,19,24,3,1
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Raheem Sterling,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,1,1,1,0,0,0,0,0,0,0,6.1,0,13,20,5,1
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Raheem Sterling,Chelsea,MF,TRUE,71,0,0,0,0,2,0,0,0,2,1,1,1,0,0,0,0,0,0,0,0,0,6.1,0,20,22,2,1
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Raheem Sterling,Chelsea,MF,FALSE,12,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.6,1,5,6,0,0
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Raheem Sterling,Chelsea,MF,TRUE,63,1,0,0,0,3,3,0,0,2,1,0,0,1,0,0,0,0,0,0,0,0,7.3,0,8,10,1,1
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Raheem Sterling,Chelsea,MF,FALSE,12,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,6.5,1,5,8,4,1
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Raheem Sterling,Chelsea,MF,TRUE,70,0,0,0,0,3,2,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.3,1,7,10,0,0
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Raheem Sterling,Chelsea,MF,FALSE,18,0,1,0,0,3,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7.2,1,13,13,0,0
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Raheem Sterling,Chelsea,MF,FALSE,20,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,6.6,0,10,11,1,0
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Raheem Sterling,Chelsea,MF,FALSE,24,0,0,0,0,1,1,0,0,1,2,0,1,0,0,0,0,0,0,0,0,0,6.3,0,10,13,2,1
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Raheem Sterling,Chelsea,MF,FALSE,18,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.8,1,9,10,1,1
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Raheem Sterling,Chelsea,MF,FALSE,22,0,0,0,0,1,1,1,0,2,0,0,1,0,1,0,0,0,0,0,0,0,6.6,0,4,5,0,0
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Raheem Sterling,Chelsea,MF,TRUE,63,1,0,0,0,2,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,7.6,3,21,24,6,3
+2023/24,Premier League,2023-08-11,Burnley,Manchester City,Cole Palmer,Manchester City,FW,FALSE,11,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,4,5,0,0
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Cole Palmer,Chelsea,FW,FALSE,29,0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,0,6.9,1,28,33,4,3
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Cole Palmer,Chelsea,FW,FALSE,28,0,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.1,1,13,16,0,0
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Cole Palmer,Chelsea,FW,FALSE,23,0,0,0,0,2,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,6.8,2,17,20,0,0
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Cole Palmer,Chelsea,FW,TRUE,77,0,0,0,0,2,1,1,0,2,3,0,1,0,2,0,0,0,0,0,0,0,7.5,1,26,32,2,0
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Cole Palmer,Chelsea,FW,TRUE,85,1,1,1,1,3,1,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,7.6,2,30,37,4,0
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Cole Palmer,Chelsea,FW,TRUE,83,1,0,1,1,4,2,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,7.1,1,24,25,0,0
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Cole Palmer,Chelsea,MF,TRUE,90,0,0,0,0,2,0,0,0,0,0,0,4,1,1,0,0,0,0,0,0,0,7.8,4,74,86,1,0
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Cole Palmer,Chelsea,MF,TRUE,90,1,1,1,1,2,1,0,0,2,1,0,2,1,2,0,0,0,0,0,0,0,8.9,1,41,51,5,4
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Cole Palmer,Chelsea,MF,TRUE,90,1,0,1,1,3,2,1,0,0,1,0,2,1,0,0,0,0,0,0,0,0,6.7,1,26,33,2,1
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Cole Palmer,Chelsea,MF,TRUE,74,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,6.8,1,27,33,1,1
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Cole Palmer,Chelsea,D,FALSE,25,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.6,1,8,12,1,0
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Cole Palmer,Chelsea,MF,TRUE,90,1,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,7.1,2,42,49,5,2
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Cole Palmer,Chelsea,MF,TRUE,90,0,0,0,0,5,2,1,0,2,1,0,2,1,0,0,0,0,0,0,0,0,7.2,2,44,53,5,2
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Cole Palmer,Chelsea,MF,TRUE,89,1,1,0,0,5,2,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,8.5,2,59,64,5,2
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Cole Palmer,Chelsea,MF,TRUE,90,0,0,0,0,2,0,1,0,1,0,0,5,2,0,0,0,0,0,0,0,0,7,3,56,63,3,1
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Cole Palmer,Chelsea,MF,TRUE,89,2,1,0,0,5,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,9.1,2,21,27,2,2
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Cole Palmer,Chelsea,MF,TRUE,89,1,0,1,1,3,2,1,0,0,0,0,6,0,0,0,0,0,0,0,0,0,8.2,1,37,44,1,1
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Cole Palmer,Chelsea,FW,TRUE,84,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,6.8,0,35,39,7,4
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Cole Palmer,Chelsea,MF,TRUE,90,1,0,0,0,4,1,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,7.4,1,36,49,6,3
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Cole Palmer,Chelsea,FW,TRUE,90,0,2,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8.5,3,39,50,1,1
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Cole Palmer,Chelsea,MF,TRUE,70,0,0,0,0,0,0,1,0,2,0,0,1,1,2,0,0,0,0,0,0,0,7.1,0,19,20,1,1
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Cole Palmer,Chelsea,FW,TRUE,90,0,1,0,0,6,2,0,0,0,1,1,3,0,1,0,0,0,0,0,0,0,7.7,2,45,48,6,2
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Cole Palmer,Chelsea,MF,TRUE,85,1,1,0,0,3,2,0,0,1,0,0,1,2,1,0,0,0,0,0,0,0,8.3,3,20,27,4,2
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Cole Palmer,Chelsea,MF,TRUE,90,2,0,1,1,9,4,0,0,2,0,0,2,0,0,0,0,0,0,0,0,0,10,5,42,55,3,3
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Cole Palmer,Chelsea,MF,TRUE,90,3,0,2,2,9,5,0,0,1,3,0,6,1,2,0,0,0,0,0,0,0,10,8,31,42,2,1
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Cole Palmer,Chelsea,MF,TRUE,73,0,1,0,0,2,1,0,0,0,1,0,4,0,0,0,0,0,0,0,0,0,7,2,24,34,1,0
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Cole Palmer,Chelsea,MF,TRUE,79,4,0,1,1,5,5,0,0,0,2,0,4,0,1,0,0,0,0,0,0,0,10,0,22,27,4,3
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Cole Palmer,Chelsea,MF,TRUE,90,0,0,0,0,6,1,0,0,2,0,0,5,0,1,0,0,0,0,0,0,0,7,3,40,48,3,2
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Cole Palmer,Chelsea,MF,TRUE,90,0,0,0,0,5,1,0,0,1,1,0,2,0,0,0,0,0,0,0,0,0,7.4,2,25,28,5,4
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Cole Palmer,Chelsea,MF,TRUE,88,1,0,0,0,4,2,0,0,1,0,0,6,0,0,0,0,0,0,0,0,0,8.5,4,53,58,4,3
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Cole Palmer,Chelsea,MF,TRUE,90,0,1,0,0,2,0,0,0,0,1,1,8,0,1,0,0,0,0,0,0,0,7.8,5,39,47,3,2
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Cole Palmer,Chelsea,MF,TRUE,89,1,0,0,0,6,2,0,0,0,2,0,6,0,1,0,0,0,0,0,0,0,7.7,2,17,21,2,0
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Cole Palmer,Chelsea,MF,TRUE,88,0,1,0,0,3,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,7.2,4,25,31,5,2
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Moises Caicedo,Chelsea,MF,FALSE,30,0,0,0,0,1,0,0,2,2,0,0,0,1,0,0,0,0,0,0,0,0,6.4,0,31,37,2,1
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,2,2,0,0,0,2,1,0,0,0,0,0,0,0,7.4,0,60,62,2,2
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Moises Caicedo,Chelsea,MF,TRUE,76,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.1,0,53,59,1,1
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Moises Caicedo,Chelsea,MF,TRUE,78,0,0,0,0,1,1,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,7,0,31,34,0,0
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,89,0,0,0,0,0,0,0,2,2,0,0,0,2,1,0,0,0,0,0,0,0,7.2,0,43,48,3,2
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.4,2,78,81,2,1
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,1,2,0,0,0,1,1,0,0,0,0,0,0,0,6.6,1,33,42,1,0
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Moises Caicedo,Chelsea,MF,TRUE,80,0,0,0,0,0,0,1,3,2,0,0,0,1,3,0,0,0,0,0,0,0,7.4,0,85,87,1,1
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,2,2,0,0,1,0,1,0,0,0,0,0,0,0,6.9,1,51,56,3,0
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Moises Caicedo,Chelsea,MF,TRUE,89,0,0,0,0,1,0,1,2,0,0,0,0,1,0,0,0,0,0,0,0,0,6.5,2,30,34,1,1
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Moises Caicedo,Chelsea,MF,FALSE,22,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,17,18,1,0
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,1,0,0,3,2,0,0,0,1,3,0,0,0,0,0,0,0,6.5,0,30,32,1,0
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,3,1,0,0,0,2,0,0,0,0,0,0,0,0,7,0,53,60,0,0
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,3,1,0,0,0,0,0,0,0,0,7,0,80,85,0,0
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,1,0,0,1,1,0,0,2,1,0,0,0,0,0,0,0,0,7.7,2,91,110,0,0
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,1,2,3,0,0,0,2,1,0,0,0,0,0,0,0,7.4,0,81,86,1,1
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,3,1,0,0,0,4,0,0,0,0,0,0,0,0,7.2,1,38,39,3,2
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,2,0,0,0,0,3,0,0,0,0,0,0,0,0,7,1,47,51,1,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,65,0,0,0,0,0,0,1,2,3,0,0,0,0,2,0,0,0,0,0,0,0,6.5,0,36,39,0,0
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Moises Caicedo,Chelsea,MF,TRUE,62,0,1,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,7.1,2,47,53,0,0
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,1,3,1,0,0,0,0,0,0,0,7.9,2,98,103,0,0
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,1,3,2,0,0,0,1,0,0,0,0,0,0,0,0,6.9,0,31,33,0,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,0,7.1,0,70,78,2,1
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,1,0,1,2,1,0,0,0,3,5,0,0,0,0,0,0,0,7.3,0,38,41,3,2
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Moises Caicedo,Chelsea,MF,TRUE,72,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,7.1,0,38,41,3,2
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Moises Caicedo,Chelsea,MF,TRUE,70,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.1,1,43,48,1,0
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,1,2,0,0,0,0,0,0,0,7.4,0,59,73,3,1
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,1,0,0,1,3,0,0,0,2,4,0,0,0,0,0,0,0,7.4,1,56,66,3,2
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,6.5,0,51,58,0,0
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,2,2,1,1,5,0,0,1,1,0,0,0,0,0,0,0,0,8.1,0,71,78,1,1
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,0,4,0,0,1,1,1,0,0,0,0,0,0,0,7.5,0,28,37,2,0
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Moises Caicedo,Chelsea,MF,TRUE,90,0,1,0,0,1,0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,0,7.9,1,95,103,4,4
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,1,0,0,0,0,0,2,0,0,0,0,1,3,0,0,0,0,0,0,0,8.1,2,92,100,2,1
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Moises Caicedo,Chelsea,MF,TRUE,90,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,3,51,55,2,1
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Moises Caicedo,Chelsea,MF,TRUE,63,1,0,0,0,1,1,0,0,0,0,0,0,4,3,0,0,0,0,0,0,0,7.8,1,44,52,3,1
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,7.3,2,56,68,1,0
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,2,0,0,0,1,1,0,2,0,0,0,0,0,0,0,0,0,6.6,0,55,65,2,2
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.3,1,60,68,0,0
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,3,0,1,1,1,3,0,0,0,0,0,0,0,6.9,0,41,50,0,0
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Levi Colwill,Chelsea,DF,TRUE,79,0,0,0,0,2,2,0,0,2,0,1,1,1,0,0,0,0,0,0,0,0,7,0,36,52,0,0
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,7.3,0,42,51,1,1
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Levi Colwill,Chelsea,DF,TRUE,90,0,1,0,0,0,0,0,0,2,3,0,0,2,1,0,0,0,0,0,0,0,7.9,1,32,39,0,0
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,6.9,0,37,41,0,0
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,1,0,0,3,0,0,0,0,0,0,0,6.7,0,63,76,0,0
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,2,1,0,0,0,0,0,0,0,7.3,0,60,69,0,0
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Levi Colwill,Chelsea,DF,TRUE,45,0,0,0,0,0,0,1,0,1,0,1,0,1,2,0,0,0,0,0,0,0,6.6,0,18,25,0,0
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Levi Colwill,Chelsea,DF,FALSE,16,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.1,0,5,5,1,0
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Levi Colwill,Chelsea,DF,TRUE,90,1,0,0,0,1,1,0,0,1,0,0,1,1,2,0,0,0,0,0,0,0,7.3,0,18,21,0,0
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,2,0,0,0,3,1,0,0,1,3,0,0,0,0,0,0,0,7,1,21,26,0,0
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Levi Colwill,Chelsea,DF,FALSE,64,0,0,0,0,1,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,6.8,1,46,52,1,0
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,3,0,0,0,0,0,0,0,7.4,0,45,52,0,0
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Levi Colwill,Chelsea,DF,TRUE,78,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,7,0,44,47,2,2
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Levi Colwill,Chelsea,DF,TRUE,57,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,6.3,0,22,26,1,1
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,4,1,0,0,0,0,0,0,0,6.9,0,26,37,0,0
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,3,0,0,2,4,3,0,0,0,0,0,0,0,7.7,1,43,57,4,2
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Levi Colwill,Chelsea,DF,FALSE,30,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.6,0,24,24,0,0
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Levi Colwill,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,7.2,0,28,31,0,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Levi Colwill,Chelsea,DF,TRUE,78,0,0,0,0,0,0,0,0,1,1,0,0,3,0,0,0,0,0,0,0,0,6.9,0,56,71,0,0
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,7.2,0,42,46,0,0
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,1,1,0,1,3,3,0,0,0,0,0,0,0,6.7,1,73,81,3,0
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,2,3,0,1,2,0,0,0,0,0,0,0,0,6.6,0,33,41,0,0
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Marc Cucurella,Chelsea,DF,TRUE,80,0,0,0,0,2,1,0,0,0,1,0,3,1,2,0,0,0,0,0,0,0,7.7,1,61,65,0,0
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Marc Cucurella,Chelsea,DF,FALSE,45,0,0,0,0,1,1,0,0,1,1,1,0,3,0,0,0,0,0,0,0,0,7.2,1,31,37,1,1
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,2,2,0,0,3,1,0,0,0,0,0,0,0,6.2,1,32,38,0,0
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,2,1,0,0,1,2,0,0,0,0,0,0,0,6.2,1,26,34,0,0
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,45,0,0,0,0,0,0,0,0,1,2,0,0,1,1,0,0,0,0,0,0,0,7.1,0,25,27,0,0
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,83,0,0,0,0,1,1,0,0,1,2,0,0,2,1,0,0,0,0,0,0,0,7.3,1,59,70,0,0
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,5,2,0,0,0,0,0,0,0,7,0,33,47,0,0
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,1,1,1,0,2,1,0,0,1,0,0,0,0,0,0,0,0,7.4,5,61,62,0,0
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,1,3,0,1,1,1,0,0,0,0,0,0,0,6.8,1,35,45,1,0
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,89,0,0,0,0,0,0,1,0,1,2,0,0,1,1,0,0,0,0,0,0,0,6.4,0,40,46,1,0
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Marc Cucurella,Chelsea,DF,TRUE,90,0,1,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,7.4,1,52,63,0,0
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,1,0,1,0,2,3,0,1,0,0,0,0,0,0,0,0,0,6.5,1,37,42,0,0
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,4,1,0,1,0,0,0,0,0,0,7.1,3,37,40,0,0
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,4,0,0,3,3,0,0,0,0,0,0,0,8.1,0,29,40,1,1
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,2,1,0,1,3,0,0,0,0,0,0,0,0,7.2,0,68,75,0,0
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,3,0,0,1,2,0,0,0,0,0,0,0,6.6,0,58,65,0,0
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Marc Cucurella,Chelsea,DF,TRUE,90,0,1,0,0,0,0,0,0,2,2,0,2,1,0,0,0,0,0,0,0,0,6.8,1,38,41,1,0
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Marc Cucurella,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,0,3,0,2,3,1,0,0,0,0,0,0,0,7.4,1,46,52,1,1
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,1,0,1,0,1,2,0,7,1,0,0,0,0,0,0,0,0,8.1,2,85,94,2,2
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,1,2,1,0,0,0,1,0,5,1,0,0,0,0,0,0,0,0,7.7,4,98,109,2,1
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,4,0,1,0,3,1,0,5,0,0,0,0,0,0,0,0,0,7.6,2,60,64,2,0
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,4,1,0,0,0,2,0,7,1,0,0,0,0,0,0,0,0,7.9,3,80,89,1,1
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,80,0,0,0,0,1,1,0,0,2,3,0,1,0,1,0,0,0,0,0,0,0,6.9,0,48,50,1,0
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Enzo Fernandez,Chelsea,MF,TRUE,67,0,0,0,0,1,0,0,0,1,1,1,2,1,0,0,0,0,0,0,0,0,6.7,0,25,33,0,0
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,89,0,0,0,0,2,1,0,0,1,1,0,0,2,1,0,0,0,0,0,0,0,7.4,1,51,57,1,1
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,1,1,1,0,0,2,0,1,2,2,0,0,0,0,0,0,0,7.6,0,81,87,2,1
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,2,1,0,0,1,0,0,2,1,0,0,0,0,0,0,0,0,6.8,1,47,57,3,1
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,57,0,0,0,0,2,0,0,0,2,2,1,0,0,0,0,0,0,0,0,0,0,7.3,1,34,38,0,0
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Enzo Fernandez,Chelsea,MF,TRUE,63,0,0,0,0,1,0,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,6.5,0,35,41,1,1
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,1,1,0,0,2,1,0,0,1,3,0,0,0,0,0,0,0,7,0,65,70,0,0
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Enzo Fernandez,Chelsea,MF,TRUE,90,2,0,1,1,3,3,1,0,1,2,0,0,0,1,0,0,0,0,0,0,0,7.8,0,26,38,2,1
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,3,1,0,0,2,2,0,1,2,1,0,0,0,0,0,0,0,6,0,47,58,1,1
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,65,0,0,0,0,2,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.1,0,31,35,2,1
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Enzo Fernandez,Chelsea,MF,FALSE,22,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,6.7,0,13,17,0,0
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Enzo Fernandez,Chelsea,MF,FALSE,10,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,4,5,2,1
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,2,0,1,0,2,2,0,2,2,1,0,0,0,0,0,0,0,8,3,52,63,6,4
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,1,1,1,0,3,1,0,0,1,2,0,0,0,0,0,0,0,6.6,0,73,88,2,1
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,1,0,0,0,2,2,0,3,2,1,0,0,0,0,0,0,0,7.8,2,77,84,1,1
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,90,1,0,0,0,2,1,0,0,1,1,0,3,1,1,0,0,0,0,0,0,0,8.1,0,110,130,1,1
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,7.4,1,26,33,1,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,70,0,0,0,0,3,0,0,0,0,0,1,1,3,0,0,0,0,0,0,0,0,7.5,4,52,53,1,0
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Enzo Fernandez,Chelsea,MF,TRUE,90,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,7,1,58,68,2,2
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,3,1,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,7.9,2,88,100,0,0
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Enzo Fernandez,Chelsea,MF,TRUE,90,0,1,0,0,2,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,7.3,3,71,82,0,0
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,2,0,1,0,0,0,0,0,0,0,6.6,2,76,95,1,0
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Enzo Fernandez,Chelsea,MF,TRUE,66,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.1,0,47,57,1,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6.8,0,24,30,0,0
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,3,1,0,6.5,0,20,21,0,0
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,7.1,0,36,39,0,0
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,7,0,23,25,0,0
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,0,0,8.2,0,40,44,0,0
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,6,0,0,8.2,0,18,22,0,0
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,3,3,0,0,7.6,0,32,39,0,0
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,6.5,0,35,38,0,0
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,3,1,0,0,5.5,0,17,31,0,0
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,0,0,6.6,0,12,23,0,0
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,0,0,7,0,18,25,0,0
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,6,1,0,7.5,0,25,35,0,0
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,1,0,0,6.2,0,25,33,0,0
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,9,7,0,0,7.9,0,23,36,0,0
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Robert Sanchez,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,6,1,1,8.1,0,35,42,0,0
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Robert Sanchez,Chelsea,GK,TRUE,83,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,0,0,7,0,31,37,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,4,2,1,0,1,2,2,0,0,0,0,0,0,0,0,0,0,6.1,0,17,21,2,2
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,2,0,1,0,0,1,1,0,3,0,0,0,0,0,0,0,0,7.2,1,21,31,2,1
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Nicolas Jackson,Chelsea,FW,TRUE,82,1,0,0,0,5,3,0,0,1,2,0,0,1,1,0,0,0,0,0,0,0,7.9,2,19,22,2,2
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,4,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,6.3,1,22,25,6,5
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,3,1,1,0,2,1,0,0,0,0,0,0,0,0,0,0,0,6.8,0,14,16,3,1
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Nicolas Jackson,Chelsea,FW,TRUE,67,0,0,0,0,1,1,1,0,2,0,3,0,1,0,0,0,0,0,0,0,0,6.4,1,7,10,1,0
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Nicolas Jackson,Chelsea,FW,FALSE,45,1,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,7.6,1,5,7,2,2
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Nicolas Jackson,Chelsea,FW,FALSE,25,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,6,6,1,0
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,3,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,6.9,2,24,29,2,2
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,90,3,0,0,0,6,5,1,0,2,0,1,0,0,0,0,0,0,0,0,0,0,9.2,0,10,11,4,3
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Nicolas Jackson,Chelsea,FW,TRUE,89,1,0,0,0,3,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,6,12,3,1
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,68,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,6.6,0,11,15,1,1
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Nicolas Jackson,Chelsea,FW,TRUE,71,0,1,0,0,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,6.7,1,8,9,3,1
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,2,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6.2,2,15,18,3,1
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Nicolas Jackson,Chelsea,FW,FALSE,24,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,3,7,0,0
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Nicolas Jackson,Chelsea,FW,TRUE,89,1,0,0,0,3,2,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0,7.1,1,21,26,2,1
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Nicolas Jackson,Chelsea,MF,TRUE,79,0,0,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.3,2,17,20,3,0
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,1,0,0,0,0,1,3,0,1,0,0,0,0,0,0,0,0,7.1,2,25,29,0,0
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Nicolas Jackson,Chelsea,MF,TRUE,90,0,1,0,0,2,2,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,7.2,2,23,28,3,2
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Nicolas Jackson,Chelsea,MF,FALSE,28,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6.2,0,8,10,0,0
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Nicolas Jackson,Chelsea,MF,TRUE,78,0,0,0,0,1,0,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,6.5,0,17,19,1,0
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,81,0,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,6.7,2,14,20,4,1
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,90,1,0,0,0,3,3,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,7.2,0,8,13,1,1
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Nicolas Jackson,Chelsea,FW,TRUE,89,1,0,0,0,2,2,0,0,1,3,2,0,2,0,0,0,0,0,0,0,0,7.9,1,10,16,1,1
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,3,2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,6.5,4,10,12,3,1
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,7,2,23,27,2,1
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,89,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,16,23,5,3
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Nicolas Jackson,Chelsea,FW,TRUE,87,1,1,0,0,3,2,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,8.2,2,13,16,7,5
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,2,0,0,0,2,4,0,1,1,0,0,0,0,0,0,0,0,6.1,0,17,22,3,2
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,2,0,0,0,3,1,1,0,0,1,0,0,0,0,0,0,0,6.6,2,24,27,0,0
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Nicolas Jackson,Chelsea,FW,TRUE,89,1,0,0,0,2,2,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,7.1,1,6,13,2,1
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Nicolas Jackson,Chelsea,FW,TRUE,90,2,1,0,0,7,4,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,9.7,4,21,27,5,3
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,90,1,0,0,0,2,2,1,0,0,1,0,2,0,0,0,0,0,0,0,0,0,7,0,19,23,7,4
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Nicolas Jackson,Chelsea,FW,TRUE,89,0,0,0,0,1,0,0,0,2,2,1,0,0,0,0,0,0,0,0,0,0,7,1,16,17,2,2
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Nicolas Jackson,Chelsea,FW,TRUE,90,0,0,0,0,4,1,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,7.5,2,17,25,4,4
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Noni Madueke,Chelsea,MF,FALSE,16,0,0,0,0,1,1,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,6.8,0,9,9,0,0
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Noni Madueke,Chelsea,MF,FALSE,29,0,0,0,0,1,0,0,0,0,1,0,3,0,0,0,0,0,0,0,0,0,6.7,0,25,27,2,0
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Noni Madueke,Chelsea,MF,FALSE,7,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,1,5,0,0
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Noni Madueke,Chelsea,MF,TRUE,66,0,0,0,0,3,0,0,0,2,0,0,2,0,0,0,0,0,0,0,0,0,6.9,2,33,34,1,1
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Noni Madueke,Chelsea,MF,FALSE,4,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.6,0,0,0,2,1
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Noni Madueke,Chelsea,MF,FALSE,11,0,0,0,0,1,0,0,0,0,1,0,3,0,0,0,0,0,0,0,0,0,6.7,1,12,13,3,1
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Noni Madueke,Chelsea,MF,FALSE,20,1,0,1,1,1,1,1,0,1,2,0,0,1,0,0,0,0,0,0,0,0,7.5,0,4,4,3,1
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Noni Madueke,Chelsea,MF,TRUE,80,1,0,0,0,2,1,0,0,2,1,0,0,3,1,0,0,0,0,0,0,0,8.1,3,21,23,6,4
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Noni Madueke,Chelsea,MF,FALSE,25,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.8,0,8,11,2,1
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Noni Madueke,Chelsea,MF,TRUE,45,0,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,6,0,9,15,3,1
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Noni Madueke,Chelsea,MF,TRUE,45,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.9,1,25,30,4,3
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Noni Madueke,Chelsea,MF,FALSE,29,0,0,0,0,4,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,7.1,1,9,11,0,0
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Noni Madueke,Chelsea,MF,FALSE,2,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.2,0,2,2,1,1
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Noni Madueke,Chelsea,MF,TRUE,81,1,0,0,0,2,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,7.3,0,37,39,2,0
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Noni Madueke,Chelsea,MF,TRUE,71,0,0,0,0,1,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,6.8,0,17,20,4,3
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Noni Madueke,Chelsea,MF,TRUE,78,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.7,2,25,26,1,1
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Noni Madueke,Chelsea,MF,TRUE,90,1,1,0,0,4,1,1,0,0,2,1,3,0,1,0,0,0,0,0,0,0,9,2,46,52,8,6
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Noni Madueke,Chelsea,MF,TRUE,90,0,0,0,0,1,0,0,0,0,2,1,0,1,0,0,0,0,0,0,0,0,7.5,2,22,29,7,5
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Noni Madueke,Chelsea,MF,TRUE,75,1,1,0,0,7,4,0,0,1,2,1,3,0,0,0,0,0,0,0,0,0,9.5,6,43,46,6,3
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Noni Madueke,Chelsea,MF,TRUE,57,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,5.9,0,11,13,9,2
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Noni Madueke,Chelsea,MF,TRUE,68,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.6,0,24,25,6,1
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Noni Madueke,Chelsea,MF,TRUE,63,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,6.7,0,19,20,4,2
+2023/24,Premier League,2023-08-14,Manchester Utd,Wolves,Pedro Neto,Wolves,MF,TRUE,90,0,0,0,0,3,2,1,0,0,1,0,15,0,0,0,0,0,0,0,0,0,7.8,4,24,34,6,4
+2023/24,Premier League,2023-08-19,Wolves,Brighton,Pedro Neto,Wolves,MF,TRUE,90,0,0,0,0,2,0,0,0,1,1,0,4,0,1,0,0,0,0,0,0,0,6.8,2,27,31,5,3
+2023/24,Premier League,2023-08-26,Everton,Wolves,Pedro Neto,Wolves,MF,TRUE,90,0,1,0,0,1,0,0,0,1,1,0,7,0,0,0,0,0,0,0,0,0,7.7,4,35,38,3,1
+2023/24,Premier League,2023-09-03,Crystal Palace,Wolves,Pedro Neto,Wolves,MF,TRUE,90,0,2,0,0,3,2,0,0,0,1,0,11,1,1,0,0,0,0,0,0,0,8.5,3,33,39,3,1
+2023/24,Premier League,2023-09-16,Wolves,Liverpool,Pedro Neto,Wolves,MF,TRUE,90,0,1,0,0,1,0,0,0,2,0,0,6,1,1,0,0,0,0,0,0,0,7.4,4,22,26,6,4
+2023/24,Premier League,2023-09-23,Luton Town,Wolves,Pedro Neto,Wolves,MF,TRUE,90,1,0,0,0,1,1,0,0,2,1,0,3,0,0,0,0,0,0,0,0,0,6.8,1,16,19,4,2
+2023/24,Premier League,2023-09-30,Wolves,Manchester City,Pedro Neto,Wolves,FW,TRUE,90,0,0,0,0,0,0,1,0,3,2,0,3,0,0,0,0,0,0,0,0,0,6.6,0,14,18,2,1
+2023/24,Premier League,2023-10-08,Wolves,Aston Villa,Pedro Neto,Wolves,FW,TRUE,90,0,1,0,0,1,0,0,0,0,2,1,8,0,0,0,0,0,0,0,0,0,7.1,2,17,22,3,2
+2023/24,Premier League,2023-10-21,Bournemouth,Wolves,Pedro Neto,Wolves,FW,TRUE,90,0,1,0,0,4,0,1,0,0,0,0,8,0,0,0,0,0,0,0,0,0,7.8,4,48,53,4,2
+2023/24,Premier League,2023-10-28,Wolves,Newcastle,Pedro Neto,Wolves,MF,TRUE,76,0,1,0,0,2,1,0,0,0,3,0,8,0,0,0,0,0,0,0,0,0,7.3,1,21,28,5,3
+2023/24,Premier League,2023-12-30,Wolves,Everton,Pedro Neto,Wolves,MF,FALSE,11,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,4,6,2,0
+2023/24,Premier League,2024-01-22,Brighton,Wolves,Pedro Neto,Wolves,FW,TRUE,87,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.8,3,15,21,2,1
+2023/24,Premier League,2024-02-01,Wolves,Manchester Utd,Pedro Neto,Wolves,MF,TRUE,90,1,0,0,0,3,1,0,0,2,2,0,11,1,0,0,0,0,0,0,0,0,8.2,2,37,43,5,1
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Pedro Neto,Wolves,FW,TRUE,71,0,1,0,0,4,2,1,0,2,0,0,1,0,0,0,0,0,0,0,0,0,7.2,2,20,21,4,1
+2023/24,Premier League,2024-02-10,Wolves,Brentford,Pedro Neto,Wolves,FW,TRUE,90,0,0,0,0,3,2,0,0,1,1,0,13,0,0,0,0,0,0,0,0,0,7.1,3,41,49,7,3
+2023/24,Premier League,2024-02-17,Tottenham,Wolves,Pedro Neto,Wolves,MF,TRUE,89,0,1,0,0,2,0,0,0,1,1,0,6,0,1,0,0,0,0,0,0,0,7,1,24,30,5,1
+2023/24,Premier League,2024-02-25,Wolves,Sheffield United,Pedro Neto,Wolves,MF,TRUE,90,0,0,0,0,2,0,0,0,0,2,0,7,1,0,0,0,0,0,0,0,0,7.1,2,50,60,5,1
+2023/24,Premier League,2024-03-02,Newcastle,Wolves,Pedro Neto,Wolves,FW,TRUE,45,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,6.7,0,21,26,5,4
+2023/24,Premier League,2024-03-09,Wolves,Fulham,Pedro Neto,Wolves,MF,TRUE,44,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.8,0,16,17,3,2
+2023/24,Premier League,2024-05-19,Liverpool,Wolves,Pedro Neto,Wolves,MF,FALSE,13,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,7,0,6,8,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Malo Gusto,Chelsea,MF,FALSE,15,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.7,0,11,16,0,0
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Malo Gusto,Chelsea,MF,TRUE,82,0,0,0,0,1,0,0,0,0,0,0,4,2,1,0,0,0,0,0,0,0,7.2,0,52,54,1,1
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Malo Gusto,Chelsea,MF,TRUE,90,0,2,0,0,1,0,0,0,2,1,0,4,1,1,0,0,0,0,0,0,0,8.1,2,65,68,2,2
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Malo Gusto,Chelsea,MF,TRUE,76,0,0,0,0,0,0,0,0,2,0,0,7,2,1,0,0,0,0,0,0,0,7.1,0,61,69,2,1
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Malo Gusto,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,3,2,0,3,2,0,0,0,0,0,0,0,0,7.5,0,65,74,4,2
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Malo Gusto,Chelsea,DF,TRUE,57,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,6.3,1,36,43,0,0
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Malo Gusto,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,6.7,0,33,35,1,1
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Malo Gusto,Chelsea,DF,FALSE,14,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.6,0,13,14,0,0
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Malo Gusto,Chelsea,DF,FALSE,27,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,24,26,0,0
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Malo Gusto,Chelsea,DF,TRUE,79,0,0,0,0,1,0,1,0,0,2,0,2,1,0,0,0,0,0,0,0,0,6.9,2,37,42,0,0
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Malo Gusto,Chelsea,DF,TRUE,90,0,1,0,0,0,0,0,0,0,1,0,1,3,3,0,0,0,0,0,0,0,7.6,2,92,98,3,1
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Malo Gusto,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,1,5,0,1,1,0,0,0,0,0,0,0,0,6.6,1,37,42,3,0
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Malo Gusto,Chelsea,DF,TRUE,89,0,0,0,0,1,0,1,0,1,1,0,3,0,0,0,0,0,0,0,0,0,7.2,3,40,50,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Malo Gusto,Chelsea,DF,FALSE,45,0,0,0,0,1,1,0,0,0,2,0,1,1,1,0,0,0,0,0,0,0,6.9,1,32,38,1,0
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Malo Gusto,Chelsea,DF,TRUE,80,0,0,0,0,0,0,1,0,3,2,0,2,0,1,0,0,0,0,0,0,0,5.6,1,40,46,3,0
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Malo Gusto,Chelsea,DF,TRUE,83,0,1,0,0,0,0,0,0,0,1,2,11,3,1,0,0,0,0,0,0,0,8,2,87,94,5,2
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Malo Gusto,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,1,3,3,1,0,0,0,0,0,0,0,7.8,2,25,29,0,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Malo Gusto,Chelsea,DF,TRUE,90,0,1,0,0,0,0,0,0,2,1,0,5,2,0,0,0,0,0,0,0,0,7.4,3,54,63,4,2
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Malo Gusto,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,5,1,3,0,0,0,0,0,0,0,7,0,33,40,1,1
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Malo Gusto,Chelsea,DF,TRUE,86,0,0,0,0,3,1,0,0,1,1,1,5,2,1,0,0,0,0,0,0,0,7.5,5,58,62,4,3
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Malo Gusto,Chelsea,DF,TRUE,74,0,0,0,0,0,0,1,0,1,2,1,1,0,0,0,0,0,0,0,0,0,6.8,4,33,37,1,1
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Malo Gusto,Chelsea,DF,TRUE,87,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,7,1,63,72,1,0
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Malo Gusto,Chelsea,DF,FALSE,13,0,0,0,0,0,0,0,0,0,2,0,0,1,1,0,0,0,0,0,0,0,7,0,16,17,0,0
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Malo Gusto,Chelsea,DF,FALSE,33,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.3,0,19,21,1,0
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Malo Gusto,Chelsea,DF,TRUE,68,0,1,0,0,2,1,0,0,1,1,0,0,2,1,0,0,0,0,0,0,0,7.9,2,44,49,0,0
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Malo Gusto,Chelsea,DF,FALSE,27,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7,0,14,15,0,0
+2023/24,Premier League,2023-08-26,Arsenal,Fulham,Tosin Adarabioyo,Fulham,DF,FALSE,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,0,0,0,0
+2023/24,Premier League,2023-12-06,Fulham,Nottingham,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,7.2,0,74,85,0,0
+2023/24,Premier League,2023-12-10,Fulham,West Ham,Tosin Adarabioyo,Fulham,DF,TRUE,90,1,0,0,0,1,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7.9,0,100,111,0,0
+2023/24,Premier League,2023-12-16,Newcastle,Fulham,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,6.5,0,18,30,1,1
+2023/24,Premier League,2023-12-23,Fulham,Burnley,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,1,3,0,0,0,0,0,0,0,7.2,1,103,112,0,0
+2023/24,Premier League,2023-12-26,Bournemouth,Fulham,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,0,0,0,0,0,2,0,1,1,1,0,0,0,0,0,0,0,7,0,46,54,0,0
+2023/24,Premier League,2023-12-31,Fulham,Arsenal,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.6,0,40,46,0,0
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,7.7,0,35,49,0,0
+2023/24,Premier League,2024-01-30,Fulham,Everton,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,1,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7.5,0,54,62,0,0
+2023/24,Premier League,2024-02-03,Burnley,Fulham,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,2,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7.1,0,72,89,0,0
+2023/24,Premier League,2024-02-24,Manchester Utd,Fulham,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,6.7,0,54,59,0,0
+2023/24,Premier League,2024-03-02,Fulham,Brighton,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,7.3,0,27,38,0,0
+2023/24,Premier League,2024-03-09,Wolves,Fulham,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,1,0,0,0,2,0,0,0,2,1,0,0,0,0,0,0,0,6.7,0,80,89,0,0
+2023/24,Premier League,2024-03-16,Fulham,Tottenham,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,36,48,0,0
+2023/24,Premier League,2024-03-30,Sheffield United,Fulham,Tosin Adarabioyo,Fulham,DF,TRUE,84,0,0,0,0,2,0,0,0,3,0,0,1,0,0,0,0,0,0,0,0,0,6.6,0,69,74,0,0
+2023/24,Premier League,2024-04-02,Nottingham,Fulham,Tosin Adarabioyo,Fulham,DF,TRUE,90,1,0,0,0,2,2,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.4,0,82,94,0,0
+2023/24,Premier League,2024-04-06,Fulham,Newcastle,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,5,0,0,0,0,0,0,0,7.2,0,51,61,0,0
+2023/24,Premier League,2024-04-14,West Ham,Fulham,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,40,46,0,0
+2023/24,Premier League,2024-04-21,Fulham,Liverpool,Tosin Adarabioyo,Fulham,DF,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,0,1,2,0,0,0,0,0,0,0,6.1,1,45,60,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Reece James,Chelsea,MF,TRUE,75,0,0,0,0,1,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,7.4,2,44,51,1,1
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Reece James,Chelsea,DF,FALSE,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,4,4,0,0
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Reece James,Chelsea,DF,FALSE,24,0,0,0,0,1,0,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,6.9,1,20,23,2,1
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Reece James,Chelsea,DF,TRUE,76,0,0,0,0,1,0,0,0,0,0,1,6,2,1,0,0,0,0,0,0,0,7.9,3,45,51,2,1
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Reece James,Chelsea,DF,TRUE,63,0,0,0,1,2,1,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,7.2,2,27,33,0,0
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Reece James,Chelsea,DF,TRUE,72,0,0,0,0,1,0,2,1,3,2,0,2,3,1,0,0,0,0,0,0,0,6.3,1,28,34,4,3
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Reece James,Chelsea,DF,FALSE,45,0,0,0,0,1,0,0,0,0,0,1,5,0,1,0,0,0,0,0,0,0,7.4,3,27,36,3,3
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Reece James,Chelsea,DF,TRUE,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,13,17,0,0
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Reece James,Chelsea,DF,FALSE,12,0,0,0,1,0,0,0,0,0,1,0,2,1,0,0,0,0,0,0,0,0,7.4,1,10,11,0,0
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Reece James,Chelsea,DF,FALSE,19,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,5.8,0,7,7,1,0
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Trevoh Chalobah,Chelsea,DF,FALSE,20,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.6,0,1,2,0,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Trevoh Chalobah,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,6.5,1,60,70,0,0
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Trevoh Chalobah,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,29,42,0,0
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Trevoh Chalobah,Chelsea,DF,FALSE,16,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.6,0,22,24,0,0
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Trevoh Chalobah,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,6.8,0,91,100,0,0
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Trevoh Chalobah,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.1,0,85,92,0,0
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Trevoh Chalobah,Chelsea,DF,FALSE,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,21,23,0,0
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Trevoh Chalobah,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,5,0,0,0,0,0,0,0,0,7.4,1,88,96,0,0
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Trevoh Chalobah,Chelsea,DF,TRUE,90,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.6,0,37,44,0,0
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Trevoh Chalobah,Chelsea,DF,TRUE,82,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,7.5,1,66,69,0,0
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Trevoh Chalobah,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.7,0,70,74,0,0
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Trevoh Chalobah,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,7.2,0,67,73,0,0
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Trevoh Chalobah,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,6.8,0,44,51,1,0
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Christopher Nkunku,Chelsea,FW,FALSE,32,1,0,0,0,4,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7.6,0,18,18,0,0
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Christopher Nkunku,Chelsea,FW,TRUE,70,0,0,0,0,1,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,6.5,1,23,25,2,0
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Christopher Nkunku,Chelsea,FW,FALSE,29,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,3,4,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Christopher Nkunku,Chelsea,FW,FALSE,45,1,0,0,0,1,1,0,0,2,1,2,0,0,0,0,0,0,0,0,0,0,7.1,0,11,12,0,0
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Christopher Nkunku,Chelsea,MF,TRUE,71,0,0,0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.1,1,12,13,2,1
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Christopher Nkunku,Chelsea,MF,FALSE,45,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.8,0,16,20,0,0
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Christopher Nkunku,Chelsea,MF,FALSE,27,0,0,0,0,2,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,6.7,0,3,4,0,0
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Christopher Nkunku,Chelsea,MF,FALSE,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,17,19,0,0
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Christopher Nkunku,Chelsea,MF,FALSE,33,0,0,0,0,1,0,0,0,1,3,0,0,1,0,0,0,0,0,0,0,0,7,0,16,18,0,0
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Christopher Nkunku,Chelsea,MF,FALSE,49,1,0,0,0,2,1,0,0,1,1,0,3,2,0,0,0,0,0,0,0,0,7.7,1,22,25,2,1
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Christopher Nkunku,Chelsea,MF,FALSE,27,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,17,19,1,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,2,0,0,1,3,0,0,0,0,0,0,0,7.1,0,61,67,1,1
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,74,0,0,0,0,2,1,0,0,1,0,0,0,1,2,0,0,0,0,0,0,0,7.2,0,53,58,1,1
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,1,1,0,0,3,1,0,0,1,3,0,0,0,0,0,0,0,7.9,1,60,63,2,1
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Conor Gallagher,Chelsea,DF,TRUE,61,0,0,0,0,1,0,1,0,2,1,0,1,2,0,0,0,0,0,0,0,0,7.1,1,49,56,0,0
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,1,1,0,0,3,1,0,0,0,2,0,0,0,0,0,0,0,7.6,1,64,70,0,0
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,2,0,2,3,1,0,0,0,0,0,0,0,7.6,1,43,50,3,2
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,3,1,0,1,2,1,0,0,0,0,0,0,0,7.2,1,39,44,2,1
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,1,0,0,0,0,0,0,3,3,0,4,2,2,0,0,0,0,0,0,0,7.7,1,34,36,0,0
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Conor Gallagher,Chelsea,DF,TRUE,90,0,1,0,0,1,0,0,0,1,1,1,0,2,1,0,0,0,0,0,0,0,7.2,4,31,36,1,1
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,1,1,0,0,3,1,0,6,0,1,0,0,0,0,0,0,0,7.4,2,74,84,4,4
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,1,0,0,0,0,0,0,1,2,0,2,1,2,0,0,0,0,0,0,0,7.9,5,39,41,2,1
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Conor Gallagher,Chelsea,DF,TRUE,90,0,1,0,0,3,2,0,0,5,2,0,1,2,0,0,0,0,0,0,0,0,7.5,2,38,40,1,1
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,68,0,0,0,0,2,0,0,0,4,1,0,1,2,0,0,0,0,0,0,0,0,6.6,1,15,18,0,0
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Conor Gallagher,Chelsea,DF,TRUE,44,0,0,0,0,0,0,2,1,4,1,0,5,0,0,0,0,0,0,0,0,0,5.6,0,18,19,1,1
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,2,4,0,0,0,0,0,0,0,0,7.7,2,84,92,1,1
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,2,1,1,0,2,2,0,2,0,4,0,0,0,0,0,0,0,7.9,1,86,87,3,1
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,3,1,1,0,3,1,0,1,1,1,0,0,0,0,0,0,0,7,0,65,71,2,2
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,2,3,0,4,2,1,0,0,0,0,0,0,0,7.9,2,77,87,2,2
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,2,1,0,0,6,1,0,1,2,1,0,0,0,0,0,0,0,7,0,41,45,0,0
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,3,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,7.4,2,44,50,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,45,0,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,6.5,0,13,14,1,0
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,2,1,0,0,3,2,0,1,0,1,0,0,0,0,0,0,0,6.6,1,60,64,1,1
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,2,0,0,0,3,2,0,0,2,3,0,7,0,2,0,0,0,0,0,0,0,8.8,3,38,44,3,1
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,2,2,0,1,2,2,0,0,0,0,0,0,0,7.3,1,26,32,0,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,1,0,1,0,2,1,0,2,3,0,0,0,0,0,0,0,0,7.4,3,64,74,2,2
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Conor Gallagher,Chelsea,DF,TRUE,90,0,1,0,0,1,1,0,0,2,0,0,1,3,2,0,0,0,0,0,0,0,7.2,3,38,40,2,0
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Conor Gallagher,Chelsea,DF,TRUE,61,0,0,0,0,2,1,1,0,3,0,0,0,0,0,0,0,0,0,0,0,0,7,3,30,30,1,1
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Conor Gallagher,Chelsea,DF,TRUE,88,1,0,0,0,4,1,0,0,1,1,0,1,1,2,0,0,0,0,0,0,0,7.5,2,27,33,1,1
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,1,0,0,1,0,0,0,2,3,0,2,1,1,0,0,0,0,0,0,0,7.1,2,44,46,2,0
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,3,8,0,0,0,2,0,0,0,0,0,0,0,8,2,69,74,4,4
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,2,0,5,1,0,0,0,0,0,0,0,0,6.6,1,64,73,2,0
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,90,1,0,0,0,3,1,0,0,3,2,0,3,1,0,0,0,0,0,0,0,0,7.5,1,56,59,1,0
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Conor Gallagher,Chelsea,DF,TRUE,90,0,1,0,0,0,0,0,0,4,3,0,1,3,0,0,0,0,0,0,0,0,7.4,1,22,24,1,1
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Conor Gallagher,Chelsea,DF,TRUE,90,1,0,0,0,2,1,0,0,3,1,0,1,1,1,0,0,0,0,0,0,0,7.5,3,60,61,0,0
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,78,0,0,0,0,1,0,1,0,2,2,0,0,2,0,0,0,0,0,0,0,0,6.8,0,45,47,3,1
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Conor Gallagher,Chelsea,DF,TRUE,89,0,0,0,0,0,0,0,0,2,2,0,1,0,2,0,0,0,0,0,0,0,7.1,0,45,48,1,1
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Conor Gallagher,Chelsea,DF,TRUE,90,0,0,0,0,2,1,0,0,1,2,0,4,1,0,0,0,0,0,0,0,0,7.7,0,50,53,5,5
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Axel Disasi,Chelsea,DF,TRUE,90,1,0,0,0,2,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7.6,0,89,97,0,0
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,2,1,0,1,0,0,0,0,0,0,0,0,0,6.2,0,98,110,0,0
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,7.5,0,87,95,0,0
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,2,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,7.2,1,99,105,0,0
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,1,0,0,0,0,0,0,0,0,0,7.1,0,54,61,0,0
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,0,6.9,1,55,60,0,0
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,7,0,56,65,1,1
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,108,113,1,1
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Axel Disasi,Chelsea,DF,TRUE,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,61,65,2,1
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,57,64,0,0
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.3,0,66,70,0,0
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,0,2,1,0,0,0,0,0,0,0,6.9,0,27,33,0,0
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,81,87,0,0
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,6.8,0,75,86,1,1
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,1,2,0,0,0,0,0,0,0,7.2,0,76,84,2,1
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,7,0,76,84,0,0
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,2,0,1,3,0,0,0,0,0,0,0,0,6.8,0,72,87,0,0
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,0,1,1,0,2,1,0,0,0,0,0,0,0,6.9,0,41,47,1,1
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.3,0,54,62,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6.3,0,66,70,1,0
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,6.6,0,71,80,5,5
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,1,1,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,7,0,110,115,0,0
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.2,0,26,32,0,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,1,0,0,0,2,1,0,0,1,3,0,0,0,3,0,0,0,0,0,0,0,7.6,0,55,61,0,0
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,0,0,0,6.9,0,39,43,0,0
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,2,1,0,1,0,0,0,0,0,0,0,0,0,7.1,0,67,79,0,0
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Axel Disasi,Chelsea,DF,TRUE,74,0,0,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,6.6,1,43,54,0,0
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,82,93,0,0
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Axel Disasi,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.3,0,76,77,1,1
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Axel Disasi,Chelsea,DF,FALSE,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,3,3,0,0
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Axel Disasi,Chelsea,DF,FALSE,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,22,22,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,7.5,1,111,118,0,0
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,98,102,0,0
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,7.5,0,97,102,0,0
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,7.4,1,95,99,0,0
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,7.2,0,79,83,0,0
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.7,2,55,56,1,1
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,7.3,0,42,45,0,0
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.9,0,105,106,0,0
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,2,1,0,0,0,0,0,0,0,6.9,0,51,55,0,0
+2023/24,Premier League,2023-10-28,Chelsea,Brentford,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.3,0,82,85,0,0
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.9,0,53,55,0,0
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Thiago Silva,Chelsea,DF,TRUE,90,1,0,0,0,1,1,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,6.8,0,51,55,0,0
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,5.8,0,46,51,0,0
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,2,1,0,0,0,0,0,0,0,7.3,0,31,33,0,0
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,65,71,0,0
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,2,0,1,0,4,0,0,0,0,0,0,0,7.7,1,132,140,0,0
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,70,76,0,0
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Thiago Silva,Chelsea,DF,FALSE,33,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.8,1,18,22,0,0
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.1,0,43,49,1,1
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,3,0,0,0,0,1,0,0,0,0,0,0,0,7.1,0,59,66,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,73,76,0,0
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Thiago Silva,Chelsea,DF,TRUE,90,1,0,0,0,2,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7.4,0,82,83,0,0
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Thiago Silva,Chelsea,DF,TRUE,60,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.1,0,89,90,0,0
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,1,0,0,0,1,1,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,7.7,0,96,99,0,0
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.2,0,78,84,0,0
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Thiago Silva,Chelsea,DF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,22,23,0,0
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Thiago Silva,Chelsea,DF,TRUE,89,0,0,0,0,1,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,6.7,1,106,109,0,0
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Thiago Silva,Chelsea,DF,TRUE,82,0,1,0,0,1,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,8.1,2,74,75,0,0
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.3,0,105,107,0,0
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Thiago Silva,Chelsea,DF,FALSE,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,1,3,0,0
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Thiago Silva,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,6.8,0,52,57,0,0
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Dorde Petovic,Chelsea,GK,FALSE,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6.4,0,4,4,0,0
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,6.9,0,21,23,0,0
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,0,0,6.9,0,19,27,0,0
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,0,0,7.4,0,30,35,0,0
+2023/24,Premier League,2023-12-30,Luton Town,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,0,0,7.2,0,34,54,0,0
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,0,0,8,0,14,19,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,9,1,0,7.7,0,9,18,0,0
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,4,1,0,6.6,0,19,20,0,0
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,0,0,6.7,0,36,40,0,0
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,5,4,0,0,7.4,0,24,34,0,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,0,0,6.4,0,21,37,0,0
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,3,1,0,0,6.2,0,23,39,0,0
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,0,0,6.3,0,17,79,0,0
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,2,0,0,6.3,0,26,30,0,0
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,0,0,7.1,0,26,33,0,0
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7.1,0,24,40,0,0
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,6,0,0,6.3,0,30,35,0,0
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,0,0,6.7,0,15,16,0,0
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,0,0,7.6,0,19,34,0,0
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7.6,0,32,34,0,0
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,0,0,6.7,0,21,24,0,0
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,1,0,0,6.6,0,37,42,0,0
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Dorde Petovic,Chelsea,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,0,0,7.5,0,35,50,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Mykhailo Mudryk,Chelsea,MF,FALSE,10,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.8,0,5,7,2,2
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Mykhailo Mudryk,Chelsea,MF,FALSE,45,0,0,0,0,1,0,0,0,0,1,0,7,1,0,0,0,0,0,0,0,0,7.2,2,13,17,0,0
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Mykhailo Mudryk,Chelsea,MF,FALSE,14,0,0,0,0,1,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,6.3,0,6,7,1,0
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Mykhailo Mudryk,Chelsea,MF,TRUE,62,0,0,0,0,0,0,1,0,2,1,0,3,1,0,0,0,0,0,0,0,0,7,2,14,19,2,2
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Mykhailo Mudryk,Chelsea,MF,TRUE,60,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,0,0,0,0,0,0,7.1,1,9,12,6,2
+2023/24,Premier League,2023-10-02,Fulham,Chelsea,Mykhailo Mudryk,Chelsea,FW,TRUE,45,1,0,0,0,2,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.3,0,3,6,0,0
+2023/24,Premier League,2023-10-07,Burnley,Chelsea,Mykhailo Mudryk,Chelsea,FW,FALSE,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,4,4,0,0
+2023/24,Premier League,2023-10-21,Chelsea,Arsenal,Mykhailo Mudryk,Chelsea,MF,TRUE,65,1,0,0,0,2,1,0,0,0,2,0,2,0,1,0,0,0,0,0,0,0,7.2,0,10,15,0,0
+2023/24,Premier League,2023-11-06,Tottenham,Chelsea,Mykhailo Mudryk,Chelsea,MF,FALSE,33,0,0,0,0,0,0,1,0,4,1,1,2,1,0,0,0,0,0,0,0,0,6.8,1,8,13,3,2
+2023/24,Premier League,2023-11-12,Chelsea,Manchester City,Mykhailo Mudryk,Chelsea,MF,FALSE,27,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.3,0,2,2,2,0
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Mykhailo Mudryk,Chelsea,MF,FALSE,22,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.6,0,6,7,1,1
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Mykhailo Mudryk,Chelsea,MF,TRUE,80,0,0,0,0,1,0,0,0,1,2,0,2,0,1,0,0,0,0,0,0,0,6.8,0,8,12,6,2
+2023/24,Premier League,2023-12-06,Manchester Utd,Chelsea,Mykhailo Mudryk,Chelsea,MF,TRUE,76,0,1,0,0,3,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,6.5,2,9,13,1,0
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Mykhailo Mudryk,Chelsea,MF,TRUE,90,0,0,0,0,1,0,1,0,4,1,0,7,0,0,0,0,0,0,0,0,0,7.3,5,30,40,7,5
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Mykhailo Mudryk,Chelsea,MF,TRUE,68,0,0,0,0,1,0,0,0,2,2,0,3,0,0,0,0,0,0,0,0,0,6.3,0,21,25,5,2
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Mykhailo Mudryk,Chelsea,MF,FALSE,32,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,0,0,0,0,0,0,6.8,0,17,20,1,0
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Mykhailo Mudryk,Chelsea,MF,TRUE,70,1,0,0,0,3,2,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,7.5,1,14,17,3,1
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Mykhailo Mudryk,Chelsea,MF,FALSE,45,0,0,0,0,1,0,0,0,1,2,0,2,0,0,0,0,0,0,0,0,0,6.1,0,10,10,1,1
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Mykhailo Mudryk,Chelsea,MF,FALSE,19,0,1,0,0,0,0,0,0,0,0,0,5,1,0,0,0,0,0,0,0,0,7,1,14,20,1,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Mykhailo Mudryk,Chelsea,MF,FALSE,20,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.7,0,5,5,0,0
+2023/24,Premier League,2024-03-11,Chelsea,Newcastle,Mykhailo Mudryk,Chelsea,MF,FALSE,20,1,0,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,7.8,0,5,7,2,2
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Mykhailo Mudryk,Chelsea,MF,TRUE,90,0,0,0,0,4,1,0,0,1,2,0,12,1,0,0,0,0,0,0,0,0,8.3,4,29,39,8,6
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Mykhailo Mudryk,Chelsea,MF,TRUE,70,0,0,0,0,3,1,0,0,2,1,0,5,0,1,0,0,0,0,0,0,0,6.7,1,18,21,1,1
+2023/24,Premier League,2024-04-07,Sheffield United,Chelsea,Mykhailo Mudryk,Chelsea,MF,FALSE,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,6.5,0,1,2,0,0
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Mykhailo Mudryk,Chelsea,MF,TRUE,79,0,0,0,0,2,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,7.2,2,15,18,2,1
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Mykhailo Mudryk,Chelsea,MF,TRUE,66,0,0,0,0,0,0,0,0,0,0,0,4,0,2,0,0,0,0,0,0,0,6.2,1,14,22,2,0
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Mykhailo Mudryk,Chelsea,MF,TRUE,89,0,0,0,0,2,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.8,3,18,23,5,2
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Mykhailo Mudryk,Chelsea,MF,TRUE,74,0,0,0,0,4,1,0,0,0,1,0,3,0,1,0,0,0,0,0,0,0,7.7,3,20,25,3,2
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Mykhailo Mudryk,Chelsea,MF,TRUE,75,0,0,0,0,2,2,0,0,0,1,0,2,0,1,0,0,0,0,0,0,0,6.9,2,21,24,1,1
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Mykhailo Mudryk,Chelsea,MF,TRUE,72,1,0,0,0,1,1,0,0,1,2,0,2,0,0,0,0,0,0,0,0,0,7.5,0,11,17,3,3
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Mykhailo Mudryk,Chelsea,MF,TRUE,41,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.7,1,7,8,1,1
+2023/24,Premier League,2023-11-25,Newcastle,Chelsea,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,1,1,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,6.5,0,41,51,0,0
+2023/24,Premier League,2023-12-03,Chelsea,Brighton,Benoit Badiashile,Chelsea,DF,TRUE,90,0,1,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,7.3,2,33,35,0,0
+2023/24,Premier League,2023-12-10,Everton,Chelsea,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,6.8,0,82,92,0,0
+2023/24,Premier League,2023-12-16,Chelsea,Sheffield United,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,2,0,0,3,2,0,0,0,0,0,0,0,7.6,1,121,131,0,0
+2023/24,Premier League,2023-12-24,Wolves,Chelsea,Benoit Badiashile,Chelsea,DF,FALSE,11,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,5.3,0,22,26,0,0
+2023/24,Premier League,2023-12-27,Chelsea,Crystal Palace,Benoit Badiashile,Chelsea,DF,TRUE,89,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,6.5,0,70,73,0,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.6,1,58,65,0,0
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Benoit Badiashile,Chelsea,DF,FALSE,10,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.4,0,17,20,0,0
+2023/24,Premier League,2024-03-30,Chelsea,Burnley,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,7.3,0,85,88,0,0
+2023/24,Premier League,2024-04-04,Chelsea,Manchester Utd,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,61,67,0,0
+2023/24,Premier League,2024-04-23,Arsenal,Chelsea,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,1,4,0,0,0,0,0,0,0,7,2,94,106,0,0
+2023/24,Premier League,2024-04-27,Aston Villa,Chelsea,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,0,0,1,0,2,1,1,0,2,1,0,0,0,0,0,0,0,7.3,0,103,109,0,0
+2023/24,Premier League,2024-05-02,Chelsea,Tottenham,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,3,0,0,0,0,2,0,0,0,0,0,0,0,7.4,0,36,43,0,0
+2023/24,Premier League,2024-05-05,Chelsea,West Ham,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,4,0,0,0,0,0,0,0,7.3,0,88,95,0,0
+2023/24,Premier League,2024-05-11,Nottingham,Chelsea,Benoit Badiashile,Chelsea,DF,TRUE,57,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,43,46,0,0
+2023/24,Premier League,2024-05-15,Brighton,Chelsea,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,6.5,0,50,55,0,0
+2023/24,Premier League,2024-05-19,Chelsea,Bournemouth,Benoit Badiashile,Chelsea,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,6.6,1,55,63,0,0
+2023/24,Premier League,2023-08-13,Chelsea,Liverpool,Ben Chilwell,Chelsea,MF,TRUE,89,0,1,0,0,1,1,0,0,1,3,1,3,1,0,0,0,0,0,0,0,0,7.4,1,41,49,1,1
+2023/24,Premier League,2023-08-20,West Ham,Chelsea,Ben Chilwell,Chelsea,MF,TRUE,60,0,0,0,0,2,0,0,0,1,0,0,5,1,0,0,0,0,0,0,0,0,7.1,2,28,33,2,1
+2023/24,Premier League,2023-08-25,Chelsea,Luton Town,Ben Chilwell,Chelsea,MF,TRUE,85,0,0,0,0,1,0,0,0,1,1,0,4,0,1,0,0,0,0,0,0,0,7,4,19,26,1,0
+2023/24,Premier League,2023-09-02,Chelsea,Nottingham,Ben Chilwell,Chelsea,MF,TRUE,61,0,0,0,0,2,0,1,0,1,0,0,4,1,0,0,0,0,0,0,0,0,6.9,2,8,18,2,2
+2023/24,Premier League,2023-09-17,Bournemouth,Chelsea,Ben Chilwell,Chelsea,MF,FALSE,11,0,0,0,0,0,0,1,0,1,1,0,3,0,1,0,0,0,0,0,0,0,6.8,0,9,13,0,0
+2023/24,Premier League,2023-09-24,Chelsea,Aston Villa,Ben Chilwell,Chelsea,MF,FALSE,30,0,0,0,0,1,1,1,0,1,2,0,2,1,1,0,0,0,0,0,0,0,6.9,0,17,19,0,0
+2023/24,Premier League,2024-01-13,Chelsea,Fulham,Ben Chilwell,Chelsea,MF,FALSE,14,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,6.2,1,10,11,3,0
+2023/24,Premier League,2024-01-31,Liverpool,Chelsea,Ben Chilwell,Chelsea,DF,TRUE,45,0,0,0,0,0,0,1,0,2,1,0,1,1,0,0,0,0,0,0,0,0,6,0,19,25,1,0
+2023/24,Premier League,2024-02-04,Chelsea,Wolves,Ben Chilwell,Chelsea,DF,TRUE,80,0,0,0,0,0,0,1,0,1,1,0,9,4,1,0,0,0,0,0,0,0,7.5,3,42,47,0,0
+2023/24,Premier League,2024-02-12,Crystal Palace,Chelsea,Ben Chilwell,Chelsea,DF,TRUE,90,0,0,0,0,1,0,0,0,1,2,0,5,0,0,0,0,0,0,0,0,0,7.3,0,54,67,3,2
+2023/24,Premier League,2024-02-17,Manchester City,Chelsea,Ben Chilwell,Chelsea,DF,TRUE,90,0,0,0,0,1,1,0,0,0,1,2,2,1,0,0,0,0,0,0,0,0,6.9,0,17,24,0,0
+2023/24,Premier League,2024-03-02,Brentford,Chelsea,Ben Chilwell,Chelsea,MF,TRUE,90,0,0,0,0,2,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,0,6.6,1,50,61,2,1
+2023/24,Premier League,2024-04-15,Chelsea,Everton,Ben Chilwell,Chelsea,MF,FALSE,11,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,11,12,0,0

@@ -78,6 +78,11 @@ class PlayerStatisticsSerializer(serializers.ModelSerializer):
         read_only=True
     )
 
+    season = serializers.CharField(
+        source="match.season",
+        read_only=True
+    )
+
     home_club_name = serializers.CharField(
         source="match.home_club.name",
         read_only=True
@@ -100,6 +105,7 @@ class PlayerStatisticsSerializer(serializers.ModelSerializer):
             "club_name",
             "match",
             "match_date",
+            "season",
             "home_club_name",
             "away_club_name",
 

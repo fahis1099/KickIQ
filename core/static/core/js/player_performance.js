@@ -1,3 +1,8 @@
+let allPlayerStatistics = [];
+let ratingChart = null;
+let minutesChart = null;
+
+
 document.addEventListener("DOMContentLoaded", function () {
     setupLogout();
     loadPlayerPerformance();
@@ -39,16 +44,20 @@ async function loadPlayerPerformance() {
             }
         */
 
-        const statistics = Array.isArray(data)
+        allPlayerStatistics = Array.isArray(data)
             ? data
             : (data.results || []);
 
-        console.log("Player statistics:", statistics);
+        console.log(
+            "Player statistics:",
+            allPlayerStatistics
+        );
 
-        createRatingChart(statistics);
-        createMinutesChart(statistics);
-        createPositionAnalysis(statistics);
-        createPerformanceTable(statistics);
+        setupSeasonFilter();
+
+        updatePerformanceDisplay(
+            allPlayerStatistics
+        );
 
     } catch (error) {
 
@@ -86,6 +95,176 @@ function getPlayerIdFromURL() {
 }
 
 
+function setupSeasonFilter() {
+
+    const seasonFilter =
+        document.getElementById("season-filter");
+
+    if (!seasonFilter) {
+        return;
+    }
+
+
+    const seasons = [
+        ...new Set(
+            allPlayerStatistics
+                .map(stat => stat.season)
+                .filter(Boolean)
+        )
+    ];
+
+
+    seasons.sort(function (a, b) {
+        return b.localeCompare(a);
+    });
+
+
+    seasons.forEach(function (season) {
+
+        const option =
+            document.createElement("option");
+
+        option.value = season;
+        option.textContent = season;
+
+        seasonFilter.appendChild(option);
+
+    });
+
+
+    seasonFilter.addEventListener(
+        "change",
+        applySeasonFilter
+    );
+}
+
+
+function applySeasonFilter() {
+
+    const selectedSeason =
+        document.getElementById("season-filter").value;
+
+
+    const filteredStatistics = selectedSeason
+        ? allPlayerStatistics.filter(function (stat) {
+            return stat.season === selectedSeason;
+        })
+        : allPlayerStatistics;
+
+
+    updatePerformanceDisplay(
+        filteredStatistics
+    );
+}
+
+
+function updatePerformanceDisplay(statistics) {
+
+    updateSummary(statistics);
+    createRatingChart(statistics);
+    createMinutesChart(statistics);
+    createPositionAnalysis(statistics);
+    createPerformanceTable(statistics);
+}
+
+
+function updateSummary(statistics) {
+
+    const appearances = statistics.length;
+
+    const minutes = statistics.reduce(
+        (sum, stat) =>
+            sum + Number(stat.minutes_played || 0),
+        0
+    );
+
+    const goals = statistics.reduce(
+        (sum, stat) =>
+            sum + Number(stat.goals || 0),
+        0
+    );
+
+    const assists = statistics.reduce(
+        (sum, stat) =>
+            sum + Number(stat.assists || 0),
+        0
+    );
+
+    const shots = statistics.reduce(
+        (sum, stat) =>
+            sum + Number(stat.shots || 0),
+        0
+    );
+
+    const keyPasses = statistics.reduce(
+        (sum, stat) =>
+            sum + Number(stat.key_passes || 0),
+        0
+    );
+
+
+    const ratings = statistics
+        .filter(stat => stat.rating !== null)
+        .map(stat => Number(stat.rating));
+
+    const averageRating = ratings.length > 0
+        ? ratings.reduce(
+            (sum, rating) => sum + rating,
+            0
+        ) / ratings.length
+        : null;
+
+
+    setSummaryValue(
+        "summary-appearances",
+        appearances
+    );
+
+    setSummaryValue(
+        "summary-minutes",
+        minutes
+    );
+
+    setSummaryValue(
+        "summary-average-rating",
+        averageRating !== null
+            ? averageRating.toFixed(2)
+            : "—"
+    );
+
+    setSummaryValue(
+        "summary-goals",
+        goals
+    );
+
+    setSummaryValue(
+        "summary-assists",
+        assists
+    );
+
+    setSummaryValue(
+        "summary-shots",
+        shots
+    );
+
+    setSummaryValue(
+        "summary-key-passes",
+        keyPasses
+    );
+}
+
+
+function setSummaryValue(elementId, value) {
+
+    const element =
+        document.getElementById(elementId);
+
+    if (element) {
+        element.textContent = value;
+    }
+}
+
+
 function createRatingChart(statistics) {
 
     const canvas =
@@ -93,6 +272,12 @@ function createRatingChart(statistics) {
 
     if (!canvas) {
         return;
+    }
+
+
+    if (ratingChart) {
+        ratingChart.destroy();
+        ratingChart = null;
     }
 
 
@@ -106,27 +291,21 @@ function createRatingChart(statistics) {
 
 
     if (ratedMatches.length === 0) {
-
         return;
-
     }
 
 
     const labels = ratedMatches.map(function (stat, index) {
-
         return `Match ${index + 1}`;
-
     });
 
 
     const ratings = ratedMatches.map(function (stat) {
-
         return Number(stat.rating);
-
     });
 
 
-    new Chart(canvas, {
+    ratingChart = new Chart(canvas, {
 
         type: "line",
 
@@ -223,6 +402,12 @@ function createMinutesChart(statistics) {
     }
 
 
+    if (minutesChart) {
+        minutesChart.destroy();
+        minutesChart = null;
+    }
+
+
     /*
         Keep statistics that contain
         actual playing information.
@@ -234,27 +419,21 @@ function createMinutesChart(statistics) {
 
 
     if (matchStatistics.length === 0) {
-
         return;
-
     }
 
 
     const labels = matchStatistics.map(function (stat, index) {
-
         return `Match ${index + 1}`;
-
     });
 
 
     const minutes = matchStatistics.map(function (stat) {
-
         return Number(stat.minutes_played);
-
     });
 
 
-    new Chart(canvas, {
+    minutesChart = new Chart(canvas, {
 
         type: "bar",
 
@@ -344,6 +523,7 @@ function createMinutesChart(statistics) {
 
     });
 }
+
 
 function createPositionAnalysis(statistics) {
 
@@ -727,6 +907,7 @@ function createPositionAnalysis(statistics) {
 
     });
 }
+
 
 function createPerformanceTable(statistics) {
 
