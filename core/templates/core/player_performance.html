@@ -1,6 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,15 +9,22 @@
     <meta charset="UTF-8">
 
     <meta
+
         name="viewport"
+
         content="width=device-width, initial-scale=1.0"
+
     >
 
     <title>{{ player.name }} - KickIQ</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b8f50'/%3E%3Cpath d='M32 8 51 22 44 46 20 46 13 22Z' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='m32 19 9 7-3 11H26l-3-11Z' fill='white'/%3E%3C/svg%3E">
 
     <link
+
         rel="stylesheet"
+
         href="{% static 'core/css/player_performance.css' %}"
+
     >
 
 </head>
@@ -24,6 +32,7 @@
 <body>
 
     <!-- Header -->
+
     <header class="page-header">
 
         <div class="header-left">
@@ -31,190 +40,142 @@
             <h1>KickIQ</h1>
 
             <span>
+
                 Player Performance
+
             </span>
 
         </div>
 
-
         <div class="header-right">
 
             <a
+
                 href="/players/"
+
                 class="back-btn"
+
             >
+
                 ← Players
+
             </a>
 
-
             <button
+
                 type="button"
+
                 id="logout-btn"
+
                 class="logout-btn"
+
             >
+
                 Logout
+
             </button>
 
         </div>
 
     </header>
 
-
     <!-- Main Content -->
+
     <main class="performance-container">
 
-
         <!-- =====================================
+
              PLAYER PROFILE
+
         ====================================== -->
 
         <section class="player-profile">
-
+            <div class="profile-glow" aria-hidden="true"></div>
 
             <div class="player-photo">
-
                 {% if player.photo_path %}
-
-                    <img
-                        src="/static/core/images/{{ player.photo_path }}"
-                        alt="{{ player.name }}"
-                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                    >
-
-                    <span
-                        class="player-photo-fallback"
-                        style="display: none;"
-                    >
-                        {{ player.name|first|upper }}
-                    </span>
-
+                    <img src="/static/core/images/{{ player.photo_path }}"
+                         alt="{{ player.name }}"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <span class="player-photo-fallback" style="display:none;">{{ player.name|first|upper }}</span>
                 {% else %}
-
-                    <span class="player-photo-fallback">
-                        {{ player.name|first|upper }}
-                    </span>
-
+                    <span class="player-photo-fallback">{{ player.name|first|upper }}</span>
                 {% endif %}
-
             </div>
-
 
             <div class="player-details">
-
-                <h2>
-                    {{ player.name }}
-                </h2>
-
-
-                <p class="club">
-                    {{ player.current_club.name }}
-                </p>
-
-
-                <span class="position">
-                    {{ player.position }}
-                </span>
-
-
-                <div class="player-meta">
-
-
-                    <div>
-
-                        <strong>
-                            Nationality
-                        </strong>
-
-                        <span>
-                            {{ player.nationality }}
-                        </span>
-
+                <div class="profile-kicker"><span class="status-dot"></span> PLAYER PROFILE</div>
+                <h2>{{ player.name }}</h2>
+                <div class="club-line">
+                    <div class="club-crest" title="{{ player.current_club.name }}">
+                        {% if player.current_club.logo_path %}
+                            <img src="/static/core/images/{{ player.current_club.logo_path }}"
+                                 alt="{{ player.current_club.name }} logo"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <span class="club-crest-fallback" style="display:none;">{{ player.current_club.name|first|upper }}</span>
+                        {% else %}
+                            <span class="club-crest-fallback">{{ player.current_club.name|first|upper }}</span>
+                        {% endif %}
                     </div>
-
-
-                    <div>
-
-                        <strong>
-                            Date of Birth
-                        </strong>
-
-                        <span>
-                            {{ player.date_of_birth }}
-                        </span>
-
+                    <div class="club-text">
+                        <p class="club">{{ player.current_club.name }}</p>
+                        <span class="club-caption">Current Club</span>
                     </div>
-
-
-                    <div>
-
-                        <strong>
-                            Height
-                        </strong>
-
-                        <span>
-                            {{ player.height }}
-                        </span>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>
-                            Jersey Number
-                        </strong>
-
-                        <span>
-                            {{ player.jersey_number }}
-                        </span>
-
-                    </div>
-
-
-                    <!-- Preferred Foot -->
-                    <div>
-
-                        <strong>
-                            Preferred Foot
-                        </strong>
-
-                        <span>
-                            {{ player.preferred_foot }}
-                        </span>
-
-                    </div>
-
-
+                    <span class="position">{{ player.position }}</span>
                 </div>
 
+                <div class="player-meta">
+                    <div class="player-meta-item">
+                        <strong>Nationality</strong>
+                        <span>{{ player.nationality|default:"—" }}</span>
+                    </div>
+                    <div class="player-meta-item dob-meta">
+                        <strong>Date of Birth</strong>
+                        <span class="dob-value" data-dob="{{ player.date_of_birth|date:'Y-m-d' }}">{{ player.date_of_birth|date:"d M Y"|default:"—" }}</span>
+                        <small class="player-age" id="player-age" aria-live="polite">Calculating age…</small>
+                    </div>
+                    <div class="player-meta-item">
+                        <strong>Height</strong>
+                        <span>{{ player.height|default:"—" }}{% if player.height %} m{% endif %}</span>
+                    </div>
+                    <div class="player-meta-item">
+                        <strong>Preferred Foot</strong>
+                        <span>{{ player.preferred_foot|default:"—" }}</span>
+                    </div>
+                </div>
             </div>
-
         </section>
 
-
         <!-- =====================================
+
              PERFORMANCE SECTION
+
         ====================================== -->
 
         <section class="performance-section">
 
-
             <div class="performance-heading-row">
 
                 <h2>
+
                     Performance Overview
+
                 </h2>
 
                 <div class="season-filter">
 
                     <label for="season-filter">
+
                         Season
+
                     </label>
 
                     <select id="season-filter">
 
                         <option value="">
+
                             All Seasons
+
                         </option>
 
                     </select>
@@ -223,44 +184,52 @@
 
             </div>
 
-
             <!-- =================================
+
                  SUMMARY CARDS
+
             ================================== -->
 
             <div class="summary-grid">
 
-
                 <div class="summary-card">
 
                     <span class="summary-label">
+
                         Appearances
+
                     </span>
 
                     <strong id="summary-appearances">
+
                         {{ summary.appearances|default:0 }}
+
                     </strong>
 
                 </div>
 
-
                 <div class="summary-card">
 
                     <span class="summary-label">
+
                         Minutes
+
                     </span>
 
                     <strong id="summary-minutes">
+
                         {{ summary.minutes|default:0 }}
+
                     </strong>
 
                 </div>
 
-
                 <div class="summary-card">
 
                     <span class="summary-label">
+
                         Average Rating
+
                     </span>
 
                     <strong id="summary-average-rating">
@@ -279,64 +248,76 @@
 
                 </div>
 
-
                 <div class="summary-card">
 
                     <span class="summary-label">
+
                         Goals
+
                     </span>
 
                     <strong id="summary-goals">
+
                         {{ summary.goals|default:0 }}
+
                     </strong>
 
                 </div>
 
-
                 <div class="summary-card">
 
                     <span class="summary-label">
+
                         Assists
+
                     </span>
 
                     <strong id="summary-assists">
+
                         {{ summary.assists|default:0 }}
+
                     </strong>
 
                 </div>
 
-
                 <div class="summary-card">
 
                     <span class="summary-label">
+
                         Shots
+
                     </span>
 
                     <strong id="summary-shots">
+
                         {{ summary.shots|default:0 }}
+
                     </strong>
 
                 </div>
-
 
                 <div class="summary-card">
 
                     <span class="summary-label">
+
                         Key Passes
+
                     </span>
 
                     <strong id="summary-key-passes">
+
                         {{ summary.key_passes|default:0 }}
+
                     </strong>
 
                 </div>
 
-
             </div>
 
-
             <!-- =================================
+
                  RATING TREND
+
             ================================== -->
 
             <div class="chart-card">
@@ -344,15 +325,18 @@
                 <div class="chart-header">
 
                     <h3>
+
                         Rating Trend
+
                     </h3>
 
                     <p>
+
                         Player rating across completed matches
+
                     </p>
 
                 </div>
-
 
                 <div class="chart-container">
 
@@ -362,9 +346,10 @@
 
             </div>
 
-
             <!-- =================================
+
                  MINUTES PLAYED
+
             ================================== -->
 
             <div class="chart-card">
@@ -372,15 +357,18 @@
                 <div class="chart-header">
 
                     <h3>
+
                         Minutes Played
+
                     </h3>
 
                     <p>
+
                         Playing time and starting status across matches
+
                     </p>
 
                 </div>
-
 
                 <div class="chart-container">
 
@@ -390,9 +378,10 @@
 
             </div>
 
-
             <!-- =================================
+
                  POSITION-SPECIFIC ANALYSIS
+
             ================================== -->
 
             <div class="position-analysis-card">
@@ -400,28 +389,37 @@
                 <div class="chart-header">
 
                     <h3>
+
                         Position-Specific Performance
+
                     </h3>
 
                     <p id="position-description">
+
                         Performance indicators based on the player's position
+
                     </p>
 
                 </div>
 
-
                 <div
+
                     id="position-metrics"
+
                     class="position-metrics-grid"
+
                 >
+
                     <!-- Metrics generated by JavaScript -->
+
                 </div>
 
             </div>
 
-
             <!-- =================================
+
                  MATCH-BY-MATCH PERFORMANCE
+
             ================================== -->
 
             <div class="match-table-card">
@@ -429,20 +427,22 @@
                 <div class="chart-header">
 
                     <h3>
+
                         Match-by-Match Performance
+
                     </h3>
 
                     <p>
+
                         Recent completed match statistics
+
                     </p>
 
                 </div>
 
-
                 <div class="table-wrapper">
 
                     <table class="performance-table">
-
 
                         <thead>
 
@@ -472,22 +472,25 @@
 
                         </thead>
 
-
                         <tbody id="performance-table-body">
 
                             <tr>
 
                                 <td
+
                                     colspan="10"
+
                                     class="loading-row"
+
                                 >
+
                                     Loading performance data...
+
                                 </td>
 
                             </tr>
 
                         </tbody>
-
 
                     </table>
 
@@ -495,16 +498,16 @@
 
             </div>
 
-
         </section>
 
     </main>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 
     <script
+
         src="{% static 'core/js/player_performance.js' %}"
+
     ></script>
 
 </body>
