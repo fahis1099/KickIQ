@@ -1,0 +1,531 @@
+Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Bruno Fernandes,Manchester Utd,FW,TRUE,90,0,0,0,0,6,3,0,0,0,0,0,8,1,0,0,0,0,0,0,0,0,6.7,0,42,50,1,1
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Bruno Fernandes,Manchester Utd,FW,TRUE,78,0,0,0,0,1,0,0,0,1,1,1,5,0,0,0,0,0,0,0,0,0,7,3,31,40,0,0
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,6,3,0,0,0,0,0,0,0,0,7.1,0,37,43,0,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,1,0,0,5,0,1,0,0,0,0,2,3,0,0,0,0,0,0,0,0,7.5,1,35,40,5,3
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,4,0,0,0,1,1,0,6,3,1,0,0,0,0,0,0,0,7.8,2,60,82,2,2
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Bruno Fernandes,Manchester Utd,MF,TRUE,41,0,0,0,0,0,0,0,1,2,0,0,1,0,2,0,0,0,0,0,0,0,5.7,0,18,23,0,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,0,3,0,1,0,3,0,0,0,0,0,0,0,7.2,0,38,42,2,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,1,0,0,5,2,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,7.9,2,49,57,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,5,0,0,0,1,3,0,4,0,0,0,0,0,0,0,0,0,7.7,3,59,72,3,1
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Bruno Fernandes,Manchester Utd,MF,TRUE,90,1,0,1,1,4,1,0,0,1,4,0,7,3,1,0,0,0,0,0,0,0,7.9,4,32,47,1,1
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Bruno Fernandes,Manchester Utd,MF,TRUE,90,1,1,0,0,2,1,0,0,2,0,0,5,4,1,0,0,0,0,0,0,0,9,7,39,51,1,0
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,3,0,0,0,2,1,0,2,0,1,0,0,0,0,0,0,0,7.7,3,49,53,3,1
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Bruno Fernandes,Manchester Utd,MF,TRUE,65,0,2,0,0,1,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,7.8,2,22,30,3,2
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,6.7,2,57,66,1,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Bruno Fernandes,Manchester Utd,MF,TRUE,75,1,0,0,0,3,2,0,0,1,3,0,6,0,1,0,0,0,0,0,0,0,7.5,2,36,48,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,1,0,1,1,2,1,0,0,1,1,0,4,2,1,0,0,0,0,0,0,0,7.4,3,38,44,2,0
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,7,3,0,0,2,2,0,6,2,1,0,0,0,0,0,0,0,7.6,4,51,69,4,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,46,0,0,0,0,1,0,2,1,2,1,0,3,1,0,0,0,0,0,0,0,0,5.6,1,23,28,3,1
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,1,0,0,2,1,0,0,1,3,0,10,0,1,0,0,0,0,0,0,0,8.4,4,42,59,3,3
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,5,2,0,0,1,1,0,3,1,0,0,0,0,0,0,0,0,6.9,2,57,67,1,0
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Bruno Fernandes,Manchester Utd,MF,TRUE,90,1,0,1,1,2,1,0,0,0,1,0,7,0,1,0,0,0,0,0,0,0,7.5,1,47,61,1,1
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,0,2,0,0,3,0,1,0,0,0,0,0,0,0,7.2,1,58,75,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,2,1,1,0,1,2,0,13,0,1,0,0,0,0,0,0,0,7.4,2,70,86,1,0
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,11,5,2,0,0,0,0,0,0,0,8.5,4,56,71,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,1,0,0,0,3,2,0,0,0,0,0,12,3,1,0,0,0,0,0,0,0,8.8,2,65,81,6,3
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,1,0,0,0,0,0,0,1,2,0,8,1,0,0,0,0,0,0,0,0,8.3,4,51,66,0,0
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Bruno Fernandes,Manchester Utd,MF,TRUE,90,1,0,0,0,3,3,0,0,0,1,0,2,1,0,0,0,0,0,0,0,0,7.4,1,31,36,2,0
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,1,2,0,0,4,1,0,0,0,0,0,3,4,1,0,0,0,0,0,0,0,9.7,6,48,56,1,1
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,3,2,0,0,3,2,0,9,2,0,0,0,0,0,0,0,0,8,6,60,76,5,2
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,1,2,0,7,1,2,0,0,0,0,0,0,0,8,3,40,43,4,3
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,81,0,0,0,0,0,0,0,0,0,1,0,1,2,1,0,0,0,0,0,0,0,7,2,32,44,2,1
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Bruno Fernandes,Manchester Utd,MF,FALSE,32,0,0,0,0,4,1,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,7.2,0,39,43,1,1
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,3,1,0,0,0,0,0,9,3,0,0,0,0,0,0,0,0,8.3,7,56,70,1,0
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,4,0,0,0,0,1,0,9,0,0,0,0,0,0,0,0,0,8.1,4,72,78,1,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,80,0,0,0,0,1,0,1,0,2,1,0,4,0,1,0,0,0,0,0,0,0,6.6,0,28,37,1,1
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,1,0,0,5,1,0,0,4,1,0,1,4,0,0,0,0,0,0,0,0,9.1,3,79,86,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7.3,0,16,23,0,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,2,0,0,7.2,0,45,49,0,0
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,6.1,0,42,51,0,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,1,1,7.9,0,27,32,0,0
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,0,0,7.6,0,34,41,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,7,0,0,7.8,0,16,26,0,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,7,0,22,23,0,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,7,1,26,44,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,1,0,6.5,0,19,31,0,0
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,3,2,0,0,6.3,0,23,26,0,0
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,0,0,7.9,0,24,35,0,0
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,0,0,7.3,0,37,47,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7.1,0,33,35,0,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6,4,0,0,7.4,0,30,41,0,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,5.1,0,33,37,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,0,0,6.5,0,23,32,0,0
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,2,1,0,6.7,0,28,38,0,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,0,0,5.9,0,14,23,0,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,0,0,6.4,0,24,34,0,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,1,0,7.1,0,10,25,0,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,0,0,7.2,0,30,43,0,0
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,5.5,0,14,26,0,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,7.1,0,20,40,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,6.5,0,24,31,0,0
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,6,0,0,7.8,0,19,27,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,6,0,0,7.5,0,19,23,0,0
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,0,0,6,0,9,27,0,0
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,0,0,7.6,0,15,40,0,0
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,7.5,0,35,48,0,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,6.4,0,17,18,0,0
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,5,0,0,8.3,0,16,27,0,0
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,6.3,0,21,27,0,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,6.3,0,24,32,0,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Andre Onana,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,2,0,0,7.2,0,24,43,1,1
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Noussair Mazraoui,Manchester Utd,DF,TRUE,80,0,0,0,0,0,0,0,0,0,1,0,0,2,3,0,0,0,0,0,0,0,7.4,0,35,38,0,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,1,0,0,0,0,0,0,2,1,0,1,1,1,0,0,0,0,0,0,0,6.7,2,29,34,0,0
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,2,1,0,0,1,1,0,2,2,0,0,0,0,0,0,0,0,7,1,45,54,1,1
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,73,0,0,0,0,2,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,7.4,0,36,43,3,3
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,4,1,0,0,2,1,0,0,0,0,0,0,0,7.1,0,54,67,5,3
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,1,2,1,0,0,0,0,0,0,0,6.3,0,38,47,0,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,45,0,0,0,0,0,0,0,0,0,1,1,0,1,2,0,0,0,0,0,0,0,7,0,21,26,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,83,0,0,0,0,0,0,0,0,1,1,0,0,3,0,0,0,0,0,0,0,0,7.5,0,37,41,1,1
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,2,0,0,4,2,0,0,0,0,0,0,0,7.9,0,33,36,5,5
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,7.4,1,32,37,2,2
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,7.2,1,105,115,3,2
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Noussair Mazraoui,Manchester Utd,DF,TRUE,55,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,6.7,0,58,67,2,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,0,1,1,0,0,0,0,0,0,0,6.6,0,68,75,2,1
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Noussair Mazraoui,Manchester Utd,DF,FALSE,25,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,6.9,0,18,21,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,77,0,0,0,0,0,0,0,0,2,0,1,0,3,1,0,0,0,0,0,0,0,7.1,0,45,53,1,1
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,1,3,0,0,0,0,0,0,0,0,6.1,0,27,38,1,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,1,2,2,0,0,0,0,0,0,0,7,0,48,58,0,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,1,2,2,2,0,0,0,0,0,0,0,6.8,1,38,42,1,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,6.9,0,26,35,2,2
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Noussair Mazraoui,Manchester Utd,DF,TRUE,82,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,0,0,0,7.2,3,36,47,1,0
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Noussair Mazraoui,Manchester Utd,DF,TRUE,83,0,0,0,0,0,0,0,0,1,0,0,0,1,2,0,0,0,0,0,0,0,6.3,1,25,30,0,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,80,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,6.6,0,24,28,2,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Noussair Mazraoui,Manchester Utd,DF,TRUE,69,0,0,0,0,1,0,0,0,2,1,0,0,0,1,0,0,0,0,0,0,0,6.6,0,19,27,0,0
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,3,1,0,1,3,2,0,0,0,0,0,0,0,7.3,1,46,48,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,69,0,0,0,0,0,0,0,0,1,2,0,0,2,2,0,0,0,0,0,0,0,7.1,0,50,57,0,0
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Noussair Mazraoui,Manchester Utd,DF,FALSE,46,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.4,0,3,3,1,0
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,2,1,0,1,1,2,0,0,0,0,0,0,0,7.3,3,17,21,1,1
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,6.8,1,35,43,2,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,1,5,1,0,0,0,0,0,0,0,7.2,1,63,71,3,1
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,3,2,0,0,0,0,0,0,0,7.4,0,40,46,1,1
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,77,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,5.5,0,27,31,0,0
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,2,1,0,0,4,0,0,0,0,0,0,0,0,7.7,1,68,74,0,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,74,0,0,0,0,1,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,7.1,1,17,20,3,2
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,2,3,0,0,0,0,0,0,0,0,7.2,0,64,68,0,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Noussair Mazraoui,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,1,2,1,0,2,0,0,0,0,0,0,0,0,6.8,0,32,41,1,0
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Noussair Mazraoui,Manchester Utd,DF,TRUE,19,0,0,0,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,7.3,2,8,9,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,2,1,0,3,1,1,0,0,0,0,0,0,0,7.5,0,45,52,1,1
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,1,2,2,0,0,0,0,0,0,0,7.7,1,53,59,2,1
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,1,3,2,0,0,0,0,0,0,0,6.8,0,34,43,2,1
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,1,0,0,0,0,0,0,4,2,0,1,1,2,0,0,0,0,0,0,0,7.6,2,75,80,1,1
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,7.9,3,53,58,2,2
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,1,3,0,0,0,0,0,0,0,6.6,0,35,47,0,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,7.3,1,17,22,0,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.7,0,33,36,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,2,1,2,0,0,0,0,0,0,0,7.3,3,36,47,1,1
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Diogo Dalot,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,2,1,0,0,0,0,0,0,0,6.8,0,33,41,1,0
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Diogo Dalot,Manchester Utd,DF,TRUE,56,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,6.4,0,24,28,0,0
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,1,1,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,7.2,0,36,50,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,2,2,1,0,0,0,0,0,0,0,6.9,0,36,41,4,1
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,6.8,0,38,44,0,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,3,1,0,0,3,0,0,9,2,2,0,0,0,0,0,0,0,7.4,1,38,46,2,2
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,4,0,1,2,0,1,0,0,0,0,0,0,0,6.3,0,34,40,0,0
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.6,1,27,36,1,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,2,1,0,0,1,1,1,2,1,1,0,0,0,0,0,0,0,7,1,35,44,1,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,3,0,0,2,2,2,0,0,0,0,0,0,0,6.8,2,36,41,2,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,1,0,2,0,0,4,1,0,0,0,0,0,0,0,0,6.7,0,29,40,1,1
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,0,1,1,0,0,2,0,0,0,0,0,0,0,6.5,1,35,46,4,2
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,6.9,0,34,47,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,3,0,0,0,2,0,0,2,1,1,0,0,0,0,0,0,0,6.7,1,37,46,4,1
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,2,0,1,5,0,0,0,0,0,0,0,0,0,7,0,44,51,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,0,3,0,0,0,0,0,0,0,6.6,1,34,47,1,0
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,2,1,0,0,1,1,0,2,0,0,0,0,0,0,0,0,0,6.9,0,22,27,5,3
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,3,2,2,0,0,0,0,0,0,0,7.4,1,16,21,0,0
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,1,0,0,1,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,0,7.4,1,36,47,2,2
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,9,0,0,0,0,0,0,0,0,0,7.6,3,62,70,5,4
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,1,0,2,1,0,4,0,1,0,0,0,0,0,0,0,7,2,34,37,1,1
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Diogo Dalot,Manchester Utd,MF,TRUE,90,0,1,0,0,0,0,0,0,0,0,0,1,3,1,0,0,0,0,0,0,0,6.8,1,27,32,3,2
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Diogo Dalot,Manchester Utd,MF,FALSE,32,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,6.5,1,13,16,3,1
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Diogo Dalot,Manchester Utd,MF,FALSE,26,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,6.8,0,10,11,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Matthijs de Ligt,Manchester Utd,DF,FALSE,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,2,2,0,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.8,0,8,8,0,0
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Matthijs de Ligt,Manchester Utd,DF,TRUE,68,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0,6.1,0,47,55,0,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,86,1,0,0,0,2,2,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,8.6,1,59,64,0,0
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,3,3,0,0,1,1,0,0,0,2,0,0,0,0,0,0,0,7.5,0,78,83,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,6.7,0,29,36,0,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,FALSE,45,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,6.8,0,13,17,0,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,1,2,3,0,0,0,0,0,0,0,7.2,1,41,43,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,3,0,0,0,0,1,0,0,0,0,0,0,0,6.2,0,53,54,0,0
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,6.7,0,38,40,0,0
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,55,59,0,0
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,6.9,0,80,81,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Matthijs de Ligt,Manchester Utd,DF,TRUE,55,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6.8,0,62,65,0,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,7,0,49,54,0,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Matthijs de Ligt,Manchester Utd,DF,TRUE,65,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.4,0,60,69,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,78,0,0,0,0,1,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,7,0,57,64,1,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Matthijs de Ligt,Manchester Utd,DF,TRUE,82,0,0,0,0,1,1,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,6.6,0,60,65,1,1
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,82,0,0,0,0,1,0,1,0,2,2,1,0,1,1,0,0,0,0,0,0,0,6.2,0,25,30,0,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,7.4,0,63,69,0,0
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,2,1,0,0,2,1,0,0,0,0,0,0,0,6.8,2,47,54,0,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,57,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,34,39,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Matthijs de Ligt,Manchester Utd,DF,FALSE,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.3,0,10,13,0,0
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,2,0,0,0,0,1,1,1,3,1,0,0,0,0,0,0,0,8.3,1,39,43,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,7,0,58,66,0,0
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,1,0,0,0,1,1,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,7.6,0,38,40,2,1
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,1,1,0,1,2,0,0,0,0,0,0,0,0,6.9,0,19,25,0,0
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,7.4,1,37,46,0,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,1,0,0,0,2,1,0,0,0,0,0,0,0,7,0,61,66,0,0
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Matthijs de Ligt,Manchester Utd,DF,TRUE,34,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,16,20,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Alejandro Garnacho,Manchester Utd,MF,FALSE,30,0,1,0,0,2,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,6.7,2,9,10,1,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,FALSE,26,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.2,1,11,14,3,1
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Alejandro Garnacho,Manchester Utd,MF,TRUE,68,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,6.4,1,17,21,3,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,FALSE,18,1,0,0,0,2,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,7.3,1,6,6,0,0
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,3,2,1,0,1,0,0,2,1,0,0,0,0,0,0,0,0,6,0,19,20,2,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,3,0,0,0,0,1,0,4,1,1,0,0,0,0,0,0,0,6.6,1,22,29,5,1
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,3,1,0,0,1,4,0,0,2,1,0,0,0,0,0,0,0,7.1,0,17,20,3,1
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Alejandro Garnacho,Manchester Utd,MF,TRUE,89,1,0,0,0,8,5,0,0,0,1,0,1,2,2,0,0,0,0,0,0,0,8.2,2,22,28,4,2
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,3,0,0,0,0,0,1,6,0,0,0,0,0,0,0,0,0,6.4,2,33,41,0,0
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,4,2,0,0,1,0,2,2,0,0,0,0,0,0,0,0,0,6.4,0,18,25,4,1
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Alejandro Garnacho,Manchester Utd,MF,FALSE,34,1,0,0,0,2,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7.1,0,6,9,2,0
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,85,0,0,0,0,2,1,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,6.3,0,24,27,1,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Alejandro Garnacho,Manchester Utd,MF,FALSE,25,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.4,0,11,12,2,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,58,0,0,0,0,0,0,0,0,0,4,0,2,0,1,0,0,0,0,0,0,0,6.9,0,17,18,3,2
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Alejandro Garnacho,Manchester Utd,MF,TRUE,58,0,0,0,0,2,2,0,0,1,3,0,1,0,0,0,0,0,0,0,0,0,7.1,0,20,21,0,0
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Alejandro Garnacho,Manchester Utd,MF,FALSE,36,0,0,0,0,1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,7,4,16,19,3,2
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,FALSE,12,0,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,5.3,0,3,5,2,1
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Alejandro Garnacho,Manchester Utd,MF,FALSE,26,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.4,0,7,9,3,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,FALSE,19,0,0,0,0,1,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,6.7,1,6,7,0,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,7,3,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,7.4,3,32,39,3,2
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Alejandro Garnacho,Manchester Utd,MF,FALSE,27,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,4,6,1,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,80,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.6,0,23,29,3,1
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,1,26,33,4,1
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,4,3,0,0,0,0,1,0,2,3,0,0,0,0,0,0,0,7.2,1,13,18,1,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,FALSE,29,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,6.9,0,15,15,1,1
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Alejandro Garnacho,Manchester Utd,MF,TRUE,44,0,0,0,0,1,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,6.9,1,15,17,0,0
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,0,1,3,0,3,1,0,0,0,0,0,0,0,0,7.2,1,16,18,2,1
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,68,1,0,0,0,3,3,0,0,0,1,2,0,1,0,0,0,0,0,0,0,0,7.4,0,13,16,3,1
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,6,0,1,0,1,1,1,7,1,0,0,0,0,0,0,0,0,7.4,4,49,53,6,2
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,0,0,3,0,1,1,0,0,0,0,0,0,0,0,7,0,21,24,2,1
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,54,1,0,0,0,2,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.3,0,9,14,2,1
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,1,3,0,5,1,1,0,0,0,0,0,0,0,6.7,3,40,46,6,2
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,0,0,0,0,8,1,0,0,1,2,1,3,0,2,0,0,0,0,0,0,0,7,1,21,26,2,2
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,TRUE,90,1,1,0,0,2,1,1,0,1,1,0,2,0,0,0,0,0,0,0,0,0,8.2,5,32,40,2,0
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Alejandro Garnacho,Manchester Utd,MF,FALSE,32,0,0,0,0,1,0,0,0,0,1,0,4,0,0,0,0,0,0,0,0,0,6.5,2,8,12,2,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Alejandro Garnacho,Manchester Utd,MF,FALSE,21,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,3,3,0,0
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,FALSE,15,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.5,0,2,3,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Rasmus Hojlund,Manchester Utd,FW,FALSE,18,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6.5,0,1,1,0,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,63,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.4,0,5,6,2,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Rasmus Hojlund,Manchester Utd,FW,TRUE,73,1,0,0,0,2,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,7.5,1,14,20,3,2
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,90,0,0,0,0,2,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6.6,1,16,18,2,1
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Rasmus Hojlund,Manchester Utd,FW,TRUE,83,0,0,0,0,0,0,0,0,2,5,1,1,0,0,0,0,0,0,0,0,0,6.9,2,10,12,3,1
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Rasmus Hojlund,Manchester Utd,FW,TRUE,74,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,11,11,2,1
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,FALSE,23,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.6,1,3,4,1,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,78,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,6.5,0,10,15,0,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Rasmus Hojlund,Manchester Utd,FW,TRUE,90,1,0,0,0,2,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6.9,0,15,16,1,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,77,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,6.9,1,5,8,0,0
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Rasmus Hojlund,Manchester Utd,FW,FALSE,36,0,0,0,0,2,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,6.9,1,10,11,2,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,78,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.4,1,5,8,1,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Rasmus Hojlund,Manchester Utd,FW,TRUE,90,0,0,0,0,1,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,6.2,1,16,21,1,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,85,0,0,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,6.4,0,6,9,1,1
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Rasmus Hojlund,Manchester Utd,FW,TRUE,52,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.8,2,7,9,0,0
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Rasmus Hojlund,Manchester Utd,FW,FALSE,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,1,1,0,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,57,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,6.3,0,6,9,1,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Rasmus Hojlund,Manchester Utd,FW,FALSE,21,0,0,0,0,1,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,6.8,0,4,4,0,0
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,90,0,0,0,0,3,2,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,6.7,0,7,11,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,69,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.4,1,7,7,0,0
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Rasmus Hojlund,Manchester Utd,FW,TRUE,66,0,0,0,0,0,0,1,0,2,0,0,1,0,0,0,0,0,0,0,0,0,6.2,0,5,5,1,0
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Rasmus Hojlund,Manchester Utd,FW,FALSE,15,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,4,4,0,0
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,84,1,0,0,0,3,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7.3,0,7,12,0,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,FALSE,45,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.7,1,9,10,2,1
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Rasmus Hojlund,Manchester Utd,FW,TRUE,70,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,7,9,0,0
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,FALSE,36,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.2,0,9,11,1,0
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Rasmus Hojlund,Manchester Utd,FW,TRUE,69,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,6.5,0,6,8,2,1
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,90,1,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,7.4,1,14,20,1,1
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Rasmus Hojlund,Manchester Utd,FW,TRUE,90,0,0,0,0,6,2,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.1,0,9,15,2,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Rasmus Hojlund,Manchester Utd,FW,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,11,17,0,0
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Rasmus Hojlund,Manchester Utd,FW,TRUE,80,0,0,0,0,1,1,0,0,0,1,2,1,0,1,0,0,0,0,0,0,0,7.3,2,6,10,0,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,FALSE,18,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,6.7,0,13,13,0,0
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,FALSE,15,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,6.5,0,13,14,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Manuel Ugarte,Manchester Utd,MF,TRUE,72,0,0,0,0,0,0,1,0,3,2,0,0,2,0,0,0,0,0,0,0,0,6.7,0,23,25,0,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Manuel Ugarte,Manchester Utd,MF,FALSE,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,2,2,0,0
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Manuel Ugarte,Manchester Utd,MF,TRUE,83,0,0,0,0,0,0,1,0,6,1,0,0,1,1,0,0,0,0,0,0,0,5.9,0,22,29,1,0
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Manuel Ugarte,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,2,1,0,0,6,3,0,0,0,0,0,0,0,7.7,1,47,51,1,1
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,FALSE,35,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.8,1,25,27,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Manuel Ugarte,Manchester Utd,MF,FALSE,25,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,15,15,1,1
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,1,0,1,1,0,0,1,2,0,0,0,0,0,0,0,6.9,1,33,36,2,2
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Manuel Ugarte,Manchester Utd,MF,TRUE,75,0,0,0,0,0,0,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,7.3,2,44,47,2,1
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,4,1,0,0,1,2,0,0,0,0,0,0,0,7.1,1,39,41,1,1
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Manuel Ugarte,Manchester Utd,MF,TRUE,54,0,0,0,0,1,0,1,0,1,1,0,0,2,2,0,0,0,0,0,0,0,7,0,23,26,0,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,62,0,0,0,0,1,0,1,0,0,2,0,0,2,1,0,0,0,0,0,0,0,7.1,0,30,35,0,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,2,3,0,1,3,0,0,0,0,0,0,0,0,6.6,0,36,41,3,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Manuel Ugarte,Manchester Utd,MF,TRUE,53,0,0,0,0,0,0,0,0,0,1,0,0,3,3,1,0,0,0,0,0,0,6.7,0,28,32,1,1
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Manuel Ugarte,Manchester Utd,MF,TRUE,63,0,0,0,0,1,0,1,0,2,0,0,0,2,0,0,0,0,0,0,0,0,6,0,22,26,0,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,75,0,0,0,0,0,0,1,0,3,1,0,0,3,1,0,0,0,0,0,0,0,7.1,0,41,45,1,1
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Manuel Ugarte,Manchester Utd,MF,TRUE,86,0,0,0,0,1,1,1,0,1,2,0,0,3,1,0,0,0,0,0,0,0,7.1,0,29,35,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,90,1,0,0,0,3,1,0,0,1,2,0,3,2,1,0,0,0,0,0,0,0,7.7,0,39,43,4,2
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Manuel Ugarte,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,2,4,0,1,1,1,0,0,0,0,0,0,0,6.5,1,13,15,3,1
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,68,0,0,0,0,2,0,0,0,1,0,0,0,2,1,0,0,0,0,0,0,0,6.8,0,23,34,0,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,45,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,6.7,0,29,36,0,0
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Manuel Ugarte,Manchester Utd,MF,TRUE,70,0,0,0,0,3,0,0,0,2,0,0,1,2,1,0,0,0,0,0,0,0,6.6,0,17,22,0,0
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,90,0,0,0,0,2,1,1,0,1,2,0,1,2,1,0,0,0,0,0,0,0,7,0,40,45,5,4
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Manuel Ugarte,Manchester Utd,MF,TRUE,58,0,0,0,0,0,0,0,0,0,3,0,0,1,1,0,0,0,0,0,0,0,7,0,33,38,2,2
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,FALSE,26,0,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.2,2,31,32,0,0
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,TRUE,90,0,1,0,0,1,1,1,0,3,2,0,0,3,1,0,0,0,0,0,0,0,7.2,1,50,53,1,1
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Manuel Ugarte,Manchester Utd,MF,TRUE,58,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,6.4,0,24,28,0,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Manuel Ugarte,Manchester Utd,MF,FALSE,21,0,0,0,0,0,0,1,0,2,0,0,0,2,0,0,0,0,0,0,0,0,6.6,0,11,11,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Amad Diallo,Manchester Utd,MF,TRUE,60,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,7.1,1,26,29,1,1
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Amad Diallo,Manchester Utd,MF,TRUE,89,1,0,0,0,2,1,1,0,3,0,1,2,1,0,0,0,0,0,0,0,0,7,1,32,41,3,1
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Amad Diallo,Manchester Utd,MF,FALSE,22,0,0,0,0,1,0,0,0,0,0,0,3,1,0,0,0,0,0,0,0,0,6.8,2,10,11,2,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Amad Diallo,Manchester Utd,MF,TRUE,90,0,1,0,0,1,1,0,0,2,0,0,1,3,0,0,0,0,0,0,0,0,8.3,6,52,58,1,0
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Amad Diallo,Manchester Utd,MF,TRUE,75,0,0,0,0,2,0,0,0,1,0,0,3,1,0,0,0,0,0,0,0,0,6.6,2,27,33,4,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Amad Diallo,Manchester Utd,MF,FALSE,6,0,0,0,0,0,0,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,6.9,0,10,12,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Amad Diallo,Manchester Utd,MF,FALSE,32,0,0,0,0,2,1,0,0,0,0,1,2,1,0,0,0,0,0,0,0,0,6.8,1,16,18,3,1
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Amad Diallo,Manchester Utd,MF,FALSE,18,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.5,0,3,5,0,0
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Amad Diallo,Manchester Utd,MF,TRUE,90,0,1,0,0,4,1,0,0,0,2,1,0,2,1,0,0,0,0,0,0,0,7.9,1,19,26,5,4
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Amad Diallo,Manchester Utd,MF,TRUE,90,0,1,0,0,2,1,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,7.5,2,40,44,5,2
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Amad Diallo,Manchester Utd,MF,TRUE,90,0,2,0,0,2,0,0,0,1,3,1,0,4,0,0,0,0,0,0,0,0,9,3,42,49,4,4
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Amad Diallo,Manchester Utd,MF,FALSE,45,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,6.9,0,6,12,3,2
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Amad Diallo,Manchester Utd,MF,TRUE,90,0,1,0,0,4,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,7.2,2,37,44,5,3
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Amad Diallo,Manchester Utd,FW,TRUE,89,1,0,0,0,4,2,0,0,0,1,3,1,1,2,0,0,0,0,0,0,0,8.3,0,31,34,8,5
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Amad Diallo,Manchester Utd,MF,TRUE,90,0,0,0,0,3,1,0,0,0,1,0,8,1,0,0,0,0,0,0,0,0,7.3,4,35,40,3,1
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Amad Diallo,Manchester Utd,MF,TRUE,78,0,0,0,0,1,0,0,0,2,2,0,2,2,2,0,0,0,0,0,0,0,6.5,1,20,25,4,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Amad Diallo,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,0,2,1,0,1,1,0,0,0,0,0,0,0,0,6.7,0,30,35,3,2
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Amad Diallo,Manchester Utd,MF,TRUE,90,1,0,0,0,2,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,7.6,0,20,30,2,2
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Amad Diallo,Manchester Utd,MF,TRUE,90,3,0,0,0,6,3,0,0,0,1,0,6,0,0,0,0,0,0,0,0,0,9.9,3,51,58,5,4
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Amad Diallo,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,0,3,1,1,3,1,0,0,0,0,0,0,0,7.2,4,20,26,3,1
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Amad Diallo,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,6.7,0,36,41,2,1
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Amad Diallo,Manchester Utd,FW,TRUE,90,0,0,0,0,1,0,0,0,3,2,0,5,0,0,0,0,0,0,0,0,0,7.8,6,39,45,2,2
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Amad Diallo,Manchester Utd,FW,FALSE,45,1,0,0,0,3,1,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,7.5,1,15,17,5,2
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Amad Diallo,Manchester Utd,MF,TRUE,82,0,0,0,0,1,1,0,0,0,2,0,2,1,0,0,0,0,0,0,0,0,7.7,5,37,40,5,1
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Amad Diallo,Manchester Utd,MF,TRUE,90,0,0,0,0,1,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,6.8,2,25,29,5,2
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Amad Diallo,Manchester Utd,MF,TRUE,90,1,0,0,0,2,1,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,8.3,2,47,52,1,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,2,2,0,0,0,0,0,0,0,7.3,1,54,61,0,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,6.8,0,70,73,0,0
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6,0,61,65,0,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,76,0,0,0,0,0,0,0,0,0,0,0,0,2,4,0,0,0,0,0,0,0,7.3,0,58,60,1,1
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,1,0,2,0,0,1,0,1,0,0,0,0,0,0,0,7,0,69,111,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,4,1,1,0,2,1,0,1,0,7,0,0,0,0,0,0,0,7.2,1,41,46,1,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,7.2,1,33,42,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,7,0,54,60,0,0
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,3,0,0,0,0,2,0,0,0,0,0,0,0,6.8,0,56,64,1,1
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,2,2,0,0,0,0,0,0,0,7.4,0,71,81,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,0,2,0,0,0,0,0,0,0,7.3,0,89,93,1,1
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,2,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.5,0,84,90,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,1,0,0,1,0,0,0,1,0,0,2,0,1,0,0,0,0,0,0,0,7.7,2,60,61,1,1
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,2,0,0,0,1,1,0,1,3,0,0,0,0,0,0,0,0,7.5,1,51,59,1,1
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,1,0,0,1,2,0,0,0,0,0,0,0,0,6.7,0,39,44,0,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Lisandro Martinez,Manchester Utd,DF,TRUE,64,0,0,0,0,0,0,1,0,2,0,0,0,0,1,0,0,0,0,0,0,0,6.9,1,66,73,0,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,1,0,0,0,1,1,0,0,2,0,0,0,1,3,0,0,0,0,0,0,0,8.1,1,22,30,0,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,2,0,1,0,0,0,0,0,0,0,6.7,1,64,73,0,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,1,0,0,0,1,1,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,8.2,0,55,60,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Lisandro Martinez,Manchester Utd,DF,TRUE,81,0,0,0,0,2,0,0,0,1,2,0,0,2,1,0,0,0,0,0,0,0,7.1,0,56,68,1,1
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Harry Maguire,Manchester Utd,DF,TRUE,80,0,0,0,0,0,0,1,0,2,0,0,0,0,2,0,0,0,0,0,0,0,7.2,0,50,60,2,1
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,78,0,0,0,0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7,1,41,45,0,0
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Harry Maguire,Manchester Utd,DF,FALSE,22,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,6.7,0,18,21,0,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Harry Maguire,Manchester Utd,DF,FALSE,17,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,25,25,1,1
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,45,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,6.5,0,19,25,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Harry Maguire,Manchester Utd,DF,FALSE,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,27,29,0,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,58,0,0,0,0,0,0,1,0,0,1,0,1,2,1,0,0,0,0,0,0,0,7,0,45,47,0,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Harry Maguire,Manchester Utd,DF,FALSE,25,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,6.9,1,28,35,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,1,5,0,0,0,0,0,0,0,7,0,34,38,0,0
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,6.2,0,38,48,0,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,1,1,0,0,1,3,0,0,0,0,0,0,0,7.2,0,49,58,0,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,7,1,56,61,0,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,1,0,2,0,1,0,0,4,0,0,0,0,0,0,0,7,1,26,34,0,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Harry Maguire,Manchester Utd,DF,FALSE,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,8,10,0,0
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,6.4,0,55,63,0,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,7.5,0,56,58,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,1,0,1,0,0,0,1,4,0,0,0,0,0,0,0,7.1,1,58,73,0,0
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,7.1,1,31,34,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,2,3,0,0,0,0,0,0,0,6.9,0,51,55,2,0
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Harry Maguire,Manchester Utd,DF,TRUE,90,1,0,0,0,3,3,0,0,1,1,0,0,2,1,0,0,0,0,0,0,0,8.5,0,46,53,0,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Harry Maguire,Manchester Utd,DF,FALSE,3,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,0,3,0,0
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Harry Maguire,Manchester Utd,DF,TRUE,57,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,6.9,0,26,31,0,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,65,0,0,0,0,1,1,0,0,1,2,0,0,0,1,0,0,0,0,0,0,0,6.8,0,24,29,0,0
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Harry Maguire,Manchester Utd,DF,FALSE,56,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,6.2,0,21,27,0,0
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Harry Maguire,Manchester Utd,DF,FALSE,39,0,0,0,0,3,1,0,0,0,2,0,0,1,2,0,0,0,0,0,0,0,7.2,1,23,26,0,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,6.6,1,52,68,0,0
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,7.3,1,57,63,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Kobbie Mainoo,Manchester Utd,MF,TRUE,83,0,0,0,0,1,0,3,4,0,0,0,0,3,5,0,0,0,0,0,0,0,7.6,0,37,41,5,4
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,2,2,1,0,1,0,2,5,0,0,0,0,0,0,0,7,0,41,45,4,4
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,2,1,1,0,0,0,3,1,0,0,0,0,0,0,0,5.8,0,36,41,3,2
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,2,2,1,0,0,1,0,2,0,0,0,0,0,0,0,7.2,1,50,57,4,2
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,6.9,0,38,42,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Kobbie Mainoo,Manchester Utd,MF,TRUE,44,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,7,1,13,17,0,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,84,0,0,0,0,1,0,1,0,1,0,0,0,2,0,0,0,0,0,0,0,0,7,1,35,40,3,2
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Kobbie Mainoo,Manchester Utd,MF,TRUE,79,0,0,0,0,1,1,3,2,1,0,0,0,0,1,0,0,0,0,0,0,0,7,0,48,51,0,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,1,2,0,0,0,0,1,0,0,0,0,0,0,0,0,6.9,2,47,51,2,1
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,FALSE,77,0,0,0,0,1,0,1,0,0,0,0,1,2,0,0,0,0,0,0,0,0,7,1,29,33,0,0
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,1,2,0,0,0,1,1,0,0,0,0,0,0,0,0,7,2,43,54,8,4
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,62,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,6.5,3,20,29,1,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Kobbie Mainoo,Manchester Utd,MF,FALSE,58,0,0,0,0,1,0,2,0,0,0,0,0,3,0,0,0,0,0,0,0,0,7.1,1,47,49,2,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,71,0,0,0,0,1,0,1,1,0,0,0,0,2,1,0,0,0,0,0,0,0,6.5,0,22,29,2,1
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Kobbie Mainoo,Manchester Utd,MF,TRUE,45,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,18,22,0,0
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Kobbie Mainoo,Manchester Utd,MF,TRUE,63,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.3,0,32,35,1,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,FALSE,10,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6.5,0,4,6,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Kobbie Mainoo,Manchester Utd,FW,TRUE,69,0,0,0,0,1,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,6.7,1,14,17,4,0
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Kobbie Mainoo,Manchester Utd,FW,FALSE,9,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,9,10,0,0
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Kobbie Mainoo,Manchester Utd,MF,TRUE,58,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.6,0,19,22,1,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,64,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.8,1,19,23,4,3
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,6,0,35,38,3,0
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,1,0,0,0,1,2,0,0,0,0,0,0,0,0,6.9,0,38,43,1,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,FALSE,10,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,6.8,0,4,5,0,0
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Kobbie Mainoo,Manchester Utd,MF,FALSE,45,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,6.8,0,17,18,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Casemiro,Manchester Utd,MF,TRUE,90,0,0,0,0,3,0,0,0,1,1,2,3,2,1,0,0,0,0,0,0,0,8.4,3,43,53,1,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Casemiro,Manchester Utd,MF,TRUE,90,0,0,0,0,3,1,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,7.3,0,44,53,0,0
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Casemiro,Manchester Utd,MF,TRUE,45,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,5.1,0,26,37,1,1
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Casemiro,Manchester Utd,MF,FALSE,4,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7,0,22,23,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Casemiro,Manchester Utd,MF,FALSE,45,0,0,0,0,2,0,0,0,1,1,0,3,3,0,0,0,0,0,0,0,0,7.3,2,25,30,1,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Casemiro,Manchester Utd,MF,FALSE,6,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.7,1,4,6,0,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Casemiro,Manchester Utd,MF,TRUE,87,0,0,0,0,3,1,0,0,2,2,0,1,4,1,0,0,0,0,0,0,0,8,4,46,55,1,1
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Casemiro,Manchester Utd,MF,TRUE,90,1,0,0,0,2,2,0,0,1,1,0,2,1,1,0,0,0,0,0,0,0,8.6,2,63,73,1,1
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Casemiro,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,1,0,2,0,0,1,2,3,0,0,0,0,0,0,0,6.7,0,33,42,0,0
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Casemiro,Manchester Utd,MF,TRUE,78,0,0,0,0,1,0,0,0,1,0,0,2,5,0,0,0,0,0,0,0,0,6.9,1,34,38,0,0
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Casemiro,Manchester Utd,MF,TRUE,55,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.5,1,17,24,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Casemiro,Manchester Utd,MF,TRUE,65,0,0,0,0,0,0,0,0,1,3,1,0,2,1,0,0,0,0,0,0,0,7.3,0,30,35,0,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Casemiro,Manchester Utd,MF,FALSE,28,0,0,0,0,1,1,0,0,0,1,0,2,1,0,0,0,0,0,0,0,0,7.1,2,14,22,0,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Casemiro,Manchester Utd,MF,TRUE,64,0,0,0,0,2,0,0,0,0,1,0,1,3,1,0,0,0,0,0,0,0,7,0,50,63,0,0
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Casemiro,Manchester Utd,MF,TRUE,89,0,0,0,0,2,1,1,0,2,4,0,1,4,2,0,0,0,0,0,0,0,7.6,2,43,52,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Casemiro,Manchester Utd,MF,TRUE,61,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,6.8,0,35,44,0,0
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Casemiro,Manchester Utd,MF,FALSE,24,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,10,12,0,0
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Casemiro,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,1,0,0,0,4,0,0,0,0,0,0,0,0,7.3,0,15,18,0,0
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Casemiro,Manchester Utd,MF,FALSE,22,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.8,0,11,16,1,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Casemiro,Manchester Utd,MF,TRUE,58,0,0,0,0,3,1,1,0,2,0,0,1,0,0,0,0,0,0,0,0,0,7.2,1,34,47,0,0
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Casemiro,Manchester Utd,MF,TRUE,90,0,0,0,0,1,1,0,0,1,1,0,1,7,2,0,0,0,0,0,0,0,7.9,0,28,38,0,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Casemiro,Manchester Utd,MF,TRUE,64,0,0,0,0,1,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,0,7,1,33,45,0,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Casemiro,Manchester Utd,MF,TRUE,69,0,0,0,0,0,0,1,0,1,0,0,0,2,1,0,0,0,0,0,0,0,6.9,0,37,45,0,0
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Casemiro,Manchester Utd,MF,TRUE,90,0,0,0,0,4,2,1,0,2,1,0,1,2,1,0,0,0,0,0,0,0,8.2,0,73,89,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Joshua Zirkzee,Manchester Utd,FW,FALSE,30,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.2,0,8,9,0,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,FALSE,45,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,6.9,1,7,9,3,2
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Joshua Zirkzee,Manchester Utd,FW,TRUE,85,0,0,0,0,3,2,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,5.6,0,15,21,3,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,TRUE,90,0,0,0,0,3,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.6,2,23,28,3,3
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,TRUE,60,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.3,2,15,16,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Joshua Zirkzee,Manchester Utd,FW,TRUE,45,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.8,0,8,11,0,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,FALSE,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,4,7,0,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Joshua Zirkzee,Manchester Utd,FW,FALSE,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,5,9,1,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,FALSE,12,0,1,0,0,2,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,7.1,1,1,3,0,0
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Joshua Zirkzee,Manchester Utd,FW,FALSE,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,1,3,0,0
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Joshua Zirkzee,Manchester Utd,FW,FALSE,16,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,7,8,0,0
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,FALSE,23,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.5,0,7,10,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Joshua Zirkzee,Manchester Utd,FW,TRUE,90,2,0,0,0,2,2,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,8.2,2,27,31,1,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,FALSE,32,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.5,0,4,6,1,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Joshua Zirkzee,Manchester Utd,FW,FALSE,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,8,10,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,FALSE,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,1,1,1,0
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Joshua Zirkzee,Manchester Utd,FW,TRUE,54,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,4,9,1,1
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.6,0,3,4,0,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Joshua Zirkzee,Manchester Utd,MF,TRUE,32,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,6.8,0,3,9,0,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Joshua Zirkzee,Manchester Utd,MF,FALSE,5,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.9,1,3,8,1,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Joshua Zirkzee,Manchester Utd,MF,FALSE,38,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,6.9,2,9,13,2,0
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Joshua Zirkzee,Manchester Utd,FW,TRUE,83,0,0,0,0,2,0,0,0,2,3,0,1,1,0,0,0,0,0,0,0,0,7.1,0,12,15,1,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,FALSE,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,4,6,1,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Joshua Zirkzee,Manchester Utd,FW,FALSE,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,9,14,0,0
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Joshua Zirkzee,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,6.5,1,21,26,4,2
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Joshua Zirkzee,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,5.9,0,21,31,2,0
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Joshua Zirkzee,Manchester Utd,MF,TRUE,89,0,0,0,0,1,0,1,0,0,3,0,0,2,2,0,0,0,0,0,0,0,6.5,0,12,18,5,1
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Joshua Zirkzee,Manchester Utd,FW,TRUE,75,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.4,0,8,10,1,0
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,FALSE,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,9,12,1,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,TRUE,77,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,19,26,1,0
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Joshua Zirkzee,Manchester Utd,FW,FALSE,20,0,0,0,0,2,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.9,0,4,6,0,0
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Joshua Zirkzee,Manchester Utd,FW,TRUE,54,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.3,0,10,16,2,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Leny Yoro,Manchester Utd,DF,FALSE,32,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.6,0,12,14,0,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Leny Yoro,Manchester Utd,DF,TRUE,65,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.2,0,42,44,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Leny Yoro,Manchester Utd,DF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,4,4,0,0
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Leny Yoro,Manchester Utd,DF,FALSE,45,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.1,0,22,25,0,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Leny Yoro,Manchester Utd,DF,TRUE,62,0,0,0,0,0,0,1,0,2,0,0,0,2,1,0,0,0,0,0,0,0,6.6,0,32,37,0,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Leny Yoro,Manchester Utd,DF,FALSE,26,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,26,26,0,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Leny Yoro,Manchester Utd,DF,FALSE,8,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.7,0,6,6,0,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Leny Yoro,Manchester Utd,DF,TRUE,82,0,0,0,0,0,0,0,0,1,0,0,0,0,4,0,0,0,0,0,0,0,6.5,0,60,66,0,0
+2024/25,Premier League,2025-01-19,Manchester Utd,Brighton,Leny Yoro,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,1,0,2,1,1,0,0,2,0,0,0,0,0,0,0,6.4,0,49,53,0,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Leny Yoro,Manchester Utd,DF,FALSE,33,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,6.8,0,13,13,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Leny Yoro,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,7.1,0,54,57,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Leny Yoro,Manchester Utd,DF,FALSE,21,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.6,0,13,14,0,0
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Leny Yoro,Manchester Utd,DF,TRUE,89,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,6.9,0,55,58,1,1
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Leny Yoro,Manchester Utd,DF,TRUE,45,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,6.9,0,21,23,0,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Leny Yoro,Manchester Utd,DF,TRUE,87,0,0,0,0,0,0,0,0,1,0,0,0,3,0,0,0,0,0,0,0,0,7.3,0,75,81,0,0
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Leny Yoro,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,0,3,0,0,0,0,0,0,0,6.6,0,40,45,1,0
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Leny Yoro,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.2,0,65,70,1,0
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Leny Yoro,Manchester Utd,DF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,0,12,14,0,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Leny Yoro,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6.8,0,33,37,0,0
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Leny Yoro,Manchester Utd,DF,FALSE,45,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.5,1,25,28,1,1
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Leny Yoro,Manchester Utd,DF,TRUE,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,1,41,42,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Marcus Rashford,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,0,0,0,0,0,0,6.7,1,22,29,5,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Marcus Rashford,Manchester Utd,MF,TRUE,64,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,0,0,0,0,0,0,6.5,0,13,18,3,1
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Marcus Rashford,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,0,0,0,0,7,2,16,22,5,2
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Marcus Rashford,Manchester Utd,MF,TRUE,72,1,0,0,0,4,3,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,7.5,1,18,22,2,0
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Marcus Rashford,Manchester Utd,MF,FALSE,30,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.6,0,6,10,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Marcus Rashford,Manchester Utd,MF,TRUE,72,0,0,0,0,0,0,0,0,0,2,1,3,1,1,0,0,0,0,0,0,0,6.8,1,14,20,1,1
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Marcus Rashford,Manchester Utd,MF,TRUE,63,0,0,0,0,2,2,1,0,2,0,0,1,0,1,0,0,0,0,0,0,0,6.9,1,13,19,1,1
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Marcus Rashford,Manchester Utd,MF,TRUE,90,0,1,0,0,2,0,0,0,0,0,0,4,1,0,0,0,0,0,0,0,0,7.4,4,40,45,3,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Marcus Rashford,Manchester Utd,MF,TRUE,58,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.5,1,16,24,3,1
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Marcus Rashford,Manchester Utd,MF,TRUE,72,0,0,0,0,2,1,1,0,1,0,1,2,0,0,0,0,0,0,0,0,0,6.2,0,15,20,5,1
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Marcus Rashford,Manchester Utd,MF,TRUE,56,0,0,0,0,0,0,0,0,0,0,0,4,0,1,0,0,0,0,0,0,0,6.6,0,23,28,4,2
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Marcus Rashford,Manchester Utd,MF,TRUE,67,1,0,0,0,1,1,0,0,2,0,1,0,1,0,0,0,0,0,0,0,0,7.2,1,8,10,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Marcus Rashford,Manchester Utd,MF,TRUE,90,2,0,0,0,4,2,0,0,1,0,1,2,0,0,0,0,0,0,0,0,0,8.3,1,14,18,1,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Marcus Rashford,Manchester Utd,MF,FALSE,32,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,6.4,0,9,11,1,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Marcus Rashford,Manchester Utd,MF,FALSE,32,0,0,0,0,1,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,6.9,2,13,16,1,0
+2024/25,Premier League,2025-02-15,Aston Villa,Ipswich Town,Marcus Rashford,Aston Villa,MF,FALSE,45,0,0,0,0,4,1,0,0,0,1,0,8,1,0,0,0,0,0,0,0,0,8.1,4,30,35,6,3
+2024/25,Premier League,2025-02-19,Aston Villa,Liverpool,Marcus Rashford,Aston Villa,MF,TRUE,66,0,0,0,0,1,1,0,0,0,1,1,5,1,0,0,0,0,0,0,0,0,6.9,0,17,23,4,2
+2024/25,Premier League,2025-02-22,Aston Villa,Chelsea,Marcus Rashford,Aston Villa,MF,FALSE,45,0,2,0,0,2,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,8.3,3,15,16,4,2
+2024/25,Premier League,2025-02-25,Crystal Palace,Aston Villa,Marcus Rashford,Aston Villa,MF,FALSE,23,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.5,0,3,6,1,1
+2024/25,Premier League,2025-03-08,Brentford,Aston Villa,Marcus Rashford,Aston Villa,MF,FALSE,23,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.6,0,4,5,1,0
+2024/25,Premier League,2025-04-02,Brighton,Aston Villa,Marcus Rashford,Aston Villa,FW,TRUE,64,1,0,0,0,2,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.3,0,9,9,0,0
+2024/25,Premier League,2025-04-05,Aston Villa,Nottingham,Marcus Rashford,Aston Villa,FW,FALSE,29,0,0,0,0,2,1,0,0,1,0,0,3,0,0,0,0,0,0,0,0,0,6.5,1,9,12,1,0
+2024/25,Premier League,2025-04-12,Southampton,Aston Villa,Marcus Rashford,Aston Villa,FW,TRUE,65,0,0,0,0,4,1,0,0,0,1,0,6,1,0,0,0,0,0,0,0,0,7.5,3,14,16,2,1
+2024/25,Premier League,2025-04-19,Aston Villa,Newcastle,Marcus Rashford,Aston Villa,FW,FALSE,9,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.7,1,3,5,1,0
+2024/25,Premier League,2025-04-22,Manchester City,Aston Villa,Marcus Rashford,Aston Villa,FW,TRUE,75,1,0,1,1,4,2,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,6.2,1,6,7,2,0
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Christen Eriksen,Manchester Utd,MF,FALSE,10,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.6,0,2,3,0,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Christen Eriksen,Manchester Utd,MF,TRUE,72,0,0,0,0,0,0,1,0,1,1,0,3,0,0,0,0,0,0,0,0,0,7.4,2,41,44,0,0
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Christen Eriksen,Manchester Utd,MF,TRUE,75,0,0,0,0,0,0,0,0,1,0,0,8,0,1,0,0,0,0,0,0,0,7.3,3,52,59,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Christen Eriksen,Manchester Utd,MF,FALSE,18,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,6.6,1,14,16,0,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Christen Eriksen,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,5,0,0,0,0,0,0,0,0,0,6.9,2,42,56,0,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Christen Eriksen,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,9,1,0,0,0,0,0,0,0,0,7.2,4,41,43,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Christen Eriksen,Manchester Utd,MF,TRUE,78,0,0,0,0,1,0,0,0,0,0,0,5,1,1,0,0,0,0,0,0,0,7.1,1,34,40,0,0
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Christen Eriksen,Manchester Utd,MF,FALSE,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.8,1,12,12,0,0
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Christen Eriksen,Manchester Utd,MF,TRUE,67,0,0,0,0,1,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,0,6.8,0,32,40,0,0
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Christen Eriksen,Manchester Utd,MF,FALSE,28,0,0,0,0,0,0,0,0,1,0,0,5,0,1,0,0,0,0,0,0,0,6.5,0,14,19,1,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Christen Eriksen,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,4,1,0,0,0,0,0,0,0,0,7.1,1,44,53,0,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Christen Eriksen,Manchester Utd,MF,FALSE,8,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.5,1,8,8,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Christen Eriksen,Manchester Utd,MF,FALSE,13,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,6.7,0,11,14,0,0
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Christen Eriksen,Manchester Utd,MF,TRUE,75,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,6.6,0,18,25,0,0
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Christen Eriksen,Manchester Utd,MF,TRUE,68,0,0,0,0,3,0,0,0,1,0,0,5,0,0,0,0,0,0,0,0,0,6.8,3,21,29,2,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Christen Eriksen,Manchester Utd,MF,FALSE,32,0,0,0,0,0,0,1,0,1,0,0,5,0,0,0,0,0,0,0,0,0,6.8,2,26,27,0,0
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Christen Eriksen,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,6.4,0,42,47,0,0
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Christen Eriksen,Manchester Utd,MF,TRUE,90,0,0,0,0,2,1,1,0,1,1,0,13,2,0,0,0,0,0,0,0,0,7.5,1,63,74,0,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Christen Eriksen,Manchester Utd,MF,FALSE,11,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,1,5,6,0,0
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Christen Eriksen,Manchester Utd,MF,FALSE,34,0,1,0,0,2,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,6.9,4,19,26,0,0
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Christen Eriksen,Manchester Utd,MF,FALSE,8,0,0,0,0,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,6.6,1,8,9,1,0
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Christen Eriksen,Manchester Utd,MF,FALSE,25,1,0,1,1,3,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,7.6,3,10,13,0,0
+2024/25,Premier League,2025-02-16,Tottenham,Manchester Utd,Patrick Dorgu,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,1,3,1,0,1,5,4,0,0,0,0,0,0,0,0,7.5,2,25,31,0,0
+2024/25,Premier League,2025-02-22,Everton,Manchester Utd,Patrick Dorgu,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,2,5,0,0,0,4,1,1,0,0,0,0,0,0,0,7.4,0,45,54,2,1
+2024/25,Premier League,2025-02-26,Manchester Utd,Ipswich Town,Patrick Dorgu,Manchester Utd,MF,TRUE,42,0,0,0,0,1,1,1,2,0,1,0,3,1,0,0,0,0,0,0,0,0,5.2,0,16,19,1,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Patrick Dorgu,Manchester Utd,MF,TRUE,90,0,0,0,0,4,1,0,0,0,0,0,5,1,0,0,0,0,0,0,0,0,7.9,1,51,60,1,1
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Patrick Dorgu,Manchester Utd,MF,TRUE,90,0,0,0,0,2,0,0,1,0,0,1,2,0,0,0,0,0,0,0,0,0,7,2,27,30,0,0
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Patrick Dorgu,Manchester Utd,MF,FALSE,36,0,0,0,0,0,0,4,1,0,0,1,1,1,0,0,0,0,0,0,0,0,6.2,1,15,16,0,0
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Patrick Dorgu,Manchester Utd,MF,TRUE,58,0,0,0,0,1,0,2,3,1,0,0,2,6,0,0,0,0,0,0,0,0,7.6,0,8,10,0,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Patrick Dorgu,Manchester Utd,MF,TRUE,89,0,0,0,0,0,0,3,4,1,0,0,4,2,2,0,0,0,0,0,0,0,6.5,1,27,32,2,1
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Patrick Dorgu,Manchester Utd,MF,TRUE,45,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6.3,0,1,17,0,0
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Patrick Dorgu,Manchester Utd,MF,FALSE,32,0,0,0,0,0,0,0,3,0,0,0,3,2,0,0,0,0,0,0,0,0,7.3,1,23,23,0,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Patrick Dorgu,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,2,2,0,0,0,3,4,0,0,0,0,0,0,0,0,7.1,1,25,31,0,0
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Patrick Dorgu,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,1,3,0,0,0,5,1,0,0,0,0,0,0,0,0,7.5,3,60,66,0,0
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Mason Mount,Manchester Utd,MF,TRUE,60,0,0,0,0,1,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,6.4,2,11,15,2,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Mason Mount,Manchester Utd,MF,TRUE,45,0,0,0,0,1,1,0,0,1,0,0,2,0,0,0,0,0,0,0,0,0,6.5,0,15,16,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Mason Mount,Manchester Utd,MF,FALSE,40,0,0,0,0,0,0,1,0,2,1,0,2,0,0,0,0,0,0,0,0,0,6.4,2,5,9,0,0
+2024/25,Premier League,2024-11-24,Ipswich Town,Manchester Utd,Mason Mount,Manchester Utd,MF,FALSE,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,6,6,1,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Mason Mount,Manchester Utd,MF,FALSE,11,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.7,0,15,17,0,0
+2024/25,Premier League,2024-12-04,Arsenal,Manchester Utd,Mason Mount,Manchester Utd,MF,TRUE,58,0,0,0,0,1,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,6.7,0,10,11,0,0
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Mason Mount,Manchester Utd,MF,FALSE,15,0,0,0,0,0,0,0,0,2,1,0,2,0,0,0,0,0,0,0,0,0,6.5,0,5,6,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Mason Mount,Manchester Utd,FW,TRUE,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,7,9,0,0
+2024/25,Premier League,2025-04-01,Nottingham,Manchester Utd,Mason Mount,Manchester Utd,MF,FALSE,13,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.7,0,3,5,0,0
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Mason Mount,Manchester Utd,MF,FALSE,20,0,0,0,0,1,0,1,0,2,0,0,1,0,2,0,0,0,0,0,0,0,6.7,1,7,7,0,0
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Mason Mount,Manchester Utd,MF,FALSE,36,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,6.5,0,6,10,0,0
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Mason Mount,Manchester Utd,MF,FALSE,32,0,0,0,0,2,0,0,0,2,2,0,1,0,0,0,0,0,0,0,0,0,6.6,0,14,14,0,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Mason Mount,Manchester Utd,MF,FALSE,26,0,0,0,0,2,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,6.7,0,15,19,0,0
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Mason Mount,Manchester Utd,MF,TRUE,56,1,0,0,0,3,2,0,0,1,0,0,0,2,1,0,0,0,0,0,0,0,7.5,0,19,23,1,0
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Mason Mount,Manchester Utd,MF,TRUE,58,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,7.1,2,19,21,3,1
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Mason Mount,Manchester Utd,MF,TRUE,69,0,0,0,0,2,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,7,0,11,15,1,0
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Mason Mount,Manchester Utd,MF,TRUE,65,0,0,0,0,4,3,0,0,1,1,1,4,0,0,0,0,0,0,0,0,0,6.9,1,31,34,1,0
+2024/25,Premier League,2024-10-06,Aston Villa,Manchester Utd,Victor Lindelof,Manchester Utd,DF,FALSE,45,0,0,0,0,0,0,1,0,2,0,0,1,0,1,0,0,0,0,0,0,0,6.8,0,12,12,0,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Victor Lindelof,Manchester Utd,DF,FALSE,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,1,1,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Victor Lindelof,Manchester Utd,DF,FALSE,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.4,0,14,16,0,0
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Victor Lindelof,Manchester Utd,DF,FALSE,7,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.8,0,4,5,0,0
+2024/25,Premier League,2025-03-09,Manchester Utd,Arsenal,Victor Lindelof,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,6.7,1,19,21,0,0
+2024/25,Premier League,2025-03-16,Leicester City,Manchester Utd,Victor Lindelof,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,7.1,1,23,26,0,0
+2024/25,Premier League,2025-04-06,Manchester Utd,Manchester City,Victor Lindelof,Manchester Utd,DF,FALSE,33,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,15,16,0,0
+2024/25,Premier League,2025-04-13,Newcastle,Manchester Utd,Victor Lindelof,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,6.1,0,40,42,0,0
+2024/25,Premier League,2025-04-20,Manchester Utd,Wolves,Victor Lindelof,Manchester Utd,DF,TRUE,78,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,6.9,0,49,51,0,0
+2024/25,Premier League,2025-04-27,Bournemouth,Manchester Utd,Victor Lindelof,Manchester Utd,DF,FALSE,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.6,0,15,15,0,0
+2024/25,Premier League,2025-05-04,Brentford,Manchester Utd,Victor Lindelof,Manchester Utd,DF,FALSE,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,9,11,0,0
+2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Victor Lindelof,Manchester Utd,DF,FALSE,39,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6.5,0,19,22,0,0
+2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Victor Lindelof,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,73,76,0,0
+2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Victor Lindelof,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,7.2,0,61,64,0,0
