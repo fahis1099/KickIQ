@@ -1,0 +1,6 @@
+Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
+2026/27,Premier League,2026-08-22,Hull City,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,3,1,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,7.2,3,57,70,2,1
+2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Bruno Fernandes,Manchester Utd,MF,TRUE,90,3,1,1,1,8,3,0,0,1,0,0,8,1,1,0,0,0,0,0,0,0,10,3,56,65,3,1
+2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,4,0,0,0,1,1,0,5,0,0,0,0,0,0,0,0,0,6.2,2,43,52,1,0
+2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,1,1,0,0,1,0,0,6,1,0,0,0,0,0,0,0,0,7.5,1,52,59,0,0
+2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,3,0,0,0,0,0,0,12,1,0,0,0,0,0,0,0,0,6.5,4,53,63,0,0

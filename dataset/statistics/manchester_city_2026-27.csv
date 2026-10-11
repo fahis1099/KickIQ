@@ -1,0 +1,6 @@
+Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
+2026/27,Premier League,2026-08-23,Manchester City,Bournemouth,Erling Haaland,Manchester City,FW,TRUE,90,0,0,0,0,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.9,0,11,16,2,1
+2026/27,Premier League,2026-08-29,Crystal Palace,Manchester City,Erling Haaland,Manchester City,FW,TRUE,90,2,0,0,0,5,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,8.2,0,2,4,0,0
+2026/27,Premier League,2026-09-05,Manchester City,Coventry City,Erling Haaland,Manchester City,FW,TRUE,90,1,0,0,0,4,3,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,8.6,1,11,13,2,1
+2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Erling Haaland,Manchester City,FW,TRUE,90,1,0,0,0,2,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,8,0,11,18,4,2
+2026/27,Premier League,2026-09-19,Manchester City,Sunderland,Erling Haaland,Manchester City,FW,TRUE,90,1,0,0,0,4,1,0,0,3,1,0,0,0,1,0,0,0,0,0,0,0,6.3,0,9,13,1,0
