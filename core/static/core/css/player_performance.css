@@ -1902,3 +1902,299 @@ body {
 
 /* The jersey-number overlay is intentionally removed from the player portrait. */
 .player-number-badge { display: none !important; }
+
+/* ==================================================
+   FOOTBALL FORM INDEX
+================================================== */
+
+.ffi-card {
+    background: #ffffff;
+    border: 1px solid #e4ebe7;
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 10px 30px rgba(15, 61, 46, 0.06);
+}
+
+
+.ffi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+
+.ffi-kicker {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: #16835d;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+
+.ffi-header h3 {
+    margin: 0 0 6px;
+    color: #173c31;
+    font-size: 22px;
+}
+
+
+.ffi-header p {
+    margin: 0;
+    color: #6d7f78;
+    font-size: 14px;
+}
+
+
+.ffi-status {
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #eef8f4;
+    color: #16835d;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+.ffi-main {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 38px;
+    align-items: center;
+}
+
+
+.ffi-score-section {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+
+.ffi-score-circle {
+    width: 142px;
+    height: 142px;
+    min-width: 142px;
+    border-radius: 50%;
+
+    background:
+        conic-gradient(
+            #19a974 0deg,
+            #19a974 290deg,
+            #e8f0ec 290deg,
+            #e8f0ec 360deg
+        );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ffi-score-inner {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        inset 0 0 0 1px #edf2ef;
+}
+
+
+.ffi-score-inner strong {
+    color: #143c30;
+    font-size: 31px;
+    line-height: 1;
+}
+
+
+.ffi-score-inner span {
+    margin-top: 5px;
+    color: #7b8c85;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.ffi-form-info {
+    min-width: 0;
+}
+
+
+.ffi-form-info > span {
+    display: block;
+    margin-bottom: 5px;
+    color: #82918b;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+
+.ffi-form-info > strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #16835d;
+    font-size: 19px;
+}
+
+
+.ffi-form-info p {
+    margin: 0;
+    color: #71817b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+.ffi-components {
+    display: grid;
+    gap: 20px;
+}
+
+
+.ffi-component {
+    width: 100%;
+}
+
+
+.ffi-component-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+
+.ffi-component-header span {
+    color: #4f625b;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.ffi-component-header strong {
+    color: #173c31;
+    font-size: 14px;
+}
+
+
+.ffi-progress {
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #e8efec;
+}
+
+
+.ffi-progress-fill {
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(
+        90deg,
+        #16835d,
+        #20b57d
+    );
+
+    transition: width 0.5s ease;
+}
+
+
+.ffi-component small {
+    display: block;
+    margin-top: 6px;
+    color: #95a19c;
+    font-size: 11px;
+}
+
+
+.ffi-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    margin-top: 28px;
+    padding-top: 22px;
+
+    border-top: 1px solid #edf1ef;
+}
+
+
+.ffi-detail {
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: #f7faf8;
+}
+
+
+.ffi-detail span {
+    display: block;
+    margin-bottom: 5px;
+    color: #7c8c86;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.ffi-detail strong {
+    color: #173c31;
+    font-size: 17px;
+}
+
+
+/* ==================================================
+   FFI RESPONSIVE
+================================================== */
+
+@media (max-width: 900px) {
+
+    .ffi-main {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ffi-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .ffi-card {
+        padding: 20px;
+    }
+
+
+    .ffi-header {
+        flex-direction: column;
+    }
+
+
+    .ffi-score-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .ffi-details {
+        grid-template-columns: 1fr;
+    }
+
+}

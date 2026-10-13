@@ -1,37 +1,74 @@
-
 /* =========================================================
    PLAYER AGE
    Calculate age from the date of birth in the rendered template.
 ========================================================= */
+
 function calculatePlayerAge() {
-    const dobElement = document.querySelector(".dob-value");
-    const ageElement = document.getElementById("player-age");
 
-    if (!dobElement || !ageElement) return;
+    const dobElement =
+        document.querySelector(".dob-value");
 
-    const dobValue = dobElement.dataset.dob;
-    if (!dobValue || dobValue === "None" || dobValue === "null") {
-        ageElement.textContent = "Age unavailable";
+    const ageElement =
+        document.getElementById("player-age");
+
+    if (!dobElement || !ageElement) {
         return;
     }
 
-    const dob = new Date(`${dobValue}T00:00:00`);
+    const dobValue =
+        dobElement.dataset.dob;
+
+    if (
+        !dobValue ||
+        dobValue === "None" ||
+        dobValue === "null"
+    ) {
+
+        ageElement.textContent =
+            "Age unavailable";
+
+        return;
+    }
+
+    const dob =
+        new Date(`${dobValue}T00:00:00`);
+
     if (Number.isNaN(dob.getTime())) {
-        ageElement.textContent = "Age unavailable";
+
+        ageElement.textContent =
+            "Age unavailable";
+
         return;
     }
 
-    const today = new Date();
-    let age = today.getFullYear() - dob.getFullYear();
+    const today =
+        new Date();
+
+    let age =
+        today.getFullYear() -
+        dob.getFullYear();
+
     const beforeBirthday =
         today.getMonth() < dob.getMonth() ||
-        (today.getMonth() === dob.getMonth() && today.getDate() < dob.getDate());
+        (
+            today.getMonth() === dob.getMonth() &&
+            today.getDate() < dob.getDate()
+        );
 
-    if (beforeBirthday) age -= 1;
+    if (beforeBirthday) {
+        age -= 1;
+    }
 
-    ageElement.textContent = age >= 0 ? `${age} years old` : "Age unavailable";
+    ageElement.textContent =
+        age >= 0
+            ? `${age} years old`
+            : "Age unavailable";
 }
 
+
+/* =========================================================
+   GLOBAL VARIABLES
+========================================================= */
 
 let allPlayerStatistics = [];
 
@@ -39,102 +76,114 @@ let ratingChart = null;
 
 let minutesChart = null;
 
-document.addEventListener("DOMContentLoaded", function () {
 
-    calculatePlayerAge();
-    setupLogout();
+/* =========================================================
+   PAGE LOAD
+========================================================= */
 
-    loadPlayerPerformance();
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
 
-});
+        calculatePlayerAge();
+
+        setupLogout();
+
+        loadPlayerPerformance();
+
+    }
+);
+
+
+/* =========================================================
+   LOAD PLAYER PERFORMANCE
+========================================================= */
 
 async function loadPlayerPerformance() {
 
     try {
 
-        const playerId = getPlayerIdFromURL();
+        const playerId =
+            getPlayerIdFromURL();
 
-        const response = await fetch(
-
-            `/api/players/${playerId}/statistics/`
-
-        );
+        const response =
+            await fetch(
+                `/api/players/${playerId}/statistics/`
+            );
 
         if (!response.ok) {
 
-            throw new Error("Failed to load player statistics");
+            throw new Error(
+                "Failed to load player statistics"
+            );
 
         }
 
-        const data = await response.json();
+        const data =
+            await response.json();
+
 
         /*
-
-            Handle both possible API response formats:
+            Handle both API response formats:
 
             Format 1:
 
             [
-
                 {...},
-
                 {...}
-
             ]
 
             Format 2:
 
             {
-
                 "count": 21,
-
                 "results": [
-
                     {...},
-
                     {...}
-
                 ]
-
             }
-
         */
 
-        allPlayerStatistics = Array.isArray(data)
+        allPlayerStatistics =
+            Array.isArray(data)
+                ? data
+                : (data.results || []);
 
-            ? data
-
-            : (data.results || []);
 
         console.log(
-
             "Player statistics:",
-
             allPlayerStatistics
-
         );
+
 
         setupSeasonFilter();
 
+
         updatePerformanceDisplay(
-
             allPlayerStatistics
-
         );
+
+
+        /*
+            Load FFI for all seasons initially.
+        */
+
+        loadFFI();
+
 
     } catch (error) {
 
         console.error(
-
             "Player performance loading error:",
-
             error
-
         );
 
-        const tableBody =
 
-            document.getElementById("performance-table-body");
+        const tableBody =
+            document.getElementById(
+                "performance-table-body"
+            );
+
 
         if (tableBody) {
 
@@ -142,7 +191,10 @@ async function loadPlayerPerformance() {
 
                 <tr>
 
-                    <td colspan="10" class="no-data-row">
+                    <td
+                        colspan="10"
+                        class="no-data-row"
+                    >
 
                         Unable to load performance data.
 
@@ -158,23 +210,36 @@ async function loadPlayerPerformance() {
 
 }
 
+
+/* =========================================================
+   GET PLAYER ID
+========================================================= */
+
 function getPlayerIdFromURL() {
 
-    const pathParts = window.location.pathname
+    const pathParts =
+        window.location.pathname
+            .split("/")
+            .filter(Boolean);
 
-        .split("/")
-
-        .filter(Boolean);
-
-    return pathParts[pathParts.length - 1];
+    return pathParts[
+        pathParts.length - 1
+    ];
 
 }
+
+
+/* =========================================================
+   SEASON FILTER
+========================================================= */
 
 function setupSeasonFilter() {
 
     const seasonFilter =
+        document.getElementById(
+            "season-filter"
+        );
 
-        document.getElementById("season-filter");
 
     if (!seasonFilter) {
 
@@ -182,13 +247,16 @@ function setupSeasonFilter() {
 
     }
 
+
     const seasons = [
 
         ...new Set(
 
             allPlayerStatistics
 
-                .map(stat => stat.season)
+                .map(
+                    stat => stat.season
+                )
 
                 .filter(Boolean)
 
@@ -196,164 +264,1081 @@ function setupSeasonFilter() {
 
     ];
 
-    seasons.sort(function (a, b) {
 
-        return b.localeCompare(a);
+    seasons.sort(
+        function (a, b) {
 
-    });
+            return b.localeCompare(a);
 
-    seasons.forEach(function (season) {
+        }
+    );
 
-        const option =
 
-            document.createElement("option");
+    seasons.forEach(
+        function (season) {
 
-        option.value = season;
+            const option =
+                document.createElement(
+                    "option"
+                );
 
-        option.textContent = season;
 
-        seasonFilter.appendChild(option);
+            option.value =
+                season;
 
-    });
+            option.textContent =
+                season;
+
+
+            seasonFilter.appendChild(
+                option
+            );
+
+        }
+    );
+
 
     seasonFilter.addEventListener(
-
         "change",
-
         applySeasonFilter
-
     );
 
 }
+
+
+/* =========================================================
+   APPLY SEASON FILTER
+========================================================= */
 
 function applySeasonFilter() {
 
+    const seasonFilter =
+        document.getElementById(
+            "season-filter"
+        );
+
+
+    if (!seasonFilter) {
+
+        return;
+
+    }
+
+
     const selectedSeason =
+        seasonFilter.value;
 
-        document.getElementById("season-filter").value;
 
-    const filteredStatistics = selectedSeason
+    const filteredStatistics =
+        selectedSeason
 
-        ? allPlayerStatistics.filter(function (stat) {
+            ? allPlayerStatistics.filter(
+                function (stat) {
 
-            return stat.season === selectedSeason;
+                    return (
+                        stat.season ===
+                        selectedSeason
+                    );
 
-        })
+                }
+            )
 
-        : allPlayerStatistics;
+            : allPlayerStatistics;
+
+
+    /*
+        Update normal performance analytics.
+    */
 
     updatePerformanceDisplay(
-
         filteredStatistics
+    );
 
+
+    /*
+        FFI is calculated by the backend.
+
+        When a season is selected,
+        send that season to the FFI API.
+    */
+
+    loadFFI(
+        selectedSeason
     );
 
 }
 
-function updatePerformanceDisplay(statistics) {
 
-    updateSummary(statistics);
+/* =========================================================
+   UPDATE PERFORMANCE DISPLAY
+========================================================= */
 
-    createRatingChart(statistics);
+function updatePerformanceDisplay(
+    statistics
+) {
 
-    createMinutesChart(statistics);
+    updateSummary(
+        statistics
+    );
 
-    createPositionAnalysis(statistics);
+    createRatingChart(
+        statistics
+    );
 
-    createPerformanceTable(statistics);
+    createMinutesChart(
+        statistics
+    );
+
+    createPositionAnalysis(
+        statistics
+    );
+
+    createPerformanceTable(
+        statistics
+    );
 
 }
 
-function updateSummary(statistics) {
 
-    const appearances = statistics.length;
+/* =========================================================
+   FOOTBALL FORM INDEX
+========================================================= */
 
-    const minutes = statistics.reduce(
+async function loadFFI(
+    season = ""
+) {
 
-        (sum, stat) =>
+    const playerId =
+        getPlayerIdFromURL();
 
-            sum + Number(stat.minutes_played || 0),
 
-        0
-
+    setFFIText(
+        "ffi-status",
+        "Loading"
     );
 
-    const goals = statistics.reduce(
 
-        (sum, stat) =>
-
-            sum + Number(stat.goals || 0),
-
-        0
-
+    setFFIText(
+        "ffi-message",
+        "Calculating Football Form Index..."
     );
 
-    const assists = statistics.reduce(
 
-        (sum, stat) =>
+    resetFFIDisplay();
 
-            sum + Number(stat.assists || 0),
 
-        0
+    try {
 
+        let url =
+            `/api/players/${playerId}/ffi/`;
+
+
+        /*
+            Add season only when the user
+            selects a specific season.
+
+            All Seasons:
+            /api/players/1/ffi/
+
+            Selected season:
+            /api/players/1/ffi/?season=2025%2F26
+        */
+
+        if (season) {
+
+            url +=
+                `?season=${encodeURIComponent(season)}`;
+
+        }
+
+
+        const response =
+            await fetch(url);
+
+
+        const data =
+            await response.json();
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                data.message ||
+                "Unable to calculate FFI."
+            );
+
+        }
+
+
+        console.log(
+            "FFI result:",
+            data
+        );
+
+
+        displayFFI(
+            data
+        );
+
+
+    } catch (error) {
+
+        console.error(
+            "FFI loading error:",
+            error
+        );
+
+
+        showFFIUnavailable(
+            error.message ||
+            "Unable to calculate Football Form Index."
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   DISPLAY FFI
+========================================================= */
+
+function displayFFI(data) {
+
+    /*
+        FFI = null is a valid result.
+
+        This can happen when:
+        - player has insufficient appearances
+        - player has not appeared recently
+        - insufficient rated matches exist
+
+        Do not display 0 in this situation.
+    */
+
+    if (
+        data.ffi === null ||
+        data.ffi === undefined
+    ) {
+
+        showFFIUnavailable(
+            data.message ||
+            "Football Form Index is unavailable."
+        );
+
+
+        updateFFIBasicDetails(
+            data
+        );
+
+
+        return;
+    }
+
+
+    const ffi =
+        Number(data.ffi);
+
+
+    /* -----------------------------
+       MAIN FFI SCORE
+    ----------------------------- */
+
+    setFFIText(
+        "ffi-score",
+        ffi.toFixed(2)
     );
 
-    const shots = statistics.reduce(
 
-        (sum, stat) =>
-
-            sum + Number(stat.shots || 0),
-
-        0
-
+    setFFIText(
+        "ffi-form-label",
+        getFFIFormLabel(ffi)
     );
 
-    const keyPasses = statistics.reduce(
 
-        (sum, stat) =>
-
-            sum + Number(stat.key_passes || 0),
-
-        0
-
+    setFFIText(
+        "ffi-message",
+        data.message ||
+        "Football Form Index calculated successfully."
     );
 
-    const ratings = statistics
 
-        .filter(stat => stat.rating !== null)
+    setFFIText(
+        "ffi-status",
+        "Available"
+    );
 
-        .map(stat => Number(stat.rating));
 
-    const averageRating = ratings.length > 0
+    /* -----------------------------
+       COMPONENT SCORES
+    ----------------------------- */
 
-        ? ratings.reduce(
+    setFFIText(
+        "ffi-performance",
+        formatFFINumber(
+            data.performance_score
+        )
+    );
 
-            (sum, rating) => sum + rating,
+
+    setFFIText(
+        "ffi-trend",
+        formatFFINumber(
+            data.trend_score
+        )
+    );
+
+
+    setFFIText(
+        "ffi-consistency",
+        formatFFINumber(
+            data.consistency_score
+        )
+    );
+
+
+    /* -----------------------------
+       PROGRESS BARS
+    ----------------------------- */
+
+    setFFIProgress(
+        "ffi-performance-bar",
+        data.performance_score
+    );
+
+
+    setFFIProgress(
+        "ffi-trend-bar",
+        data.trend_score
+    );
+
+
+    setFFIProgress(
+        "ffi-consistency-bar",
+        data.consistency_score
+    );
+
+
+    /* -----------------------------
+       MATCHES USED
+    ----------------------------- */
+
+    setFFIText(
+        "ffi-matches-used",
+        data.matches_used ??
+        "—"
+    );
+
+
+    /* -----------------------------
+       WEIGHTED RATING
+    ----------------------------- */
+
+    if (
+        data.weighted_average_rating !==
+            undefined &&
+        data.weighted_average_rating !==
+            null
+    ) {
+
+        setFFIText(
+            "ffi-weighted-rating",
+            Number(
+                data.weighted_average_rating
+            ).toFixed(2)
+        );
+
+    } else {
+
+        setFFIText(
+            "ffi-weighted-rating",
+            "—"
+        );
+
+    }
+
+
+    /* -----------------------------
+       RATING CHANGE
+    ----------------------------- */
+
+    if (
+        data.rating_change !== undefined &&
+        data.rating_change !== null
+    ) {
+
+        const ratingChange =
+            Number(
+                data.rating_change
+            );
+
+
+        const formattedChange =
+            ratingChange > 0
+
+                ? `+${ratingChange.toFixed(2)}`
+
+                : ratingChange.toFixed(2);
+
+
+        setFFIText(
+            "ffi-rating-change",
+            formattedChange
+        );
+
+    } else {
+
+        setFFIText(
+            "ffi-rating-change",
+            "—"
+        );
+
+    }
+
+
+    /* -----------------------------
+       CONTINUITY
+    ----------------------------- */
+
+    if (data.continuity) {
+
+        const appearances =
+            data.continuity
+                .appearances_in_window;
+
+
+        const fixtures =
+            data.continuity
+                .fixtures_analyzed;
+
+
+        if (
+            appearances !== undefined &&
+            fixtures !== undefined
+        ) {
+
+            setFFIText(
+                "ffi-appearances",
+                `${appearances} / ${fixtures}`
+            );
+
+        } else {
+
+            setFFIText(
+                "ffi-appearances",
+                "—"
+            );
+
+        }
+
+    } else {
+
+        setFFIText(
+            "ffi-appearances",
+            "—"
+        );
+
+    }
+
+
+    /*
+        Update circular score visual.
+    */
+
+    updateFFICircle(
+        ffi
+    );
+
+}
+
+
+/* =========================================================
+   UPDATE BASIC DETAILS WHEN FFI IS UNAVAILABLE
+========================================================= */
+
+function updateFFIBasicDetails(data) {
+
+    if (!data) {
+
+        return;
+
+    }
+
+
+    setFFIText(
+        "ffi-matches-used",
+        data.matches_used ??
+        "—"
+    );
+
+
+    if (data.continuity) {
+
+        const appearances =
+            data.continuity
+                .appearances_in_window;
+
+
+        const fixtures =
+            data.continuity
+                .fixtures_analyzed;
+
+
+        if (
+            appearances !== undefined &&
+            fixtures !== undefined
+        ) {
+
+            setFFIText(
+                "ffi-appearances",
+                `${appearances} / ${fixtures}`
+            );
+
+        }
+
+    }
+
+}
+
+
+/* =========================================================
+   FFI UNAVAILABLE
+========================================================= */
+
+function showFFIUnavailable(
+    message
+) {
+
+    setFFIText(
+        "ffi-score",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-form-label",
+        "Unavailable"
+    );
+
+
+    setFFIText(
+        "ffi-status",
+        "Unavailable"
+    );
+
+
+    setFFIText(
+        "ffi-message",
+        message
+    );
+
+
+    setFFIText(
+        "ffi-performance",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-trend",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-consistency",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-weighted-rating",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-rating-change",
+        "—"
+    );
+
+
+    setFFIProgress(
+        "ffi-performance-bar",
+        0
+    );
+
+
+    setFFIProgress(
+        "ffi-trend-bar",
+        0
+    );
+
+
+    setFFIProgress(
+        "ffi-consistency-bar",
+        0
+    );
+
+
+    updateFFICircle(
+        0
+    );
+
+}
+
+
+/* =========================================================
+   RESET FFI DISPLAY
+========================================================= */
+
+function resetFFIDisplay() {
+
+    setFFIText(
+        "ffi-score",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-form-label",
+        "Calculating..."
+    );
+
+
+    setFFIText(
+        "ffi-performance",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-trend",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-consistency",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-matches-used",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-weighted-rating",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-rating-change",
+        "—"
+    );
+
+
+    setFFIText(
+        "ffi-appearances",
+        "—"
+    );
+
+
+    setFFIProgress(
+        "ffi-performance-bar",
+        0
+    );
+
+
+    setFFIProgress(
+        "ffi-trend-bar",
+        0
+    );
+
+
+    setFFIProgress(
+        "ffi-consistency-bar",
+        0
+    );
+
+
+    updateFFICircle(
+        0
+    );
+
+}
+
+
+/* =========================================================
+   FFI TEXT HELPER
+========================================================= */
+
+function setFFIText(
+    elementId,
+    value
+) {
+
+    const element =
+        document.getElementById(
+            elementId
+        );
+
+
+    if (element) {
+
+        element.textContent =
+            value;
+
+    }
+
+}
+
+
+/* =========================================================
+   FFI PROGRESS BAR HELPER
+========================================================= */
+
+function setFFIProgress(
+    elementId,
+    value
+) {
+
+    const element =
+        document.getElementById(
+            elementId
+        );
+
+
+    if (!element) {
+
+        return;
+
+    }
+
+
+    let percentage =
+        Number(value);
+
+
+    if (
+        !Number.isFinite(
+            percentage
+        )
+    ) {
+
+        percentage = 0;
+
+    }
+
+
+    percentage =
+        Math.max(
+            0,
+            Math.min(
+                100,
+                percentage
+            )
+        );
+
+
+    element.style.width =
+        `${percentage}%`;
+
+}
+
+
+/* =========================================================
+   FFI CIRCLE
+========================================================= */
+
+function updateFFICircle(
+    value
+) {
+
+    const circle =
+        document.querySelector(
+            ".ffi-score-circle"
+        );
+
+
+    if (!circle) {
+
+        return;
+
+    }
+
+
+    let percentage =
+        Number(value);
+
+
+    if (
+        !Number.isFinite(
+            percentage
+        )
+    ) {
+
+        percentage = 0;
+
+    }
+
+
+    percentage =
+        Math.max(
+            0,
+            Math.min(
+                100,
+                percentage
+            )
+        );
+
+
+    const degrees =
+        (percentage / 100) * 360;
+
+
+    circle.style.background = `
+
+        conic-gradient(
+
+            #19a974 0deg,
+
+            #19a974 ${degrees}deg,
+
+            #e8f0ec ${degrees}deg,
+
+            #e8f0ec 360deg
+
+        )
+
+    `;
+
+}
+
+
+/* =========================================================
+   FORMAT FFI NUMBER
+========================================================= */
+
+function formatFFINumber(
+    value
+) {
+
+    if (
+        value === null ||
+        value === undefined
+    ) {
+
+        return "—";
+
+    }
+
+
+    const number =
+        Number(value);
+
+
+    if (
+        !Number.isFinite(number)
+    ) {
+
+        return "—";
+
+    }
+
+
+    return number.toFixed(2);
+
+}
+
+
+/* =========================================================
+   FFI PRESENTATION LABEL
+========================================================= */
+
+function getFFIFormLabel(
+    ffi
+) {
+
+    /*
+        These labels are only for presentation.
+
+        They DO NOT change the FFI calculation.
+    */
+
+    if (ffi >= 85) {
+
+        return "Excellent Form";
+
+    }
+
+
+    if (ffi >= 75) {
+
+        return "Strong Form";
+
+    }
+
+
+    if (ffi >= 65) {
+
+        return "Good Form";
+
+    }
+
+
+    if (ffi >= 50) {
+
+        return "Average Form";
+
+    }
+
+
+    return "Poor Form";
+
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+function updateSummary(
+    statistics
+) {
+
+    const appearances =
+        statistics.length;
+
+
+    const minutes =
+        statistics.reduce(
+
+            (sum, stat) =>
+
+                sum +
+                Number(
+                    stat.minutes_played ||
+                    0
+                ),
 
             0
 
-        ) / ratings.length
+        );
 
-        : null;
+
+    const goals =
+        statistics.reduce(
+
+            (sum, stat) =>
+
+                sum +
+                Number(
+                    stat.goals ||
+                    0
+                ),
+
+            0
+
+        );
+
+
+    const assists =
+        statistics.reduce(
+
+            (sum, stat) =>
+
+                sum +
+                Number(
+                    stat.assists ||
+                    0
+                ),
+
+            0
+
+        );
+
+
+    const shots =
+        statistics.reduce(
+
+            (sum, stat) =>
+
+                sum +
+                Number(
+                    stat.shots ||
+                    0
+                ),
+
+            0
+
+        );
+
+
+    const keyPasses =
+        statistics.reduce(
+
+            (sum, stat) =>
+
+                sum +
+                Number(
+                    stat.key_passes ||
+                    0
+                ),
+
+            0
+
+        );
+
+
+    const ratings =
+        statistics
+
+            .filter(
+                stat =>
+                    stat.rating !== null
+            )
+
+            .map(
+                stat =>
+                    Number(
+                        stat.rating
+                    )
+            );
+
+
+    const averageRating =
+        ratings.length > 0
+
+            ? ratings.reduce(
+
+                (sum, rating) =>
+                    sum + rating,
+
+                0
+
+            ) / ratings.length
+
+            : null;
+
 
     setSummaryValue(
-
         "summary-appearances",
-
         appearances
-
     );
 
-    setSummaryValue(
 
+    setSummaryValue(
         "summary-minutes",
-
         minutes
-
     );
 
-    setSummaryValue(
 
+    setSummaryValue(
         "summary-average-rating",
 
         averageRating !== null
@@ -361,68 +1346,80 @@ function updateSummary(statistics) {
             ? averageRating.toFixed(2)
 
             : "—"
-
     );
 
-    setSummaryValue(
 
+    setSummaryValue(
         "summary-goals",
-
         goals
-
     );
 
-    setSummaryValue(
 
+    setSummaryValue(
         "summary-assists",
-
         assists
-
     );
 
-    setSummaryValue(
 
+    setSummaryValue(
         "summary-shots",
-
         shots
-
     );
 
+
     setSummaryValue(
-
         "summary-key-passes",
-
         keyPasses
-
     );
 
 }
 
-function setSummaryValue(elementId, value) {
+
+/* =========================================================
+   SUMMARY VALUE HELPER
+========================================================= */
+
+function setSummaryValue(
+    elementId,
+    value
+) {
 
     const element =
+        document.getElementById(
+            elementId
+        );
 
-        document.getElementById(elementId);
 
     if (element) {
 
-        element.textContent = value;
+        element.textContent =
+            value;
 
     }
 
 }
 
-function createRatingChart(statistics) {
+
+/* =========================================================
+   RATING CHART
+========================================================= */
+
+function createRatingChart(
+    statistics
+) {
 
     const canvas =
+        document.getElementById(
+            "rating-chart"
+        );
 
-        document.getElementById("rating-chart");
 
     if (!canvas) {
 
         return;
 
     }
+
 
     if (ratingChart) {
 
@@ -432,131 +1429,193 @@ function createRatingChart(statistics) {
 
     }
 
+
     /*
-
-        Only use matches where a rating exists.
-
+        Only use matches where
+        a rating exists.
     */
 
+    
     const ratedMatches = statistics
+    .filter(stat =>
+        stat.rating !== null &&
+        stat.rating !== undefined &&
+        stat.rating !== "" &&
+        Number.isFinite(Number(stat.rating))
+    )
+    .slice()
+    .reverse();
 
-        .filter(stat => stat.rating !== null)
 
-        .reverse();
 
-    if (ratedMatches.length === 0) {
+    if (
+        ratedMatches.length === 0
+    ) {
 
         return;
 
     }
 
-    const labels = ratedMatches.map(function (stat, index) {
 
-        return `Match ${index + 1}`;
+    const labels =
+        ratedMatches.map(
+            function (
+                stat,
+                index
+            ) {
 
-    });
+                return (
+                    `Match ${index + 1}`
+                );
 
-    const ratings = ratedMatches.map(function (stat) {
+            }
+        );
 
-        return Number(stat.rating);
 
-    });
+    const ratings =
+        ratedMatches.map(
+            function (stat) {
 
-    ratingChart = new Chart(canvas, {
+                return Number(
+                    stat.rating
+                );
 
-        type: "line",
+            }
+        );
 
-        data: {
 
-            labels: labels,
+    ratingChart =
+        new Chart(
+            canvas,
+            {
 
-            datasets: [
+                type: "line",
 
-                {
+                data: {
 
-                    label: "Rating",
+                    labels: labels,
 
-                    data: ratings,
+                    datasets: [
 
-                    tension: 0.3,
+                        {
 
-                    borderWidth: 3,
+                            label:
+                                "Rating",
 
-                    borderColor: "#16a34a",
+                            data:
+                                ratings,
 
-                    backgroundColor: "rgba(22, 163, 74, 0.12)",
+                            tension:
+                                0.3,
 
-                    pointBackgroundColor: "#ffffff",
+                            borderWidth:
+                                3,
 
-                    pointBorderColor: "#16a34a",
+                            borderColor:
+                                "#16a34a",
 
-                    pointBorderWidth: 2,
+                            backgroundColor:
+                                "rgba(22, 163, 74, 0.12)",
 
-                    pointRadius: 4,
+                            pointBackgroundColor:
+                                "#ffffff",
 
-                    pointHoverRadius: 6,
+                            pointBorderColor:
+                                "#16a34a",
 
-                    fill: true
+                            pointBorderWidth:
+                                2,
 
-                }
+                            pointRadius:
+                                4,
 
-            ]
+                            pointHoverRadius:
+                                6,
 
-        },
+                            fill:
+                                true
 
-        options: {
+                        }
 
-            responsive: true,
-
-            maintainAspectRatio: false,
-
-            scales: {
-
-                y: {
-
-                    min: 0,
-
-                    max: 10,
-
-                    title: {
-
-                        display: true,
-
-                        text: "Rating"
-
-                    }
-
-                },
-
-                x: {
-
-                    title: {
-
-                        display: true,
-
-                        text: "Matches"
-
-                    }
-
-                }
-
-            },
-
-            plugins: {
-
-                legend: {
-
-                    display: true
+                    ]
 
                 },
 
-                tooltip: {
 
-                    callbacks: {
+                options: {
 
-                        label: function (context) {
+                    responsive:
+                        true,
 
-                            return `Rating: ${context.parsed.y}`;
+                    maintainAspectRatio:
+                        false,
+
+                    scales: {
+
+                        y: {
+
+                            min:
+                                0,
+
+                            max:
+                                10,
+
+                            title: {
+
+                                display:
+                                    true,
+
+                                text:
+                                    "Rating"
+
+                            }
+
+                        },
+
+
+                        x: {
+
+                            title: {
+
+                                display:
+                                    true,
+
+                                text:
+                                    "Matches"
+
+                            }
+
+                        }
+
+                    },
+
+
+                    plugins: {
+
+                        legend: {
+
+                            display:
+                                true
+
+                        },
+
+
+                        tooltip: {
+
+                            callbacks: {
+
+                                label:
+                                    function (
+                                        context
+                                    ) {
+
+                                        return (
+                                            `Rating: ${context.parsed.y}`
+                                        );
+
+                                    }
+
+                            }
 
                         }
 
@@ -565,24 +1624,31 @@ function createRatingChart(statistics) {
                 }
 
             }
-
-        }
-
-    });
+        );
 
 }
 
-function createMinutesChart(statistics) {
+
+/* =========================================================
+   MINUTES CHART
+========================================================= */
+
+function createMinutesChart(
+    statistics
+) {
 
     const canvas =
+        document.getElementById(
+            "minutes-chart"
+        );
 
-        document.getElementById("minutes-chart");
 
     if (!canvas) {
 
         return;
 
     }
+
 
     if (minutesChart) {
 
@@ -592,143 +1658,200 @@ function createMinutesChart(statistics) {
 
     }
 
+
     /*
-
         Keep statistics that contain
-
         actual playing information.
-
     */
 
-    const matchStatistics = statistics
+    
+const matchStatistics = statistics
+    .filter(stat =>
+        stat.minutes_played !== null &&
+        stat.minutes_played !== undefined &&
+        stat.minutes_played !== "" &&
+        Number.isFinite(Number(stat.minutes_played))
+    )
+    .slice()
+    .reverse();
 
-        .filter(stat => stat.minutes_played !== null)
 
-        .reverse();
 
-    if (matchStatistics.length === 0) {
+    if (
+        matchStatistics.length ===
+        0
+    ) {
 
         return;
 
     }
 
-    const labels = matchStatistics.map(function (stat, index) {
 
-        return `Match ${index + 1}`;
+    const labels =
+        matchStatistics.map(
+            function (
+                stat,
+                index
+            ) {
 
-    });
+                return (
+                    `Match ${index + 1}`
+                );
 
-    const minutes = matchStatistics.map(function (stat) {
+            }
+        );
 
-        return Number(stat.minutes_played);
 
-    });
+    const minutes =
+        matchStatistics.map(
+            function (stat) {
 
-    minutesChart = new Chart(canvas, {
+                return Number(
+                    stat.minutes_played
+                );
 
-        type: "bar",
+            }
+        );
 
-        data: {
 
-            labels: labels,
+    minutesChart =
+        new Chart(
+            canvas,
+            {
 
-            datasets: [
+                type:
+                    "bar",
 
-                {
+                data: {
 
-                    label: "Minutes Played",
+                    labels:
+                        labels,
 
-                    data: minutes,
+                    datasets: [
 
-                    backgroundColor: "rgba(22, 163, 74, 0.78)",
+                        {
 
-                    hoverBackgroundColor: "#15803d",
+                            label:
+                                "Minutes Played",
 
-                    borderColor: "#15803d",
+                            data:
+                                minutes,
 
-                    borderWidth: 1,
+                            backgroundColor:
+                                "rgba(22, 163, 74, 0.78)",
 
-                    borderRadius: 6
+                            hoverBackgroundColor:
+                                "#15803d",
 
-                }
+                            borderColor:
+                                "#15803d",
 
-            ]
+                            borderWidth:
+                                1,
 
-        },
+                            borderRadius:
+                                6
 
-        options: {
+                        }
 
-            responsive: true,
-
-            maintainAspectRatio: false,
-
-            scales: {
-
-                y: {
-
-                    beginAtZero: true,
-
-                    title: {
-
-                        display: true,
-
-                        text: "Minutes"
-
-                    }
-
-                },
-
-                x: {
-
-                    title: {
-
-                        display: true,
-
-                        text: "Matches"
-
-                    }
-
-                }
-
-            },
-
-            plugins: {
-
-                legend: {
-
-                    display: true
+                    ]
 
                 },
 
-                tooltip: {
 
-                    callbacks: {
+                options: {
 
-                        label: function (context) {
+                    responsive:
+                        true,
 
-                            const index =
+                    maintainAspectRatio:
+                        false,
 
-                                context.dataIndex;
+                    scales: {
 
-                            const stat =
+                        y: {
 
-                                matchStatistics[index];
+                            beginAtZero:
+                                true,
 
-                            const started =
+                            title: {
 
-                                stat.started
+                                display:
+                                    true,
 
-                                    ? "Yes"
+                                text:
+                                    "Minutes"
 
-                                    : "No";
+                            }
 
-                            return [
+                        },
 
-                                `Minutes: ${stat.minutes_played}`,
 
-                                `Started: ${started}`
+                        x: {
 
-                            ];
+                            title: {
+
+                                display:
+                                    true,
+
+                                text:
+                                    "Matches"
+
+                            }
+
+                        }
+
+                    },
+
+
+                    plugins: {
+
+                        legend: {
+
+                            display:
+                                true
+
+                        },
+
+
+                        tooltip: {
+
+                            callbacks: {
+
+                                label:
+                                    function (
+                                        context
+                                    ) {
+
+                                        const index =
+                                            context.dataIndex;
+
+
+                                        const stat =
+                                            matchStatistics[
+                                                index
+                                            ];
+
+
+                                        const started =
+                                            stat.started
+
+                                                ? "Yes"
+
+                                                : "No";
+
+
+                                        return [
+
+                                            `Minutes: ${stat.minutes_played}`,
+
+                                            `Started: ${started}`
+
+                                        ];
+
+                                    }
+
+                            }
 
                         }
 
@@ -737,22 +1860,30 @@ function createMinutesChart(statistics) {
                 }
 
             }
-
-        }
-
-    });
+        );
 
 }
 
-function createPositionAnalysis(statistics) {
+
+/* =========================================================
+   POSITION ANALYSIS
+========================================================= */
+
+function createPositionAnalysis(
+    statistics
+) {
 
     const container =
+        document.getElementById(
+            "position-metrics"
+        );
 
-        document.getElementById("position-metrics");
 
     const description =
+        document.getElementById(
+            "position-description"
+        );
 
-        document.getElementById("position-description");
 
     if (!container) {
 
@@ -760,15 +1891,17 @@ function createPositionAnalysis(statistics) {
 
     }
 
+
     /*
-
-        Get player position from the page.
-
+        Get player position
+        from the page.
     */
 
     const positionElement =
+        document.querySelector(
+            ".position"
+        );
 
-        document.querySelector(".position");
 
     if (!positionElement) {
 
@@ -776,561 +1909,736 @@ function createPositionAnalysis(statistics) {
 
     }
 
-    const position =
 
-        positionElement.textContent.trim();
+    const position =
+        positionElement
+            .textContent
+            .trim();
+
 
     /*
-
         Calculate totals.
-
     */
 
-    const totalGoals = statistics.reduce(
+    const totalGoals =
+        statistics.reduce(
 
-        (sum, stat) => sum + Number(stat.goals || 0),
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.goals ||
+                    0
+                ),
 
-        0
+            0
 
-    );
+        );
 
-    const totalAssists = statistics.reduce(
 
-        (sum, stat) => sum + Number(stat.assists || 0),
+    const totalAssists =
+        statistics.reduce(
 
-        0
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.assists ||
+                    0
+                ),
 
-    );
+            0
 
-    const totalShots = statistics.reduce(
+        );
 
-        (sum, stat) => sum + Number(stat.shots || 0),
 
-        0
+    const totalShots =
+        statistics.reduce(
 
-    );
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.shots ||
+                    0
+                ),
 
-    const totalShotsOnTarget = statistics.reduce(
+            0
 
-        (sum, stat) => sum + Number(stat.shots_on_target || 0),
+        );
 
-        0
 
-    );
+    const totalShotsOnTarget =
+        statistics.reduce(
 
-    const totalKeyPasses = statistics.reduce(
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.shots_on_target ||
+                    0
+                ),
 
-        (sum, stat) => sum + Number(stat.key_passes || 0),
+            0
 
-        0
+        );
 
-    );
 
-    const totalTackles = statistics.reduce(
+    const totalKeyPasses =
+        statistics.reduce(
 
-        (sum, stat) => sum + Number(stat.tackles_won || 0),
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.key_passes ||
+                    0
+                ),
 
-        0
+            0
 
-    );
+        );
 
-    const totalInterceptions = statistics.reduce(
 
-        (sum, stat) => sum + Number(stat.interceptions || 0),
+    const totalTackles =
+        statistics.reduce(
 
-        0
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.tackles_won ||
+                    0
+                ),
 
-    );
+            0
 
-    const totalPassesCompleted = statistics.reduce(
+        );
 
-        (sum, stat) => sum + Number(stat.passes_completed || 0),
 
-        0
+    const totalInterceptions =
+        statistics.reduce(
 
-    );
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.interceptions ||
+                    0
+                ),
 
-    const totalPassesAttempted = statistics.reduce(
+            0
 
-        (sum, stat) => sum + Number(stat.passes_attempted || 0),
+        );
 
-        0
 
-    );
+    const totalPassesCompleted =
+        statistics.reduce(
 
-    const totalDribblesCompleted = statistics.reduce(
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.passes_completed ||
+                    0
+                ),
 
-        (sum, stat) => sum + Number(stat.dribbles_completed || 0),
+            0
 
-        0
+        );
 
-    );
 
-    const totalDribblesAttempted = statistics.reduce(
+    const totalPassesAttempted =
+        statistics.reduce(
 
-        (sum, stat) => sum + Number(stat.dribbles_attempted || 0),
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.passes_attempted ||
+                    0
+                ),
 
-        0
+            0
 
-    );
+        );
 
-    const totalSaves = statistics.reduce(
 
-        (sum, stat) => sum + Number(stat.saves || 0),
+    const totalDribblesCompleted =
+        statistics.reduce(
 
-        0
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.dribbles_completed ||
+                    0
+                ),
 
-    );
+            0
 
-    const totalShotsFaced = statistics.reduce(
+        );
 
-        (sum, stat) => sum + Number(stat.shots_faced || 0),
 
-        0
+    const totalDribblesAttempted =
+        statistics.reduce(
 
-    );
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.dribbles_attempted ||
+                    0
+                ),
 
-    const totalPenaltySaved = statistics.reduce(
+            0
 
-        (sum, stat) => sum + Number(stat.penalty_saved || 0),
+        );
 
-        0
 
-    );
+    const totalSaves =
+        statistics.reduce(
+
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.saves ||
+                    0
+                ),
+
+            0
+
+        );
+
+
+    const totalShotsFaced =
+        statistics.reduce(
+
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.shots_faced ||
+                    0
+                ),
+
+            0
+
+        );
+
+
+    const totalPenaltySaved =
+        statistics.reduce(
+
+            (sum, stat) =>
+                sum +
+                Number(
+                    stat.penalty_saved ||
+                    0
+                ),
+
+            0
+
+        );
+
 
     /*
-
         Calculate percentages.
-
     */
 
     const passAccuracy =
-
         totalPassesAttempted > 0
 
-            ? (totalPassesCompleted / totalPassesAttempted) * 100
+            ? (
+                totalPassesCompleted /
+                totalPassesAttempted
+            ) * 100
 
             : 0;
+
 
     const dribbleSuccess =
-
         totalDribblesAttempted > 0
 
-            ? (totalDribblesCompleted / totalDribblesAttempted) * 100
+            ? (
+                totalDribblesCompleted /
+                totalDribblesAttempted
+            ) * 100
 
             : 0;
+
 
     const shotAccuracy =
-
         totalShots > 0
 
-            ? (totalShotsOnTarget / totalShots) * 100
+            ? (
+                totalShotsOnTarget /
+                totalShots
+            ) * 100
 
             : 0;
+
 
     const savePercentage =
-
         totalShotsFaced > 0
 
-            ? (totalSaves / totalShotsFaced) * 100
+            ? (
+                totalSaves /
+                totalShotsFaced
+            ) * 100
 
             : 0;
 
+
     /*
-
         Position-specific metrics.
-
     */
 
     let metrics = [];
 
+
     if (position === "FW") {
 
-        description.textContent =
+        if (description) {
 
-            "Attacking indicators for forwards";
+            description.textContent =
+                "Attacking indicators for forwards";
+
+        }
+
 
         metrics = [
 
             {
+                label:
+                    "Goals",
 
-                label: "Goals",
-
-                value: totalGoals
-
+                value:
+                    totalGoals
             },
 
             {
+                label:
+                    "Assists",
 
-                label: "Assists",
-
-                value: totalAssists
-
+                value:
+                    totalAssists
             },
 
             {
+                label:
+                    "Shots",
 
-                label: "Shots",
-
-                value: totalShots
-
+                value:
+                    totalShots
             },
 
             {
+                label:
+                    "Shot Accuracy",
 
-                label: "Shot Accuracy",
-
-                value: `${shotAccuracy.toFixed(1)}%`
-
+                value:
+                    `${shotAccuracy.toFixed(1)}%`
             },
 
             {
+                label:
+                    "Key Passes",
 
-                label: "Key Passes",
-
-                value: totalKeyPasses
-
+                value:
+                    totalKeyPasses
             },
 
             {
+                label:
+                    "Dribble Success",
 
-                label: "Dribble Success",
-
-                value: `${dribbleSuccess.toFixed(1)}%`
-
+                value:
+                    `${dribbleSuccess.toFixed(1)}%`
             }
 
         ];
 
     }
 
-    else if (position === "MF") {
 
-        description.textContent =
+    else if (
+        position === "MF"
+    ) {
 
-            "Creative and ball-progression indicators for midfielders";
+        if (description) {
+
+            description.textContent =
+                "Creative and ball-progression indicators for midfielders";
+
+        }
+
 
         metrics = [
 
             {
+                label:
+                    "Assists",
 
-                label: "Assists",
-
-                value: totalAssists
-
+                value:
+                    totalAssists
             },
 
             {
+                label:
+                    "Key Passes",
 
-                label: "Key Passes",
-
-                value: totalKeyPasses
-
+                value:
+                    totalKeyPasses
             },
 
             {
+                label:
+                    "Pass Accuracy",
 
-                label: "Pass Accuracy",
-
-                value: `${passAccuracy.toFixed(1)}%`
-
+                value:
+                    `${passAccuracy.toFixed(1)}%`
             },
 
             {
+                label:
+                    "Dribble Success",
 
-                label: "Dribble Success",
-
-                value: `${dribbleSuccess.toFixed(1)}%`
-
+                value:
+                    `${dribbleSuccess.toFixed(1)}%`
             },
 
             {
+                label:
+                    "Tackles Won",
 
-                label: "Tackles Won",
-
-                value: totalTackles
-
+                value:
+                    totalTackles
             },
 
             {
+                label:
+                    "Interceptions",
 
-                label: "Interceptions",
-
-                value: totalInterceptions
-
+                value:
+                    totalInterceptions
             }
 
         ];
 
     }
 
-    else if (position === "DF") {
 
-        description.textContent =
+    else if (
+        position === "DF"
+    ) {
 
-            "Defensive and ball-retention indicators for defenders";
+        if (description) {
+
+            description.textContent =
+                "Defensive and ball-retention indicators for defenders";
+
+        }
+
 
         metrics = [
 
             {
+                label:
+                    "Tackles Won",
 
-                label: "Tackles Won",
-
-                value: totalTackles
-
+                value:
+                    totalTackles
             },
 
             {
+                label:
+                    "Interceptions",
 
-                label: "Interceptions",
-
-                value: totalInterceptions
-
+                value:
+                    totalInterceptions
             },
 
             {
+                label:
+                    "Pass Accuracy",
 
-                label: "Pass Accuracy",
-
-                value: `${passAccuracy.toFixed(1)}%`
-
+                value:
+                    `${passAccuracy.toFixed(1)}%`
             },
 
             {
+                label:
+                    "Dribble Success",
 
-                label: "Dribble Success",
-
-                value: `${dribbleSuccess.toFixed(1)}%`
-
+                value:
+                    `${dribbleSuccess.toFixed(1)}%`
             },
 
             {
+                label:
+                    "Key Passes",
 
-                label: "Key Passes",
-
-                value: totalKeyPasses
-
+                value:
+                    totalKeyPasses
             },
 
             {
+                label:
+                    "Assists",
 
-                label: "Assists",
-
-                value: totalAssists
-
+                value:
+                    totalAssists
             }
 
         ];
 
     }
 
-    else if (position === "GK") {
 
-        description.textContent =
+    else if (
+        position === "GK"
+    ) {
 
-            "Goalkeeping indicators based on shots faced and saves";
+        if (description) {
+
+            description.textContent =
+                "Goalkeeping indicators based on shots faced and saves";
+
+        }
+
 
         metrics = [
 
             {
+                label:
+                    "Saves",
 
-                label: "Saves",
-
-                value: totalSaves
-
+                value:
+                    totalSaves
             },
 
             {
+                label:
+                    "Shots Faced",
 
-                label: "Shots Faced",
-
-                value: totalShotsFaced
-
+                value:
+                    totalShotsFaced
             },
 
             {
+                label:
+                    "Save Percentage",
 
-                label: "Save Percentage",
-
-                value: `${savePercentage.toFixed(1)}%`
-
+                value:
+                    `${savePercentage.toFixed(1)}%`
             },
 
             {
+                label:
+                    "Penalty Saves",
 
-                label: "Penalty Saves",
-
-                value: totalPenaltySaved
-
+                value:
+                    totalPenaltySaved
             },
 
             {
+                label:
+                    "Pass Accuracy",
 
-                label: "Pass Accuracy",
-
-                value: `${passAccuracy.toFixed(1)}%`
-
+                value:
+                    `${passAccuracy.toFixed(1)}%`
             },
 
             {
+                label:
+                    "Interceptions",
 
-                label: "Interceptions",
-
-                value: totalInterceptions
-
+                value:
+                    totalInterceptions
             }
 
         ];
 
     }
+
 
     else {
 
-        description.textContent =
+        if (description) {
 
-            "General performance indicators";
+            description.textContent =
+                "General performance indicators";
+
+        }
+
 
         metrics = [
 
             {
+                label:
+                    "Goals",
 
-                label: "Goals",
-
-                value: totalGoals
-
+                value:
+                    totalGoals
             },
 
             {
+                label:
+                    "Assists",
 
-                label: "Assists",
-
-                value: totalAssists
-
+                value:
+                    totalAssists
             },
 
             {
+                label:
+                    "Shots",
 
-                label: "Shots",
-
-                value: totalShots
-
+                value:
+                    totalShots
             },
 
             {
+                label:
+                    "Key Passes",
 
-                label: "Key Passes",
-
-                value: totalKeyPasses
-
+                value:
+                    totalKeyPasses
             },
 
             {
+                label:
+                    "Tackles Won",
 
-                label: "Tackles Won",
-
-                value: totalTackles
-
+                value:
+                    totalTackles
             },
 
             {
+                label:
+                    "Interceptions",
 
-                label: "Interceptions",
-
-                value: totalInterceptions
-
+                value:
+                    totalInterceptions
             }
 
         ];
 
     }
 
+
     /*
-
         Display metrics.
-
     */
 
-    container.innerHTML = "";
+    container.innerHTML =
+        "";
 
-    metrics.forEach(function (metric) {
 
-        const card =
+    metrics.forEach(
+        function (metric) {
 
-            document.createElement("div");
+            const card =
+                document.createElement(
+                    "div"
+                );
 
-        card.className =
 
-            "position-metric";
+            card.className =
+                "position-metric";
 
-        card.innerHTML = `
 
-            <span class="position-metric-label">
+            card.innerHTML = `
 
-                ${metric.label}
+                <span
+                    class="position-metric-label"
+                >
 
-            </span>
+                    ${metric.label}
 
-            <strong class="position-metric-value">
+                </span>
 
-                ${metric.value}
+                <strong
+                    class="position-metric-value"
+                >
 
-            </strong>
+                    ${metric.value}
 
-        `;
+                </strong>
 
-        container.appendChild(card);
+            `;
 
-    });
+
+            container.appendChild(
+                card
+            );
+
+        }
+    );
 
 }
 
-function createPerformanceTable(statistics) {
+
+/* =========================================================
+   PERFORMANCE TABLE
+========================================================= */
+
+function createPerformanceTable(
+    statistics
+) {
 
     const tableBody =
+        document.getElementById(
+            "performance-table-body"
+        );
 
-        document.getElementById("performance-table-body");
 
     if (!tableBody) {
 
         console.error(
-
             "Performance table body not found."
-
         );
 
         return;
 
     }
 
+
     /*
-
         Only statistics with a match date
-
         are displayed.
 
         Newest match first.
-
     */
 
-    const completedMatches = statistics
+    const completedMatches =
+        statistics
 
-        .filter(stat => stat.match_date)
+            .filter(
+                stat =>
+                    stat.match_date
+            )
 
-        .sort(function (a, b) {
+            .slice()
 
-            return new Date(b.match_date) -
+            .sort(
+                function (a, b) {
 
-                   new Date(a.match_date);
+                    return (
+                        new Date(
+                            b.match_date
+                        ) -
+                        new Date(
+                            a.match_date
+                        )
+                    );
 
-        });
+                }
+            );
 
-    if (completedMatches.length === 0) {
+
+    if (
+        completedMatches.length ===
+        0
+    ) {
 
         tableBody.innerHTML = `
 
             <tr>
 
-                <td colspan="10" class="no-data-row">
+                <td
+                    colspan="10"
+                    class="no-data-row"
+                >
 
                     No completed match statistics available.
 
@@ -1340,115 +2648,179 @@ function createPerformanceTable(statistics) {
 
         `;
 
+
         return;
 
     }
 
-    tableBody.innerHTML = "";
 
-    completedMatches.forEach(function (stat) {
+    tableBody.innerHTML =
+        "";
 
-        const playerClub =
 
-            stat.club_name;
+    completedMatches.forEach(
+        function (stat) {
 
-        let opponent = "";
+            const playerClub =
+                stat.club_name;
 
-        let venue = "";
 
-        if (stat.home_club_name === playerClub) {
+            let opponent =
+                "";
 
-            opponent = stat.away_club_name;
+            let venue =
+                "";
 
-            venue = "Home";
 
-        } else {
+            if (
+                stat.home_club_name ===
+                playerClub
+            ) {
 
-            opponent = stat.home_club_name;
+                opponent =
+                    stat.away_club_name;
 
-            venue = "Away";
+                venue =
+                    "Home";
+
+            } else {
+
+                opponent =
+                    stat.home_club_name;
+
+                venue =
+                    "Away";
+
+            }
+
+
+            const row =
+                document.createElement(
+                    "tr"
+                );
+
+
+            row.innerHTML = `
+
+                <td>
+
+                    ${formatDate(
+                        stat.match_date
+                    )}
+
+                </td>
+
+
+                <td class="opponent">
+
+                    ${opponent}
+
+                </td>
+
+
+                <td>
+
+                    <span
+                        class="venue ${venue.toLowerCase()}"
+                    >
+
+                        ${venue}
+
+                    </span>
+
+                </td>
+
+
+                <td>
+
+                    ${
+                        stat.started
+                            ? "Yes"
+                            : "No"
+                    }
+
+                </td>
+
+
+                <td>
+
+                    ${
+                        stat.minutes_played ??
+                        0
+                    }
+
+                </td>
+
+
+                <td>
+
+                    ${
+                        stat.goals ??
+                        0
+                    }
+
+                </td>
+
+
+                <td>
+
+                    ${
+                        stat.assists ??
+                        0
+                    }
+
+                </td>
+
+
+                <td>
+
+                    ${
+                        stat.shots ??
+                        0
+                    }
+
+                </td>
+
+
+                <td>
+
+                    ${
+                        stat.key_passes ??
+                        0
+                    }
+
+                </td>
+
+
+                <td class="rating">
+
+                    ${
+                        stat.rating ??
+                        "—"
+                    }
+
+                </td>
+
+            `;
+
+
+            tableBody.appendChild(
+                row
+            );
 
         }
-
-        const row =
-
-            document.createElement("tr");
-
-        row.innerHTML = `
-
-            <td>
-
-                ${formatDate(stat.match_date)}
-
-            </td>
-
-            <td class="opponent">
-
-                ${opponent}
-
-            </td>
-
-            <td>
-
-                <span class="venue ${venue.toLowerCase()}">
-
-                    ${venue}
-
-                </span>
-
-            </td>
-
-            <td>
-
-                ${stat.started ? "Yes" : "No"}
-
-            </td>
-
-            <td>
-
-                ${stat.minutes_played ?? 0}
-
-            </td>
-
-            <td>
-
-                ${stat.goals ?? 0}
-
-            </td>
-
-            <td>
-
-                ${stat.assists ?? 0}
-
-            </td>
-
-            <td>
-
-                ${stat.shots ?? 0}
-
-            </td>
-
-            <td>
-
-                ${stat.key_passes ?? 0}
-
-            </td>
-
-            <td class="rating">
-
-                ${stat.rating ?? "—"}
-
-            </td>
-
-        `;
-
-        tableBody.appendChild(row);
-
-    });
+    );
 
 }
 
-function formatDate(dateString) {
+
+/* =========================================================
+   FORMAT DATE
+========================================================= */
+
+function formatDate(
+    dateString
+) {
 
     if (!dateString) {
 
@@ -1456,7 +2828,12 @@ function formatDate(dateString) {
 
     }
 
-    const date = new Date(dateString);
+
+    const date =
+        new Date(
+            dateString
+        );
+
 
     return date.toLocaleDateString(
 
@@ -1464,11 +2841,14 @@ function formatDate(dateString) {
 
         {
 
-            day: "2-digit",
+            day:
+                "2-digit",
 
-            month: "short",
+            month:
+                "short",
 
-            year: "numeric"
+            year:
+                "numeric"
 
         }
 
@@ -1476,17 +2856,25 @@ function formatDate(dateString) {
 
 }
 
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
 function setupLogout() {
 
     const button =
+        document.getElementById(
+            "logout-btn"
+        );
 
-        document.getElementById("logout-btn");
 
     if (!button) {
 
         return;
 
     }
+
 
     button.addEventListener(
 
@@ -1496,28 +2884,31 @@ function setupLogout() {
 
             try {
 
-                const response = await fetch(
+                const response =
+                    await fetch(
 
-                    "/api/auth/logout/",
+                        "/api/auth/logout/",
 
-                    {
+                        {
 
-                        method: "POST"
+                            method:
+                                "POST"
 
-                    }
+                        }
 
-                );
+                    );
+
 
                 const data =
-
                     await response.json();
+
 
                 if (data.success) {
 
                     sessionStorage.clear();
 
-                    window.location.href =
 
+                    window.location.href =
                         "/login/";
 
                 } else {
@@ -1532,20 +2923,17 @@ function setupLogout() {
 
                 }
 
+
             } catch (error) {
 
                 console.error(
-
                     "Logout error:",
-
                     error
-
                 );
 
+
                 alert(
-
                     "Unable to logout. Please try again."
-
                 );
 
             }
