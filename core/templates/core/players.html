@@ -27,26 +27,36 @@
 <div class="players-container">
 
 
-    <!-- ============================= -->
-    <!-- HEADER -->
-    <!-- ============================= -->
+    <!-- =====================================
+         HEADER
+    ====================================== -->
 
     <header class="players-header">
 
-        <div>
+        <div class="header-main">
 
             <a
                 href="/dashboard/"
                 class="back-link"
             >
-                ← Dashboard
+                <span class="back-arrow">←</span>
+                Dashboard
             </a>
 
-            <h1>Players</h1>
+
+            <div class="page-label">
+                PLAYER DATABASE
+            </div>
+
+
+            <h1>
+                Explore Players
+            </h1>
+
 
             <p>
-                Search and explore football players
-                across available teams.
+                Browse squads, positions and player profiles
+                across the KickIQ football database.
             </p>
 
         </div>
@@ -54,9 +64,18 @@
 
         <div class="header-user">
 
-            <span>
-                {{ request.user.first_name|default:request.user.username }}
-            </span>
+            <div class="user-info">
+
+                <span class="user-label">
+                    Signed in as
+                </span>
+
+                <strong>
+                    {{ request.user.first_name|default:request.user.username }}
+                </strong>
+
+            </div>
+
 
             <button
                 type="button"
@@ -68,105 +87,257 @@
 
         </div>
 
+
+        <!-- Decorative football pitch lines -->
+
+        <div class="header-pitch" aria-hidden="true">
+
+            <div class="pitch-circle"></div>
+
+            <div class="pitch-line"></div>
+
+        </div>
+
     </header>
 
 
-    <!-- ============================= -->
-    <!-- SEARCH & FILTERS -->
-    <!-- ============================= -->
 
-    <section class="filters-card">
+    <!-- =====================================
+         SEARCH / FILTER AREA
+    ====================================== -->
 
-        <div class="search-box">
+    <section class="player-controls">
 
-            <label for="player-search">
-                Search Player
-            </label>
 
-            <input
-                type="text"
-                id="player-search"
-                placeholder="Search by player name..."
-                autocomplete="off"
+        <div class="controls-top">
+
+
+            <div class="controls-title">
+
+                <span class="controls-kicker">
+                    SCOUTING DIRECTORY
+                </span>
+
+                <h2>
+                    Find a Player
+                </h2>
+
+                <p>
+                    Search the database or narrow the squad
+                    by team and playing position.
+                </p>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 ACTIVE / ALL TOGGLE
+            ====================================== -->
+
+            <div
+                class="player-view-toggle"
+                role="group"
+                aria-label="Player status filter"
             >
 
+                <button
+                    type="button"
+                    id="active-players-btn"
+                    class="view-toggle-btn active"
+                    data-player-view="active"
+                    aria-pressed="true"
+                >
+
+                    <span class="status-dot"></span>
+
+                    Active Players
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="all-players-btn"
+                    class="view-toggle-btn"
+                    data-player-view="all"
+                    aria-pressed="false"
+                >
+
+                    All Players
+
+                </button>
+
+            </div>
+
         </div>
 
 
-        <div class="filter-box">
 
-            <label for="club-filter">
-                Team
-            </label>
+        <!-- =====================================
+             FILTERS
+        ====================================== -->
 
-            <select id="club-filter">
-
-                <option value="">
-                    All Teams
-                </option>
-
-            </select>
-
-        </div>
+        <div class="filters-card">
 
 
-        <div class="filter-box">
+            <!-- SEARCH -->
 
-            <label for="position-filter">
-                Position
-            </label>
+            <div class="search-box filter-control">
 
-            <select id="position-filter">
+                <label for="player-search">
+                    Player Name
+                </label>
 
-                <option value="">
-                    All Positions
-                </option>
 
-                <option value="GK">
-                    Goalkeeper
-                </option>
+                <div class="input-shell">
 
-                <option value="DF">
-                    Defender
-                </option>
+                    <span class="search-icon" aria-hidden="true">
 
-                <option value="MF">
-                    Midfielder
-                </option>
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle
+                                cx="11"
+                                cy="11"
+                                r="7"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            />
 
-                <option value="FW">
-                    Forward
-                </option>
+                            <path
+                                d="M16.5 16.5L21 21"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            />
+                        </svg>
 
-            </select>
+                    </span>
+
+
+                    <input
+                        type="text"
+                        id="player-search"
+                        placeholder="Search player..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CLUB -->
+
+            <div class="filter-box filter-control">
+
+                <label for="club-filter">
+                    Team
+                </label>
+
+                <select id="club-filter">
+
+                    <option value="">
+                        All Teams
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- POSITION -->
+
+            <div class="filter-box filter-control">
+
+                <label for="position-filter">
+                    Position
+                </label>
+
+                <select id="position-filter">
+
+                    <option value="">
+                        All Positions
+                    </option>
+
+                    <option value="GK">
+                        Goalkeeper
+                    </option>
+
+                    <option value="DF">
+                        Defender
+                    </option>
+
+                    <option value="MF">
+                        Midfielder
+                    </option>
+
+                    <option value="FW">
+                        Forward
+                    </option>
+
+                </select>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- ============================= -->
-    <!-- RESULT INFORMATION -->
-    <!-- ============================= -->
+
+    <!-- =====================================
+         RESULTS HEADER
+    ====================================== -->
 
     <div class="results-header">
 
-        <div>
 
-            <h2>Player List</h2>
+        <div class="results-heading">
 
-            <p id="results-count">
-                Loading players...
-            </p>
+            <div class="results-icon">
+                <span></span>
+            </div>
+
+
+            <div>
+
+                <h2>
+                    Player Squad
+                </h2>
+
+                <p id="results-count">
+                    Loading players...
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="results-status"
+            id="results-status"
+        >
+
+            <span class="results-status-dot"></span>
+
+            Active Players
 
         </div>
 
     </div>
 
 
-    <!-- ============================= -->
-    <!-- PLAYER GRID -->
-    <!-- ============================= -->
+
+    <!-- =====================================
+         PLAYER GRID
+    ====================================== -->
 
     <section
         id="players-grid"
@@ -174,7 +345,17 @@
     >
 
         <div class="loading">
-            Loading players...
+
+            <div class="loading-ball"></div>
+
+            <strong>
+                Loading players
+            </strong>
+
+            <span>
+                Building your squad view...
+            </span>
+
         </div>
 
     </section>
