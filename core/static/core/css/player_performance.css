@@ -3379,3 +3379,58 @@ canvas {
     }
 
 }
+
+/* =========================================================
+   KICKIQ MONTHLY SUMMARY CHART
+========================================================= */
+.monthly-summary-card {
+    overflow: hidden;
+}
+
+.monthly-summary-container {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    min-width: 0;
+}
+
+.monthly-summary-container canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.monthly-summary-legend {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    color: #7c8b9b;
+    font-size: 12px;
+}
+
+.monthly-legend-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #00c853;
+    flex: 0 0 auto;
+}
+
+.monthly-summary-note {
+    margin-left: auto;
+    color: #98a2b3;
+}
+
+@media (max-width: 600px) {
+    .monthly-summary-container {
+        height: 245px;
+    }
+
+    .monthly-summary-note {
+        width: 100%;
+        margin-left: 0;
+    }
+}

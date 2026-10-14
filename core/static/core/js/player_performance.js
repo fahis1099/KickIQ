@@ -71,6 +71,7 @@ function calculatePlayerAge() {
 ========================================================= */
 
 let allPlayerStatistics = [];
+let currentDisplayedStatistics = [];
 
 let ratingChart = null;
 
@@ -378,6 +379,10 @@ function applySeasonFilter() {
 function updatePerformanceDisplay(
     statistics
 ) {
+
+    currentDisplayedStatistics = Array.isArray(statistics) ? statistics : [];
+
+    createMonthlySummaryChart(currentDisplayedStatistics);
 
     updateSummary(
         statistics
@@ -1403,6 +1408,199 @@ function setSummaryValue(
 
 
 /* =========================================================
+   MONTHLY SUMMARY — LAST 12 MONTHS
+   Monthly average ratings are calculated from the existing
+   match-statistics API response. No injury data is assumed.
+========================================================= */
+function createMonthlySummaryChart(statistics) {
+    const canvas = document.getElementById("monthly-summary-chart");
+    if (!canvas) return;
+
+    const now = new Date();
+    const monthBuckets = [];
+    // Include the current month and the preceding eleven months.
+    for (let offset = 11; offset >= 0; offset--) {
+        const date = new Date(now.getFullYear(), now.getMonth() - offset, 1);
+        monthBuckets.push({
+            year: date.getFullYear(),
+            month: date.getMonth(),
+            label: date.toLocaleDateString("en-US", { month: "short" }),
+            fullLabel: date.toLocaleDateString("en-US", { month: "long", year: "numeric" }),
+            ratings: [],
+            matches: 0
+        });
+    }
+
+    const bucketLookup = new Map(monthBuckets.map((bucket, index) => [`${bucket.year}-${bucket.month}`, index]));
+    (Array.isArray(statistics) ? statistics : []).forEach(stat => {
+        const rawDate = stat.match_date ?? stat.date ?? stat.match?.match_date ?? stat.match?.date;
+        if (!rawDate) return;
+        const date = new Date(rawDate);
+        if (Number.isNaN(date.getTime())) return;
+        const bucketIndex = bucketLookup.get(`${date.getFullYear()}-${date.getMonth()}`);
+        if (bucketIndex === undefined) return;
+
+        const bucket = monthBuckets[bucketIndex];
+        bucket.matches += 1;
+        const rating = stat.rating;
+        if (rating !== null && rating !== undefined && rating !== "" && Number.isFinite(Number(rating))) {
+            bucket.ratings.push(Number(rating));
+        }
+    });
+
+    monthBuckets.forEach(bucket => {
+        bucket.average = bucket.ratings.length
+            ? bucket.ratings.reduce((sum, value) => sum + value, 0) / bucket.ratings.length
+            : null;
+    });
+
+    drawMonthlySummaryCanvas(canvas, monthBuckets);
+}
+
+function drawMonthlySummaryCanvas(canvas, buckets) {
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const width = Math.max(320, canvas.clientWidth || canvas.parentElement?.clientWidth || 600);
+    const height = Math.max(230, canvas.clientHeight || 260);
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
+    canvas.width = Math.round(width * dpr);
+    canvas.height = Math.round(height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, width, height);
+
+    const plot = { left: 30, right: width - 14, top: 36, bottom: height - 48 };
+    const plotWidth = plot.right - plot.left;
+    const plotHeight = plot.bottom - plot.top;
+    const y = value => plot.bottom - (value / 10) * plotHeight;
+
+    // Rating grid and subtle y-axis labels.
+    ctx.font = "11px Arial, sans-serif";
+    ctx.textBaseline = "middle";
+    for (let tick = 0; tick <= 10; tick += 2) {
+        const yy = y(tick);
+        ctx.beginPath();
+        ctx.moveTo(plot.left, yy);
+        ctx.lineTo(plot.right, yy);
+        ctx.strokeStyle = "rgba(148,163,184,0.18)";
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        ctx.fillStyle = "#7c8b9b";
+        ctx.textAlign = "right";
+        ctx.fillText(String(tick), plot.left - 8, yy);
+    }
+
+    // Overall average reference line (only from rated months).
+    const ratedMonths = buckets.filter(bucket => bucket.average !== null);
+    const overallAverage = ratedMonths.length
+        ? ratedMonths.reduce((sum, bucket) => sum + bucket.average, 0) / ratedMonths.length
+        : null;
+    if (overallAverage !== null) {
+        ctx.save();
+        ctx.setLineDash([4, 4]);
+        ctx.beginPath();
+        ctx.moveTo(plot.left, y(overallAverage));
+        ctx.lineTo(plot.right, y(overallAverage));
+        ctx.strokeStyle = "#00c853";
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        ctx.restore();
+    }
+
+    const slot = plotWidth / buckets.length;
+    const barWidth = Math.max(5, Math.min(25, slot * 0.68));
+    const points = [];
+    buckets.forEach((bucket, index) => {
+        const centerX = plot.left + slot * index + slot / 2;
+        const average = bucket.average;
+        const hasRating = average !== null;
+        const barTop = hasRating ? y(average) : plot.bottom;
+        const barHeight = hasRating ? Math.max(0, plot.bottom - barTop) : 0;
+
+        if (hasRating) {
+            ctx.fillStyle = average >= 8.5 ? "#4054ff" : average >= 7.5 ? "#00b9c7" : "#00c52b";
+            ctx.beginPath();
+            const radius = Math.min(4, barWidth / 2, barHeight / 2);
+            ctx.roundRect(centerX - barWidth / 2, barTop, barWidth, barHeight, radius);
+            ctx.fill();
+            ctx.fillStyle = "#00c853";
+            ctx.font = "bold 11px Arial, sans-serif";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "alphabetic";
+            ctx.fillText(average.toFixed(1), centerX, height - 28);
+        } else {
+            ctx.fillStyle = "#7c8b9b";
+            ctx.font = "11px Arial, sans-serif";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "alphabetic";
+            ctx.fillText("—", centerX, height - 28);
+        }
+
+        // Show alternating month labels on narrow screens, all labels on wider canvases.
+        const labelStep = width < 480 ? 2 : 1;
+        if (index % labelStep === 0 || index === buckets.length - 1) {
+            ctx.fillStyle = "#8b9aaa";
+            ctx.font = "11px Arial, sans-serif";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "alphabetic";
+            ctx.fillText(bucket.label, centerX, height - 8);
+        }
+        points.push({ x: centerX, top: barTop, bottom: plot.bottom, bucket, hasRating });
+    });
+
+    // Tooltip: month, average rating, rated matches, and total records in that month.
+    canvas.__kickIQMonthlyPoints = points;
+    if (!canvas.__kickIQMonthlyHoverBound) {
+        canvas.__kickIQMonthlyHoverBound = true;
+        canvas.style.cursor = "crosshair";
+        canvas.addEventListener("mousemove", event => {
+            const currentPoints = canvas.__kickIQMonthlyPoints || [];
+            if (!currentPoints.length) return;
+            const rect = canvas.getBoundingClientRect();
+            const px = event.clientX - rect.left;
+            const nearest = currentPoints.reduce((best, point) =>
+                Math.abs(point.x - px) < Math.abs(best.x - px) ? point : best, currentPoints[0]);
+            const slotWidth = rect.width / currentPoints.length;
+            if (Math.abs(nearest.x - px) > slotWidth / 2) {
+                hideKickIQChartTooltip(canvas);
+                return;
+            }
+            const bucket = nearest.bucket;
+            const tooltip = getKickIQChartTooltip(canvas);
+            tooltip.replaceChildren();
+            const rows = [
+                ["Month", bucket.fullLabel],
+                ["Average rating", bucket.average === null ? "No rating data" : bucket.average.toFixed(2)],
+                ["Rated matches", bucket.ratings.length],
+                ["Match records", bucket.matches]
+            ];
+            rows.forEach(([label, value]) => {
+                const row = document.createElement("div");
+                row.style.cssText = "display:flex;gap:10px;justify-content:space-between;white-space:nowrap;";
+                const key = document.createElement("span");
+                key.textContent = label;
+                key.style.color = "#cbd5e1";
+                const val = document.createElement("strong");
+                val.textContent = String(value);
+                val.style.color = "#ffffff";
+                row.append(key, val);
+                tooltip.appendChild(row);
+            });
+            tooltip.style.display = "block";
+            const hostRect = (canvas.parentElement || canvas).getBoundingClientRect();
+            let left = event.clientX - hostRect.left + 12;
+            let top = event.clientY - hostRect.top + 12;
+            left = Math.max(4, Math.min(left, hostRect.width - tooltip.offsetWidth - 4));
+            top = Math.max(4, Math.min(top, hostRect.height - tooltip.offsetHeight - 4));
+            tooltip.style.left = `${left}px`;
+            tooltip.style.top = `${top}px`;
+        });
+        canvas.addEventListener("mouseleave", () => hideKickIQChartTooltip(canvas));
+    }
+}
+
+
+/* =========================================================
    SELF-CONTAINED CANVAS CHARTS
    No Chart.js/CDN dependency required.
 ========================================================= */
@@ -1712,8 +1910,12 @@ function createMinutesChart(statistics) {
 // Redraw canvas charts when the layout changes (responsive window resizing).
 window.addEventListener("resize", () => {
     if (!Array.isArray(window.__kickIQPlayerStatistics)) return;
-    createRatingChart(window.__kickIQPlayerStatistics);
-    createMinutesChart(window.__kickIQPlayerStatistics);
+    const statistics = Array.isArray(currentDisplayedStatistics)
+        ? currentDisplayedStatistics
+        : window.__kickIQPlayerStatistics;
+    createMonthlySummaryChart(statistics);
+    createRatingChart(statistics);
+    createMinutesChart(statistics);
 });
 
 
