@@ -149,6 +149,8 @@ async function loadPlayerPerformance() {
                 ? data
                 : (data.results || []);
 
+        window.__kickIQPlayerStatistics = allPlayerStatistics;
+
 
         console.log(
             "Player statistics:",
@@ -1401,468 +1403,318 @@ function setSummaryValue(
 
 
 /* =========================================================
-   RATING CHART
+   SELF-CONTAINED CANVAS CHARTS
+   No Chart.js/CDN dependency required.
 ========================================================= */
 
-function createRatingChart(
-    statistics
-) {
+function drawPerformanceCanvas(canvas, values, labels, options = {}) {
+    if (!canvas) return;
 
-    const canvas =
-        document.getElementById(
-            "rating-chart"
-        );
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
 
+    const width = Math.max(320, canvas.clientWidth || canvas.parentElement?.clientWidth || 600);
+    const height = Math.max(240, canvas.clientHeight || canvas.parentElement?.clientHeight || 320);
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
+    canvas.width = Math.round(width * dpr);
+    canvas.height = Math.round(height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, width, height);
 
-    if (!canvas) {
+    const isBar = options.type === "bar";
+    const color = "#16a34a";
+    const plot = { left: 48, right: width - 18, top: 18, bottom: height - 48 };
+    const plotWidth = plot.right - plot.left;
+    const plotHeight = plot.bottom - plot.top;
+    if (plotWidth <= 0 || plotHeight <= 0 || !values.length) return;
 
-        return;
+    const maxValue = options.maxValue || Math.max(1, Math.ceil(Math.max(...values) / 10) * 10);
+    const minValue = options.minValue ?? 0;
+    const range = Math.max(1, maxValue - minValue);
+    const y = value => plot.bottom - ((value - minValue) / range) * plotHeight;
+    const x = index => values.length === 1
+        ? plot.left + plotWidth / 2
+        : plot.left + (index / (values.length - 1)) * plotWidth;
 
+    ctx.font = "12px Arial, sans-serif";
+    ctx.textBaseline = "middle";
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "#e5e7eb";
+    ctx.fillStyle = "#64748b";
+
+    const ticks = 5;
+    for (let i = 0; i <= ticks; i++) {
+        const value = minValue + (range / ticks) * i;
+        const yy = y(value);
+        ctx.beginPath();
+        ctx.moveTo(plot.left, yy);
+        ctx.lineTo(plot.right, yy);
+        ctx.stroke();
+        ctx.textAlign = "right";
+        ctx.fillText(Number.isInteger(value) ? String(value) : value.toFixed(1), plot.left - 9, yy);
     }
 
+    if (isBar) {
+        const slot = plotWidth / values.length;
+        const barWidth = Math.max(1, Math.min(24, slot * 0.68));
+        values.forEach((value, i) => {
+            const barX = x(i) - barWidth / 2;
+            const barY = y(value);
+            ctx.fillStyle = color;
+            const barH = Math.max(0, plot.bottom - barY);
+            ctx.beginPath();
+            const radius = Math.min(5, barWidth / 2, barH / 2);
+            ctx.roundRect(barX, barY, barWidth, barH, radius);
+            ctx.fill();
+        });
+    } else {
+        // Light fill under the rating trend.
+        ctx.beginPath();
+        values.forEach((value, i) => {
+            const px = x(i), py = y(value);
+            if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+        });
+        ctx.lineTo(x(values.length - 1), plot.bottom);
+        ctx.lineTo(x(0), plot.bottom);
+        ctx.closePath();
+        ctx.fillStyle = "rgba(22, 163, 74, 0.10)";
+        ctx.fill();
 
-    if (ratingChart) {
+        ctx.beginPath();
+        values.forEach((value, i) => {
+            const px = x(i), py = y(value);
+            if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+        });
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 2.5;
+        ctx.lineJoin = "round";
+        ctx.stroke();
 
-        ratingChart.destroy();
-
-        ratingChart = null;
-
+        // Draw a visible point for EVERY match so each rating can be hovered.
+        values.forEach((value, i) => {
+            ctx.beginPath();
+            ctx.arc(x(i), y(value), values.length > 80 ? 2.6 : 3.5, 0, Math.PI * 2);
+            ctx.fillStyle = "#ffffff";
+            ctx.fill();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 1.8;
+            ctx.stroke();
+        });
     }
 
-
-    /*
-        Only use matches where
-        a rating exists.
-    */
-
-    
-    const ratedMatches = statistics
-    .filter(stat =>
-        stat.rating !== null &&
-        stat.rating !== undefined &&
-        stat.rating !== "" &&
-        Number.isFinite(Number(stat.rating))
-    )
-    .slice()
-    .reverse();
-
-
-
-    if (
-        ratedMatches.length === 0
-    ) {
-
-        return;
-
-    }
-
-
-    const labels =
-        ratedMatches.map(
-            function (
-                stat,
-                index
-            ) {
-
-                return (
-                    `Match ${index + 1}`
-                );
-
-            }
-        );
-
-
-    const ratings =
-        ratedMatches.map(
-            function (stat) {
-
-                return Number(
-                    stat.rating
-                );
-
-            }
-        );
-
-
-    ratingChart =
-        new Chart(
-            canvas,
-            {
-
-                type: "line",
-
-                data: {
-
-                    labels: labels,
-
-                    datasets: [
-
-                        {
-
-                            label:
-                                "Rating",
-
-                            data:
-                                ratings,
-
-                            tension:
-                                0.3,
-
-                            borderWidth:
-                                3,
-
-                            borderColor:
-                                "#16a34a",
-
-                            backgroundColor:
-                                "rgba(22, 163, 74, 0.12)",
-
-                            pointBackgroundColor:
-                                "#ffffff",
-
-                            pointBorderColor:
-                                "#16a34a",
-
-                            pointBorderWidth:
-                                2,
-
-                            pointRadius:
-                                4,
-
-                            pointHoverRadius:
-                                6,
-
-                            fill:
-                                true
-
-                        }
-
-                    ]
-
-                },
-
-
-                options: {
-
-                    responsive:
-                        true,
-
-                    maintainAspectRatio:
-                        false,
-
-                    scales: {
-
-                        y: {
-
-                            min:
-                                0,
-
-                            max:
-                                10,
-
-                            title: {
-
-                                display:
-                                    true,
-
-                                text:
-                                    "Rating"
-
-                            }
-
-                        },
-
-
-                        x: {
-
-                            title: {
-
-                                display:
-                                    true,
-
-                                text:
-                                    "Matches"
-
-                            }
-
-                        }
-
-                    },
-
-
-                    plugins: {
-
-                        legend: {
-
-                            display:
-                                true
-
-                        },
-
-
-                        tooltip: {
-
-                            callbacks: {
-
-                                label:
-                                    function (
-                                        context
-                                    ) {
-
-                                        return (
-                                            `Rating: ${context.parsed.y}`
-                                        );
-
-                                    }
-
-                            }
-
-                        }
-
-                    }
-
+    // Show a readable subset of match labels when there are many records.
+    const labelStep = Math.max(1, Math.ceil(labels.length / 8));
+    ctx.fillStyle = "#64748b";
+    ctx.font = "11px Arial, sans-serif";
+    ctx.textAlign = "center";
+    labels.forEach((label, i) => {
+        if (i % labelStep !== 0 && i !== labels.length - 1) return;
+        const px = isBar
+            ? (values.length === 1 ? plot.left + plotWidth / 2 : plot.left + (i / values.length) * plotWidth + plotWidth / values.length / 2)
+            : x(i);
+        ctx.fillText(label, px, plot.bottom + 20);
+    });
+
+    ctx.fillStyle = "#334155";
+    ctx.font = "12px Arial, sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillText(options.xTitle || "Matches", plot.left + plotWidth / 2, height - 10);
+    ctx.save();
+    ctx.translate(13, plot.top + plotHeight / 2);
+    ctx.rotate(-Math.PI / 2);
+    ctx.fillText(options.yTitle || "Value", 0, 0);
+    ctx.restore();
+
+    // Store chart geometry and metadata for interactive point tooltips.
+    canvas.__kickIQChart = {
+        values: values.slice(),
+        labels: labels.slice(),
+        x,
+        y,
+        plot,
+        dpr,
+        metadata: Array.isArray(options.pointMetadata) ? options.pointMetadata : [],
+        valueLabel: options.valueLabel || (isBar ? "Value" : "Rating"),
+        isBar
+    };
+
+    if (!canvas.__kickIQHoverBound) {
+        canvas.__kickIQHoverBound = true;
+        canvas.style.cursor = "crosshair";
+        canvas.addEventListener("mousemove", event => {
+            const chart = canvas.__kickIQChart;
+            if (!chart || !chart.values.length) return;
+            const rect = canvas.getBoundingClientRect();
+            const px = event.clientX - rect.left;
+            const py = event.clientY - rect.top;
+            let nearest = -1;
+            let nearestDistance = Infinity;
+            chart.values.forEach((value, index) => {
+                const pointX = chart.x(index);
+                const pointY = chart.y(value);
+                const distance = Math.hypot(px - pointX, py - pointY);
+                if (distance < nearestDistance) {
+                    nearestDistance = distance;
+                    nearest = index;
                 }
-
+            });
+            const hitRadius = chart.isBar ? 18 : 12;
+            if (nearest < 0 || nearestDistance > hitRadius) {
+                hideKickIQChartTooltip(canvas);
+                return;
             }
-        );
-
+            const meta = chart.metadata[nearest] || {};
+            const tooltip = getKickIQChartTooltip(canvas);
+            tooltip.replaceChildren();
+            const rows = [
+                [chart.valueLabel || "Rating", meta.value ?? meta.rating ?? chart.values[nearest]],
+                ["Match week", meta.week ?? "Unavailable"],
+                ["Season", meta.season ?? "Unavailable"]
+            ];
+            rows.forEach(([label, value]) => {
+                const row = document.createElement("div");
+                row.style.cssText = "display:flex;gap:10px;justify-content:space-between;white-space:nowrap;";
+                const key = document.createElement("span");
+                key.textContent = label;
+                key.style.color = "#cbd5e1";
+                const val = document.createElement("strong");
+                val.textContent = String(value);
+                val.style.color = "#ffffff";
+                row.append(key, val);
+                tooltip.appendChild(row);
+            });
+            tooltip.style.display = "block";
+            const hostRect = (canvas.parentElement || canvas).getBoundingClientRect();
+            let left = event.clientX - hostRect.left + 12;
+            let top = event.clientY - hostRect.top + 12;
+            left = Math.max(4, Math.min(left, hostRect.width - tooltip.offsetWidth - 4));
+            top = Math.max(4, Math.min(top, hostRect.height - tooltip.offsetHeight - 4));
+            tooltip.style.left = `${left}px`;
+            tooltip.style.top = `${top}px`;
+        });
+        canvas.addEventListener("mouseleave", () => hideKickIQChartTooltip(canvas));
+    }
 }
 
-
-/* =========================================================
-   MINUTES CHART
-========================================================= */
-
-function createMinutesChart(
-    statistics
-) {
-
-    const canvas =
-        document.getElementById(
-            "minutes-chart"
-        );
-
-
-    if (!canvas) {
-
-        return;
-
+function getKickIQChartTooltip(canvas) {
+    const host = canvas.parentElement || canvas;
+    if (getComputedStyle(host).position === "static") host.style.position = "relative";
+    let tooltip = host.querySelector(":scope > .kickiq-chart-tooltip");
+    if (!tooltip) {
+        tooltip = document.createElement("div");
+        tooltip.className = "kickiq-chart-tooltip";
+        tooltip.style.cssText = "position:absolute;z-index:20;display:none;pointer-events:none;padding:9px 11px;border-radius:8px;background:#0f172a;color:#fff;font:12px/1.6 Arial,sans-serif;box-shadow:0 8px 24px rgba(15,23,42,.22);";
+        host.appendChild(tooltip);
     }
-
-
-    if (minutesChart) {
-
-        minutesChart.destroy();
-
-        minutesChart = null;
-
-    }
-
-
-    /*
-        Keep statistics that contain
-        actual playing information.
-    */
-
-    
-const matchStatistics = statistics
-    .filter(stat =>
-        stat.minutes_played !== null &&
-        stat.minutes_played !== undefined &&
-        stat.minutes_played !== "" &&
-        Number.isFinite(Number(stat.minutes_played))
-    )
-    .slice()
-    .reverse();
-
-
-
-    if (
-        matchStatistics.length ===
-        0
-    ) {
-
-        return;
-
-    }
-
-
-    const labels =
-        matchStatistics.map(
-            function (
-                stat,
-                index
-            ) {
-
-                return (
-                    `Match ${index + 1}`
-                );
-
-            }
-        );
-
-
-    const minutes =
-        matchStatistics.map(
-            function (stat) {
-
-                return Number(
-                    stat.minutes_played
-                );
-
-            }
-        );
-
-
-    minutesChart =
-        new Chart(
-            canvas,
-            {
-
-                type:
-                    "bar",
-
-                data: {
-
-                    labels:
-                        labels,
-
-                    datasets: [
-
-                        {
-
-                            label:
-                                "Minutes Played",
-
-                            data:
-                                minutes,
-
-                            backgroundColor:
-                                "rgba(22, 163, 74, 0.78)",
-
-                            hoverBackgroundColor:
-                                "#15803d",
-
-                            borderColor:
-                                "#15803d",
-
-                            borderWidth:
-                                1,
-
-                            borderRadius:
-                                6
-
-                        }
-
-                    ]
-
-                },
-
-
-                options: {
-
-                    responsive:
-                        true,
-
-                    maintainAspectRatio:
-                        false,
-
-                    scales: {
-
-                        y: {
-
-                            beginAtZero:
-                                true,
-
-                            title: {
-
-                                display:
-                                    true,
-
-                                text:
-                                    "Minutes"
-
-                            }
-
-                        },
-
-
-                        x: {
-
-                            title: {
-
-                                display:
-                                    true,
-
-                                text:
-                                    "Matches"
-
-                            }
-
-                        }
-
-                    },
-
-
-                    plugins: {
-
-                        legend: {
-
-                            display:
-                                true
-
-                        },
-
-
-                        tooltip: {
-
-                            callbacks: {
-
-                                label:
-                                    function (
-                                        context
-                                    ) {
-
-                                        const index =
-                                            context.dataIndex;
-
-
-                                        const stat =
-                                            matchStatistics[
-                                                index
-                                            ];
-
-
-                                        const started =
-                                            stat.started
-
-                                                ? "Yes"
-
-                                                : "No";
-
-
-                                        return [
-
-                                            `Minutes: ${stat.minutes_played}`,
-
-                                            `Started: ${started}`
-
-                                        ];
-
-                                    }
-
-                            }
-
-                        }
-
-                    }
-
-                }
-
-            }
-        );
-
+    return tooltip;
 }
+
+function hideKickIQChartTooltip(canvas) {
+    const host = canvas.parentElement || canvas;
+    const tooltip = host.querySelector(":scope > .kickiq-chart-tooltip");
+    if (tooltip) tooltip.style.display = "none";
+}
+
+function getMatchWeek(stat, index) {
+    const match = stat.match && typeof stat.match === "object" ? stat.match : {};
+    const value = stat.match_week ?? stat.matchweek ?? stat.match_week_number ??
+        stat.matchweek_number ?? stat.gameweek ?? stat.game_week ?? stat.week ??
+        stat.round ?? match.match_week ?? match.matchweek ?? match.gameweek ?? match.week ?? match.round;
+    if (value !== null && value !== undefined && String(value).trim() !== "") return value;
+    return `Match ${index + 1}`;
+}
+
+function createRatingChart(statistics) {
+    const canvas = document.getElementById("rating-chart");
+    if (!canvas) return;
+
+    const ratedMatches = (Array.isArray(statistics) ? statistics : [])
+        .filter(stat => stat.rating !== null && stat.rating !== undefined && stat.rating !== "" && Number.isFinite(Number(stat.rating)))
+        .slice().reverse();
+
+    if (!ratedMatches.length) {
+        const ctx = canvas.getContext("2d");
+        if (ctx) {
+            canvas.width = Math.max(320, canvas.clientWidth || 600);
+            canvas.height = Math.max(240, canvas.clientHeight || 320);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#64748b";
+            ctx.font = "14px Arial, sans-serif";
+            ctx.textAlign = "center";
+            ctx.fillText("No rating data available", canvas.width / 2, canvas.height / 2);
+        }
+        return;
+    }
+
+    drawPerformanceCanvas(
+        canvas,
+        ratedMatches.map(stat => Number(stat.rating)),
+        ratedMatches.map((_, index) => `Match ${index + 1}`),
+        {
+            type: "line",
+            minValue: 0,
+            maxValue: 10,
+            yTitle: "Rating",
+            xTitle: "Matches",
+            pointMetadata: ratedMatches.map((stat, index) => ({
+                rating: Number(stat.rating).toFixed(2),
+                week: getMatchWeek(stat, index),
+                season: stat.season ?? stat.season_name ?? (stat.match && stat.match.season) ?? "Unavailable"
+            }))
+        }
+    );
+}
+
+function createMinutesChart(statistics) {
+    const canvas = document.getElementById("minutes-chart");
+    if (!canvas) return;
+
+    const matchStatistics = (Array.isArray(statistics) ? statistics : [])
+        .filter(stat => stat.minutes_played !== null && stat.minutes_played !== undefined && stat.minutes_played !== "" && Number.isFinite(Number(stat.minutes_played)))
+        .slice().reverse();
+
+    if (!matchStatistics.length) {
+        const ctx = canvas.getContext("2d");
+        if (ctx) {
+            canvas.width = Math.max(320, canvas.clientWidth || 600);
+            canvas.height = Math.max(240, canvas.clientHeight || 320);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#64748b";
+            ctx.font = "14px Arial, sans-serif";
+            ctx.textAlign = "center";
+            ctx.fillText("No minutes data available", canvas.width / 2, canvas.height / 2);
+        }
+        return;
+    }
+
+    const minutes = matchStatistics.map(stat => Number(stat.minutes_played));
+    const maxMinutes = Math.max(90, Math.ceil(Math.max(...minutes) / 15) * 15);
+    drawPerformanceCanvas(
+        canvas,
+        minutes,
+        matchStatistics.map((_, index) => `Match ${index + 1}`),
+        {
+            type: "bar",
+            minValue: 0,
+            maxValue: maxMinutes,
+            yTitle: "Minutes",
+            xTitle: "Matches",
+            valueLabel: "Minutes",
+            pointMetadata: matchStatistics.map((stat, index) => ({
+                value: Number(stat.minutes_played),
+                week: getMatchWeek(stat, index),
+                season: stat.season ?? stat.season_name ?? (stat.match && stat.match.season) ?? "Unavailable"
+            }))
+        }
+    );
+}
+
+// Redraw canvas charts when the layout changes (responsive window resizing).
+window.addEventListener("resize", () => {
+    if (!Array.isArray(window.__kickIQPlayerStatistics)) return;
+    createRatingChart(window.__kickIQPlayerStatistics);
+    createMinutesChart(window.__kickIQPlayerStatistics);
+});
 
 
 /* =========================================================

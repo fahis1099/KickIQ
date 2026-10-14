@@ -89,62 +89,389 @@
 
         ====================================== -->
 
-        <section class="player-profile">
-            <div class="profile-glow" aria-hidden="true"></div>
+        <!-- =====================================
+     PLAYER PROFILE
+====================================== -->
+
+<section class="player-profile">
+
+    <!-- Decorative football background -->
+    <div class="profile-pitch" aria-hidden="true">
+        <span class="pitch-center-line"></span>
+        <span class="pitch-center-circle"></span>
+    </div>
+
+
+    <!-- =====================================
+         TOP LABEL
+    ====================================== -->
+
+    <div class="profile-topbar">
+
+        <div class="profile-kicker">
+            <span class="status-dot"></span>
+            PLAYER PROFILE
+        </div>
+
+
+        {% if player.is_active %}
+            <div class="profile-status active">
+                <span></span>
+                Active Player
+            </div>
+        {% else %}
+            <div class="profile-status inactive">
+                <span></span>
+                Inactive Player
+            </div>
+        {% endif %}
+
+    </div>
+
+
+    <!-- =====================================
+         MAIN PROFILE CONTENT
+    ====================================== -->
+
+    <div class="profile-content">
+
+
+        <!-- =================================
+             PLAYER PHOTO
+        ================================== -->
+
+        <div class="profile-photo-column">
 
             <div class="player-photo">
+
                 {% if player.photo_path %}
-                    <img src="/static/core/images/{{ player.photo_path }}"
-                         alt="{{ player.name }}"
-                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <span class="player-photo-fallback" style="display:none;">{{ player.name|first|upper }}</span>
+
+                    <img
+                        src="/static/core/images/{{ player.photo_path }}"
+                        alt="{{ player.name }}"
+                        onerror="
+                            this.style.display='none';
+                            this.nextElementSibling.style.display='flex';
+                        "
+                    >
+
+                    <span
+                        class="player-photo-fallback"
+                        style="display:none;"
+                    >
+                        {{ player.name|first|upper }}
+                    </span>
+
                 {% else %}
-                    <span class="player-photo-fallback">{{ player.name|first|upper }}</span>
+
+                    <span class="player-photo-fallback">
+                        {{ player.name|first|upper }}
+                    </span>
+
                 {% endif %}
+
             </div>
 
-            <div class="player-details">
-                <div class="profile-kicker"><span class="status-dot"></span> PLAYER PROFILE</div>
-                <h2>{{ player.name }}</h2>
-                <div class="club-line">
-                    <div class="club-crest" title="{{ player.current_club.name }}">
-                        {% if player.current_club.logo_path %}
-                            <img src="/static/core/images/{{ player.current_club.logo_path }}"
-                                 alt="{{ player.current_club.name }} logo"
-                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <span class="club-crest-fallback" style="display:none;">{{ player.current_club.name|first|upper }}</span>
-                        {% else %}
-                            <span class="club-crest-fallback">{{ player.current_club.name|first|upper }}</span>
-                        {% endif %}
-                    </div>
-                    <div class="club-text">
-                        <p class="club">{{ player.current_club.name }}</p>
-                        <span class="club-caption">Current Club</span>
-                    </div>
-                    <span class="position">{{ player.position }}</span>
+
+        </div>
+
+
+
+        <!-- =================================
+             PLAYER IDENTITY
+        ================================== -->
+
+        <div class="player-identity">
+
+
+            <!-- Jersey + identity label -->
+
+            <div class="identity-heading">
+
+                <div class="jersey-number">
+
+                    <span class="jersey-hash">
+                        #
+                    </span>
+
+                    <strong>
+                        {{ player.jersey_number|default:"—" }}
+                    </strong>
+
                 </div>
 
-                <div class="player-meta">
-                    <div class="player-meta-item">
-                        <strong>Nationality</strong>
-                        <span>{{ player.nationality|default:"—" }}</span>
-                    </div>
-                    <div class="player-meta-item dob-meta">
-                        <strong>Date of Birth</strong>
-                        <span class="dob-value" data-dob="{{ player.date_of_birth|date:'Y-m-d' }}">{{ player.date_of_birth|date:"d M Y"|default:"—" }}</span>
-                        <small class="player-age" id="player-age" aria-live="polite">Calculating age…</small>
-                    </div>
-                    <div class="player-meta-item">
-                        <strong>Height</strong>
-                        <span>{{ player.height|default:"—" }}{% if player.height %} m{% endif %}</span>
-                    </div>
-                    <div class="player-meta-item">
-                        <strong>Preferred Foot</strong>
-                        <span>{{ player.preferred_foot|default:"—" }}</span>
-                    </div>
+
+                <div class="identity-label">
+                    SQUAD NUMBER
                 </div>
+
             </div>
-        </section>
+
+
+
+            <!-- Player name -->
+
+            <h2>
+                {{ player.name }}
+            </h2>
+
+
+
+            <!-- Club -->
+
+            <div class="club-line">
+
+
+                <div
+                    class="club-crest"
+                    title="{{ player.current_club.name }}"
+                >
+
+                    {% if player.current_club.logo_path %}
+
+                        <img
+                            src="/static/core/images/{{ player.current_club.logo_path }}"
+                            alt="{{ player.current_club.name }} logo"
+                            onerror="
+                                this.style.display='none';
+                                this.nextElementSibling.style.display='flex';
+                            "
+                        >
+
+                        <span
+                            class="club-crest-fallback"
+                            style="display:none;"
+                        >
+                            {{ player.current_club.name|first|upper }}
+                        </span>
+
+                    {% else %}
+
+                        <span class="club-crest-fallback">
+                            {{ player.current_club.name|first|upper }}
+                        </span>
+
+                    {% endif %}
+
+                </div>
+
+
+
+                <div class="club-text">
+
+                    <span class="club-caption">
+                        CURRENT CLUB
+                    </span>
+
+                    <p class="club">
+                        {{ player.current_club.name }}
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Position badge -->
+
+            <div class="identity-badges">
+
+                <span class="position">
+
+                    {% if player.position == "GK" %}
+                        Goalkeeper
+
+                    {% elif player.position == "DF" %}
+                        Defender
+
+                    {% elif player.position == "MF" %}
+                        Midfielder
+
+                    {% elif player.position == "FW" %}
+                        Forward
+
+                    {% else %}
+                        {{ player.position }}
+                    {% endif %}
+
+                </span>
+
+
+                {% if player.preferred_foot %}
+
+                    <span class="foot-badge">
+                        {{ player.preferred_foot }} Foot
+                    </span>
+
+                {% endif %}
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================
+             PLAYER DETAILS
+        ================================== -->
+
+        <div class="player-facts">
+
+
+            <div class="facts-heading">
+
+                <div>
+
+                    <span class="facts-kicker">
+                        PLAYER DETAILS
+                    </span>
+
+                    <h3>
+                        Profile Overview
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="player-meta">
+
+
+                <!-- Nationality -->
+
+                <div class="player-meta-item">
+
+                    <span class="meta-icon">
+                        NAT
+                    </span>
+
+                    <div class="meta-content">
+
+                        <strong>
+                            Nationality
+                        </strong>
+
+                        <span>
+                            {{ player.nationality|default:"—" }}
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Date of birth / Age -->
+
+                <div class="player-meta-item dob-meta">
+
+                    <span class="meta-icon">
+                        AGE
+                    </span>
+
+                    <div class="meta-content">
+
+                        <strong>
+                            Date of Birth
+                        </strong>
+
+                        <span
+                            class="dob-value"
+                            data-dob="{{ player.date_of_birth|date:'Y-m-d' }}"
+                        >
+                            {{ player.date_of_birth|date:"d M Y"|default:"—" }}
+                        </span>
+
+                        <small
+                            class="player-age"
+                            id="player-age"
+                            aria-live="polite"
+                        >
+                            Calculating age…
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Height -->
+
+                <div class="player-meta-item">
+
+                    <span class="meta-icon">
+                        HT
+                    </span>
+
+                    <div class="meta-content">
+
+                        <strong>
+                            Height
+                        </strong>
+
+                        <span>
+                            {{ player.height|default:"—" }}{% if player.height %} m{% endif %}
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Preferred foot -->
+
+                <div class="player-meta-item">
+
+                    <span class="meta-icon">
+                        FT
+                    </span>
+
+                    <div class="meta-content">
+
+                        <strong>
+                            Preferred Foot
+                        </strong>
+
+                        <span>
+                            {{ player.preferred_foot|default:"—" }}
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Large decorative squad number -->
+
+    {% if player.jersey_number %}
+
+        <div
+            class="profile-background-number"
+            aria-hidden="true"
+        >
+            {{ player.jersey_number }}
+        </div>
+
+    {% endif %}
+
+
+</section>
 
         <!-- =====================================
 
@@ -740,9 +1067,6 @@
         </section>
 
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
-
     <script
 
         src="{% static 'core/js/player_performance.js' %}"
