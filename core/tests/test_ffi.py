@@ -1,3 +1,4 @@
+
 from datetime import date, timedelta
 from decimal import Decimal
 from statistics import pstdev
@@ -11,6 +12,7 @@ from core.services.ffi_analysis import analyze_player_continuity
 
 
 class FFITestCase(TestCase):
+
     def setUp(self):
         self.club = Club.objects.create(
             name="Test FC",
@@ -38,26 +40,31 @@ class FFITestCase(TestCase):
         status="COMPLETED",
         season="2023/24",
         club=None,
+        home_club=None,
+        away_club=None,
     ):
-        """Create a match and an optional player-statistics record."""
+        """Create a match and its player-statistics record."""
+
         match_date = self.cutoff - timedelta(
             days=days_before_cutoff
         )
+
+        home_club = home_club or self.club
+        away_club = away_club or self.opponent
 
         match = Match.objects.create(
             season=season,
             competition="Premier League",
             match_date=match_date,
-            home_club=self.club,
-            away_club=self.opponent,
+            home_club=home_club,
+            away_club=away_club,
             status=status,
         )
 
-        # Always create the statistics record, even if rating is None.
         PlayerStatistics.objects.create(
             player=self.player,
             match=match,
-            club=club or self.club,
+            club=club or home_club,
             minutes_played=minutes,
             started=minutes >= 60,
             rating=rating,
@@ -67,6 +74,7 @@ class FFITestCase(TestCase):
 
     def create_recent_appearances(self, ratings=None):
         """Create appearances in descending chronological order."""
+
         if ratings is None:
             ratings = [
                 Decimal("8.00"),
@@ -444,3 +452,153 @@ class FFITestCase(TestCase):
                     minutes_played=90,
                     rating=Decimal("8.00"),
                 )
+
+    # ---------------------------------------------------------
+    # New tests for recent-availability eligibility
+    # ---------------------------------------------------------
+
+    def test_no_appearance_in_last_three_fixtures_returns_no_ffi(self):
+        # The player appeared and received ratings in these older fixtures.
+        for days, rating in [
+            (4, Decimal("8.00")),
+            (5, Decimal("7.50")),
+            (6, Decimal("7.00")),
+        ]:
+            self.create_match(
+                days_before_cutoff=days,
+                rating=rating,
+                minutes=90,
+            )
+
+        # The three most recent club fixtures have zero minutes.
+        for days in [1, 2, 3]:
+            self.create_match(
+                days_before_cutoff=days,
+                rating=None,
+                minutes=0,
+            )
+
+        result = calculate_ffi(
+            self.player.id,
+            before_date=self.cutoff,
+            season="2023/24",
+        )
+
+        self.assertIsNone(result["ffi"])
+        self.assertIn(
+            "last 3 completed club fixtures",
+            result["message"],
+        )
+
+    def test_recent_appearance_with_only_two_rated_appearances_returns_no_ffi(
+        self,
+    ):
+        # Two rated appearances.
+        self.create_match(
+            days_before_cutoff=2,
+            rating=Decimal("8.00"),
+        )
+        self.create_match(
+            days_before_cutoff=3,
+            rating=Decimal("7.00"),
+        )
+
+        # Recent appearance without a rating.
+        self.create_match(
+            days_before_cutoff=1,
+            rating=None,
+            minutes=90,
+        )
+
+        result = calculate_ffi(
+            self.player.id,
+            before_date=self.cutoff,
+            season="2023/24",
+        )
+
+        self.assertIsNone(result["ffi"])
+        self.assertEqual(result["matches_used"], 2)
+        self.assertIn("at least 3 rated appearances", result["message"])
+
+    def test_appearance_in_third_recent_fixture_is_eligible(self):
+        # The newest two fixtures were missed.
+        self.create_match(
+            days_before_cutoff=1,
+            rating=None,
+            minutes=0,
+        )
+        self.create_match(
+            days_before_cutoff=2,
+            rating=None,
+            minutes=0,
+        )
+
+        # The third-most-recent fixture was an appearance.
+        self.create_match(
+            days_before_cutoff=3,
+            rating=Decimal("8.00"),
+            minutes=90,
+        )
+
+        self.create_match(
+            days_before_cutoff=4,
+            rating=Decimal("7.50"),
+            minutes=90,
+        )
+        self.create_match(
+            days_before_cutoff=5,
+            rating=Decimal("7.00"),
+            minutes=90,
+        )
+
+        result = calculate_ffi(
+            self.player.id,
+            before_date=self.cutoff,
+            season="2023/24",
+        )
+
+        self.assertIsNotNone(result["ffi"])
+        self.assertEqual(result["matches_used"], 3)
+
+    def test_explicit_target_club_uses_target_club_history(self):
+        target_club = Club.objects.create(
+            name="Target FC",
+            country="England",
+        )
+
+        # The player's former club has plenty of rated appearances.
+        self.create_recent_appearances(
+            [
+                Decimal("9.00"),
+                Decimal("8.50"),
+                Decimal("8.00"),
+                Decimal("7.50"),
+                Decimal("7.00"),
+            ]
+        )
+
+        # The target club has only two rated appearances.
+        for days, rating in [
+            (1, Decimal("6.50")),
+            (2, Decimal("6.00")),
+        ]:
+            self.create_match(
+                days_before_cutoff=days,
+                rating=rating,
+                minutes=90,
+                club=target_club,
+                home_club=target_club,
+                away_club=self.opponent,
+            )
+
+        result = calculate_ffi(
+            self.player.id,
+            before_date=self.cutoff,
+            season="2023/24",
+            club_id=target_club.id,
+        )
+
+        # Former-club history must not make the target-club FFI eligible.
+        self.assertIsNone(result["ffi"])
+        self.assertEqual(result["matches_used"], 2)
+        self.assertEqual(result["club_id"], target_club.id)
