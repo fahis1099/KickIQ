@@ -3434,3 +3434,511 @@ canvas {
         margin-left: 0;
     }
 }
+
+
+/* =========================================================
+   KICKIQ ATTRIBUTE OVERVIEW RADAR CHART
+========================================================= */
+.radar-chart-card {
+    position: relative;
+    overflow: visible;
+}
+.radar-chart-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+.radar-chart-header > div:first-child {
+    min-width: 0;
+}
+.radar-info-button {
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text-primary, #e5e7eb);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+}
+.radar-info-button:hover,
+.radar-info-button:focus-visible {
+    color: #8b91ff;
+    outline: 2px solid rgba(99, 102, 241, 0.35);
+    outline-offset: 2px;
+}
+.radar-info-panel {
+    position: relative;
+    z-index: 2;
+    margin: 8px 0 12px;
+    padding: 14px 16px;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 12px;
+    background: var(--card-background, #242a30);
+    color: var(--text-primary, #e5e7eb);
+    font-size: 13px;
+    line-height: 1.55;
+}
+.radar-info-panel p {
+    margin: 8px 0;
+    color: var(--text-secondary, #aab3bf);
+}
+.radar-info-close {
+    display: block;
+    margin: 10px 0 0 auto;
+    border: 0;
+    background: transparent;
+    color: #8b91ff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.radar-chart-container {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    min-width: 0;
+}
+.radar-chart-container canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.radar-chart-status {
+    margin-top: 4px;
+    min-height: 18px;
+    color: var(--text-secondary, #98a2b3);
+    font-size: 12px;
+    text-align: center;
+}
+.radar-chart-legend {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    color: var(--text-secondary, #98a2b3);
+    font-size: 12px;
+}
+.radar-legend-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #39c65a;
+    flex: 0 0 auto;
+}
+.radar-chart-note {
+    margin-left: auto;
+}
+@media (max-width: 600px) {
+    .radar-chart-container {
+        height: 330px;
+    }
+    .radar-chart-note {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/* Next Match Rating Prediction */
+
+.prediction-card {
+    margin: 22px 0;
+    padding: 24px;
+    border: 1px solid #dcebe2;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #ffffff, #f2faf5);
+    box-shadow: 0 5px 20px rgba(20, 53, 42, 0.05);
+}
+
+.prediction-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.prediction-kicker {
+    color: #13834a;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.prediction-header h3 {
+    margin: 8px 0;
+    color: #14352a;
+    font-size: 21px;
+}
+
+.prediction-header p,
+.prediction-details p {
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.prediction-status {
+    padding: 7px 11px;
+    border-radius: 20px;
+    background: #e4f5ea;
+    color: #137443;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.prediction-main {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #dcebe2;
+}
+
+.prediction-score {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    color: #13834a;
+    white-space: nowrap;
+}
+
+.prediction-score strong {
+    font-size: 46px;
+    line-height: 1;
+}
+
+.prediction-score span {
+    color: #667085;
+    font-size: 14px;
+}
+
+.prediction-details p {
+    margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+    .prediction-card {
+        padding: 18px;
+    }
+
+    .prediction-main {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .prediction-score strong {
+        font-size: 38px;
+    }
+}
+
+
+.shap-card {
+    margin: 22px 0;
+    padding: 24px;
+    border: 1px solid #e1e9e4;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.shap-kicker {
+    color: #13834a;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.shap-header h3 {
+    margin: 8px 0;
+    color: #14352a;
+    font-size: 21px;
+}
+
+.shap-header p,
+.shap-message {
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.shap-results {
+    display: grid;
+    gap: 15px;
+    margin-top: 22px;
+}
+
+.shap-row {
+    display: grid;
+    grid-template-columns: minmax(130px, 1.1fr) minmax(60px, 2fr) 65px;
+    align-items: center;
+    gap: 12px;
+}
+
+.shap-feature {
+    color: #344054;
+    font-size: 12px;
+    text-transform: capitalize;
+    overflow-wrap: anywhere;
+}
+
+.shap-track {
+    height: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #edf1ef;
+}
+
+.shap-bar {
+    height: 100%;
+    border-radius: 8px;
+}
+
+.shap-bar.positive {
+    background: #159957;
+}
+
+.shap-bar.negative {
+    background: #d9534f;
+}
+
+.shap-value {
+    font-size: 12px;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.positive-text {
+    color: #13834a;
+}
+
+.negative-text {
+    color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .shap-card {
+        padding: 17px;
+    }
+
+    .shap-row {
+        grid-template-columns: minmax(90px, 1fr) minmax(45px, 1fr) 58px;
+        gap: 8px;
+    }
+}
+
+/* =========================================
+   KICKIQ — EXPLAINABLE AI
+========================================= */
+
+.shap-card {
+    margin: 22px 0;
+    padding: 26px;
+    border: 1px solid #e0e9e3;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff 0%, #f8fcf9 100%);
+    box-shadow: 0 8px 26px rgba(20, 53, 42, 0.045);
+}
+
+.shap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.shap-kicker {
+    color: #13834a;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.shap-header h3 {
+    margin: 8px 0;
+    color: #14352a;
+    font-size: 22px;
+    font-weight: 750;
+}
+
+.shap-header p {
+    max-width: 620px;
+    margin: 0;
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.shap-refresh-btn {
+    padding: 10px 15px;
+    border: 1px solid #cfe7d8;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #137443;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.shap-refresh-btn:hover:not(:disabled) {
+    background: #eaf7ef;
+    transform: translateY(-1px);
+}
+
+.shap-refresh-btn:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+.shap-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 23px 0;
+    padding: 13px 15px;
+    border: 1px solid #e7eee9;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.shap-legend span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #475467;
+    font-size: 12px;
+}
+
+.shap-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.positive-dot {
+    background: #159957;
+}
+
+.negative-dot {
+    background: #d9534f;
+}
+
+.shap-results {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.shap-group {
+    min-width: 0;
+    padding: 18px;
+    border: 1px solid #e7eee9;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.shap-group h4 {
+    margin: 0 0 20px;
+    color: #263b31;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.shap-row {
+    margin-bottom: 20px;
+}
+
+.shap-row:last-child {
+    margin-bottom: 0;
+}
+
+.shap-row-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 9px;
+}
+
+.shap-feature {
+    color: #475467;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.shap-value {
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 750;
+    font-variant-numeric: tabular-nums;
+}
+
+.positive-text {
+    color: #13834a;
+}
+
+.negative-text {
+    color: #c0392b;
+}
+
+.shap-track {
+    height: 8px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #edf1ef;
+}
+
+.shap-bar {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.35s ease;
+}
+
+.shap-bar.positive {
+    background: linear-gradient(90deg, #40b978, #13834a);
+}
+
+.shap-bar.negative {
+    background: linear-gradient(90deg, #ee8a84, #c0392b);
+}
+
+.shap-empty,
+.shap-message {
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.shap-footnote {
+    margin: 22px 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #e7eee9;
+    color: #7a8699;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+    .shap-card {
+        padding: 18px;
+    }
+
+    .shap-results {
+        grid-template-columns: 1fr;
+    }
+
+    .shap-group {
+        padding: 15px;
+    }
+}

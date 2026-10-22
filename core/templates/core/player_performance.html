@@ -50,6 +50,21 @@
         <div class="header-right">
 
             <a
+                href="{% url 'player-performance-report-pdf' player.id %}"
+                class="back-btn"
+                title="Download the full player performance report as a PDF"
+            >
+                ↓ Download PDF Report
+            </a>
+
+            <a
+                href="{% url 'player-comparison' %}?player_a={{ player.id }}"
+                class="back-btn"
+            >
+                ⇄ Compare Player
+            </a>
+
+            <a
 
                 href="/players/"
 
@@ -642,7 +657,93 @@
             </div>
 
 
-            <!-- =================================
+
+<!-- NEXT MATCH RATING PREDICTION -->
+<div class="prediction-card">
+
+    <div class="prediction-header">
+        <div>
+            <span class="prediction-kicker">AI PERFORMANCE FORECAST</span>
+            <h3>Next Match Rating Prediction</h3>
+            <p>Random Forest prediction based on historical performance and FFI.</p>
+        </div>
+
+        <span id="prediction-status" class="prediction-status">
+            Loading
+        </span>
+    </div>
+
+    <div class="prediction-main">
+        <div class="prediction-score">
+            <strong id="predicted-rating">—</strong>
+            <span>/ 10</span>
+        </div>
+
+        <div class="prediction-details">
+            <p id="prediction-fixture">Finding the next fixture...</p>
+            <p id="prediction-message">
+                Preparing historical performance features.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- EXPLAINABLE AI -->
+<section class="shap-card" id="shap-card">
+
+    <div class="shap-header">
+        <div>
+            <span class="shap-kicker">EXPLAINABLE AI</span>
+            <h3>Why This Rating?</h3>
+            <p>
+                Understand which historical performance indicators
+                influenced the AI rating forecast.
+            </p>
+        </div>
+
+        <button
+            type="button"
+            class="shap-refresh-btn"
+            id="shap-refresh-btn"
+        >
+            ↻ Refresh
+        </button>
+    </div>
+
+    <div class="shap-legend">
+        <span><i class="shap-dot positive-dot"></i> Pushes rating higher</span>
+        <span><i class="shap-dot negative-dot"></i> Pushes rating lower</span>
+    </div>
+
+    <div id="shap-loading" class="shap-message" role="status">
+        Calculating feature contributions...
+    </div>
+
+    <div id="shap-results" class="shap-results">
+
+        <div class="shap-group">
+            <h4>Positive contributors</h4>
+            <div id="shap-positive-list"></div>
+        </div>
+
+        <div class="shap-group">
+            <h4>Negative contributors</h4>
+            <div id="shap-negative-list"></div>
+        </div>
+
+    </div>
+
+    <p class="shap-footnote">
+        Contributions are measured in rating points relative to the
+        model's baseline. They describe model behavior, not causal effects.
+    </p>
+
+</section>
+
+
+<!-- =================================
      FOOTBALL FORM INDEX
 ================================== -->
 
@@ -912,6 +1013,38 @@
 
                 </div>
 
+            </div>
+
+            <!-- =================================
+                 ATTRIBUTE OVERVIEW RADAR CHART
+            ================================== -->
+            <div class="chart-card radar-chart-card">
+                <div class="chart-header radar-chart-header">
+                    <div>
+                        <h3>Attribute Overview</h3>
+                        <p id="radar-chart-subtitle">Position-adjusted scores for the selected season</p>
+                    </div>
+                    <button type="button" class="radar-info-button" id="radar-info-button"
+                            aria-label="Explain attribute scoring" aria-expanded="false" aria-controls="radar-info-panel">i</button>
+                </div>
+
+                <div class="radar-info-panel" id="radar-info-panel" hidden>
+                    <strong>How these scores work</strong>
+                    <p>Scores are percentiles from 0–100 compared with players in the same primary position and season. Count-based statistics are calculated per 90 minutes. Scores require at least 450 minutes and at least 10 eligible players in the comparison group.</p>
+                    <p>Unavailable ratios (for example, no shots attempted) have their weight redistributed across the available components. Goalkeeping is only scored for goalkeepers.</p>
+                    <button type="button" id="radar-info-close" class="radar-info-close">Close</button>
+                </div>
+
+                <div class="radar-chart-container">
+                    <canvas id="attribute-radar-chart" role="img"
+                            aria-label="Radar chart showing attacking, defending, goalkeeping, passing and technique scores"></canvas>
+                </div>
+                <div id="radar-chart-status" class="radar-chart-status" aria-live="polite">Loading attribute scores…</div>
+                <div class="radar-chart-legend">
+                    <span class="radar-legend-dot"></span>
+                    <span>Player attribute score</span>
+                    <span class="radar-chart-note">Hover over a point to inspect the score.</span>
+                </div>
             </div>
 
             <!-- =================================

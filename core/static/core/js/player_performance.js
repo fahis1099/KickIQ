@@ -88,10 +88,15 @@ document.addEventListener(
 
         calculatePlayerAge();
 
+        setupRadarInfoPanel();
+
         setupLogout();
 
         loadPlayerPerformance();
 
+        loadRatingPrediction();
+
+        loadShapExplanation();
     }
 );
 
@@ -383,6 +388,8 @@ function updatePerformanceDisplay(
     currentDisplayedStatistics = Array.isArray(statistics) ? statistics : [];
 
     createMonthlySummaryChart(currentDisplayedStatistics);
+
+    createAttributeRadarChart(currentDisplayedStatistics);
 
     updateSummary(
         statistics
@@ -1285,6 +1292,27 @@ function updateSummary(
 
         );
 
+    const shotsOnTarget =
+        statistics.reduce(
+            (sum, stat) => sum + Number(stat.shots_on_target || 0),
+            0
+        );
+
+    const passesCompleted =
+        statistics.reduce(
+            (sum, stat) => sum + Number(stat.passes_completed || 0),
+            0
+        );
+
+    const passesAttempted =
+        statistics.reduce(
+            (sum, stat) => sum + Number(stat.passes_attempted || 0),
+            0
+        );
+
+    const shotRatio = shots > 0 ? (shotsOnTarget / shots) * 100 : null;
+    const passRatio = passesAttempted > 0 ? (passesCompleted / passesAttempted) * 100 : null;
+
 
     const keyPasses =
         statistics.reduce(
@@ -1369,8 +1397,13 @@ function updateSummary(
 
 
     setSummaryValue(
-        "summary-shots",
-        shots
+        "summary-shot-ratio",
+        shotRatio !== null ? `${shotRatio.toFixed(1)}%` : "—"
+    );
+
+    setSummaryValue(
+        "summary-pass-ratio",
+        passRatio !== null ? `${passRatio.toFixed(1)}%` : "—"
     );
 
 
@@ -1600,6 +1633,283 @@ function drawMonthlySummaryCanvas(canvas, buckets) {
 }
 
 
+
+
+/* =========================================================
+   ATTRIBUTE OVERVIEW RADAR CHART
+   Scores are supplied by the Django radar API, which compares
+   the player against eligible peers in the same position/season.
+========================================================= */
+let kickIQRadarPayload = null;
+let kickIQRadarRequestToken = 0;
+
+function setupRadarInfoPanel() {
+    const openButton = document.getElementById("radar-info-button");
+    const closeButton = document.getElementById("radar-info-close");
+    const panel = document.getElementById("radar-info-panel");
+    if (!openButton || !closeButton || !panel) return;
+
+    const setOpen = isOpen => {
+        panel.hidden = !isOpen;
+        openButton.setAttribute("aria-expanded", String(isOpen));
+    };
+    openButton.addEventListener("click", () => setOpen(panel.hidden));
+    closeButton.addEventListener("click", () => setOpen(false));
+}
+
+async function createAttributeRadarChart(statistics) {
+    const canvas = document.getElementById("attribute-radar-chart");
+    const status = document.getElementById("radar-chart-status");
+    const subtitle = document.getElementById("radar-chart-subtitle");
+    if (!canvas || !status) return;
+
+    const token = ++kickIQRadarRequestToken;
+    const playerId = getPlayerIdFromURL();
+    const seasonFilter = document.getElementById("season-filter");
+    const selectedSeason = seasonFilter ? seasonFilter.value : "";
+    let url = `/api/players/${encodeURIComponent(playerId)}/radar/`;
+    if (selectedSeason) url += `?season=${encodeURIComponent(selectedSeason)}`;
+
+    status.textContent = "Calculating position-adjusted attribute scores…";
+    if (subtitle) subtitle.textContent = selectedSeason
+        ? `Position-adjusted scores · ${selectedSeason}`
+        : "Position-adjusted scores · all available seasons";
+
+    try {
+        const response = await fetch(url, { headers: { "Accept": "application/json" } });
+        const payload = await response.json();
+        if (token !== kickIQRadarRequestToken) return;
+        if (!response.ok) throw new Error(payload.message || "Unable to load attribute scores.");
+
+        kickIQRadarPayload = payload;
+        if (subtitle) {
+            const seasonLabel = selectedSeason || "All seasons";
+            subtitle.textContent = `${payload.position_label || payload.position || "Position"} · ${seasonLabel}`;
+        }
+        drawAttributeRadarCanvas(canvas, payload);
+
+        if (payload.status === "insufficient_minutes") {
+            status.textContent = `At least 450 minutes are required. This player has ${Number(payload.minutes || 0).toLocaleString()} minutes in ${payload.season || "the selected season"}.`;
+        } else if (payload.status === "small_cohort") {
+            status.textContent = `Not enough comparable players in this position group (${payload.cohort_size || 0} found; at least 10 required).`;
+        } else if (payload.status === "no_statistics") {
+            status.textContent = "No completed match statistics are available for this season.";
+        } else {
+            status.textContent = `Compared with ${payload.cohort_size} eligible ${payload.position_label || "position-group"} players · ${Number(payload.minutes || 0).toLocaleString()} minutes`;
+        }
+    } catch (error) {
+        if (token !== kickIQRadarRequestToken) return;
+        console.error("KickIQ radar chart error:", error);
+        kickIQRadarPayload = null;
+        drawAttributeRadarCanvas(canvas, null);
+        status.textContent = error.message || "Unable to load radar scores. Check the radar API endpoint.";
+    }
+}
+
+function drawAttributeRadarCanvas(canvas, payload) {
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const width = Math.max(300, canvas.clientWidth || canvas.parentElement?.clientWidth || 600);
+    const height = Math.max(300, canvas.clientHeight || 390);
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
+    canvas.width = Math.round(width * dpr);
+    canvas.height = Math.round(height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, width, height);
+
+    const allAxes = [
+        { key: "attacking", label: "ATT", fullLabel: "Attacking" },
+        { key: "passing", label: "PAS", fullLabel: "Passing" },
+        { key: "technique", label: "TEC", fullLabel: "Technique" },
+        { key: "defending", label: "DEF", fullLabel: "Defending" },
+        { key: "goalkeeping", label: "GK", fullLabel: "Goalkeeping" }
+    ];
+    // Outfield players use four applicable axes; goalkeeper axis is reserved for GKs.
+    const axes = payload && payload.position === "GK"
+        ? allAxes
+        : allAxes.filter(axis => axis.key !== "goalkeeping");
+    const compact = width < 430;
+    const centerX = width / 2;
+    const centerY = height / 2 + 2;
+    const radius = Math.max(72, Math.min(width * (compact ? 0.27 : 0.30), height * 0.31));
+    const angleFor = index => -Math.PI / 2 + (Math.PI * 2 * index / axes.length);
+    const pointFor = (index, value, scaleRadius = radius) => {
+        const angle = angleFor(index);
+        return { x: centerX + Math.cos(angle) * scaleRadius * value / 100,
+                 y: centerY + Math.sin(angle) * scaleRadius * value / 100 };
+    };
+
+    // Concentric polygon grids and spokes.
+    for (let level = 1; level <= 4; level++) {
+        const gridRadius = radius * level / 4;
+        ctx.beginPath();
+        axes.forEach((axis, index) => {
+            const p = pointFor(index, 100, gridRadius);
+            if (index === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
+        });
+        ctx.closePath();
+        ctx.strokeStyle = "rgba(148,163,184,0.22)";
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        if (level < 4) {
+            ctx.fillStyle = "#8290a0";
+            ctx.font = "10px Arial, sans-serif";
+            ctx.textAlign = "left";
+            ctx.textBaseline = "bottom";
+            ctx.fillText(String(level * 25), centerX + 4, centerY - gridRadius + 1);
+        }
+    }
+    axes.forEach((axis, index) => {
+        const p = pointFor(index, 100);
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.lineTo(p.x, p.y);
+        ctx.strokeStyle = "rgba(148,163,184,0.22)";
+        ctx.stroke();
+    });
+
+    const scores = axes.map(axis => {
+        const value = payload && payload.scores ? payload.scores[axis.key] : null;
+        return value === null || value === undefined || !Number.isFinite(Number(value))
+            ? null : Math.max(0, Math.min(100, Number(value)));
+    });
+    const isEligible = payload && payload.status === "ok";
+    const points = [];
+
+    if (isEligible) {
+        axes.forEach((axis, index) => {
+            if (scores[index] === null) return;
+            const p = pointFor(index, scores[index]);
+            points.push({ ...p, axis, score: scores[index] });
+        });
+        ctx.strokeStyle = "#39c65a";
+        ctx.lineWidth = 2.2;
+        if (scores.every(value => value !== null)) {
+            ctx.beginPath();
+            scores.forEach((score, index) => {
+                const p = pointFor(index, score);
+                if (index === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
+            });
+            ctx.closePath();
+            ctx.fillStyle = "rgba(57,198,90,0.20)";
+            ctx.fill();
+            ctx.stroke();
+        } else {
+            // Draw only adjacent valid axis segments if one attribute is unavailable.
+            axes.forEach((axis, index) => {
+                const nextIndex = (index + 1) % axes.length;
+                if (scores[index] === null || scores[nextIndex] === null) return;
+                const first = pointFor(index, scores[index]);
+                const second = pointFor(nextIndex, scores[nextIndex]);
+                ctx.beginPath();
+                ctx.moveTo(first.x, first.y);
+                ctx.lineTo(second.x, second.y);
+                ctx.stroke();
+            });
+        }
+    }
+
+    // Axis labels and colored score badges, similar to the reference design.
+    axes.forEach((axis, index) => {
+        const edge = pointFor(index, 100, radius + (compact ? 24 : 29));
+        const score = scores[index];
+        ctx.font = compact ? "bold 11px Arial, sans-serif" : "bold 12px Arial, sans-serif";
+        ctx.textBaseline = "middle";
+        ctx.fillStyle = "#93a0af";
+        if (Math.abs(edge.x - centerX) < 10) ctx.textAlign = "center";
+        else ctx.textAlign = edge.x < centerX ? "right" : "left";
+        const label = axis.label;
+        ctx.fillText(label, edge.x, edge.y);
+
+        if (score !== null) {
+            const labelWidth = ctx.measureText(label).width;
+            const badgeWidth = score >= 100 ? 30 : 25;
+            const badgeHeight = 23;
+            let bx;
+            if (Math.abs(edge.x - centerX) < 10) bx = edge.x - badgeWidth / 2;
+            else if (edge.x < centerX) bx = edge.x - labelWidth - badgeWidth - 5;
+            else bx = edge.x + labelWidth + 5;
+            const by = edge.y - badgeHeight / 2;
+            ctx.fillStyle = score >= 75 ? "#414dff" : score >= 50 ? "#b79b00" : "#dc2626";
+            ctx.beginPath();
+            ctx.roundRect(bx, by, badgeWidth, badgeHeight, 5);
+            ctx.fill();
+            ctx.fillStyle = "#ffffff";
+            ctx.textAlign = "center";
+            ctx.fillText(String(Math.round(score)), bx + badgeWidth / 2, by + badgeHeight / 2 + 0.5);
+        } else {
+            ctx.fillStyle = "#8994a3";
+            ctx.font = "10px Arial, sans-serif";
+            ctx.textAlign = "center";
+            ctx.fillText("N/A", edge.x, edge.y + 16);
+        }
+    });
+
+    if (!isEligible) {
+        ctx.fillStyle = "#94a3b8";
+        ctx.font = "13px Arial, sans-serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        const message = payload?.status === "insufficient_minutes"
+            ? "450 minutes required" : payload?.status === "small_cohort"
+                ? "Insufficient comparison group" : payload?.status === "no_statistics"
+                    ? "No season statistics" : "Scores unavailable";
+        ctx.fillText(message, centerX, centerY);
+    }
+
+    canvas.__kickIQRadarPoints = points;
+    canvas.__kickIQRadarAxes = axes;
+    canvas.__kickIQRadarScores = scores;
+    if (!canvas.__kickIQRadarHoverBound) {
+        canvas.__kickIQRadarHoverBound = true;
+        canvas.style.cursor = "crosshair";
+        canvas.addEventListener("mousemove", event => {
+            const currentPoints = canvas.__kickIQRadarPoints || [];
+            const rect = canvas.getBoundingClientRect();
+            const px = event.clientX - rect.left;
+            const py = event.clientY - rect.top;
+            const nearest = currentPoints.reduce((best, point) => {
+                const distance = Math.hypot(point.x - px, point.y - py);
+                return !best || distance < best.distance ? { point, distance } : best;
+            }, null);
+            if (!nearest || nearest.distance > 18) {
+                hideKickIQChartTooltip(canvas);
+                return;
+            }
+            const tooltip = getKickIQChartTooltip(canvas);
+            tooltip.replaceChildren();
+            const details = [
+                ["Attribute", nearest.point.axis.fullLabel],
+                ["Position percentile", `${nearest.point.score.toFixed(1)} / 100`]
+            ];
+            details.forEach(([label, value]) => {
+                const row = document.createElement("div");
+                row.style.cssText = "display:flex;gap:12px;justify-content:space-between;white-space:nowrap;";
+                const key = document.createElement("span");
+                key.textContent = label;
+                key.style.color = "#cbd5e1";
+                const val = document.createElement("strong");
+                val.textContent = value;
+                val.style.color = "#ffffff";
+                row.append(key, val);
+                tooltip.appendChild(row);
+            });
+            tooltip.style.display = "block";
+            const hostRect = (canvas.parentElement || canvas).getBoundingClientRect();
+            let left = event.clientX - hostRect.left + 12;
+            let top = event.clientY - hostRect.top + 12;
+            left = Math.max(4, Math.min(left, hostRect.width - tooltip.offsetWidth - 4));
+            top = Math.max(4, Math.min(top, hostRect.height - tooltip.offsetHeight - 4));
+            tooltip.style.left = `${left}px`;
+            tooltip.style.top = `${top}px`;
+        });
+        canvas.addEventListener("mouseleave", () => hideKickIQChartTooltip(canvas));
+    }
+}
+
+
 /* =========================================================
    SELF-CONTAINED CANVAS CHARTS
    No Chart.js/CDN dependency required.
@@ -1766,6 +2076,7 @@ function drawPerformanceCanvas(canvas, values, labels, options = {}) {
             tooltip.replaceChildren();
             const rows = [
                 [chart.valueLabel || "Rating", meta.value ?? meta.rating ?? chart.values[nearest]],
+                ...(chart.valueLabel === "Minutes" ? [["Started match", meta.started ? "Yes" : "No"]] : []),
                 ["Match week", meta.week ?? "Unavailable"],
                 ["Season", meta.season ?? "Unavailable"]
             ];
@@ -1900,6 +2211,7 @@ function createMinutesChart(statistics) {
             valueLabel: "Minutes",
             pointMetadata: matchStatistics.map((stat, index) => ({
                 value: Number(stat.minutes_played),
+                started: stat.started === true || stat.started === 1 || stat.started === "true",
                 week: getMatchWeek(stat, index),
                 season: stat.season ?? stat.season_name ?? (stat.match && stat.match.season) ?? "Unavailable"
             }))
@@ -1916,6 +2228,7 @@ window.addEventListener("resize", () => {
     createMonthlySummaryChart(statistics);
     createRatingChart(statistics);
     createMinutesChart(statistics);
+    drawAttributeRadarCanvas(document.getElementById("attribute-radar-chart"), kickIQRadarPayload);
 });
 
 
@@ -2997,3 +3310,209 @@ function setupLogout() {
     );
 
 }
+
+
+/* =========================================
+   NEXT MATCH RATING PREDICTION
+========================================= */
+
+async function loadRatingPrediction() {
+    const playerId = getPlayerIdFromURL();
+
+    const status = document.getElementById("prediction-status");
+    const rating = document.getElementById("predicted-rating");
+    const fixture = document.getElementById("prediction-fixture");
+    const message = document.getElementById("prediction-message");
+
+    if (!status || !rating || !fixture || !message) {
+        return;
+    }
+
+    status.textContent = "Loading";
+    rating.textContent = "—";
+    fixture.textContent = "Finding the next fixture...";
+    message.textContent = "Generating prediction...";
+
+    try {
+        const response = await fetch(
+            `/api/players/${playerId}/prediction/`
+        );
+
+        const data = await response.json();
+
+        if (!response.ok || !data.success) {
+            throw new Error(
+                data.message || "Prediction is currently unavailable."
+            );
+        }
+
+        rating.textContent = Number(data.predicted_rating).toFixed(2);
+
+        const matchDate = new Date(`${data.fixture.date}T00:00:00`);
+        const formattedDate = Number.isNaN(matchDate.getTime())
+            ? data.fixture.date
+            : matchDate.toLocaleDateString(undefined, {
+                day: "numeric",
+                month: "short",
+                year: "numeric"
+            });
+
+        fixture.textContent =
+            `${data.fixture.club} vs ${data.fixture.opponent} · ` +
+            `${data.fixture.venue} · ${formattedDate}`;
+
+        message.textContent = data.message;
+        status.textContent = "Prediction ready";
+
+    } catch (error) {
+        console.error("Rating prediction error:", error);
+
+        status.textContent = "Unavailable";
+        rating.textContent = "—";
+        fixture.textContent = "No prediction available";
+        message.textContent = error.message;
+    }
+}
+
+
+
+async function loadShapExplanation() {
+    const loading = document.getElementById("shap-loading");
+    const results = document.getElementById("shap-results");
+    const positiveList = document.getElementById("shap-positive-list");
+    const negativeList = document.getElementById("shap-negative-list");
+
+    if (!loading || !results || !positiveList || !negativeList) return;
+
+    loading.hidden = false;
+    loading.textContent = "Calculating feature contributions...";
+    results.hidden = true;
+    positiveList.replaceChildren();
+    negativeList.replaceChildren();
+
+    try {
+        const playerId = getPlayerIdFromURL();
+
+        const response = await fetch(
+            `/api/players/${playerId}/prediction/`
+        );
+
+        const data = await response.json();
+
+        if (!response.ok || !data.success) {
+            throw new Error(
+                data.message || "Explanation unavailable."
+            );
+        }
+
+        const explanations = Array.isArray(data.explanations)
+            ? data.explanations
+            : [];
+
+        if (!explanations.length) {
+            loading.textContent =
+                "No feature contributions are available for this prediction.";
+            return;
+        }
+
+        const positive = explanations
+            .filter(item => Number(item.contribution) > 0)
+            .sort((a, b) =>
+                Number(b.contribution) - Number(a.contribution)
+            );
+
+        const negative = explanations
+            .filter(item => Number(item.contribution) < 0)
+            .sort((a, b) =>
+                Number(a.contribution) - Number(b.contribution)
+            );
+
+        const maxContribution = Math.max(
+            ...explanations.map(item =>
+                Math.abs(Number(item.contribution) || 0)
+            ),
+            0.0001
+        );
+
+        function formatFeatureName(name) {
+            const labels = {
+                history_rating_mean_5: "Average rating (last 5 appearances)",
+                history_rating_std_5: "Rating consistency (last 5 appearances)",
+                history_shots_sum_5: "Total shots (last 5 appearances)",
+                history_shots_mean_5: "Average shots (last 5 appearances)",
+                history_key_passes_sum_5: "Total key passes (last 5 appearances)",
+                history_key_passes_mean_5: "Average key passes (last 5 appearances)",
+                history_passes_completed_sum_5: "Completed passes total (last 5 appearances)",
+                history_passes_completed_mean_5: "Average completed passes (last 5 appearances)",
+                is_home: "Home fixture",
+                ffi: "Football Form Index"
+            };
+
+            if (labels[name]) return labels[name];
+
+            return name
+                .replace(/^history_/, "")
+                .replace(/_mean_5$/, " average (last 5 appearances)")
+                .replace(/_sum_5$/, " total (last 5 appearances)")
+                .replace(/_observed_5$/, " observations (last 5 appearances)")
+                .replaceAll("_", " ")
+                .replace(/\b\w/g, letter => letter.toUpperCase());
+        }
+
+        function renderContributionList(items, container, type) {
+            if (!items.length) {
+                const empty = document.createElement("p");
+                empty.className = "shap-empty";
+                empty.textContent = "No contributors in this category.";
+                container.appendChild(empty);
+                return;
+            }
+
+            items.forEach(item => {
+                const value = Number(item.contribution) || 0;
+                const row = document.createElement("div");
+                row.className = "shap-row";
+
+                const heading = document.createElement("div");
+                heading.className = "shap-row-heading";
+
+                const name = document.createElement("span");
+                name.className = "shap-feature";
+                name.textContent = formatFeatureName(item.feature);
+
+                const score = document.createElement("strong");
+                score.className = `shap-value ${type}-text`;
+                score.textContent =
+                    `${value > 0 ? "+" : ""}${value.toFixed(3)}`;
+
+                heading.append(name, score);
+
+                const track = document.createElement("div");
+                track.className = "shap-track";
+
+                const bar = document.createElement("div");
+                bar.className = `shap-bar ${type}`;
+                bar.style.width =
+                    `${Math.max(2, Math.abs(value) / maxContribution * 100)}%`;
+
+                track.appendChild(bar);
+                row.append(heading, track);
+                container.appendChild(row);
+            });
+        }
+
+        renderContributionList(positive, positiveList, "positive");
+        renderContributionList(negative, negativeList, "negative");
+
+        loading.hidden = true;
+        results.hidden = false;
+
+    } catch (error) {
+        console.error("SHAP explanation error:", error);
+        loading.textContent =
+            "Unable to load the explanation. Please try again.";
+        loading.hidden = false;
+    }
+}
+
+/* Refresh button removed; prediction and explanation still load automatically on page load. */
