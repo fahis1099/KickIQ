@@ -1,6 +1,53 @@
-Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
+﻿Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
 2026/27,Premier League,2026-08-22,Hull City,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,3,1,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,7.2,3,57,70,2,1
 2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Bruno Fernandes,Manchester Utd,MF,TRUE,90,3,1,1,1,8,3,0,0,1,0,0,8,1,1,0,0,0,0,0,0,0,10,3,56,65,3,1
 2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,4,0,0,0,1,1,0,5,0,0,0,0,0,0,0,0,0,6.2,2,43,52,1,0
 2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,1,1,0,0,1,0,0,6,1,0,0,0,0,0,0,0,0,7.5,1,52,59,0,0
 2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,3,0,0,0,0,0,0,12,1,0,0,0,0,0,0,0,0,6.5,4,53,63,0,0
+2026/27,Premier League,2026-10-10,Manchester Utd,Tottenham,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,1,0,2,3,0,6,0,0,0,0,0,0,0,0,0,7.1,2,36,45,0,0
+2026/27,Premier League,2026-08-22,Hull City,Manchester Utd,Senne Lammens,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,0,0,6.7,0,12,17,0,0
+2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Senne Lammens,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,3,0,0,7.6,0,18,20,0,0
+2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Senne Lammens,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,4,0,0,6.1,0,14,21,0,0
+2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Senne Lammens,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,6.7,0,13,16,0,0
+2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Senne Lammens,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,6,0,0,8.6,0,18,24,0,0
+2026/27,Premier League,2026-10-10,Manchester Utd,Tottenham,Senne Lammens,Manchester Utd,GK,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,3,1,0,0,6.8,0,14,27,0,0
+2026/27,Premier League,2026-08-22,Hull City,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,2,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,7.3,2,76,82,2,2
+2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,2,1,0,0,0,3,0,0,0,0,0,0,0,6.6,0,39,43,0,0
+2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,0,0,1,0,0,0,0,0,0,0,6.5,0,55,66,0,0
+2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,2,0,1,0,3,0,0,0,1,1,0,0,0,0,0,0,0,6.5,0,49,57,1,1
+2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,0,3,0,2,1,1,0,0,0,0,0,0,0,7.2,1,69,72,0,0
+2026/27,Premier League,2026-10-10,Manchester Utd,Tottenham,Harry Maguire,Manchester Utd,DF,TRUE,90,0,0,0,0,3,1,0,0,0,1,0,0,1,5,0,0,0,0,0,0,0,6.8,0,40,46,0,0
+2026/27,Premier League,2026-08-22,Hull City,Manchester Utd,Bryan Mbeumo,Manchester Utd,MF,TRUE,90,0,0,0,0,4,2,0,0,0,0,1,10,0,0,0,0,0,0,0,0,0,6.3,1,38,44,2,0
+2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Bryan Mbeumo,Manchester Utd,MF,TRUE,90,1,0,0,0,5,1,1,0,1,1,0,5,2,0,0,0,0,0,0,0,0,8,3,23,25,1,0
+2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Bryan Mbeumo,Manchester Utd,MF,TRUE,90,1,0,0,0,2,1,0,0,2,1,0,1,0,3,0,0,0,0,0,0,0,6.9,1,20,23,3,1
+2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Bryan Mbeumo,Manchester Utd,MF,TRUE,90,0,0,0,0,3,1,0,0,0,2,1,3,1,0,0,0,0,0,0,0,0,5.9,2,20,27,3,0
+2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Bryan Mbeumo,Manchester Utd,MF,TRUE,90,0,0,0,0,5,1,0,0,1,1,0,6,1,1,0,0,0,0,0,0,0,6.8,3,38,38,5,2
+2026/27,Premier League,2026-10-10,Manchester Utd,Tottenham,Bryan Mbeumo,Manchester Utd,FW,TRUE,90,1,0,0,0,2,2,0,0,2,1,0,1,0,1,0,0,0,0,0,0,0,8.5,1,16,18,3,3
+2026/27,Premier League,2026-08-22,Hull City,Manchester Utd,Matheus Cunha,Manchester Utd,FW,TRUE,79,0,0,0,0,3,1,0,0,0,1,0,3,0,0,0,0,0,0,0,0,0,5.8,2,27,28,2,0
+2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Matheus Cunha,Manchester Utd,FW,TRUE,79,0,1,0,0,2,1,0,0,1,2,0,1,0,0,0,0,0,0,0,0,0,7,2,18,21,1,0
+2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Matheus Cunha,Manchester Utd,FW,TRUE,69,0,0,0,0,2,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,6.3,0,22,28,0,0
+2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Matheus Cunha,Manchester Utd,FW,TRUE,90,0,0,0,0,3,0,0,0,1,2,0,3,0,0,0,0,0,0,0,0,0,6.7,1,23,28,3,2
+2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Matheus Cunha,Manchester Utd,FW,TRUE,90,1,0,0,0,3,2,0,0,3,0,0,2,0,1,0,0,0,0,0,0,0,7.4,3,22,26,1,1
+2026/27,Premier League,2026-10-10,Manchester Utd,Tottenham,Matheus Cunha,Manchester Utd,MF,TRUE,89,0,1,0,0,1,0,0,0,2,3,0,1,4,1,0,0,0,0,0,0,0,6.9,1,28,34,1,0
+2026/27,Premier League,2026-08-22,Hull City,Manchester Utd,Youri Tielemans,Manchester Utd,MF,TRUE,66,0,0,0,0,1,0,0,0,1,3,0,1,0,0,0,0,0,0,0,0,0,6.7,0,65,73,1,0
+2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Youri Tielemans,Manchester Utd,MF,TRUE,90,0,0,0,0,3,2,2,0,0,3,0,0,1,2,0,0,0,0,0,0,0,8.1,4,66,72,1,1
+2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Youri Tielemans,Manchester Utd,MF,TRUE,90,0,0,0,0,2,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.7,1,74,81,1,1
+2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Youri Tielemans,Manchester Utd,MF,TRUE,66,0,0,0,0,0,0,0,0,0,1,0,1,1,2,0,0,0,0,0,0,0,7.1,1,39,44,1,0
+2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Youri Tielemans,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,2,3,2,0,0,0,0,0,0,0,7.1,1,70,77,1,0
+2026/27,Premier League,2026-10-10,Manchester Utd,Tottenham,Youri Tielemans,Manchester Utd,MF,TRUE,58,0,0,0,0,0,0,0,0,1,4,0,0,3,0,0,0,0,0,0,0,0,7.5,0,21,26,1,0
+2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.5,0,83,92,0,0
+2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,6.8,0,43,44,0,0
+2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,2,0,0,0,3,0,0,0,0,0,0,0,0,7,0,57,66,0,0
+2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,4,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,6.7,1,79,87,1,1
+2026/27,Premier League,2026-10-10,Manchester Utd,Tottenham,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,2,1,1,0,1,2,0,0,0,0,0,0,0,7.4,0,67,74,0,0
+2026/27,Premier League,2026-08-22,Hull City,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,FALSE,24,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6.7,0,26,30,0,0
+2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Kobbie Mainoo,Manchester Utd,MF,TRUE,79,0,0,0,0,3,0,0,0,0,2,0,0,2,2,0,0,0,0,0,0,0,7.8,0,46,51,5,4
+2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,83,0,1,0,0,0,0,0,0,0,2,0,0,1,1,0,0,0,0,0,0,0,7.6,2,74,77,3,1
+2026/27,Premier League,2026-09-13,Manchester Utd,Manchester City,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,3,1,0,0,0,2,0,0,0,0,0,0,0,7.5,3,68,70,4,4
+2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Kobbie Mainoo,Manchester Utd,MF,TRUE,79,0,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,7.1,1,64,68,1,1
+2026/27,Premier League,2026-10-10,Manchester Utd,Tottenham,Kobbie Mainoo,Manchester Utd,MF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,7.1,0,64,69,1,1
+2026/27,Premier League,2026-08-22,Hull City,Manchester Utd,Luke Shaw,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,7,1,1,0,0,0,0,0,0,0,6.5,4,48,60,2,0
+2026/27,Premier League,2026-08-30,Manchester Utd,Ipswich Town,Luke Shaw,Manchester Utd,DF,TRUE,72,0,0,0,0,0,0,0,0,0,1,0,0,2,2,0,0,0,0,0,0,0,7,0,42,47,0,0
+2026/27,Premier League,2026-09-06,Everton,Manchester Utd,Luke Shaw,Manchester Utd,DF,TRUE,89,1,0,0,0,1,0,1,0,2,0,0,3,1,1,0,0,0,0,0,0,0,7.3,1,39,43,0,0
+2026/27,Premier League,2026-09-20,Fulham,Manchester Utd,Luke Shaw,Manchester Utd,DF,TRUE,83,0,0,0,0,1,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,0,6.2,0,44,49,0,0
+2026/27,Premier League,2026-10-10,Manchester Utd,Tottenham,Luke Shaw,Manchester Utd,DF,TRUE,89,0,0,0,0,0,0,1,0,1,0,1,0,1,5,0,0,0,0,0,0,0,6.5,0,31,44,1,1

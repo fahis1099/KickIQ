@@ -1,4 +1,4 @@
-Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
+﻿Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Started,MinutesPlayed,Goals,Assists,PenaltyGoals,PenaltyAttempts,Shots,ShotsOnTarget,YellowCards,RedCards,FoulsCommitted,FoulsDrawn,Offsides,Crosses,TacklesWon,Interceptions,OwnGoals,PenaltyWon,PenaltyConceded,ShotsFaced,Saves,PenaltyFaced,PenaltySaved,Rating,KeyPasses,PassesCompleted,PassAttempted,DribblesAttempted,DribbleSuccess
 2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Bruno Fernandes,Manchester Utd,FW,TRUE,90,0,0,0,0,6,3,0,0,0,0,0,8,1,0,0,0,0,0,0,0,0,6.7,0,42,50,1,1
 2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Bruno Fernandes,Manchester Utd,FW,TRUE,78,0,0,0,0,1,0,0,0,1,1,1,5,0,0,0,0,0,0,0,0,0,7,3,31,40,0,0
 2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Bruno Fernandes,Manchester Utd,MF,TRUE,90,0,0,0,0,1,0,0,0,0,1,0,6,3,0,0,0,0,0,0,0,0,7.1,0,37,43,0,0
@@ -290,26 +290,26 @@ Season,Competition,MatchDate,HomeClub,AwayClub,PlayerName,ClubName,Position,Star
 2024/25,Premier League,2025-05-11,Manchester Utd,West Ham,Amad Diallo,Manchester Utd,MF,TRUE,82,0,0,0,0,1,1,0,0,0,2,0,2,1,0,0,0,0,0,0,0,0,7.7,5,37,40,5,1
 2024/25,Premier League,2025-05-16,Chelsea,Manchester Utd,Amad Diallo,Manchester Utd,MF,TRUE,90,0,0,0,0,1,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,6.8,2,25,29,5,2
 2024/25,Premier League,2025-05-25,Manchester Utd,Aston Villa,Amad Diallo,Manchester Utd,MF,TRUE,90,1,0,0,0,2,1,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,8.3,2,47,52,1,0
-2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,2,2,0,0,0,0,0,0,0,7.3,1,54,61,0,0
-2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,6.8,0,70,73,0,0
-2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6,0,61,65,0,0
-2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,76,0,0,0,0,0,0,0,0,0,0,0,0,2,4,0,0,0,0,0,0,0,7.3,0,58,60,1,1
-2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,1,0,2,0,0,1,0,1,0,0,0,0,0,0,0,7,0,69,111,0,0
-2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,4,1,1,0,2,1,0,1,0,7,0,0,0,0,0,0,0,7.2,1,41,46,1,0
-2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,7.2,1,33,42,0,0
-2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,7,0,54,60,0,0
-2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,3,0,0,0,0,2,0,0,0,0,0,0,0,6.8,0,56,64,1,1
-2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,2,2,0,0,0,0,0,0,0,7.4,0,71,81,0,0
-2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,0,2,0,0,0,0,0,0,0,7.3,0,89,93,1,1
-2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,2,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.5,0,84,90,0,0
-2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,1,0,0,1,0,0,0,1,0,0,2,0,1,0,0,0,0,0,0,0,7.7,2,60,61,1,1
-2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,2,0,0,0,1,1,0,1,3,0,0,0,0,0,0,0,0,7.5,1,51,59,1,1
-2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,1,0,0,1,2,0,0,0,0,0,0,0,0,6.7,0,39,44,0,0
-2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Lisandro Martinez,Manchester Utd,DF,TRUE,64,0,0,0,0,0,0,1,0,2,0,0,0,0,1,0,0,0,0,0,0,0,6.9,1,66,73,0,0
-2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,1,0,0,0,1,1,0,0,2,0,0,0,1,3,0,0,0,0,0,0,0,8.1,1,22,30,0,0
-2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Lisandro Martinez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,2,0,1,0,0,0,0,0,0,0,6.7,1,64,73,0,0
-2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Lisandro Martinez,Manchester Utd,DF,TRUE,90,1,0,0,0,1,1,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,8.2,0,55,60,0,0
-2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Lisandro Martinez,Manchester Utd,DF,TRUE,81,0,0,0,0,2,0,0,0,1,2,0,0,2,1,0,0,0,0,0,0,0,7.1,0,56,68,1,1
+2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,0,0,0,2,2,0,0,0,0,0,0,0,7.3,1,54,61,0,0
+2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,6.8,0,70,73,0,0
+2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,6,0,61,65,0,0
+2024/25,Premier League,2024-09-14,Southampton,Manchester Utd,Lisandro Marti­nez,Manchester Utd,DF,TRUE,76,0,0,0,0,0,0,0,0,0,0,0,0,2,4,0,0,0,0,0,0,0,7.3,0,58,60,1,1
+2024/25,Premier League,2024-09-21,Crystal Palace,Manchester Utd,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,1,0,2,0,0,1,0,1,0,0,0,0,0,0,0,7,0,69,111,0,0
+2024/25,Premier League,2024-09-29,Manchester Utd,Tottenham,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,4,1,1,0,2,1,0,1,0,7,0,0,0,0,0,0,0,7.2,1,41,46,1,0
+2024/25,Premier League,2024-10-19,Manchester Utd,Brentford,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,7.2,1,33,42,0,0
+2024/25,Premier League,2024-10-27,West Ham,Manchester Utd,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,7,0,54,60,0,0
+2024/25,Premier League,2024-11-03,Manchester Utd,Chelsea,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,3,0,0,0,0,2,0,0,0,0,0,0,0,6.8,0,56,64,1,1
+2024/25,Premier League,2024-11-10,Manchester Utd,Leicester City,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,0,0,0,1,0,0,2,2,0,0,0,0,0,0,0,7.4,0,71,81,0,0
+2024/25,Premier League,2024-12-01,Manchester Utd,Everton,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,1,0,0,0,0,2,0,0,0,0,0,0,0,7.3,0,89,93,1,1
+2024/25,Premier League,2024-12-07,Manchester Utd,Nottingham,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,2,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,6.5,0,84,90,0,0
+2024/25,Premier League,2024-12-15,Manchester City,Manchester Utd,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,1,0,0,1,0,0,0,1,0,0,2,0,1,0,0,0,0,0,0,0,7.7,2,60,61,1,1
+2024/25,Premier League,2024-12-22,Manchester Utd,Bournemouth,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,2,0,0,0,1,1,0,1,3,0,0,0,0,0,0,0,0,7.5,1,51,59,1,1
+2024/25,Premier League,2024-12-26,Wolves,Manchester Utd,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,1,1,0,0,1,0,0,1,2,0,0,0,0,0,0,0,0,6.7,0,39,44,0,0
+2024/25,Premier League,2024-12-30,Manchester Utd,Newcastle,Lisandro Marti­nez,Manchester Utd,DF,TRUE,64,0,0,0,0,0,0,1,0,2,0,0,0,0,1,0,0,0,0,0,0,0,6.9,1,66,73,0,0
+2024/25,Premier League,2025-01-05,Liverpool,Manchester Utd,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,1,0,0,0,1,1,0,0,2,0,0,0,1,3,0,0,0,0,0,0,0,8.1,1,22,30,0,0
+2024/25,Premier League,2025-01-16,Manchester Utd,Southampton,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,0,0,0,0,0,0,1,0,2,0,0,2,0,1,0,0,0,0,0,0,0,6.7,1,64,73,0,0
+2024/25,Premier League,2025-01-26,Fulham,Manchester Utd,Lisandro Marti­nez,Manchester Utd,DF,TRUE,90,1,0,0,0,1,1,0,0,1,1,0,0,2,0,0,0,0,0,0,0,0,8.2,0,55,60,0,0
+2024/25,Premier League,2025-02-02,Manchester Utd,Crystal Palace,Lisandro Marti­nez,Manchester Utd,DF,TRUE,81,0,0,0,0,2,0,0,0,1,2,0,0,2,1,0,0,0,0,0,0,0,7.1,0,56,68,1,1
 2024/25,Premier League,2024-08-16,Manchester Utd,Fulham,Harry Maguire,Manchester Utd,DF,TRUE,80,0,0,0,0,0,0,1,0,2,0,0,0,0,2,0,0,0,0,0,0,0,7.2,0,50,60,2,1
 2024/25,Premier League,2024-08-24,Brighton,Manchester Utd,Harry Maguire,Manchester Utd,DF,TRUE,78,0,0,0,0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,7,1,41,45,0,0
 2024/25,Premier League,2024-09-01,Manchester Utd,Liverpool,Harry Maguire,Manchester Utd,DF,FALSE,22,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,6.7,0,18,21,0,0
