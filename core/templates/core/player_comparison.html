@@ -1,0 +1,364 @@
+{% load static %}
+
+<style>
+/* KickIQ Player Comparison — self-contained template styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+.kc-page{
+  --bg:rgba(255,255,255,.88);--panel:#ffffff;--cell:#f1f4f6;--line:rgba(15,23,30,.10);
+  --text:#14202a;--muted:#5b6b77;--green:#35c86a;--blue:#777bff;
+  --green-soft:rgba(53,200,106,.14);--blue-soft:rgba(119,123,255,.16);
+  --radius:20px;
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);max-width:1500px;margin:24px auto;padding:28px 22px 48px;border-radius:28px;
+  background:
+    radial-gradient(900px 420px at 8% -5%,rgba(53,200,106,.13),transparent 60%),
+    radial-gradient(900px 420px at 95% 0%,rgba(119,123,255,.15),transparent 60%),
+    linear-gradient(180deg,#f6f8fa 0%,#eceff2 100%);
+  -webkit-font-smoothing:antialiased;
+}
+.kc-page *{box-sizing:border-box}
+.kc-page .kc-panel{
+  position:relative;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;margin-bottom:22px;overflow:hidden;
+  box-shadow:0 18px 40px -18px rgba(15,23,30,.22),inset 0 1px 0 rgba(255,255,255,.8);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+.kc-page .kc-panel::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:3px;
+  background:linear-gradient(90deg,var(--green),#4fd6a8 45%,var(--blue));opacity:.85;
+}
+.kc-page h1{font-size:clamp(26px,3.2vw,38px);margin:0 0 8px;font-weight:900;letter-spacing:-.02em;
+  background:linear-gradient(90deg,#14202a 30%,#1f8a4c);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.kc-page-top{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.kc-back-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:8px 16px;
+  border:1px solid rgba(15,23,30,.15);border-radius:999px;background:rgba(15,23,30,.04);
+  color:#243642;text-decoration:none;font-weight:700;font-size:13px;transition:all .2s ease}
+.kc-back-link:hover{border-color:var(--green);background:var(--green-soft);color:#14202a;transform:translateX(-2px)}
+.kc-report-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 16px;
+  border:1px solid rgba(53,200,106,.5);border-radius:12px;background:linear-gradient(135deg,#1fa65a,#16834a);
+  color:#fff;text-decoration:none;font-weight:800;font-size:13px;box-shadow:0 10px 24px -10px rgba(53,200,106,.55)}
+.kc-report-link:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.kc-page-top h1{margin:0}
+.kc-page h2{font-size:22px;margin:0 0 20px;text-align:center;font-weight:800;letter-spacing:-.01em}
+.kc-page h3{font-weight:700;letter-spacing:-.01em}
+.kc-page p{margin:0}
+.kc-muted{color:var(--muted)}
+.kc-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:end;margin-top:24px}
+.kc-page label{display:block;font-weight:700;font-size:11.5px;margin-bottom:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.kc-page select,.kc-page button{width:100%;min-height:48px;padding:11px 14px;border:1px solid rgba(15,23,30,.18);
+  border-radius:12px;background:#ffffff;color:var(--text);font:inherit;font-size:14px;transition:all .2s ease}
+.kc-page select{cursor:pointer;appearance:none;-webkit-appearance:none;padding-right:40px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%239aa7b1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 16px center}
+.kc-page select:hover{border-color:rgba(15,23,30,.35)}
+.kc-page select:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px var(--green-soft)}
+.kc-filters > div:nth-child(2) select:focus{border-color:var(--blue);box-shadow:0 0 0 4px var(--blue-soft)}
+.kc-page button{background:linear-gradient(135deg,#1fa65a,#16834a);color:#fff;border-color:transparent;font-weight:800;
+  letter-spacing:.02em;cursor:pointer;box-shadow:0 10px 24px -10px rgba(53,200,106,.7)}
+.kc-page button:hover{filter:brightness(1.1);transform:translateY(-2px);box-shadow:0 14px 28px -10px rgba(53,200,106,.85)}
+.kc-page button:active{transform:translateY(0)}
+.kc-filters > div:last-child{grid-column:1 / -1;display:flex;justify-content:center;margin-top:4px}
+.kc-filters > div:last-child button{width:min(280px,100%)}
+.kc-player-heads{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:24px}
+.kc-player-card{position:relative;border:1px solid var(--line);border-radius:18px;padding:24px 18px 20px;
+  background:linear-gradient(160deg,rgba(53,200,106,.16),rgba(255,255,255,.95) 55%);text-align:center;min-width:0;
+  box-shadow:0 14px 30px -16px rgba(15,23,30,.25);transition:transform .25s ease,box-shadow .25s ease}
+.kc-player-card:nth-child(2){background:linear-gradient(160deg,rgba(119,123,255,.18),rgba(255,255,255,.95) 55%)}
+.kc-player-card:hover{transform:translateY(-3px)}
+.kc-player-card .kc-avatar{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;overflow:hidden;
+  margin:0 auto 12px;background:#ffffff;border:3px solid var(--green);font-size:26px;font-weight:800;
+  box-shadow:0 0 0 6px var(--green-soft),0 10px 24px -8px rgba(53,200,106,.5)}
+.kc-player-card:nth-child(2) .kc-avatar{border-color:var(--blue);box-shadow:0 0 0 6px var(--blue-soft),0 10px 24px -8px rgba(119,123,255,.55)}
+.kc-player-card .kc-avatar img{width:100%;height:100%;object-fit:cover}
+.kc-player-club{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px}
+.kc-player-club img{width:26px;height:26px;object-fit:contain}
+.kc-stat-heading td{background:linear-gradient(90deg,rgba(53,200,106,.18),rgba(119,123,255,.18))!important;color:#14202a!important;
+  font-weight:800;text-align:left!important;padding:13px 16px!important;font-size:12px!important;
+  text-transform:uppercase;letter-spacing:.12em;border-radius:8px;border-bottom:0!important}
+.kc-stat-table td:first-child{width:40%}
+.kc-stat-table td:nth-child(2),.kc-stat-table td:nth-child(3){width:30%}
+.kc-player-card h3{font-size:20px;margin:0 0 5px;overflow-wrap:anywhere}
+.kc-player-card .kc-club{font-size:13px;color:#44545f}
+.kc-player-card > .kc-club{display:inline-block;margin-top:10px;padding:4px 12px;border-radius:999px;
+  background:rgba(15,23,30,.06);font-size:12px;font-weight:600;color:#2b3b46}
+.kc-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.kc-chart-card{background:linear-gradient(180deg,#ffffff,#f4f7f9);border:1px solid var(--line);border-radius:18px;
+  padding:20px;min-width:0;box-shadow:0 12px 28px -16px rgba(15,23,30,.22)}
+.kc-chart-card h3{margin:0 0 14px;font-size:15px;color:#14202a}
+.kc-chart-wrap{position:relative;height:300px}
+.kc-chart-wrap.tall{height:350px}
+.kc-section-title{text-align:center;font-size:24px;font-weight:900;letter-spacing:-.01em;margin:6px 0 20px}
+.kc-table-wrap{overflow-x:auto}
+.kc-table{width:100%;border-collapse:separate;border-spacing:8px 0;min-width:480px}
+.kc-table th,.kc-table td{padding:14px 12px;text-align:center;border-bottom:1px solid var(--line);
+  color:var(--text)!important;font-size:14px;line-height:1.45}
+.kc-table th{color:#14202a;font-size:12px;text-transform:uppercase;letter-spacing:.1em;background:#e6ebef;
+  border-radius:10px 10px 0 0;padding:15px 12px}
+.kc-table th:nth-child(2){border-bottom:3px solid var(--green)}
+.kc-table th:nth-child(3){border-bottom:3px solid var(--blue)}
+.kc-table th:first-child,.kc-table td:first-child{text-align:left;width:32%;background:transparent;color:#243642!important}
+.kc-table td:not(:first-child){background:var(--cell);color:#14202a!important;font-weight:600;transition:background .2s ease}
+.kc-table tbody tr:not(.kc-stat-heading):hover td:not(:first-child){background:#e6ebef}
+.kc-table tr:first-child td:not(:first-child){border-radius:8px 8px 0 0}
+.kc-table tr:last-child td:not(:first-child){border-radius:0 0 8px 8px;border-bottom:0}
+.kc-best{color:#fff;font-weight:800}
+.kc-best span{display:inline-block;background:#292d55;border-radius:999px;padding:5px 12px}
+.kc-note{font-size:12px;color:var(--muted);margin-top:16px;line-height:1.6;text-align:center}
+.kc-error{padding:14px 16px;background:rgba(255,92,80,.12);border:1px solid rgba(255,92,80,.35);color:#8a1f16;border-radius:12px;margin-top:16px}
+.kc-empty{padding:40px 20px;border:2px dashed rgba(15,23,30,.2);border-radius:16px;color:var(--muted);
+  text-align:center;font-size:15px;background:rgba(15,23,30,.02)}
+.kc-empty strong{color:var(--green)}
+.kc-summary-table-wrap{margin:18px 0 0;width:100%;overflow-x:auto}
+.kc-summary-table{width:100%;border-collapse:separate;border-spacing:8px 0;table-layout:fixed}
+.kc-summary-table th,.kc-summary-table td{padding:15px 14px;text-align:center;border-bottom:1px solid var(--line)}
+.kc-summary-table thead th{background:#e6ebef;color:#14202a;font-size:13px;font-weight:800;border-radius:10px 10px 0 0}
+.kc-summary-table thead th:first-child{border-bottom:3px solid var(--green)}
+.kc-summary-table thead th:last-child{border-bottom:3px solid var(--blue)}
+.kc-summary-table thead th.kc-summary-label{border-bottom:3px solid transparent;color:var(--muted);
+  font-size:11px;text-transform:uppercase;letter-spacing:.12em}
+.kc-summary-table .kc-summary-label{width:34%;background:#e6ebef;color:#14202a;font-weight:800;text-align:center}
+.kc-summary-table tbody .kc-summary-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#44545f}
+.kc-summary-table .kc-summary-value{background:var(--cell);font-weight:800;color:var(--text);font-size:20px}
+.kc-summary-table .kc-higher,.kc-table td.kc-higher{background:linear-gradient(135deg,#dfe1ff,#cdd0ff)!important;color:#14202a!important;
+  font-weight:900;box-shadow:inset 0 0 0 1px rgba(119,123,255,.55)}
+.kc-summary-table tbody tr:last-child td,.kc-summary-table tbody tr:last-child th{border-bottom:0}
+@media(max-width:760px){.kc-filters,.kc-grid-2,.kc-player-heads{grid-template-columns:1fr}.kc-page{padding:18px 12px 32px;border-radius:20px}.kc-page .kc-panel{padding:16px}.kc-chart-wrap{height:270px}.kc-chart-wrap.tall{height:300px}.kc-summary-table{min-width:520px}}@media(max-width:460px){.kc-summary-table{min-width:520px}}
+
+/* Keep all statistic rows in a consistent three-column comparison layout. */
+.kc-table{width:100%;border-collapse:separate;border-spacing:8px 0;min-width:560px;table-layout:fixed}
+.kc-table th:first-child,.kc-table td:first-child{width:33.333%;text-align:center;background:#e6ebef;color:#14202a;font-weight:700}
+.kc-table td:not(:first-child){width:33.333%;background:var(--cell);color:var(--text)}
+.kc-table td.kc-higher{background:linear-gradient(135deg,#dfe1ff,#cdd0ff)!important;color:#14202a!important;font-weight:900}
+/* Player Statistics table: Player A on the left, statistic name in the center, Player B on the right (CSS-only reorder). */
+.kc-stat-table thead,.kc-stat-table tbody{display:block}
+.kc-stat-table tr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:8px}
+.kc-stat-table th,.kc-stat-table td{width:auto!important}
+.kc-stat-table th:nth-child(2),.kc-stat-table td:nth-child(2){order:1}
+.kc-stat-table th:first-child,.kc-stat-table td:first-child{order:2;text-align:center;background:#e6ebef;color:#14202a!important;font-weight:700}
+.kc-stat-table th:nth-child(3),.kc-stat-table td:nth-child(3){order:3}
+.kc-stat-table .kc-stat-heading td{grid-column:1 / -1;order:0;text-align:center!important}
+</style>
+
+<div class="kc-page">
+  <section class="kc-panel">
+    <div class="kc-page-top">
+      <a class="kc-back-link" href="/players/" aria-label="Back to players">← Back to Players</a>
+      <h1>Player Comparison</h1>
+    </div>
+    
+    {% if error_message %}<div class="kc-error">{{ error_message }}</div>{% endif %}
+    <form method="get" class="kc-filters">
+      <div><label for="player_a">Player A</label>
+        <select id="player_a" name="player_a" required>
+          <option value="">Select player</option>
+          {% for p in players %}<option value="{{ p.id }}" {% if player_a and player_a.id == p.id %}selected{% endif %}>{{ p.name }}{% if p.current_club %} — {{ p.current_club.name }}{% endif %}</option>{% endfor %}
+        </select>
+      </div>
+      <div><label for="player_b">Player B</label>
+        <select id="player_b" name="player_b" required>
+          <option value="">Select player</option>
+          {% for p in players %}<option value="{{ p.id }}" {% if player_b and player_b.id == p.id %}selected{% endif %}>{{ p.name }}{% if p.current_club %} — {{ p.current_club.name }}{% endif %}</option>{% endfor %}
+        </select>
+      </div>
+      <div><label for="season">Season</label>
+        <select id="season" name="season">
+          <option value="">All seasons</option>
+          {% for s in seasons %}<option value="{{ s }}" {% if selected_season == s %}selected{% endif %}>{{ s }}</option>{% endfor %}
+        </select>
+      </div>
+      <div><button type="submit">Compare Players</button></div>
+    </form>
+  </section>
+
+  {% if comparison %}
+  <section class="kc-panel">
+    <div class="kc-player-heads">
+      <article class="kc-player-card">
+        <div class="kc-avatar">
+          {% if player_a.photo_path %}
+            <img src="/static/core/images/{{ player_a.photo_path }}" alt="{{ player_a.name }}" onerror="this.remove();this.parentElement.textContent='{{ player_a.name|first|upper }}';">
+          {% else %}{{ player_a.name|first|upper }}{% endif %}
+        </div>
+        <h3>{{ player_a.name }}</h3>
+        <div class="kc-player-club">
+          {% if player_a.current_club and player_a.current_club.logo_path %}<img src="/static/core/images/{{ player_a.current_club.logo_path }}" alt="{{ player_a.current_club.name }} logo" onerror="this.style.display='none'">{% endif %}
+          <p class="kc-club">{% if player_a.current_club %}{{ player_a.current_club.name }}{% else %}Club unavailable{% endif %}</p>
+        </div>
+        <p class="kc-club">{{ player_a.get_position_display|default:player_a.position }}</p>
+      </article>
+      <article class="kc-player-card">
+        <div class="kc-avatar">
+          {% if player_b.photo_path %}
+            <img src="/static/core/images/{{ player_b.photo_path }}" alt="{{ player_b.name }}" onerror="this.remove();this.parentElement.textContent='{{ player_b.name|first|upper }}';">
+          {% else %}{{ player_b.name|first|upper }}{% endif %}
+        </div>
+        <h3>{{ player_b.name }}</h3>
+        <div class="kc-player-club">
+          {% if player_b.current_club and player_b.current_club.logo_path %}<img src="/static/core/images/{{ player_b.current_club.logo_path }}" alt="{{ player_b.current_club.name }} logo" onerror="this.style.display='none'">{% endif %}
+          <p class="kc-club">{% if player_b.current_club %}{{ player_b.current_club.name }}{% else %}Club unavailable{% endif %}</p>
+        </div>
+        <p class="kc-club">{{ player_b.get_position_display|default:player_b.position }}</p>
+      </article>
+    </div>
+    <p class="kc-muted" style="text-align:center">{% if selected_season %}Season {{ selected_season }}{% else %}All completed seasons{% endif %}</p>
+    <div style="display:flex;justify-content:center;margin-top:16px">
+      <a class="kc-report-link" href="{% url 'player-comparison-report-pdf' %}?player_a={{ player_a.id }}&amp;player_b={{ player_b.id }}{% if selected_season %}&amp;season={{ selected_season|urlencode }}{% endif %}">
+        Download Comparison PDF
+      </a>
+    </div>
+
+    <div class="kc-summary-table-wrap">
+      <table class="kc-summary-table" aria-label="Player summary comparison">
+        <thead><tr><th>{{ player_a.name }}</th><th class="kc-summary-label">Summary statistics</th><th>{{ player_b.name }}</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="kc-summary-value kc-summary-a" data-value="{{ comparison.a.appearances|default_if_none:'0' }}">{{ comparison.a.appearances|default:"0" }}</td>
+            <th scope="row" class="kc-summary-label">Appearances</th>
+            <td class="kc-summary-value kc-summary-b" data-value="{{ comparison.b.appearances|default_if_none:'0' }}">{{ comparison.b.appearances|default:"0" }}</td>
+          </tr>
+          <tr>
+            <td class="kc-summary-value kc-summary-a" data-value="{{ comparison.a.minutes|default_if_none:'0' }}">{{ comparison.a.minutes|default:"0" }}</td>
+            <th scope="row" class="kc-summary-label">Total minutes</th>
+            <td class="kc-summary-value kc-summary-b" data-value="{{ comparison.b.minutes|default_if_none:'0' }}">{{ comparison.b.minutes|default:"0" }}</td>
+          </tr>
+          <tr>
+            <td class="kc-summary-value kc-summary-a" data-value="{{ comparison.a.average_rating|default_if_none:'0' }}">{{ comparison.a.average_rating|default:"N/A" }}</td>
+            <th scope="row" class="kc-summary-label">Average rating</th>
+            <td class="kc-summary-value kc-summary-b" data-value="{{ comparison.b.average_rating|default_if_none:'0' }}">{{ comparison.b.average_rating|default:"N/A" }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="kc-panel">
+    <h2>Performance graphs</h2>
+    <div class="kc-grid-2">
+      <div class="kc-chart-card"><h3>Core statistics</h3><div class="kc-chart-wrap"><canvas id="kcTotalsChart" aria-label="Goals, assists, shots and key passes comparison"></canvas></div></div>
+      <div class="kc-chart-card"><h3>Per-appearance efficiency</h3><div class="kc-chart-wrap"><canvas id="kcPerGameChart" aria-label="Per game goals, assists, shots and key passes comparison"></canvas></div></div>
+
+    </div>
+    <p class="kc-note">Graphs compare total statistics and per-appearance efficiency for the selected season or all seasons.</p>
+  </section>
+
+  <section class="kc-panel">
+    <div class="kc-section-title">Player Statistics</div>
+    <div class="kc-table-wrap">
+      <table class="kc-table kc-stat-table">
+        <thead><tr><th>Statistic</th><th>{{ player_a.name }}</th><th>{{ player_b.name }}</th></tr></thead>
+        <tbody>
+          <tr class="kc-stat-heading"><td colspan="3">Matches</td></tr>
+          <tr><td>Minutes per game</td><td>{{ comparison.a.minutes_per_appearance|default:"0" }}</td><td>{{ comparison.b.minutes_per_appearance|default:"0" }}</td></tr>
+          <tr><td>Total minutes played</td><td>{{ comparison.a.minutes|default:"0" }}</td><td>{{ comparison.b.minutes|default:"0" }}</td></tr>
+          <tr><td>Matches played</td><td>{{ comparison.a.appearances|default:"0" }}</td><td>{{ comparison.b.appearances|default:"0" }}</td></tr>
+          <tr class="kc-stat-heading"><td colspan="3">Attacking</td></tr>
+          <tr><td>Goals</td><td>{{ comparison.a.goals|default:"0" }}</td><td>{{ comparison.b.goals|default:"0" }}</td></tr>
+          <tr><td>Goals per game</td><td>{{ comparison.a.goals_per_game|default:"0" }}</td><td>{{ comparison.b.goals_per_game|default:"0" }}</td></tr>
+          <tr><td>Shots</td><td>{{ comparison.a.shots|default:"0" }}</td><td>{{ comparison.b.shots|default:"0" }}</td></tr>
+          <tr><td>Shots on target</td><td>{{ comparison.a.shots_on_target|default:"0" }}</td><td>{{ comparison.b.shots_on_target|default:"0" }}</td></tr>
+          <tr><td>Shot accuracy</td><td>{% if comparison.a.shot_accuracy != None %}{{ comparison.a.shot_accuracy }}%{% else %}—{% endif %}</td><td>{% if comparison.b.shot_accuracy != None %}{{ comparison.b.shot_accuracy }}%{% else %}—{% endif %}</td></tr>
+          <tr><td>Assists</td><td>{{ comparison.a.assists|default:"0" }}</td><td>{{ comparison.b.assists|default:"0" }}</td></tr>
+          <tr><td>Assists per game</td><td>{{ comparison.a.assists_per_game|default:"0" }}</td><td>{{ comparison.b.assists_per_game|default:"0" }}</td></tr>
+          <tr><td>Key passes</td><td>{{ comparison.a.key_passes|default:"0" }}</td><td>{{ comparison.b.key_passes|default:"0" }}</td></tr>
+          <tr><td>Crosses</td><td>{{ comparison.a.crosses|default:"0" }}</td><td>{{ comparison.b.crosses|default:"0" }}</td></tr>
+          <tr><td>Offsides</td><td>{{ comparison.a.offsides|default:"0" }}</td><td>{{ comparison.b.offsides|default:"0" }}</td></tr>
+          <tr class="kc-stat-heading"><td colspan="3">Passing</td></tr>
+          <tr><td>Passes completed</td><td>{{ comparison.a.passes_completed|default:"0" }}</td><td>{{ comparison.b.passes_completed|default:"0" }}</td></tr>
+          <tr><td>Passes attempted</td><td>{{ comparison.a.passes_attempted|default:"0" }}</td><td>{{ comparison.b.passes_attempted|default:"0" }}</td></tr>
+          <tr><td>Pass completion</td><td>{% if comparison.a.pass_accuracy != None %}{{ comparison.a.pass_accuracy }}%{% else %}—{% endif %}</td><td>{% if comparison.b.pass_accuracy != None %}{{ comparison.b.pass_accuracy }}%{% else %}—{% endif %}</td></tr>
+          <tr class="kc-stat-heading"><td colspan="3">Defending and dribbling</td></tr>
+          <tr><td>Tackles won</td><td>{{ comparison.a.tackles_won|default:"0" }}</td><td>{{ comparison.b.tackles_won|default:"0" }}</td></tr>
+          <tr><td>Interceptions</td><td>{{ comparison.a.interceptions|default:"0" }}</td><td>{{ comparison.b.interceptions|default:"0" }}</td></tr>
+          <tr><td>Dribbles completed</td><td>{{ comparison.a.dribbles_completed|default:"0" }}</td><td>{{ comparison.b.dribbles_completed|default:"0" }}</td></tr>
+          <tr><td>Dribbles attempted</td><td>{{ comparison.a.dribbles_attempted|default:"0" }}</td><td>{{ comparison.b.dribbles_attempted|default:"0" }}</td></tr>
+          <tr><td>Dribble success</td><td>{% if comparison.a.dribble_success != None %}{{ comparison.a.dribble_success }}%{% else %}—{% endif %}</td><td>{% if comparison.b.dribble_success != None %}{{ comparison.b.dribble_success }}%{% else %}—{% endif %}</td></tr>
+          <tr class="kc-stat-heading"><td colspan="3">Goalkeeping and discipline</td></tr>
+          <tr><td>Saves</td><td>{{ comparison.a.saves|default:"0" }}</td><td>{{ comparison.b.saves|default:"0" }}</td></tr>
+          <tr><td>Shots faced</td><td>{{ comparison.a.shots_faced|default:"0" }}</td><td>{{ comparison.b.shots_faced|default:"0" }}</td></tr>
+          <tr><td>Penalties saved</td><td>{{ comparison.a.penalty_saved|default:"0" }}</td><td>{{ comparison.b.penalty_saved|default:"0" }}</td></tr>
+          <tr><td>Yellow cards</td><td>{{ comparison.a.yellow_cards|default:"0" }}</td><td>{{ comparison.b.yellow_cards|default:"0" }}</td></tr>
+          <tr><td>Red cards</td><td>{{ comparison.a.red_cards|default:"0" }}</td><td>{{ comparison.b.red_cards|default:"0" }}</td></tr>
+          <tr><td>Fouls committed</td><td>{{ comparison.a.fouls_committed|default:"0" }}</td><td>{{ comparison.b.fouls_committed|default:"0" }}</td></tr>
+          <tr><td>Fouls drawn</td><td>{{ comparison.a.fouls_drawn|default:"0" }}</td><td>{{ comparison.b.fouls_drawn|default:"0" }}</td></tr>
+          <tr class="kc-stat-heading"><td colspan="3">Overall</td></tr>
+          <tr><td>Average rating</td><td>{{ comparison.a.average_rating|default:"N/A" }}</td><td>{{ comparison.b.average_rating|default:"N/A" }}</td></tr>
+          <tr><td>Football Form Index (FFI)</td><td>{{ comparison.a.ffi|default:"N/A" }}</td><td>{{ comparison.b.ffi|default:"N/A" }}</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="kc-note">Statistics are aggregated from completed matches in the selected season or across all seasons. Per-game values are calculated from recorded appearances.</p>
+  </section>
+  {% else %}
+  <section class="kc-panel"><div class="kc-empty">Select two players and click <strong>Compare Players</strong> to view their statistics and graphs.</div></section>
+  {% endif %}
+</div>
+
+{% if comparison %}
+<script>
+/* Highlight the strictly higher numeric value for each player; ties are not highlighted. */
+(() => {
+  document.querySelectorAll(".kc-table tbody tr, .kc-summary-table tbody tr").forEach(row => {
+    const cells = row.querySelectorAll("td");
+    if (row.closest(".kc-summary-table")) {
+      const left = row.querySelector(".kc-summary-a");
+      const right = row.querySelector(".kc-summary-b");
+      if (!left || !right) return;
+      const a = Number(left.dataset.value ?? left.textContent.trim());
+      const b = Number(right.dataset.value ?? right.textContent.trim());
+      if (Number.isFinite(a) && Number.isFinite(b) && a !== b) (a > b ? left : right).classList.add("kc-higher");
+      return;
+    }
+    if (cells.length < 3) return;
+    const parse = cell => {
+      const raw = cell.textContent.trim().replace(/[,%€\s]/g, "");
+      if (!raw || raw === "—" || raw === "N/A") return NaN;
+      return Number(raw);
+    };
+    const a = parse(cells[1]), b = parse(cells[2]);
+    if (!Number.isFinite(a) || !Number.isFinite(b) || a === b) return;
+    cells[a > b ? 1 : 2].classList.add("kc-higher");
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+(() => {
+  const names = [
+    document.querySelector(".kc-player-heads article:nth-child(1) h3")?.textContent?.trim() || "Player A",
+    document.querySelector(".kc-player-heads article:nth-child(2) h3")?.textContent?.trim() || "Player B"
+  ];
+  const values = {
+    appearances: [Number("{{ comparison.a.appearances|default_if_none:'0' }}") || 0, Number("{{ comparison.b.appearances|default_if_none:'0' }}") || 0],
+    goals: [Number("{{ comparison.a.goals|default_if_none:'0' }}") || 0, Number("{{ comparison.b.goals|default_if_none:'0' }}") || 0],
+    assists: [Number("{{ comparison.a.assists|default_if_none:'0' }}") || 0, Number("{{ comparison.b.assists|default_if_none:'0' }}") || 0],
+    shots: [Number("{{ comparison.a.shots|default_if_none:'0' }}") || 0, Number("{{ comparison.b.shots|default_if_none:'0' }}") || 0],
+    keyPasses: [Number("{{ comparison.a.key_passes|default_if_none:'0' }}") || 0, Number("{{ comparison.b.key_passes|default_if_none:'0' }}") || 0]
+  };
+  const perGame = key => values.appearances.map((apps, i) => apps > 0 ? values[key][i] / apps : 0);
+  if (!window.Chart) {
+    document.querySelectorAll(".kc-chart-card").forEach(card => {
+      const message = document.createElement("p");
+      message.className = "kc-note";
+      message.textContent = "Charts could not load. Check the Chart.js CDN connection.";
+      card.appendChild(message);
+    });
+    return;
+  }
+  Chart.defaults.color = "#44545f";
+  Chart.defaults.borderColor = "rgba(15,23,30,.12)";
+  const common = { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { usePointStyle: true, color: "#243642" } } } };
+  const bar = (id, labels, dataA, dataB) => new Chart(document.getElementById(id), {
+    type: "bar",
+    data: { labels, datasets: [
+      { label: names[0], data: dataA, backgroundColor: "rgba(53,200,106,.78)", borderRadius: 5 },
+      { label: names[1], data: dataB, backgroundColor: "rgba(119,123,255,.78)", borderRadius: 5 }
+    ]},
+    options: { ...common, scales: { x: { grid: { display: false } }, y: { beginAtZero: true } } }
+  });
+  bar("kcTotalsChart", ["Goals", "Assists", "Shots", "Key passes"], [values.goals[0], values.assists[0], values.shots[0], values.keyPasses[0]], [values.goals[1], values.assists[1], values.shots[1], values.keyPasses[1]]);
+  bar("kcPerGameChart", ["Goals / game", "Assists / game", "Shots / game", "Key passes / game"], [perGame("goals")[0], perGame("assists")[0], perGame("shots")[0], perGame("keyPasses")[0]], [perGame("goals")[1], perGame("assists")[1], perGame("shots")[1], perGame("keyPasses")[1]]);
+})();
+</script>
+{% endif %}
+
