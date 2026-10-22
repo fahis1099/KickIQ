@@ -215,26 +215,43 @@
         </div>
 
 
-        <div class="summary-card rating-card">
+        <div class="summary-card stats-count-card">
 
             <div class="card-label">
-                Average Rating
+                Total Available Stats
             </div>
 
             <div
                 class="card-value"
-                id="average-rating"
+                id="total-available-stats"
             >
                 -
             </div>
 
             <div class="card-description">
-                Overall player rating
+                Player match-statistics records
             </div>
 
         </div>
 
 
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- STATISTICAL LEADERS -->
+    <!-- ============================= -->
+
+    <section class="leaders-section">
+        <div class="section-header">
+            <div>
+                <h3>Statistical Leaders</h3>
+                <p>Players leading key match statistics</p>
+            </div>
+        </div>
+        <div id="statistical-leaders" class="leaders-grid">
+            <div class="loading">Loading statistical leaders...</div>
+        </div>
     </section>
 
 
@@ -367,6 +384,63 @@
         </div>
 
 
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- LEAGUE POINTS TABLE -->
+    <!-- ============================= -->
+
+    <section class="dashboard-grid points-table-grid">
+        <div class="dashboard-card points-table-card">
+            <div class="section-header points-table-header">
+                <div>
+                    <h3>League Points Table</h3>
+                    <p>Calculated from completed match results in the database</p>
+                </div>
+
+                <div class="standings-filters">
+                    <label for="standings-season">Season</label>
+                    <select id="standings-season" aria-label="Select season">
+                        <option value="">Loading seasons...</option>
+                    </select>
+
+                    <label for="standings-competition">Competition</label>
+                    <select id="standings-competition" aria-label="Select competition">
+                        <option value="">All competitions</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="table-wrapper standings-table-wrapper">
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Club</th>
+                            <th title="Played">P</th>
+                            <th title="Won">W</th>
+                            <th title="Drawn">D</th>
+                            <th title="Lost">L</th>
+                            <th title="Goals For">GF</th>
+                            <th title="Goals Against">GA</th>
+                            <th title="Goal Difference">GD</th>
+                            <th title="Points">Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody id="standings-table-body">
+                        <tr>
+                            <td colspan="10" class="loading">Loading league table...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="standings-note">
+                Scoring: 3 points for a win, 1 for a draw, and 0 for a loss.
+                Only completed matches with both scores recorded are counted.
+            </p>
+        </div>
     </section>
 
 

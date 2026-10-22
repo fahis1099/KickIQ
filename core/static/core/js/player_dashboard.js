@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadDashboard();
 
     setupLogout();
+    setupStandingsFilters();
 
 });
 
@@ -27,11 +28,14 @@ async function loadDashboard() {
 
         updateTopPlayers(data.top_players);
 
+        updateStatisticalLeaders(data.statistical_leaders);
+
         updatePositionChart(data.position_summary);
 
         updateUpcomingMatches(data.upcoming_matches);
 
         updateRecentMatches(data.recent_matches);
+        updateStandings(data.standings, data.standings_seasons, data.standings_competitions);
 
     }
 
@@ -68,8 +72,8 @@ function updateSummary(summary) {
     document.getElementById("upcoming-matches").textContent =
         summary.upcoming_matches;
 
-    document.getElementById("average-rating").textContent =
-        summary.average_rating;
+    document.getElementById("total-available-stats").textContent =
+        Number(summary.total_available_stats || 0).toLocaleString();
 
 }
 
@@ -110,8 +114,10 @@ function updateTopPlayers(players) {
             </td>
 
             <td class="player-name">
-                ${player.player__name}
-            </td>
+    <a href="/players/${player.player_id}">
+        ${player.player__name}
+    </a>
+</td>
 
             <td>
                 ${formatPosition(player.player__position)}
@@ -145,6 +151,101 @@ function updateTopPlayers(players) {
 
 }
 
+
+/* =====================================
+   STATISTICAL LEADERS
+===================================== */
+
+function updateStatisticalLeaders(leaders) {
+    const container = document.getElementById("statistical-leaders");
+    if (!container) return;
+
+    const definitions = [
+        { key: "goals", label: "Most Goals", icon: "⚽" },
+        { key: "assists", label: "Most Assists", icon: "🎯" },
+        { key: "red_cards", label: "Most Red Cards", icon: "🟥" },
+        { key: "yellow_cards", label: "Most Yellow Cards", icon: "🟨" },
+        { key: "saves", label: "Most Saves", icon: "🧤" }
+    ];
+
+    container.innerHTML = "";
+
+    definitions.forEach(function (definition) {
+        const leader = leaders ? leaders[definition.key] : null;
+        const card = document.createElement("a");
+        card.className = "leader-card";
+
+        if (leader && leader.player_id) {
+            card.href = `/players/${leader.player_id}`;
+            const photoURL = getPlayerPhotoURL(leader.photo_path);
+            const photo = photoURL
+                ? `<img class="leader-photo" src="${photoURL}" alt="${escapeHTML(leader.player_name)}" onerror="handlePlayerPhotoError(this)">`
+                : `<div class="leader-photo-fallback">${escapeHTML(getPlayerInitials(leader.player_name))}</div>`;
+
+            card.innerHTML = `
+                <div class="leader-topline">
+                    <span class="leader-icon">${definition.icon}</span>
+                    <span class="leader-category">${definition.label}</span>
+                </div>
+                <div class="leader-player">
+                    ${photo}
+                    <div class="leader-player-details">
+                        <span class="leader-player-name">${escapeHTML(leader.player_name)}</span>
+                        <strong class="leader-total">${Number(leader.total || 0).toLocaleString()}</strong>
+                    </div>
+                </div>
+                <span class="leader-hint">View performance →</span>
+            `;
+        } else {
+            card.classList.add("leader-card-empty");
+            card.innerHTML = `
+                <div class="leader-topline">
+                    <span class="leader-icon">${definition.icon}</span>
+                    <span class="leader-category">${definition.label}</span>
+                </div>
+                <p class="leader-empty-text">No data available</p>
+            `;
+            card.removeAttribute("href");
+            card.setAttribute("aria-disabled", "true");
+        }
+
+        container.appendChild(card);
+    });
+}
+
+function getPlayerPhotoURL(photoPath) {
+    if (!photoPath) return null;
+    if (/^https?:\/\//i.test(photoPath)) return photoPath;
+    if (photoPath.startsWith("/")) return photoPath;
+    return `/static/core/images/${photoPath}`;
+}
+
+function handlePlayerPhotoError(image) {
+    const fallback = document.createElement("div");
+    fallback.className = "leader-photo-fallback";
+    fallback.textContent = getPlayerInitials(image.alt);
+    image.replaceWith(fallback);
+}
+
+function getPlayerInitials(name) {
+    if (!name) return "?";
+    const words = name.trim().split(/\s+/);
+    return (words.length === 1
+        ? words[0].slice(0, 2)
+        : words[0][0] + words[words.length - 1][0]).toUpperCase();
+}
+
+function escapeHTML(value) {
+    return String(value ?? "").replace(/[&<>"']/g, function (character) {
+        return ({
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;"
+        })[character];
+    });
+}
 
 /* =====================================
    PREFERRED FOOT FORMAT
@@ -672,4 +773,121 @@ function setupLogout() {
         }
     );
 
+}
+
+
+/* =====================================
+   LEAGUE POINTS TABLE
+   Added without changing existing dashboard functions.
+===================================== */
+
+function setupStandingsFilters() {
+    const seasonSelect = document.getElementById("standings-season");
+    const competitionSelect = document.getElementById("standings-competition");
+
+    if (seasonSelect) seasonSelect.addEventListener("change", loadStandingsForFilters);
+    if (competitionSelect) competitionSelect.addEventListener("change", loadStandingsForFilters);
+}
+
+async function loadStandingsForFilters() {
+    const season = document.getElementById("standings-season")?.value || "";
+    const competition = document.getElementById("standings-competition")?.value || "";
+    const params = new URLSearchParams();
+
+    if (season) params.set("season", season);
+    if (competition) params.set("competition", competition);
+
+    const tbody = document.getElementById("standings-table-body");
+    if (tbody) tbody.innerHTML = '<tr><td colspan="10" class="loading">Updating points table...</td></tr>';
+
+    try {
+        const query = params.toString();
+        const response = await fetch("/api/dashboard/" + (query ? "?" + query : ""));
+        if (!response.ok) throw new Error("Failed to load league standings");
+
+        const data = await response.json();
+        updateStandings(data.standings, data.standings_seasons, data.standings_competitions, false);
+    } catch (error) {
+        console.error("Standings error:", error);
+        if (tbody) tbody.innerHTML = '<tr><td colspan="10" class="loading">Unable to load points table.</td></tr>';
+    }
+}
+
+function updateStandings(standings, seasons, competitions, setDefaults = true) {
+    const seasonSelect = document.getElementById("standings-season");
+    const competitionSelect = document.getElementById("standings-competition");
+    const tbody = document.getElementById("standings-table-body");
+    if (!seasonSelect || !competitionSelect || !tbody) return;
+
+    const previousSeason = seasonSelect.value;
+    const previousCompetition = competitionSelect.value;
+
+    if (Array.isArray(seasons)) {
+        seasonSelect.innerHTML = "";
+        seasons.forEach(function (season) {
+            const option = document.createElement("option");
+            option.value = season;
+            option.textContent = season;
+            seasonSelect.appendChild(option);
+        });
+    }
+
+    if (Array.isArray(competitions)) {
+        competitionSelect.innerHTML = '<option value="">All competitions</option>';
+        competitions.forEach(function (competition) {
+            const option = document.createElement("option");
+            option.value = competition;
+            option.textContent = competition;
+            competitionSelect.appendChild(option);
+        });
+    }
+
+    if (setDefaults) {
+        seasonSelect.value = seasons && seasons.includes(previousSeason)
+            ? previousSeason
+            : (seasons && seasons.length ? seasons[0] : "");
+        competitionSelect.value = competitions && competitions.includes(previousCompetition)
+            ? previousCompetition
+            : "";
+    } else {
+        if (seasons && seasons.includes(previousSeason)) seasonSelect.value = previousSeason;
+        if (competitions && competitions.includes(previousCompetition)) competitionSelect.value = previousCompetition;
+    }
+
+    tbody.innerHTML = "";
+    if (!Array.isArray(standings) || standings.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="10" class="loading">No completed match data available for this selection.</td></tr>';
+        return;
+    }
+
+    standings.forEach(function (club, index) {
+        const row = document.createElement("tr");
+        if (index === 0) row.classList.add("standings-leader");
+
+        row.innerHTML = `
+            <td class="standings-rank">${index + 1}</td>
+            <td class="standings-club">${escapeDashboardText(club.club_name)}</td>
+            <td>${club.played}</td>
+            <td>${club.won}</td>
+            <td>${club.drawn}</td>
+            <td>${club.lost}</td>
+            <td>${club.goals_for}</td>
+            <td>${club.goals_against}</td>
+            <td class="${club.goal_difference > 0 ? "positive-gd" : club.goal_difference < 0 ? "negative-gd" : ""}">${club.goal_difference > 0 ? "+" : ""}${club.goal_difference}</td>
+            <td class="standings-points">${club.points}</td>
+        `;
+        tbody.appendChild(row);
+    });
+}
+
+function escapeDashboardText(value) {
+    return String(value ?? "").replace(/[&<>"']/g, function (character) {
+        return ({
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;"
+        })[character];
+    });
 }
