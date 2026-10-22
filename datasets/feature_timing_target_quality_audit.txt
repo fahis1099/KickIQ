@@ -1,0 +1,207 @@
+
+========================================================================
+1. DATASET OVERVIEW
+========================================================================
+
+File: D:\mits\s3\mini Project\KickIQ\kickiq_project\datasets\kickiq_training_dataset.csv
+Rows: 7,204
+Columns: 113
+Duplicate complete rows: 0
+Duplicate player-match pairs: 0
+Invalid/missing match dates: 0
+
+========================================================================
+2. TARGET RATING QUALITY
+========================================================================
+
+missing: 0
+minimum: 3.0
+maximum: 10.0
+mean: 7.0614797334813995
+median: 7.0
+standard_deviation: 0.6567223721316203
+unique_values: 54
+outside_0_to_10: 0
+integer_valued_targets: 663
+
+Target quantiles:
+  0.01: 5.8
+  0.05: 6.2
+  0.25: 6.6
+  0.5: 7.0
+  0.75: 7.4
+  0.95: 8.3
+  0.99: 9.2
+
+Target distribution by position:
+          count    mean     std  min  median   max
+position                                          
+DF         2427  7.0112  0.5656  3.0     7.0   9.7
+FW         1546  7.0878  0.7465  5.3     6.9  10.0
+GK          502  6.9944  0.6397  5.0     7.0   9.3
+MF         2729  7.1036  0.6769  4.7     7.0  10.0
+
+Target distribution by season:
+         count    mean     std  min   max
+season                                   
+2023/24   2282  7.1557  0.6697  4.7  10.0
+2024/25   2516  7.0854  0.6274  3.0  10.0
+2025/26   2396  6.9447  0.6540  4.2  10.0
+2026/27     10  7.5400  1.1909  6.2  10.0
+
+Monthly target distribution (first 12 and last 12 months):
+             count    mean     std
+_year_month                       
+2023-09        225  7.1107  0.6280
+2023-10        215  7.1056  0.5953
+2023-11        201  7.1090  0.6941
+2023-12        429  7.0746  0.5912
+2024-01        133  7.2406  0.7032
+2024-02        272  7.2176  0.6806
+2024-03        196  7.2107  0.6532
+2024-04        356  7.1618  0.7421
+2024-05        255  7.2494  0.7265
+2024-08        135  7.2459  0.6774
+2024-09        234  7.1265  0.6748
+2024-10        207  7.0899  0.6172
+
+...
+             count    mean     std
+_year_month                       
+2025-08        132  7.0083  0.6044
+2025-09        195  6.8713  0.6699
+2025-10        208  6.9851  0.6874
+2025-11        256  6.9367  0.6813
+2025-12        375  7.0056  0.6957
+2026-01        320  6.8784  0.6186
+2026-02        256  7.0289  0.6516
+2026-03        214  6.8612  0.5931
+2026-04        189  6.9302  0.5877
+2026-05        251  6.9323  0.6751
+2026-08          4  8.0750  1.3985
+2026-09          6  7.1833  0.9988
+
+========================================================================
+3. FEATURE TIMING AND LEAKAGE REVIEW
+========================================================================
+
+Columns excluded by the current training policy:
+player_id, match_id, match_date, season, competition, club, opponent, target_rating
+
+Remaining candidate model features: 105
+
+Candidate feature groups:
+
+Historical features (89):
+history_appearances_used, history_rated_appearances, history_latest_rating, history_rating_mean_5, history_rating_std_5, history_minutes_played_mean_5, history_minutes_played_sum_5, history_minutes_played_observed_5, history_started_mean_5, history_started_sum_5, history_started_observed_5, history_goals_mean_5, history_goals_sum_5, history_goals_observed_5, history_assists_mean_5, history_assists_sum_5, history_assists_observed_5, history_penalty_goals_mean_5, history_penalty_goals_sum_5, history_penalty_goals_observed_5, history_penalty_attempts_mean_5, history_penalty_attempts_sum_5, history_penalty_attempts_observed_5, history_shots_mean_5, history_shots_sum_5, history_shots_observed_5, history_shots_on_target_mean_5, history_shots_on_target_sum_5, history_shots_on_target_observed_5, history_passes_completed_mean_5, history_passes_completed_sum_5, history_passes_completed_observed_5, history_passes_attempted_mean_5, history_passes_attempted_sum_5, history_passes_attempted_observed_5, history_key_passes_mean_5, history_key_passes_sum_5, history_key_passes_observed_5, history_crosses_mean_5, history_crosses_sum_5, history_crosses_observed_5, history_dribbles_completed_mean_5, history_dribbles_completed_sum_5, history_dribbles_completed_observed_5, history_dribbles_attempted_mean_5, history_dribbles_attempted_sum_5, history_dribbles_attempted_observed_5, history_tackles_won_mean_5, history_tackles_won_sum_5, history_tackles_won_observed_5, history_interceptions_mean_5, history_interceptions_sum_5, history_interceptions_observed_5, history_yellow_cards_mean_5, history_yellow_cards_sum_5, history_yellow_cards_observed_5, history_red_cards_mean_5, history_red_cards_sum_5, history_red_cards_observed_5, history_fouls_committed_mean_5, history_fouls_committed_sum_5, history_fouls_committed_observed_5, history_fouls_drawn_mean_5, history_fouls_drawn_sum_5, history_fouls_drawn_observed_5, history_offsides_mean_5, history_offsides_sum_5, history_offsides_observed_5, history_own_goals_mean_5, history_own_goals_sum_5, history_own_goals_observed_5, history_penalty_won_mean_5, history_penalty_won_sum_5, history_penalty_won_observed_5, history_penalty_conceded_mean_5, history_penalty_conceded_sum_5, history_penalty_conceded_observed_5, history_shots_faced_mean_5, history_shots_faced_sum_5, history_shots_faced_observed_5, history_saves_mean_5, history_saves_sum_5, history_saves_observed_5, history_penalty_faced_mean_5, history_penalty_faced_sum_5, history_penalty_faced_observed_5, history_penalty_saved_mean_5, history_penalty_saved_sum_5, history_penalty_saved_observed_5
+
+FFI features (13):
+ffi, ffi_matches_used, ffi_weighted_average_rating, ffi_performance_score, ffi_rating_change, ffi_trend_score, ffi_rating_standard_deviation, ffi_consistency_score, ffi_days_since_latest_appearance, ffi_appearance_percentage, ffi_consecutive_appearances, ffi_appearances_in_window, ffi_missed_fixtures_in_window
+
+Context features (3):
+is_home, position, preferred_foot
+
+Other candidate features (0):
+(none)
+
+Unexpected candidate features requiring review:
+None detected by this naming-based check.
+
+Features with potentially suspicious names:
+None detected.
+
+Historical feature count: 89
+FFI feature count: 13
+
+TIMING LOGIC TO VERIFY IN SOURCE CODE:
+- History queries must use match_date strictly earlier than the target.
+- FFI must be calculated with before_date=target.match_date.
+- The target match's statistics must not contribute to history or FFI.
+- Historical club context must be used for transferred players.
+- Position, preferred foot, and home/away status must reflect information available for the target match.
+
+========================================================================
+4. FEATURE DATA QUALITY
+========================================================================
+
+Features with missing values: 0
+
+Features with infinite values: 0
+
+Constant features: 4
+history_penalty_won_mean_5, history_penalty_won_sum_5, history_penalty_conceded_mean_5, history_penalty_conceded_sum_5
+
+========================================================================
+5. CHRONOLOGICAL SPLIT AUDIT
+========================================================================
+
+
+TRAIN:
+  rows: 4386
+  start_date: 2023-09-02
+  end_date: 2025-04-13
+  target_mean: 7.123734610123119
+  target_std: 0.6546351229099782
+  target_min: 3.0
+  target_max: 10.0
+  position_counts: {'MF': 1557, 'DF': 1485, 'FW': 1028, 'GK': 316}
+
+VALIDATION:
+  rows: 1461
+  start_date: 2025-04-14
+  end_date: 2025-12-20
+  target_mean: 6.9881587953456545
+  target_std: 0.6542721288595316
+  target_min: 5.3
+  target_max: 10.0
+  position_counts: {'MF': 615, 'DF': 486, 'FW': 269, 'GK': 91}
+
+TEST:
+  rows: 1357
+  start_date: 2025-12-21
+  end_date: 2026-09-20
+  target_mean: 6.939204126750184
+  target_std: 0.6410458478907742
+  target_min: 4.2
+  target_max: 10.0
+  position_counts: {'MF': 557, 'DF': 456, 'FW': 249, 'GK': 95}
+Distinct dates: 299
+
+Dates appearing in multiple partitions: 0
+
+========================================================================
+6. NUMERIC FEATURE CORRELATION DIAGNOSTIC
+========================================================================
+
+Top 20 numeric feature correlations with target_rating (descriptive only):
+history_rating_mean_5              0.2597
+ffi_performance_score              0.2445
+ffi_weighted_average_rating        0.2445
+history_key_passes_sum_5           0.1971
+history_key_passes_mean_5          0.1969
+history_shots_sum_5                0.1709
+history_shots_mean_5               0.1709
+history_latest_rating              0.1541
+history_shots_on_target_mean_5     0.1536
+history_shots_on_target_sum_5      0.1535
+ffi                                0.1510
+history_minutes_played_mean_5      0.1493
+history_minutes_played_sum_5       0.1460
+history_started_mean_5             0.1405
+history_started_sum_5              0.1382
+history_assists_sum_5              0.1366
+history_goals_sum_5                0.1362
+history_passes_attempted_mean_5    0.1356
+history_goals_mean_5               0.1351
+history_passes_attempted_sum_5     0.1347
+
+Interpretation warning: high correlation alone does not prove leakage. Review feature-generation timing before removing features.
+
+========================================================================
+7. AUDIT SUMMARY
+========================================================================
+
+Items requiring attention:
+- Some candidate features are constant.
+
+This is a diagnostic audit, not proof that the ratings are accurate or that no leakage exists. Source-code timing checks remain essential.

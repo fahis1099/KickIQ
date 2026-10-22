@@ -1,0 +1,22 @@
+KICKIQ TRAINING DATASET SUMMARY
+====================================
+Rated target candidates: 8378
+Included rows: 7204
+Excluded rated candidates: 1174
+Unrated appearances not usable as targets: 0
+
+EXCLUSION BREAKDOWN
+------------------------
+excluded_no_history: 176
+excluded_recent_availability: 332
+excluded_insufficient_rated_history: 666
+excluded_no_eligible_club_history: 0
+excluded_ffi_unavailable: 0
+invalid_target_club_association: 0
+
+History window: 5
+FFI fixture window: 7
+Minimum rated appearances: 3
+Recent availability window: 3
+Historical lookback: all seasons, strictly before target date
+CSV path: D:\mits\s3\mini Project\KickIQ\kickiq_project\datasets\kickiq_training_dataset.csv
