@@ -1,6 +1,6 @@
-from django.urls import path
+from django.urls import path, include
 
-from .views import (
+from core.views import (
     ClubListAPIView,
     PlayerListAPIView,
     PlayerDetailAPIView,
@@ -11,7 +11,13 @@ from .views import (
     PlayerStatisticsListAPIView,
     PlayerStatisticsDetailAPIView,
     PlayerStatisticsByPlayerAPIView,
+    PlayerFFIAPIView,
+    PlayerRadarAPIView,
     DashboardAPIView,
+    player_comparison_page,
+    player_performance_report_pdf,
+    PlayerRatingPredictionAPIView,
+    player_comparison_report_pdf,
 )
 
 from .auth_views import (
@@ -96,6 +102,18 @@ urlpatterns = [
         PlayerStatisticsByPlayerAPIView.as_view(),
         name="player-statistics"
     ),
+    
+    path(
+        "players/<int:player_id>/ffi/",
+        PlayerFFIAPIView.as_view(),
+        name="player-ffi"
+    ),
+
+    path(
+        "players/<int:player_id>/radar/",
+        PlayerRadarAPIView.as_view(),
+        name="player-radar"
+    ),
 
 
     # ------------------------------------------
@@ -142,4 +160,28 @@ urlpatterns = [
         PlayerStatisticsDetailAPIView.as_view(),
         name="player-statistics-detail"
     ),
+
+    # ------------------------------------------
+    # Player Comparison and PDF Reports
+    # ------------------------------------------
+    path(
+        "player-comparison/",
+        player_comparison_page,
+        name="player-comparison",
+    ),
+    path(
+    "players/<int:player_id>/prediction/",
+    PlayerRatingPredictionAPIView.as_view(),
+    name="player-rating-prediction",
+    ),
+    path(
+    "players/<int:player_id>/report.pdf",
+    player_performance_report_pdf,
+    name="player-performance-report-pdf",
+    ),
+    path(
+    "player-comparison/report.pdf",
+    player_comparison_report_pdf,
+    name="player-comparison-report-pdf",
+),  
 ]
