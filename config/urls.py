@@ -24,6 +24,7 @@ from core.views import (
     players_page,
     register_page,
     player_performance_page,
+    player_comparison_page
 )
 
 urlpatterns = [
@@ -35,4 +36,5 @@ urlpatterns = [
     path("register/", register_page, name="register-page"),
     path("players/", players_page, name="players-page"),
     path("players/<int:player_id>/",player_performance_page, name="player-performance-page"),
+    path("player-comparison/", player_comparison_page,name="player-comparison",),
 ]
