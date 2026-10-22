@@ -1,4 +1,6 @@
+
 import csv
+
 from pathlib import Path
 from datetime import datetime
 
@@ -17,7 +19,6 @@ class Command(BaseCommand):
     help = "Import player match statistics from CSV"
 
     def add_arguments(self, parser):
-
         parser.add_argument(
             "--file",
             type=str,
@@ -29,18 +30,13 @@ class Command(BaseCommand):
 
         file_path = Path(options["file"])
 
-        # =====================================================
         # CHECK FILE
-        # =====================================================
-
         if not file_path.exists():
-
             self.stdout.write(
                 self.style.ERROR(
                     f"CSV file not found: {file_path}"
                 )
             )
-
             return
 
         created_count = 0
@@ -48,109 +44,80 @@ class Command(BaseCommand):
         error_count = 0
 
         self.stdout.write("")
-
         self.stdout.write(
             self.style.WARNING(
                 "=============================================="
             )
         )
-
         self.stdout.write(
             self.style.WARNING(
                 "KickIQ Player Statistics Import"
             )
         )
-
         self.stdout.write(
             self.style.WARNING(
                 "=============================================="
             )
         )
-
-        self.stdout.write(
-            f"File: {file_path}"
-        )
-
+        self.stdout.write(f"File: {file_path}")
         self.stdout.write("")
 
-        # =====================================================
         # OPEN CSV
-        # =====================================================
-
         with open(
             file_path,
             "r",
             encoding="utf-8-sig",
-            newline=""
+            newline="",
         ) as csvfile:
 
             reader = csv.DictReader(csvfile)
 
-            # =================================================
             # REQUIRED COLUMNS
-            # =================================================
-
             required_columns = [
-
                 "PlayerName",
                 "ClubName",
                 "MatchDate",
                 "HomeClub",
                 "AwayClub",
-
+                "Position",
                 "Started",
                 "MinutesPlayed",
-
                 "Goals",
                 "Assists",
-
                 "PenaltyGoals",
                 "PenaltyAttempts",
-
                 "Shots",
                 "ShotsOnTarget",
-
                 "PassesCompleted",
                 "PassAttempted",
-
                 "KeyPasses",
                 "Crosses",
-
                 "DribbleSuccess",
                 "DribblesAttempted",
-
                 "TacklesWon",
                 "Interceptions",
-
                 "YellowCards",
                 "RedCards",
-
                 "FoulsCommitted",
                 "FoulsDrawn",
-
                 "Offsides",
                 "OwnGoals",
-
                 "PenaltyWon",
                 "PenaltyConceded",
-
                 "ShotsFaced",
                 "Saves",
-
                 "PenaltyFaced",
                 "PenaltySaved",
-
                 "Rating",
             ]
 
             missing_columns = [
                 column
                 for column in required_columns
-                if column not in reader.fieldnames
+                if column not in (reader.fieldnames or [])
             ]
 
             if missing_columns:
-
                 self.stdout.write(
                     self.style.ERROR(
                         "CSV is missing required columns:"
@@ -158,113 +125,62 @@ class Command(BaseCommand):
                 )
 
                 for column in missing_columns:
-
-                    self.stdout.write(
-                        f"  - {column}"
-                    )
+                    self.stdout.write(f"  - {column}")
 
                 return
 
-            # =================================================
             # PROCESS EACH ROW
-            # =================================================
-
-            for row_number, row in enumerate(
-                reader,
-                start=2
-            ):
+            for row_number, row in enumerate(reader, start=2):
 
                 try:
-
-                    # =========================================
                     # BASIC VALUES
-                    # =========================================
-
-                    player_name = (
-                        row["PlayerName"]
-                        .strip()
-                    )
-
-                    club_name = (
-                        row["ClubName"]
-                        .strip()
-                    )
+                    player_name = row["PlayerName"].strip()
+                    club_name = row["ClubName"].strip()
 
                     match_date = datetime.strptime(
                         row["MatchDate"].strip(),
-                        "%Y-%m-%d"
+                        "%Y-%m-%d",
                     ).date()
 
-                    home_club_name = (
-                        row["HomeClub"]
-                        .strip()
-                    )
+                    home_club_name = row["HomeClub"].strip()
+                    away_club_name = row["AwayClub"].strip()
 
-                    away_club_name = (
-                        row["AwayClub"]
-                        .strip()
-                    )
-
-                    # =========================================
                     # FIND PLAYER
-                    # =========================================
-
                     try:
-
                         player = Player.objects.get(
                             name__iexact=player_name
                         )
-
                     except Player.DoesNotExist:
-
                         self.stdout.write(
                             self.style.ERROR(
                                 f"Row {row_number}: "
-                                f"Player not found: "
-                                f"{player_name}"
+                                f"Player not found: {player_name}"
                             )
                         )
-
                         error_count += 1
-
                         continue
 
-                    # =========================================
                     # FIND CLUB
-                    # =========================================
-
                     try:
-
                         club = Club.objects.get(
                             name__iexact=club_name
                         )
-
                     except Club.DoesNotExist:
-
                         self.stdout.write(
                             self.style.ERROR(
                                 f"Row {row_number}: "
-                                f"Club not found: "
-                                f"{club_name}"
+                                f"Club not found: {club_name}"
                             )
                         )
-
                         error_count += 1
-
                         continue
 
-                    # =========================================
                     # FIND HOME CLUB
-                    # =========================================
-
                     try:
-
                         home_club = Club.objects.get(
                             name__iexact=home_club_name
                         )
-
                     except Club.DoesNotExist:
-
                         self.stdout.write(
                             self.style.ERROR(
                                 f"Row {row_number}: "
@@ -272,23 +188,15 @@ class Command(BaseCommand):
                                 f"{home_club_name}"
                             )
                         )
-
                         error_count += 1
-
                         continue
 
-                    # =========================================
                     # FIND AWAY CLUB
-                    # =========================================
-
                     try:
-
                         away_club = Club.objects.get(
                             name__iexact=away_club_name
                         )
-
                     except Club.DoesNotExist:
-
                         self.stdout.write(
                             self.style.ERROR(
                                 f"Row {row_number}: "
@@ -296,25 +204,17 @@ class Command(BaseCommand):
                                 f"{away_club_name}"
                             )
                         )
-
                         error_count += 1
-
                         continue
 
-                    # =========================================
                     # FIND MATCH
-                    # =========================================
-
                     try:
-
                         match = Match.objects.get(
                             match_date=match_date,
                             home_club=home_club,
                             away_club=away_club,
                         )
-
                     except Match.DoesNotExist:
-
                         self.stdout.write(
                             self.style.ERROR(
                                 f"Row {row_number}: "
@@ -324,60 +224,28 @@ class Command(BaseCommand):
                                 f"({match_date})"
                             )
                         )
-
                         error_count += 1
-
                         continue
 
-                    # =========================================
                     # HELPER FUNCTIONS
-                    # =========================================
+                    def int_value(field, default=0):
+                        value = row.get(field, "")
 
-                    def int_value(
-                        field,
-                        default=0
-                    ):
-
-                        value = row.get(
-                            field,
-                            ""
-                        )
-
-                        if (
-                            value is None
-                            or value.strip() == ""
-                        ):
-
+                        if value is None or value.strip() == "":
                             return default
 
-                        return int(
-                            float(value)
-                        )
+                        return int(float(value))
 
                     def nullable_int(field):
+                        value = row.get(field, "")
 
-                        value = row.get(
-                            field,
-                            ""
-                        )
-
-                        if (
-                            value is None
-                            or value.strip() == ""
-                        ):
-
+                        if value is None or value.strip() == "":
                             return None
 
-                        return int(
-                            float(value)
-                        )
+                        return int(float(value))
 
                     def bool_value(field):
-
-                        value = row.get(
-                            field,
-                            ""
-                        ).strip().lower()
+                        value = row.get(field, "").strip().lower()
 
                         return value in (
                             "true",
@@ -387,347 +255,167 @@ class Command(BaseCommand):
                         )
 
                     def decimal_value(field):
+                        value = row.get(field, "")
 
-                        value = row.get(
-                            field,
-                            ""
-                        )
-
-                        if (
-                            value is None
-                            or value.strip() == ""
-                        ):
-
+                        if value is None or value.strip() == "":
                             return None
 
                         return value.strip()
 
-                    # =========================================
+                    # POSITION
+                    position = row["Position"].strip().upper()
+
+                    valid_positions = {"GK", "DF", "MF", "FW"}
+
+                    if position not in valid_positions:
+                        raise ValueError(
+                            f"Invalid position: {position}"
+                        )
+
                     # VALIDATE VALUES
-                    # =========================================
+                    minutes = int_value("MinutesPlayed")
+                    shots = int_value("Shots")
+                    shots_on_target = int_value("ShotsOnTarget")
 
-                    minutes = int_value(
-                        "MinutesPlayed"
-                    )
+                    passes_completed = nullable_int("PassesCompleted")
+                    passes_attempted = nullable_int("PassAttempted")
 
-                    shots = int_value(
-                        "Shots"
-                    )
+                    dribbles_completed = nullable_int("DribbleSuccess")
+                    dribbles_attempted = nullable_int("DribblesAttempted")
 
-                    shots_on_target = int_value(
-                        "ShotsOnTarget"
-                    )
+                    penalty_goals = int_value("PenaltyGoals")
+                    penalty_attempts = int_value("PenaltyAttempts")
+                    penalty_saved = int_value("PenaltySaved")
+                    penalty_faced = int_value("PenaltyFaced")
 
-                    passes_completed = nullable_int(
-                        "PassesCompleted"
-                    )
-
-                    passes_attempted = nullable_int(
-                        "PassAttempted"
-                    )
-
-                    dribbles_completed = nullable_int(
-                        "DribbleSuccess"
-                    )
-
-                    dribbles_attempted = nullable_int(
-                        "DribblesAttempted"
-                    )
-
-                    penalty_goals = int_value(
-                        "PenaltyGoals"
-                    )
-
-                    penalty_attempts = int_value(
-                        "PenaltyAttempts"
-                    )
-
-                    penalty_saved = int_value(
-                        "PenaltySaved"
-                    )
-
-                    penalty_faced = int_value(
-                        "PenaltyFaced"
-                    )
-
-                    # -----------------------------------------
                     # MINUTES
-                    # -----------------------------------------
-
                     if minutes < 0 or minutes > 90:
-
                         raise ValueError(
                             f"Invalid minutes: {minutes}"
                         )
 
-                    # -----------------------------------------
                     # SHOTS
-                    # -----------------------------------------
-
                     if shots_on_target > shots:
-
                         raise ValueError(
-                            f"Shots on target "
-                            f"({shots_on_target}) "
-                            f"cannot exceed shots "
-                            f"({shots})"
+                            f"Shots on target ({shots_on_target}) "
+                            f"cannot exceed shots ({shots})"
                         )
 
-                    # -----------------------------------------
                     # PASSING
-                    # -----------------------------------------
-
                     if (
                         passes_completed is not None
                         and passes_attempted is not None
                         and passes_completed > passes_attempted
                     ):
-
                         raise ValueError(
-                            f"Passes completed "
-                            f"({passes_completed}) "
-                            f"cannot exceed passes "
-                            f"attempted "
+                            f"Passes completed ({passes_completed}) "
+                            f"cannot exceed passes attempted "
                             f"({passes_attempted})"
                         )
 
-                    # -----------------------------------------
                     # DRIBBLING
-                    # -----------------------------------------
-
                     if (
                         dribbles_completed is not None
                         and dribbles_attempted is not None
                         and dribbles_completed > dribbles_attempted
                     ):
-
                         raise ValueError(
-                            f"Dribble success "
-                            f"({dribbles_completed}) "
-                            f"cannot exceed dribbles "
-                            f"attempted "
+                            f"Dribble success ({dribbles_completed}) "
+                            f"cannot exceed dribbles attempted "
                             f"({dribbles_attempted})"
                         )
 
-                    # -----------------------------------------
                     # PENALTIES
-                    # -----------------------------------------
-
                     if penalty_goals > penalty_attempts:
-
                         raise ValueError(
-                            f"Penalty goals "
-                            f"({penalty_goals}) "
+                            f"Penalty goals ({penalty_goals}) "
                             f"cannot exceed penalty attempts "
                             f"({penalty_attempts})"
                         )
 
                     if penalty_saved > penalty_faced:
-
                         raise ValueError(
-                            f"Penalty saved "
-                            f"({penalty_saved}) "
+                            f"Penalty saved ({penalty_saved}) "
                             f"cannot exceed penalty faced "
                             f"({penalty_faced})"
                         )
 
-                    # =========================================
                     # CREATE / UPDATE STATISTICS
-                    # =========================================
-
                     statistics, created = (
-                        PlayerStatistics.objects
-                        .update_or_create(
-
+                        PlayerStatistics.objects.update_or_create(
                             player=player,
-
                             match=match,
-
                             defaults={
-
                                 "club": club,
-
-                                "started": bool_value(
-                                    "Started"
-                                ),
-
+                                "position": position,
+                                "started": bool_value("Started"),
                                 "minutes_played": minutes,
-
-                                "goals": int_value(
-                                    "Goals"
-                                ),
-
-                                "assists": int_value(
-                                    "Assists"
-                                ),
-
-                                "penalty_goals":
-                                    penalty_goals,
-
-                                "penalty_attempts":
-                                    penalty_attempts,
-
+                                "goals": int_value("Goals"),
+                                "assists": int_value("Assists"),
+                                "penalty_goals": penalty_goals,
+                                "penalty_attempts": penalty_attempts,
                                 "shots": shots,
-
-                                "shots_on_target":
-                                    shots_on_target,
-
-                                "passes_completed":
-                                    passes_completed,
-
-                                "passes_attempted":
-                                    passes_attempted,
-
-                                "key_passes":
-                                    nullable_int(
-                                        "KeyPasses"
-                                    ),
-
-                                "crosses":
-                                    int_value(
-                                        "Crosses"
-                                    ),
-
-                                "dribbles_completed":
-                                    dribbles_completed,
-
-                                "dribbles_attempted":
-                                    dribbles_attempted,
-
-                                "tackles_won":
-                                    int_value(
-                                        "TacklesWon"
-                                    ),
-
-                                "interceptions":
-                                    int_value(
-                                        "Interceptions"
-                                    ),
-
-                                "yellow_cards":
-                                    int_value(
-                                        "YellowCards"
-                                    ),
-
-                                "red_cards":
-                                    int_value(
-                                        "RedCards"
-                                    ),
-
-                                "fouls_committed":
-                                    int_value(
-                                        "FoulsCommitted"
-                                    ),
-
-                                "fouls_drawn":
-                                    int_value(
-                                        "FoulsDrawn"
-                                    ),
-
-                                "offsides":
-                                    int_value(
-                                        "Offsides"
-                                    ),
-
-                                "own_goals":
-                                    int_value(
-                                        "OwnGoals"
-                                    ),
-
-                                "penalty_won":
-                                    int_value(
-                                        "PenaltyWon"
-                                    ),
-
-                                "penalty_conceded":
-                                    int_value(
-                                        "PenaltyConceded"
-                                    ),
-
-                                "shots_faced":
-                                    int_value(
-                                        "ShotsFaced"
-                                    ),
-
-                                "saves":
-                                    int_value(
-                                        "Saves"
-                                    ),
-
-                                "penalty_faced":
-                                    penalty_faced,
-
-                                "penalty_saved":
-                                    penalty_saved,
-
-                                "rating":
-                                    decimal_value(
-                                        "Rating"
-                                    ),
+                                "shots_on_target": shots_on_target,
+                                "passes_completed": passes_completed,
+                                "passes_attempted": passes_attempted,
+                                "key_passes": nullable_int("KeyPasses"),
+                                "crosses": int_value("Crosses"),
+                                "dribbles_completed": dribbles_completed,
+                                "dribbles_attempted": dribbles_attempted,
+                                "tackles_won": int_value("TacklesWon"),
+                                "interceptions": int_value("Interceptions"),
+                                "yellow_cards": int_value("YellowCards"),
+                                "red_cards": int_value("RedCards"),
+                                "fouls_committed": int_value("FoulsCommitted"),
+                                "fouls_drawn": int_value("FoulsDrawn"),
+                                "offsides": int_value("Offsides"),
+                                "own_goals": int_value("OwnGoals"),
+                                "penalty_won": int_value("PenaltyWon"),
+                                "penalty_conceded": int_value(
+                                    "PenaltyConceded"
+                                ),
+                                "shots_faced": int_value("ShotsFaced"),
+                                "saves": int_value("Saves"),
+                                "penalty_faced": penalty_faced,
+                                "penalty_saved": penalty_saved,
+                                "rating": decimal_value("Rating"),
                             },
                         )
                     )
 
-                    # =========================================
                     # COUNT RESULT
-                    # =========================================
-
                     if created:
-
                         created_count += 1
-
                     else:
-
                         updated_count += 1
 
-                # =============================================
                 # ERROR
-                # =============================================
-
                 except Exception as e:
-
                     error_count += 1
-
                     self.stdout.write(
                         self.style.ERROR(
                             f"Row {row_number}: {e}"
                         )
                     )
 
-        # =====================================================
         # FINAL SUMMARY
-        # =====================================================
-
         self.stdout.write("")
-
         self.stdout.write(
             self.style.SUCCESS(
                 "=============================================="
             )
         )
-
         self.stdout.write(
             self.style.SUCCESS(
                 "Player statistics import completed."
             )
         )
-
         self.stdout.write(
             self.style.SUCCESS(
                 "=============================================="
             )
         )
-
-        self.stdout.write(
-            f"Created : {created_count}"
-        )
-
-        self.stdout.write(
-            f"Updated : {updated_count}"
-        )
-
-        self.stdout.write(
-            f"Errors  : {error_count}"
-        )
-
+        self.stdout.write(f"Created : {created_count}")
+        self.stdout.write(f"Updated : {updated_count}")
+        self.stdout.write(f"Errors  : {error_count}")
         self.stdout.write("")
